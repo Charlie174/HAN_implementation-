@@ -1,0 +1,10 @@
+artifact_location: file:///Users/charlie/Documents/Coding/VS%20Code/Language_python/FYP/New_2026/pyHGT-implementation/mlruns/317701094337654653/models/m-96c8ca04aea14511b903fa1c08d98b35/artifacts
+creation_timestamp: 1769788469836
+experiment_id: '317701094337654653'
+last_updated_timestamp: 1769788471543
+model_id: m-96c8ca04aea14511b903fa1c08d98b35
+model_type: null
+name: classifier_model
+source_run_id: 5dd900afa48646b390c728102e7f96f3
+status: 2
+status_message: null

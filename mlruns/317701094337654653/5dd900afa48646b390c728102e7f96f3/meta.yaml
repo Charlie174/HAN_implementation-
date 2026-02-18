@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/charlie/Documents/Coding/VS%20Code/Language_python/FYP/New_2026/pyHGT-implementation/mlruns/317701094337654653/5dd900afa48646b390c728102e7f96f3/artifacts
+end_time: 1769788471545
+entry_point_name: ''
+experiment_id: '317701094337654653'
+lifecycle_stage: active
+run_id: 5dd900afa48646b390c728102e7f96f3
+run_name: pyHGT_epochs100_batch128
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1769788063066
+status: 3
+tags: []
+user_id: charlie

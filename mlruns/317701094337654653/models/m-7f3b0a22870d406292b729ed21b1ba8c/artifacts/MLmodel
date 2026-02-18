@@ -1,0 +1,23 @@
+artifact_path: file:///Users/charlie/Documents/Coding/VS%20Code/Language_python/FYP/New_2026/pyHGT-implementation/mlruns/317701094337654653/models/m-7f3b0a22870d406292b729ed21b1ba8c/artifacts
+flavors:
+  python_function:
+    config:
+      device: null
+    data: data
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.pytorch
+    pickle_module_name: mlflow.pytorch.pickle_module
+    python_version: 3.9.6
+  pytorch:
+    code: null
+    model_data: data
+    pytorch_version: 2.8.0
+mlflow_version: 3.1.4
+model_id: m-7f3b0a22870d406292b729ed21b1ba8c
+model_size_bytes: 42670331
+model_uuid: m-7f3b0a22870d406292b729ed21b1ba8c
+prompts: null
+run_id: 5dd900afa48646b390c728102e7f96f3
+utc_time_created: '2026-01-30 15:54:26.261083'
