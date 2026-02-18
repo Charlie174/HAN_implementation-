@@ -22,7 +22,7 @@ import warnings
 warnings.filterwarnings('ignore')
 
 # Configuration
-DATA_DIR = 'data/'
+DATA_DIR = '/Users/charlie/Documents/Coding/VS Code/Language_python/FYP/New_2026/HAN-implementation/data'
 INPUT_FILE = 'patient-one-hot-labeled-disease.csv'
 OUTPUT_FILE = 'patient-one-hot-labeled-disease-clustered.csv'
 MAPPING_FILE = 'disease_cluster_mapping.json'
