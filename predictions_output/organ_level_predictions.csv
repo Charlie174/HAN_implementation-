@@ -1,0 +1,176 @@
+patient_id,organ,predicted_severity,severity_name,avg_symptom_severity,max_symptom_severity,num_symptoms,num_abnormal_symptoms,abnormal_ratio,damage_score
+900000,blood,0,NORMAL,0.0,0,3,0,0.0,0.0
+900000,immune system,0,NORMAL,0.0,0,1,0,0.0,0.0
+900000,pancreas,0,NORMAL,0.0,0,1,0,0.0,0.0
+900000,kidney,0,NORMAL,0.0,0,5,0,0.0,0.0
+900000,cardiovascular system,0,NORMAL,0.0,0,3,0,0.0,0.0
+900000,liver,0,NORMAL,0.0,0,1,0,0.0,0.0
+900000,thyroid,0,NORMAL,0.0,0,1,0,0.0,0.0
+900001,blood,0,NORMAL,0.0,0,3,0,0.0,0.0
+900001,immune system,0,NORMAL,0.0,0,1,0,0.0,0.0
+900001,pancreas,0,NORMAL,0.0,0,1,0,0.0,0.0
+900001,kidney,0,NORMAL,0.0,0,5,0,0.0,0.0
+900001,cardiovascular system,0,NORMAL,0.0,0,3,0,0.0,0.0
+900001,liver,0,NORMAL,0.0,0,1,0,0.0,0.0
+900001,thyroid,0,NORMAL,0.0,0,1,0,0.0,0.0
+900002,blood,0,NORMAL,0.0,0,3,0,0.0,0.0
+900002,immune system,0,NORMAL,0.0,0,1,0,0.0,0.0
+900002,pancreas,0,NORMAL,0.0,0,1,0,0.0,0.0
+900002,kidney,0,NORMAL,0.0,0,5,0,0.0,0.0
+900002,cardiovascular system,0,NORMAL,0.0,0,3,0,0.0,0.0
+900002,liver,0,NORMAL,0.0,0,1,0,0.0,0.0
+900002,thyroid,0,NORMAL,0.0,0,1,0,0.0,0.0
+900003,blood,0,NORMAL,0.0,0,3,0,0.0,0.0
+900003,immune system,0,NORMAL,0.0,0,1,0,0.0,0.0
+900003,pancreas,0,NORMAL,0.0,0,1,0,0.0,0.0
+900003,kidney,0,NORMAL,0.0,0,5,0,0.0,0.0
+900003,cardiovascular system,0,NORMAL,0.0,0,3,0,0.0,0.0
+900003,liver,0,NORMAL,0.0,0,1,0,0.0,0.0
+900003,thyroid,0,NORMAL,0.0,0,1,0,0.0,0.0
+900004,blood,0,NORMAL,0.0,0,3,0,0.0,0.0
+900004,immune system,0,NORMAL,0.0,0,1,0,0.0,0.0
+900004,pancreas,0,NORMAL,0.0,0,1,0,0.0,0.0
+900004,kidney,0,NORMAL,0.0,0,5,0,0.0,0.0
+900004,cardiovascular system,0,NORMAL,0.0,0,3,0,0.0,0.0
+900004,liver,0,NORMAL,0.0,0,1,0,0.0,0.0
+900004,thyroid,0,NORMAL,0.0,0,1,0,0.0,0.0
+900005,blood,0,NORMAL,0.0,0,3,0,0.0,0.0
+900005,immune system,0,NORMAL,0.0,0,1,0,0.0,0.0
+900005,pancreas,0,NORMAL,0.0,0,1,0,0.0,0.0
+900005,kidney,0,NORMAL,0.0,0,5,0,0.0,0.0
+900005,cardiovascular system,0,NORMAL,0.0,0,3,0,0.0,0.0
+900005,liver,0,NORMAL,0.0,0,1,0,0.0,0.0
+900005,thyroid,0,NORMAL,0.0,0,1,0,0.0,0.0
+900006,blood,0,NORMAL,0.0,0,3,0,0.0,0.0
+900006,immune system,0,NORMAL,0.0,0,1,0,0.0,0.0
+900006,pancreas,0,NORMAL,0.0,0,1,0,0.0,0.0
+900006,kidney,0,NORMAL,0.0,0,5,0,0.0,0.0
+900006,cardiovascular system,0,NORMAL,0.0,0,3,0,0.0,0.0
+900006,liver,0,NORMAL,0.0,0,1,0,0.0,0.0
+900006,thyroid,0,NORMAL,0.0,0,1,0,0.0,0.0
+900007,blood,0,NORMAL,0.0,0,3,0,0.0,0.0
+900007,immune system,0,NORMAL,0.0,0,1,0,0.0,0.0
+900007,pancreas,0,NORMAL,0.0,0,1,0,0.0,0.0
+900007,kidney,0,NORMAL,0.0,0,5,0,0.0,0.0
+900007,cardiovascular system,0,NORMAL,0.0,0,3,0,0.0,0.0
+900007,liver,0,NORMAL,0.0,0,1,0,0.0,0.0
+900007,thyroid,0,NORMAL,0.0,0,1,0,0.0,0.0
+900008,blood,0,NORMAL,0.0,0,3,0,0.0,0.0
+900008,immune system,0,NORMAL,0.0,0,1,0,0.0,0.0
+900008,pancreas,0,NORMAL,0.0,0,1,0,0.0,0.0
+900008,kidney,0,NORMAL,0.0,0,5,0,0.0,0.0
+900008,cardiovascular system,0,NORMAL,0.0,0,3,0,0.0,0.0
+900008,liver,0,NORMAL,0.0,0,1,0,0.0,0.0
+900008,thyroid,0,NORMAL,0.0,0,1,0,0.0,0.0
+900009,blood,0,NORMAL,0.0,0,3,0,0.0,0.0
+900009,immune system,0,NORMAL,0.0,0,1,0,0.0,0.0
+900009,pancreas,0,NORMAL,0.0,0,1,0,0.0,0.0
+900009,kidney,0,NORMAL,0.0,0,5,0,0.0,0.0
+900009,cardiovascular system,0,NORMAL,0.0,0,3,0,0.0,0.0
+900009,liver,0,NORMAL,0.0,0,1,0,0.0,0.0
+900009,thyroid,0,NORMAL,0.0,0,1,0,0.0,0.0
+900010,blood,0,NORMAL,0.0,0,3,0,0.0,0.0
+900010,immune system,0,NORMAL,0.0,0,1,0,0.0,0.0
+900010,pancreas,0,NORMAL,0.0,0,1,0,0.0,0.0
+900010,kidney,0,NORMAL,0.0,0,5,0,0.0,0.0
+900010,cardiovascular system,0,NORMAL,0.0,0,3,0,0.0,0.0
+900010,liver,0,NORMAL,0.0,0,1,0,0.0,0.0
+900010,thyroid,0,NORMAL,0.0,0,1,0,0.0,0.0
+900011,blood,0,NORMAL,0.0,0,3,0,0.0,0.0
+900011,immune system,0,NORMAL,0.0,0,1,0,0.0,0.0
+900011,pancreas,0,NORMAL,0.0,0,1,0,0.0,0.0
+900011,kidney,0,NORMAL,0.0,0,5,0,0.0,0.0
+900011,cardiovascular system,0,NORMAL,0.0,0,3,0,0.0,0.0
+900011,liver,0,NORMAL,0.0,0,1,0,0.0,0.0
+900011,thyroid,0,NORMAL,0.0,0,1,0,0.0,0.0
+900012,blood,0,NORMAL,0.0,0,3,0,0.0,0.0
+900012,immune system,0,NORMAL,0.0,0,1,0,0.0,0.0
+900012,pancreas,0,NORMAL,0.0,0,1,0,0.0,0.0
+900012,kidney,0,NORMAL,0.0,0,5,0,0.0,0.0
+900012,cardiovascular system,0,NORMAL,0.0,0,3,0,0.0,0.0
+900012,liver,0,NORMAL,0.0,0,1,0,0.0,0.0
+900012,thyroid,0,NORMAL,0.0,0,1,0,0.0,0.0
+900013,blood,0,NORMAL,0.0,0,3,0,0.0,0.0
+900013,immune system,0,NORMAL,0.0,0,1,0,0.0,0.0
+900013,pancreas,0,NORMAL,0.0,0,1,0,0.0,0.0
+900013,kidney,0,NORMAL,0.0,0,5,0,0.0,0.0
+900013,cardiovascular system,0,NORMAL,0.0,0,3,0,0.0,0.0
+900013,liver,0,NORMAL,0.0,0,1,0,0.0,0.0
+900013,thyroid,0,NORMAL,0.0,0,1,0,0.0,0.0
+900014,blood,0,NORMAL,0.0,0,3,0,0.0,0.0
+900014,immune system,0,NORMAL,0.0,0,1,0,0.0,0.0
+900014,pancreas,0,NORMAL,0.0,0,1,0,0.0,0.0
+900014,kidney,0,NORMAL,0.0,0,5,0,0.0,0.0
+900014,cardiovascular system,0,NORMAL,0.0,0,3,0,0.0,0.0
+900014,liver,0,NORMAL,0.0,0,1,0,0.0,0.0
+900014,thyroid,0,NORMAL,0.0,0,1,0,0.0,0.0
+900015,blood,0,NORMAL,0.0,0,3,0,0.0,0.0
+900015,immune system,0,NORMAL,0.0,0,1,0,0.0,0.0
+900015,pancreas,0,NORMAL,0.0,0,1,0,0.0,0.0
+900015,kidney,0,NORMAL,0.0,0,5,0,0.0,0.0
+900015,cardiovascular system,0,NORMAL,0.0,0,3,0,0.0,0.0
+900015,liver,0,NORMAL,0.0,0,1,0,0.0,0.0
+900015,thyroid,0,NORMAL,0.0,0,1,0,0.0,0.0
+900016,blood,0,NORMAL,0.0,0,3,0,0.0,0.0
+900016,immune system,0,NORMAL,0.0,0,1,0,0.0,0.0
+900016,pancreas,0,NORMAL,0.0,0,1,0,0.0,0.0
+900016,kidney,0,NORMAL,0.0,0,5,0,0.0,0.0
+900016,cardiovascular system,0,NORMAL,0.0,0,3,0,0.0,0.0
+900016,liver,0,NORMAL,0.0,0,1,0,0.0,0.0
+900016,thyroid,0,NORMAL,0.0,0,1,0,0.0,0.0
+900017,blood,0,NORMAL,0.0,0,3,0,0.0,0.0
+900017,immune system,0,NORMAL,0.0,0,1,0,0.0,0.0
+900017,pancreas,0,NORMAL,0.0,0,1,0,0.0,0.0
+900017,kidney,0,NORMAL,0.0,0,5,0,0.0,0.0
+900017,cardiovascular system,0,NORMAL,0.0,0,3,0,0.0,0.0
+900017,liver,0,NORMAL,0.0,0,1,0,0.0,0.0
+900017,thyroid,0,NORMAL,0.0,0,1,0,0.0,0.0
+900018,blood,3,SEVERE,1.67,3,3,3,1.0,1.667
+900018,immune system,2,MODERATE,2.0,2,1,1,1.0,2.0
+900018,pancreas,2,MODERATE,1.0,1,1,1,1.0,1.0
+900018,kidney,2,MODERATE,1.2,2,5,5,1.0,1.2
+900018,cardiovascular system,2,MODERATE,1.67,2,3,3,1.0,1.667
+900018,liver,3,SEVERE,3.0,3,1,1,1.0,3.0
+900018,thyroid,2,MODERATE,2.0,2,1,1,1.0,2.0
+900019,blood,2,MODERATE,1.0,1,3,3,1.0,1.0
+900019,immune system,2,MODERATE,2.0,2,1,1,1.0,2.0
+900019,pancreas,2,MODERATE,1.0,1,1,1,1.0,1.0
+900019,kidney,2,MODERATE,1.0,1,5,5,1.0,1.0
+900019,cardiovascular system,2,MODERATE,1.0,1,3,3,1.0,1.0
+900019,liver,3,SEVERE,3.0,3,1,1,1.0,3.0
+900019,thyroid,2,MODERATE,1.0,1,1,1,1.0,1.0
+900020,blood,2,MODERATE,1.33,2,3,3,1.0,1.333
+900020,immune system,2,MODERATE,1.0,1,1,1,1.0,1.0
+900020,pancreas,2,MODERATE,1.0,1,1,1,1.0,1.0
+900020,kidney,2,MODERATE,1.2,2,5,5,1.0,1.2
+900020,cardiovascular system,2,MODERATE,1.67,2,3,3,1.0,1.667
+900020,liver,2,MODERATE,1.0,1,1,1,1.0,1.0
+900020,thyroid,2,MODERATE,1.0,1,1,1,1.0,1.0
+900021,blood,2,MODERATE,1.33,2,3,3,1.0,1.333
+900021,immune system,2,MODERATE,1.0,1,1,1,1.0,1.0
+900021,pancreas,2,MODERATE,1.0,1,1,1,1.0,1.0
+900021,kidney,2,MODERATE,1.2,2,5,5,1.0,1.2
+900021,cardiovascular system,2,MODERATE,1.33,2,3,3,1.0,1.333
+900021,liver,3,SEVERE,3.0,3,1,1,1.0,3.0
+900021,thyroid,2,MODERATE,2.0,2,1,1,1.0,2.0
+900022,blood,2,MODERATE,1.0,1,3,3,1.0,1.0
+900022,immune system,2,MODERATE,2.0,2,1,1,1.0,2.0
+900022,pancreas,2,MODERATE,1.0,1,1,1,1.0,1.0
+900022,kidney,2,MODERATE,1.2,2,5,5,1.0,1.2
+900022,cardiovascular system,2,MODERATE,1.0,1,3,3,1.0,1.0
+900022,liver,3,SEVERE,3.0,3,1,1,1.0,3.0
+900022,thyroid,3,SEVERE,3.0,3,1,1,1.0,3.0
+900023,blood,3,SEVERE,1.67,3,3,3,1.0,1.667
+900023,immune system,2,MODERATE,2.0,2,1,1,1.0,2.0
+900023,pancreas,2,MODERATE,1.0,1,1,1,1.0,1.0
+900023,kidney,3,SEVERE,1.8,3,5,5,1.0,1.8
+900023,cardiovascular system,2,MODERATE,1.67,2,3,3,1.0,1.667
+900023,liver,3,SEVERE,3.0,3,1,1,1.0,3.0
+900023,thyroid,3,SEVERE,3.0,3,1,1,1.0,3.0
+900024,blood,3,SEVERE,1.67,3,3,3,1.0,1.667
+900024,immune system,3,SEVERE,3.0,3,1,1,1.0,3.0
+900024,pancreas,2,MODERATE,1.0,1,1,1,1.0,1.0
+900024,kidney,2,MODERATE,1.8,2,5,5,1.0,1.8
+900024,cardiovascular system,2,MODERATE,1.67,2,3,3,1.0,1.667
+900024,liver,3,SEVERE,3.0,3,1,1,1.0,3.0
+900024,thyroid,3,SEVERE,3.0,3,1,1,1.0,3.0

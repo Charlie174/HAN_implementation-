@@ -1,0 +1,725 @@
+================================================================================
+MEDICAL PREDICTION REPORT - P-S-P META-PATH ANALYSIS
+Patient → Symptom Level → Organ Severity Analysis
+Report Date: 2026-02-27 20:16:22
+================================================================================
+
+
+================================================================================
+PATIENT ID: 900000
+================================================================================
+Demographics: Age 63, Female
+Overall Status: NORMAL
+Profile: HEALTHY
+
+================================================================================
+STEP 1: SYMPTOM-LEVEL ANALYSIS
+================================================================================
+Total Symptoms: 15
+  Normal: 15, Mild: 0, Moderate: 0, Severe: 0
+
+✅ All symptoms within normal ranges.
+
+================================================================================
+STEP 2: ORGAN-LEVEL ANALYSIS (Aggregated from Symptoms)
+================================================================================
+Organs: Normal 7, Mild 0, Moderate 0, Severe 0
+
+✅ All organs functioning normally.
+
+RECOMMENDED ACTION: No immediate action needed. Continue regular health monitoring.
+
+================================================================================
+PATIENT ID: 900001
+================================================================================
+Demographics: Age 36, Female
+Overall Status: NORMAL
+Profile: HEALTHY
+
+================================================================================
+STEP 1: SYMPTOM-LEVEL ANALYSIS
+================================================================================
+Total Symptoms: 15
+  Normal: 15, Mild: 0, Moderate: 0, Severe: 0
+
+✅ All symptoms within normal ranges.
+
+================================================================================
+STEP 2: ORGAN-LEVEL ANALYSIS (Aggregated from Symptoms)
+================================================================================
+Organs: Normal 7, Mild 0, Moderate 0, Severe 0
+
+✅ All organs functioning normally.
+
+RECOMMENDED ACTION: No immediate action needed. Continue regular health monitoring.
+
+================================================================================
+PATIENT ID: 900002
+================================================================================
+Demographics: Age 63, Female
+Overall Status: NORMAL
+Profile: HEALTHY
+
+================================================================================
+STEP 1: SYMPTOM-LEVEL ANALYSIS
+================================================================================
+Total Symptoms: 15
+  Normal: 15, Mild: 0, Moderate: 0, Severe: 0
+
+✅ All symptoms within normal ranges.
+
+================================================================================
+STEP 2: ORGAN-LEVEL ANALYSIS (Aggregated from Symptoms)
+================================================================================
+Organs: Normal 7, Mild 0, Moderate 0, Severe 0
+
+✅ All organs functioning normally.
+
+RECOMMENDED ACTION: No immediate action needed. Continue regular health monitoring.
+
+================================================================================
+PATIENT ID: 900003
+================================================================================
+Demographics: Age 66, Female
+Overall Status: NORMAL
+Profile: HEALTHY
+
+================================================================================
+STEP 1: SYMPTOM-LEVEL ANALYSIS
+================================================================================
+Total Symptoms: 15
+  Normal: 15, Mild: 0, Moderate: 0, Severe: 0
+
+✅ All symptoms within normal ranges.
+
+================================================================================
+STEP 2: ORGAN-LEVEL ANALYSIS (Aggregated from Symptoms)
+================================================================================
+Organs: Normal 7, Mild 0, Moderate 0, Severe 0
+
+✅ All organs functioning normally.
+
+RECOMMENDED ACTION: No immediate action needed. Continue regular health monitoring.
+
+================================================================================
+PATIENT ID: 900004
+================================================================================
+Demographics: Age 69, Male
+Overall Status: NORMAL
+Profile: HEALTHY
+
+================================================================================
+STEP 1: SYMPTOM-LEVEL ANALYSIS
+================================================================================
+Total Symptoms: 15
+  Normal: 15, Mild: 0, Moderate: 0, Severe: 0
+
+✅ All symptoms within normal ranges.
+
+================================================================================
+STEP 2: ORGAN-LEVEL ANALYSIS (Aggregated from Symptoms)
+================================================================================
+Organs: Normal 7, Mild 0, Moderate 0, Severe 0
+
+✅ All organs functioning normally.
+
+RECOMMENDED ACTION: No immediate action needed. Continue regular health monitoring.
+
+================================================================================
+PATIENT ID: 900005
+================================================================================
+Demographics: Age 36, Female
+Overall Status: NORMAL
+Profile: HEALTHY
+
+================================================================================
+STEP 1: SYMPTOM-LEVEL ANALYSIS
+================================================================================
+Total Symptoms: 15
+  Normal: 15, Mild: 0, Moderate: 0, Severe: 0
+
+✅ All symptoms within normal ranges.
+
+================================================================================
+STEP 2: ORGAN-LEVEL ANALYSIS (Aggregated from Symptoms)
+================================================================================
+Organs: Normal 7, Mild 0, Moderate 0, Severe 0
+
+✅ All organs functioning normally.
+
+RECOMMENDED ACTION: No immediate action needed. Continue regular health monitoring.
+
+================================================================================
+PATIENT ID: 900006
+================================================================================
+Demographics: Age 50, Female
+Overall Status: NORMAL
+Profile: HEALTHY
+
+================================================================================
+STEP 1: SYMPTOM-LEVEL ANALYSIS
+================================================================================
+Total Symptoms: 15
+  Normal: 15, Mild: 0, Moderate: 0, Severe: 0
+
+✅ All symptoms within normal ranges.
+
+================================================================================
+STEP 2: ORGAN-LEVEL ANALYSIS (Aggregated from Symptoms)
+================================================================================
+Organs: Normal 7, Mild 0, Moderate 0, Severe 0
+
+✅ All organs functioning normally.
+
+RECOMMENDED ACTION: No immediate action needed. Continue regular health monitoring.
+
+================================================================================
+PATIENT ID: 900007
+================================================================================
+Demographics: Age 77, Female
+Overall Status: NORMAL
+Profile: HEALTHY
+
+================================================================================
+STEP 1: SYMPTOM-LEVEL ANALYSIS
+================================================================================
+Total Symptoms: 15
+  Normal: 15, Mild: 0, Moderate: 0, Severe: 0
+
+✅ All symptoms within normal ranges.
+
+================================================================================
+STEP 2: ORGAN-LEVEL ANALYSIS (Aggregated from Symptoms)
+================================================================================
+Organs: Normal 7, Mild 0, Moderate 0, Severe 0
+
+✅ All organs functioning normally.
+
+RECOMMENDED ACTION: No immediate action needed. Continue regular health monitoring.
+
+================================================================================
+PATIENT ID: 900008
+================================================================================
+Demographics: Age 61, Male
+Overall Status: NORMAL
+Profile: MILD
+
+================================================================================
+STEP 1: SYMPTOM-LEVEL ANALYSIS
+================================================================================
+Total Symptoms: 15
+  Normal: 15, Mild: 0, Moderate: 0, Severe: 0
+
+✅ All symptoms within normal ranges.
+
+================================================================================
+STEP 2: ORGAN-LEVEL ANALYSIS (Aggregated from Symptoms)
+================================================================================
+Organs: Normal 7, Mild 0, Moderate 0, Severe 0
+
+✅ All organs functioning normally.
+
+RECOMMENDED ACTION: No immediate action needed. Continue regular health monitoring.
+
+================================================================================
+PATIENT ID: 900009
+================================================================================
+Demographics: Age 30, Female
+Overall Status: NORMAL
+Profile: MILD
+
+================================================================================
+STEP 1: SYMPTOM-LEVEL ANALYSIS
+================================================================================
+Total Symptoms: 15
+  Normal: 15, Mild: 0, Moderate: 0, Severe: 0
+
+✅ All symptoms within normal ranges.
+
+================================================================================
+STEP 2: ORGAN-LEVEL ANALYSIS (Aggregated from Symptoms)
+================================================================================
+Organs: Normal 7, Mild 0, Moderate 0, Severe 0
+
+✅ All organs functioning normally.
+
+RECOMMENDED ACTION: No immediate action needed. Continue regular health monitoring.
+
+================================================================================
+PATIENT ID: 900010
+================================================================================
+Demographics: Age 79, Male
+Overall Status: NORMAL
+Profile: MILD
+
+================================================================================
+STEP 1: SYMPTOM-LEVEL ANALYSIS
+================================================================================
+Total Symptoms: 15
+  Normal: 15, Mild: 0, Moderate: 0, Severe: 0
+
+✅ All symptoms within normal ranges.
+
+================================================================================
+STEP 2: ORGAN-LEVEL ANALYSIS (Aggregated from Symptoms)
+================================================================================
+Organs: Normal 7, Mild 0, Moderate 0, Severe 0
+
+✅ All organs functioning normally.
+
+RECOMMENDED ACTION: No immediate action needed. Continue regular health monitoring.
+
+================================================================================
+PATIENT ID: 900011
+================================================================================
+Demographics: Age 46, Female
+Overall Status: NORMAL
+Profile: MILD
+
+================================================================================
+STEP 1: SYMPTOM-LEVEL ANALYSIS
+================================================================================
+Total Symptoms: 15
+  Normal: 15, Mild: 0, Moderate: 0, Severe: 0
+
+✅ All symptoms within normal ranges.
+
+================================================================================
+STEP 2: ORGAN-LEVEL ANALYSIS (Aggregated from Symptoms)
+================================================================================
+Organs: Normal 7, Mild 0, Moderate 0, Severe 0
+
+✅ All organs functioning normally.
+
+RECOMMENDED ACTION: No immediate action needed. Continue regular health monitoring.
+
+================================================================================
+PATIENT ID: 900012
+================================================================================
+Demographics: Age 66, Male
+Overall Status: NORMAL
+Profile: MILD
+
+================================================================================
+STEP 1: SYMPTOM-LEVEL ANALYSIS
+================================================================================
+Total Symptoms: 15
+  Normal: 15, Mild: 0, Moderate: 0, Severe: 0
+
+✅ All symptoms within normal ranges.
+
+================================================================================
+STEP 2: ORGAN-LEVEL ANALYSIS (Aggregated from Symptoms)
+================================================================================
+Organs: Normal 7, Mild 0, Moderate 0, Severe 0
+
+✅ All organs functioning normally.
+
+RECOMMENDED ACTION: No immediate action needed. Continue regular health monitoring.
+
+================================================================================
+PATIENT ID: 900013
+================================================================================
+Demographics: Age 46, Female
+Overall Status: NORMAL
+Profile: MILD
+
+================================================================================
+STEP 1: SYMPTOM-LEVEL ANALYSIS
+================================================================================
+Total Symptoms: 15
+  Normal: 15, Mild: 0, Moderate: 0, Severe: 0
+
+✅ All symptoms within normal ranges.
+
+================================================================================
+STEP 2: ORGAN-LEVEL ANALYSIS (Aggregated from Symptoms)
+================================================================================
+Organs: Normal 7, Mild 0, Moderate 0, Severe 0
+
+✅ All organs functioning normally.
+
+RECOMMENDED ACTION: No immediate action needed. Continue regular health monitoring.
+
+================================================================================
+PATIENT ID: 900014
+================================================================================
+Demographics: Age 56, Female
+Overall Status: NORMAL
+Profile: MILD
+
+================================================================================
+STEP 1: SYMPTOM-LEVEL ANALYSIS
+================================================================================
+Total Symptoms: 15
+  Normal: 15, Mild: 0, Moderate: 0, Severe: 0
+
+✅ All symptoms within normal ranges.
+
+================================================================================
+STEP 2: ORGAN-LEVEL ANALYSIS (Aggregated from Symptoms)
+================================================================================
+Organs: Normal 7, Mild 0, Moderate 0, Severe 0
+
+✅ All organs functioning normally.
+
+RECOMMENDED ACTION: No immediate action needed. Continue regular health monitoring.
+
+================================================================================
+PATIENT ID: 900015
+================================================================================
+Demographics: Age 56, Male
+Overall Status: NORMAL
+Profile: MILD
+
+================================================================================
+STEP 1: SYMPTOM-LEVEL ANALYSIS
+================================================================================
+Total Symptoms: 15
+  Normal: 15, Mild: 0, Moderate: 0, Severe: 0
+
+✅ All symptoms within normal ranges.
+
+================================================================================
+STEP 2: ORGAN-LEVEL ANALYSIS (Aggregated from Symptoms)
+================================================================================
+Organs: Normal 7, Mild 0, Moderate 0, Severe 0
+
+✅ All organs functioning normally.
+
+RECOMMENDED ACTION: No immediate action needed. Continue regular health monitoring.
+
+================================================================================
+PATIENT ID: 900016
+================================================================================
+Demographics: Age 74, Male
+Overall Status: NORMAL
+Profile: MILD
+
+================================================================================
+STEP 1: SYMPTOM-LEVEL ANALYSIS
+================================================================================
+Total Symptoms: 15
+  Normal: 15, Mild: 0, Moderate: 0, Severe: 0
+
+✅ All symptoms within normal ranges.
+
+================================================================================
+STEP 2: ORGAN-LEVEL ANALYSIS (Aggregated from Symptoms)
+================================================================================
+Organs: Normal 7, Mild 0, Moderate 0, Severe 0
+
+✅ All organs functioning normally.
+
+RECOMMENDED ACTION: No immediate action needed. Continue regular health monitoring.
+
+================================================================================
+PATIENT ID: 900017
+================================================================================
+Demographics: Age 76, Male
+Overall Status: NORMAL
+Profile: MILD
+
+================================================================================
+STEP 1: SYMPTOM-LEVEL ANALYSIS
+================================================================================
+Total Symptoms: 15
+  Normal: 15, Mild: 0, Moderate: 0, Severe: 0
+
+✅ All symptoms within normal ranges.
+
+================================================================================
+STEP 2: ORGAN-LEVEL ANALYSIS (Aggregated from Symptoms)
+================================================================================
+Organs: Normal 7, Mild 0, Moderate 0, Severe 0
+
+✅ All organs functioning normally.
+
+RECOMMENDED ACTION: No immediate action needed. Continue regular health monitoring.
+
+================================================================================
+PATIENT ID: 900018
+================================================================================
+Demographics: Age 46, Female
+Overall Status: SEVERE
+Profile: MODERATE
+
+================================================================================
+STEP 1: SYMPTOM-LEVEL ANALYSIS
+================================================================================
+Total Symptoms: 15
+  Normal: 0, Mild: 8, Moderate: 5, Severe: 2
+
+🔴 ABNORMAL SYMPTOMS (15):
+  • Platelet Count Absolute Value: 46.65 10^9/L (Normal: 150-450) - 68.9% LOW - SEVERE
+  • SGPT (ALT) Result: 0.1 U/L (Normal: 7-56) - 98.6% LOW - SEVERE
+  • WBC Absolute Value: 1.86 10^9/L (Normal: 4-11) - 53.5% LOW - MODERATE
+  • LDL-Cholesterol: 28.49 mg/dL (Normal: 50-100) - 43.0% LOW - MODERATE
+  • HDL Cholesterol: 30.19 mg/dL (Normal: 45-80) - 32.9% LOW - MODERATE
+  • TSH: 5.24 mIU/L (Normal: 0.4-4) - 31.0% HIGH - MODERATE
+  • Blood Urea Result: 12.66 mg/dL (Normal: 20-40) - 36.7% LOW - MODERATE
+  • Haemoglobin Absolute Value: 17.65 g/dL (Normal: 12.5-16) - 10.3% HIGH - MILD
+  • HbA1c Result: 6.26 % (Normal: 4-5.6) - 11.8% HIGH - MILD
+  • Serum_Creatinine_Result: 1.36 mg/dL (Normal: 0.65-1.2) - 13.3% HIGH - MILD
+
+================================================================================
+STEP 2: ORGAN-LEVEL ANALYSIS (Aggregated from Symptoms)
+================================================================================
+Organs: Normal 0, Mild 0, Moderate 5, Severe 2
+
+⚠️  ORGANS REQUIRING ATTENTION (7):
+  • blood: SEVERE (Score: 1.667, 3/3 abnormal symptoms)
+  • liver: SEVERE (Score: 3.000, 1/1 abnormal symptoms)
+  • immune system: MODERATE (Score: 2.000, 1/1 abnormal symptoms)
+  • pancreas: MODERATE (Score: 1.000, 1/1 abnormal symptoms)
+  • kidney: MODERATE (Score: 1.200, 5/5 abnormal symptoms)
+  • cardiovascular system: MODERATE (Score: 1.667, 3/3 abnormal symptoms)
+  • thyroid: MODERATE (Score: 2.000, 1/1 abnormal symptoms)
+
+RECOMMENDED ACTION: URGENT: Seek immediate medical attention.
+
+================================================================================
+PATIENT ID: 900019
+================================================================================
+Demographics: Age 45, Male
+Overall Status: SEVERE
+Profile: MODERATE
+
+================================================================================
+STEP 1: SYMPTOM-LEVEL ANALYSIS
+================================================================================
+Total Symptoms: 15
+  Normal: 0, Mild: 13, Moderate: 1, Severe: 1
+
+🔴 ABNORMAL SYMPTOMS (15):
+  • SGPT (ALT) Result: 0.1 U/L (Normal: 7-56) - 98.6% LOW - SEVERE
+  • WBC Absolute Value: 2.44 10^9/L (Normal: 4-11) - 39.0% LOW - MODERATE
+  • Haemoglobin Absolute Value: 11.53 g/dL (Normal: 12.5-16) - 7.8% LOW - MILD
+  • Platelet Count Absolute Value: 529.51 10^9/L (Normal: 150-450) - 17.7% HIGH - MILD
+  • HbA1c Result: 6.4 % (Normal: 4-5.6) - 14.3% HIGH - MILD
+  • Serum_Creatinine_Result: 0.48 mg/dL (Normal: 0.65-1.2) - 26.2% LOW - MILD
+  • eGFR Result: 75.76 mL/min (Normal: 90-120) - 15.8% LOW - MILD
+  • Total Cholesterol: 78.26 mg/dL (Normal: 100-200) - 21.7% LOW - MILD
+  • LDL-Cholesterol: 111.6 mg/dL (Normal: 50-100) - 11.6% HIGH - MILD
+  • HDL Cholesterol: 88.78 mg/dL (Normal: 45-80) - 11.0% HIGH - MILD
+
+================================================================================
+STEP 2: ORGAN-LEVEL ANALYSIS (Aggregated from Symptoms)
+================================================================================
+Organs: Normal 0, Mild 0, Moderate 6, Severe 1
+
+⚠️  ORGANS REQUIRING ATTENTION (7):
+  • liver: SEVERE (Score: 3.000, 1/1 abnormal symptoms)
+  • blood: MODERATE (Score: 1.000, 3/3 abnormal symptoms)
+  • immune system: MODERATE (Score: 2.000, 1/1 abnormal symptoms)
+  • pancreas: MODERATE (Score: 1.000, 1/1 abnormal symptoms)
+  • kidney: MODERATE (Score: 1.000, 5/5 abnormal symptoms)
+  • cardiovascular system: MODERATE (Score: 1.000, 3/3 abnormal symptoms)
+  • thyroid: MODERATE (Score: 1.000, 1/1 abnormal symptoms)
+
+RECOMMENDED ACTION: URGENT: Seek immediate medical attention.
+
+================================================================================
+PATIENT ID: 900020
+================================================================================
+Demographics: Age 37, Female
+Overall Status: MODERATE
+Profile: MODERATE
+
+================================================================================
+STEP 1: SYMPTOM-LEVEL ANALYSIS
+================================================================================
+Total Symptoms: 15
+  Normal: 0, Mild: 11, Moderate: 4, Severe: 0
+
+🔴 ABNORMAL SYMPTOMS (15):
+  • Platelet Count Absolute Value: 82.55 10^9/L (Normal: 150-450) - 45.0% LOW - MODERATE
+  • Total Cholesterol: 68.7 mg/dL (Normal: 100-200) - 31.3% LOW - MODERATE
+  • LDL-Cholesterol: 34.11 mg/dL (Normal: 50-100) - 31.8% LOW - MODERATE
+  • Blood Urea Result: 12.49 mg/dL (Normal: 20-40) - 37.5% LOW - MODERATE
+  • Haemoglobin Absolute Value: 17.69 g/dL (Normal: 12.5-16) - 10.6% HIGH - MILD
+  • WBC Absolute Value: 13.62 10^9/L (Normal: 4-11) - 23.8% HIGH - MILD
+  • HbA1c Result: 3.42 % (Normal: 4-5.6) - 14.5% LOW - MILD
+  • Serum_Creatinine_Result: 1.38 mg/dL (Normal: 0.65-1.2) - 15.0% HIGH - MILD
+  • eGFR Result: 79.68 mL/min (Normal: 90-120) - 11.5% LOW - MILD
+  • HDL Cholesterol: 32.02 mg/dL (Normal: 45-80) - 28.8% LOW - MILD
+
+================================================================================
+STEP 2: ORGAN-LEVEL ANALYSIS (Aggregated from Symptoms)
+================================================================================
+Organs: Normal 0, Mild 0, Moderate 7, Severe 0
+
+⚠️  ORGANS REQUIRING ATTENTION (7):
+  • blood: MODERATE (Score: 1.333, 3/3 abnormal symptoms)
+  • immune system: MODERATE (Score: 1.000, 1/1 abnormal symptoms)
+  • pancreas: MODERATE (Score: 1.000, 1/1 abnormal symptoms)
+  • kidney: MODERATE (Score: 1.200, 5/5 abnormal symptoms)
+  • cardiovascular system: MODERATE (Score: 1.667, 3/3 abnormal symptoms)
+  • liver: MODERATE (Score: 1.000, 1/1 abnormal symptoms)
+  • thyroid: MODERATE (Score: 1.000, 1/1 abnormal symptoms)
+
+RECOMMENDED ACTION: Consult specialist. Begin treatment plan.
+
+================================================================================
+PATIENT ID: 900021
+================================================================================
+Demographics: Age 43, Male
+Overall Status: SEVERE
+Profile: MODERATE
+
+================================================================================
+STEP 1: SYMPTOM-LEVEL ANALYSIS
+================================================================================
+Total Symptoms: 15
+  Normal: 0, Mild: 10, Moderate: 4, Severe: 1
+
+🔴 ABNORMAL SYMPTOMS (15):
+  • SGPT (ALT) Result: 0.1 U/L (Normal: 7-56) - 98.6% LOW - SEVERE
+  • Platelet Count Absolute Value: 589.04 10^9/L (Normal: 150-450) - 30.9% HIGH - MODERATE
+  • LDL-Cholesterol: 25.48 mg/dL (Normal: 50-100) - 49.0% LOW - MODERATE
+  • TSH: 5.57 mIU/L (Normal: 0.4-4) - 39.3% HIGH - MODERATE
+  • Blood Urea Result: 12.35 mg/dL (Normal: 20-40) - 38.2% LOW - MODERATE
+  • Haemoglobin Absolute Value: 16.92 g/dL (Normal: 12.5-16) - 5.8% HIGH - MILD
+  • WBC Absolute Value: 12.98 10^9/L (Normal: 4-11) - 18.0% HIGH - MILD
+  • HbA1c Result: 3.66 % (Normal: 4-5.6) - 8.5% LOW - MILD
+  • Serum_Creatinine_Result: 1.31 mg/dL (Normal: 0.65-1.2) - 9.2% HIGH - MILD
+  • eGFR Result: 130.29 mL/min (Normal: 90-120) - 8.6% HIGH - MILD
+
+================================================================================
+STEP 2: ORGAN-LEVEL ANALYSIS (Aggregated from Symptoms)
+================================================================================
+Organs: Normal 0, Mild 0, Moderate 6, Severe 1
+
+⚠️  ORGANS REQUIRING ATTENTION (7):
+  • liver: SEVERE (Score: 3.000, 1/1 abnormal symptoms)
+  • blood: MODERATE (Score: 1.333, 3/3 abnormal symptoms)
+  • immune system: MODERATE (Score: 1.000, 1/1 abnormal symptoms)
+  • pancreas: MODERATE (Score: 1.000, 1/1 abnormal symptoms)
+  • kidney: MODERATE (Score: 1.200, 5/5 abnormal symptoms)
+  • cardiovascular system: MODERATE (Score: 1.333, 3/3 abnormal symptoms)
+  • thyroid: MODERATE (Score: 2.000, 1/1 abnormal symptoms)
+
+RECOMMENDED ACTION: URGENT: Seek immediate medical attention.
+
+================================================================================
+PATIENT ID: 900022
+================================================================================
+Demographics: Age 75, Male
+Overall Status: SEVERE
+Profile: MODERATE
+
+================================================================================
+STEP 1: SYMPTOM-LEVEL ANALYSIS
+================================================================================
+Total Symptoms: 15
+  Normal: 0, Mild: 11, Moderate: 2, Severe: 2
+
+🔴 ABNORMAL SYMPTOMS (15):
+  • SGPT (ALT) Result: 0.1 U/L (Normal: 7-56) - 98.6% LOW - SEVERE
+  • TSH: 0.1 mIU/L (Normal: 0.4-4) - 75.0% LOW - SEVERE
+  • WBC Absolute Value: 14.31 10^9/L (Normal: 4-11) - 30.1% HIGH - MODERATE
+  • Blood Urea Result: 12.91 mg/dL (Normal: 20-40) - 35.4% LOW - MODERATE
+  • Haemoglobin Absolute Value: 11.23 g/dL (Normal: 12.5-16) - 10.2% LOW - MILD
+  • Platelet Count Absolute Value: 557.12 10^9/L (Normal: 150-450) - 23.8% HIGH - MILD
+  • HbA1c Result: 3.3 % (Normal: 4-5.6) - 17.5% LOW - MILD
+  • Serum_Creatinine_Result: 1.45 mg/dL (Normal: 0.65-1.2) - 20.8% HIGH - MILD
+  • eGFR Result: 83.4 mL/min (Normal: 90-120) - 7.3% LOW - MILD
+  • Total Cholesterol: 238.62 mg/dL (Normal: 100-200) - 19.3% HIGH - MILD
+
+================================================================================
+STEP 2: ORGAN-LEVEL ANALYSIS (Aggregated from Symptoms)
+================================================================================
+Organs: Normal 0, Mild 0, Moderate 5, Severe 2
+
+⚠️  ORGANS REQUIRING ATTENTION (7):
+  • liver: SEVERE (Score: 3.000, 1/1 abnormal symptoms)
+  • thyroid: SEVERE (Score: 3.000, 1/1 abnormal symptoms)
+  • blood: MODERATE (Score: 1.000, 3/3 abnormal symptoms)
+  • immune system: MODERATE (Score: 2.000, 1/1 abnormal symptoms)
+  • pancreas: MODERATE (Score: 1.000, 1/1 abnormal symptoms)
+  • kidney: MODERATE (Score: 1.200, 5/5 abnormal symptoms)
+  • cardiovascular system: MODERATE (Score: 1.000, 3/3 abnormal symptoms)
+
+RECOMMENDED ACTION: URGENT: Seek immediate medical attention.
+
+================================================================================
+PATIENT ID: 900023
+================================================================================
+Demographics: Age 75, Male
+Overall Status: SEVERE
+Profile: SEVERE
+
+================================================================================
+STEP 1: SYMPTOM-LEVEL ANALYSIS
+================================================================================
+Total Symptoms: 15
+  Normal: 0, Mild: 6, Moderate: 5, Severe: 4
+
+🔴 ABNORMAL SYMPTOMS (15):
+  • Platelet Count Absolute Value: 0.1 10^9/L (Normal: 150-450) - 99.9% LOW - SEVERE
+  • SGPT (ALT) Result: 0.1 U/L (Normal: 7-56) - 98.6% LOW - SEVERE
+  • TSH: 0.1 mIU/L (Normal: 0.4-4) - 75.0% LOW - SEVERE
+  • Blood Urea Result: 2.79 mg/dL (Normal: 20-40) - 86.1% LOW - SEVERE
+  • WBC Absolute Value: 14.61 10^9/L (Normal: 4-11) - 32.8% HIGH - MODERATE
+  • Serum_Creatinine_Result: 1.57 mg/dL (Normal: 0.65-1.2) - 30.8% HIGH - MODERATE
+  • Total Cholesterol: 284.39 mg/dL (Normal: 100-200) - 42.2% HIGH - MODERATE
+  • LDL-Cholesterol: 21.08 mg/dL (Normal: 50-100) - 57.8% LOW - MODERATE
+  • Serum - Potassium: 1.96 mmol/L (Normal: 3.5-5.1) - 44.0% LOW - MODERATE
+  • Haemoglobin Absolute Value: 10.15 g/dL (Normal: 12.5-16) - 18.8% LOW - MILD
+
+================================================================================
+STEP 2: ORGAN-LEVEL ANALYSIS (Aggregated from Symptoms)
+================================================================================
+Organs: Normal 0, Mild 0, Moderate 3, Severe 4
+
+⚠️  ORGANS REQUIRING ATTENTION (7):
+  • blood: SEVERE (Score: 1.667, 3/3 abnormal symptoms)
+  • kidney: SEVERE (Score: 1.800, 5/5 abnormal symptoms)
+  • liver: SEVERE (Score: 3.000, 1/1 abnormal symptoms)
+  • thyroid: SEVERE (Score: 3.000, 1/1 abnormal symptoms)
+  • immune system: MODERATE (Score: 2.000, 1/1 abnormal symptoms)
+  • pancreas: MODERATE (Score: 1.000, 1/1 abnormal symptoms)
+  • cardiovascular system: MODERATE (Score: 1.667, 3/3 abnormal symptoms)
+
+RECOMMENDED ACTION: URGENT: Seek immediate medical attention.
+
+================================================================================
+PATIENT ID: 900024
+================================================================================
+Demographics: Age 75, Male
+Overall Status: SEVERE
+Profile: SEVERE
+
+================================================================================
+STEP 1: SYMPTOM-LEVEL ANALYSIS
+================================================================================
+Total Symptoms: 15
+  Normal: 0, Mild: 5, Moderate: 6, Severe: 4
+
+🔴 ABNORMAL SYMPTOMS (15):
+  • WBC Absolute Value: 0.39 10^9/L (Normal: 4-11) - 90.2% LOW - SEVERE
+  • Platelet Count Absolute Value: 0.1 10^9/L (Normal: 150-450) - 99.9% LOW - SEVERE
+  • SGPT (ALT) Result: 0.1 U/L (Normal: 7-56) - 98.6% LOW - SEVERE
+  • TSH: 0.1 mIU/L (Normal: 0.4-4) - 75.0% LOW - SEVERE
+  • Serum_Creatinine_Result: 0.32 mg/dL (Normal: 0.65-1.2) - 50.8% LOW - MODERATE
+  • eGFR Result: 62.39 mL/min (Normal: 90-120) - 30.7% LOW - MODERATE
+  • Total Cholesterol: 276.77 mg/dL (Normal: 100-200) - 38.4% HIGH - MODERATE
+  • LDL-Cholesterol: 133.57 mg/dL (Normal: 50-100) - 33.6% HIGH - MODERATE
+  • Serum - Potassium: 2.23 mmol/L (Normal: 3.5-5.1) - 36.3% LOW - MODERATE
+  • Blood Urea Result: 59.0 mg/dL (Normal: 20-40) - 47.5% HIGH - MODERATE
+
+================================================================================
+STEP 2: ORGAN-LEVEL ANALYSIS (Aggregated from Symptoms)
+================================================================================
+Organs: Normal 0, Mild 0, Moderate 3, Severe 4
+
+⚠️  ORGANS REQUIRING ATTENTION (7):
+  • blood: SEVERE (Score: 1.667, 3/3 abnormal symptoms)
+  • immune system: SEVERE (Score: 3.000, 1/1 abnormal symptoms)
+  • liver: SEVERE (Score: 3.000, 1/1 abnormal symptoms)
+  • thyroid: SEVERE (Score: 3.000, 1/1 abnormal symptoms)
+  • pancreas: MODERATE (Score: 1.000, 1/1 abnormal symptoms)
+  • kidney: MODERATE (Score: 1.800, 5/5 abnormal symptoms)
+  • cardiovascular system: MODERATE (Score: 1.667, 3/3 abnormal symptoms)
+
+RECOMMENDED ACTION: URGENT: Seek immediate medical attention.

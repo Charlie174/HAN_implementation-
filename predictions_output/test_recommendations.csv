@@ -1,0 +1,9 @@
+organ,severity,priority,initial_tests_done,initial_tests_missing,recommended_confirmatory,rationale,patient_id
+cardiovascular system,MILD,ROUTINE,"['Total Cholesterol', 'LDL-Cholesterol', 'HDL Cholesterol']",['Triglycerides'],"['Apolipoprotein B', 'Lipoprotein(a)']",To confirm MILD cardiovascular system dysfunction (Confidence: 57.7%),900000
+thyroid glands,MILD,ROUTINE,['TSH'],[],"['Free T4', 'Free T3']",To confirm MILD thyroid glands dysfunction (Confidence: 31.6%),900000
+Immune system,MODERATE,HIGH,['WBC Absolute Value'],['Lymphocyte Count'],"['Immunoglobulin Panel (IgG, IgA, IgM, IgE)', 'Complement Levels (C3, C4)', 'Autoimmune Panel (ANA, RF, Anti-CCP)', 'Neutrophil Count']",To confirm MODERATE Immune system dysfunction (Confidence: 34.0%),900002
+cardiovascular system,MILD,ROUTINE,"['Total Cholesterol', 'LDL-Cholesterol', 'HDL Cholesterol']",['Triglycerides'],"['Apolipoprotein B', 'Lipoprotein(a)']",To confirm MILD cardiovascular system dysfunction (Confidence: 61.6%),900002
+thyroid glands,MILD,ROUTINE,['TSH'],[],"['Free T4', 'Free T3']",To confirm MILD thyroid glands dysfunction (Confidence: 35.1%),900002
+Immune system,MODERATE,HIGH,['WBC Absolute Value'],['Lymphocyte Count'],"['Immunoglobulin Panel (IgG, IgA, IgM, IgE)', 'Complement Levels (C3, C4)', 'Autoimmune Panel (ANA, RF, Anti-CCP)', 'Neutrophil Count']",To confirm MODERATE Immune system dysfunction (Confidence: 35.8%),900003
+thyroid glands,MILD,ROUTINE,['TSH'],[],"['Free T4', 'Free T3']",To confirm MILD thyroid glands dysfunction (Confidence: 34.6%),900003
+thyroid glands,MILD,ROUTINE,['TSH'],[],"['Free T4', 'Free T3']",To confirm MILD thyroid glands dysfunction (Confidence: 40.5%),900004
