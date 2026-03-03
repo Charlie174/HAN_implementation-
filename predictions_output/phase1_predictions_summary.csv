@@ -1,0 +1,40 @@
+organ,severity,severity_name,description,damage_score,confidence,patient_id
+        ,3,SEVERE,Critical - immediate attention required,0.4263848662376404,39.026981592178345,900000
+cardiovascular system,1,MILD,Minor abnormalities - monitor closely,0.5128716826438904,57.745009660720825,900000
+thyroid glands,1,MILD,Minor abnormalities - monitor closely,0.43871256709098816,31.62839114665985,900000
+overies,1,MILD,Minor abnormalities - monitor closely,0.4007396697998047,36.63170039653778,900000
+        ,3,SEVERE,Critical - immediate attention required,0.5195730924606323,41.33129417896271,900001
+pitiutary gland,1,MILD,Minor abnormalities - monitor closely,0.5458236336708069,41.43214821815491,900001
+reproductive system,1,MILD,Minor abnormalities - monitor closely,0.4158065915107727,49.565985798835754,900001
+overies,1,MILD,Minor abnormalities - monitor closely,0.4019020199775696,39.52385485172272,900001
+        ,3,SEVERE,Critical - immediate attention required,0.40493088960647583,38.778916001319885,900002
+Immune system,2,MODERATE,Significant concern - investigation needed,0.5219616889953613,34.0376079082489,900002
+cardiovascular system,1,MILD,Minor abnormalities - monitor closely,0.5274255871772766,61.57737970352173,900002
+thyroid glands,1,MILD,Minor abnormalities - monitor closely,0.43402040004730225,35.14519929885864,900002
+overies,1,MILD,Minor abnormalities - monitor closely,0.41424673795700073,35.62527000904083,900002
+        ,3,SEVERE,Critical - immediate attention required,0.3898620307445526,38.99705410003662,900003
+Immune system,2,MODERATE,Significant concern - investigation needed,0.537868082523346,35.84326207637787,900003
+thyroid glands,1,MILD,Minor abnormalities - monitor closely,0.4237195551395416,34.64266061782837,900003
+overies,1,MILD,Minor abnormalities - monitor closely,0.33753013610839844,36.47802472114563,900003
+        ,3,SEVERE,Critical - immediate attention required,0.38206177949905396,40.5792772769928,900004
+thyroid glands,1,MILD,Minor abnormalities - monitor closely,0.46994972229003906,40.54625928401947,900004
+overies,1,MILD,Minor abnormalities - monitor closely,0.33157074451446533,33.72730910778046,900004
+        ,3,SEVERE,Critical - immediate attention required,0.5419749021530151,41.91922843456268,900005
+pitiutary gland,1,MILD,Minor abnormalities - monitor closely,0.4991609752178192,39.81414437294006,900005
+overies,1,MILD,Minor abnormalities - monitor closely,0.3572394847869873,32.83552825450897,900005
+reproductive system,1,MILD,Minor abnormalities - monitor closely,0.34713420271873474,46.20655179023743,900005
+        ,3,SEVERE,Critical - immediate attention required,0.46587616205215454,51.455897092819214,900006
+overies,1,MILD,Minor abnormalities - monitor closely,0.33904123306274414,32.921501994132996,900006
+        ,3,SEVERE,Critical - immediate attention required,0.532962441444397,50.37046670913696,900007
+pitiutary gland,1,MILD,Minor abnormalities - monitor closely,0.5259935855865479,41.62431359291077,900007
+overies,1,MILD,Minor abnormalities - monitor closely,0.33613431453704834,31.182685494422913,900007
+thyroid glands,3,SEVERE,Critical - immediate attention required,0.4375024139881134,32.10040628910065,900008
+Immune system,2,MODERATE,Significant concern - investigation needed,0.48380646109580994,31.45166039466858,900008
+        ,2,MODERATE,Significant concern - investigation needed,0.48239490389823914,31.179222464561462,900008
+urinary system,1,MILD,Minor abnormalities - monitor closely,0.5499541759490967,78.56205701828003,900008
+overies,1,MILD,Minor abnormalities - monitor closely,0.5337049961090088,34.25805866718292,900008
+kidney,1,MILD,Minor abnormalities - monitor closely,0.40890222787857056,51.71940326690674,900008
+        ,3,SEVERE,Critical - immediate attention required,0.4727524220943451,42.70014762878418,900009
+thyroid glands,1,MILD,Minor abnormalities - monitor closely,0.4526844024658203,27.532583475112915,900009
+overies,1,MILD,Minor abnormalities - monitor closely,0.36241620779037476,30.979913473129272,900009
+reproductive system,1,MILD,Minor abnormalities - monitor closely,0.35669755935668945,47.710466384887695,900009

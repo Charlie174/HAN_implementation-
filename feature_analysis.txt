@@ -1,0 +1,17 @@
+FEATURE DIMENSION MISMATCH ANALYSIS
+================================================================================
+
+Date: 2026-02-27
+Model: models_saved/ruhunu_data_clustered/hanpp_P-S-P.pt
+Data: predictions_output/combined_patient_data.csv
+
+Model expects: 182 features
+Data contains: 203 features
+Difference: 21
+
+IGNORED TESTS (21):
+--------------------------------------------------------------------------------
+
+
+CATEGORIZED BY ORGAN:
+--------------------------------------------------------------------------------

@@ -1,0 +1,112 @@
+================================================================================
+PHASE 1: AI DIAGNOSTIC PREDICTION REPORT
+================================================================================
+Patient ID: 900008
+Report Date: 2026-03-03 11:24:05
+AI Model: HAN++ with P-S-P Meta-Path
+Model Path: models_saved/ruhunu_data_clustered/hanpp_P-S-P.pt
+
+Patient: 61 years old, Male
+
+================================================================================
+AVAILABLE CLINICAL DATA
+================================================================================
+Laboratory tests performed: 15
+
+   1. Haemoglobin Absolute Value: 14.84
+   2. WBC Absolute Value: 6.35
+   3. Platelet Count Absolute Value: 227.82
+   4. HbA1c Result: 5.27
+   5. Serum_Creatinine_Result: 0.84
+   6. eGFR Result: 109.81
+   7. Total Cholesterol: 160.74
+   8. LDL-Cholesterol: 64.97
+   9. HDL Cholesterol: 67.95
+  10. SGPT (ALT) Result: 24.25
+  11. TSH: 2.91
+  12. Serum - Potassium: 4.06
+  13. Serum - Sodium: 137.48
+  14. Blood Urea Result: 34.91
+  15. RBC Absolute Value: 5.13
+
+================================================================================
+AI MODEL PREDICTIONS
+================================================================================
+
+⚠️  ATTENTION: 6 ORGAN SYSTEM(S) SHOW PREDICTED ABNORMALITIES
+
+1. THYROID GLANDS
+   ├─ Predicted Severity: SEVERE (Level 3/3)
+   ├─ Clinical Significance: Critical - immediate attention required
+   ├─ Damage Score: 0.438
+   └─ Model Confidence: 32.1%
+
+2. IMMUNE SYSTEM
+   ├─ Predicted Severity: MODERATE (Level 2/3)
+   ├─ Clinical Significance: Significant concern - investigation needed
+   ├─ Damage Score: 0.484
+   └─ Model Confidence: 31.5%
+
+3.         
+   ├─ Predicted Severity: MODERATE (Level 2/3)
+   ├─ Clinical Significance: Significant concern - investigation needed
+   ├─ Damage Score: 0.482
+   └─ Model Confidence: 31.2%
+
+4. URINARY SYSTEM
+   ├─ Predicted Severity: MILD (Level 1/3)
+   ├─ Clinical Significance: Minor abnormalities - monitor closely
+   ├─ Damage Score: 0.550
+   └─ Model Confidence: 78.6%
+
+5. OVERIES
+   ├─ Predicted Severity: MILD (Level 1/3)
+   ├─ Clinical Significance: Minor abnormalities - monitor closely
+   ├─ Damage Score: 0.534
+   └─ Model Confidence: 34.3%
+
+6. KIDNEY
+   ├─ Predicted Severity: MILD (Level 1/3)
+   ├─ Clinical Significance: Minor abnormalities - monitor closely
+   ├─ Damage Score: 0.409
+   └─ Model Confidence: 51.7%
+
+✅ NORMAL ORGAN SYSTEMS: 13
+   Kidney, blood, bone narrow, cardiovascular system, immune system, joints, liver, nervous system, pancreas, pitiutary gland (and 3 more)
+
+================================================================================
+REQUIRED: PHYSICIAN VALIDATION
+================================================================================
+
+This report contains AI-generated predictions that MUST be validated
+by a qualified physician before any clinical action is taken.
+
+PHYSICIAN REVIEW CHECKLIST:
+  [ ] Review patient history and symptoms
+  [ ] Verify available test results
+  [ ] Assess AI predictions for clinical plausibility
+  [ ] Compare with differential diagnosis
+  [ ] Decide: VALIDATE or REJECT AI predictions
+
+If predictions are VALIDATED:
+  → Proceed to Phase 2 for confirmatory test recommendations
+
+If predictions are REJECTED:
+  → Document reasons for rejection
+  → Follow standard diagnostic protocol
+
+Physician Name: _______________________  Date: __________
+
+Validation Decision:  [ ] VALIDATED    [ ] REJECTED
+
+================================================================================
+
+IMPORTANT MEDICAL DISCLAIMER
+================================================================================
+This AI system is a DECISION SUPPORT TOOL, not a replacement for
+clinical judgment. All predictions must be interpreted by a qualified
+healthcare professional in the context of the patient's complete
+clinical picture, medical history, and physical examination.
+
+Do NOT use this report alone for diagnosis or treatment decisions.
+================================================================================

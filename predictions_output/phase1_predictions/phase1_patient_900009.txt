@@ -1,0 +1,100 @@
+================================================================================
+PHASE 1: AI DIAGNOSTIC PREDICTION REPORT
+================================================================================
+Patient ID: 900009
+Report Date: 2026-03-03 11:24:05
+AI Model: HAN++ with P-S-P Meta-Path
+Model Path: models_saved/ruhunu_data_clustered/hanpp_P-S-P.pt
+
+Patient: 30 years old, Female
+
+================================================================================
+AVAILABLE CLINICAL DATA
+================================================================================
+Laboratory tests performed: 15
+
+   1. Haemoglobin Absolute Value: 13.84
+   2. WBC Absolute Value: 6.35
+   3. Platelet Count Absolute Value: 332.45
+   4. HbA1c Result: 4.42
+   5. Serum_Creatinine_Result: 1.04
+   6. eGFR Result: 111.87
+   7. Total Cholesterol: 173.82
+   8. LDL-Cholesterol: 89.37
+   9. HDL Cholesterol: 68.39
+  10. SGPT (ALT) Result: 45.46
+  11. TSH: 1.65
+  12. Serum - Potassium: 3.88
+  13. Serum - Sodium: 137.94
+  14. Blood Urea Result: 32.37
+  15. RBC Absolute Value: 4.42
+
+================================================================================
+AI MODEL PREDICTIONS
+================================================================================
+
+⚠️  ATTENTION: 4 ORGAN SYSTEM(S) SHOW PREDICTED ABNORMALITIES
+
+1.         
+   ├─ Predicted Severity: SEVERE (Level 3/3)
+   ├─ Clinical Significance: Critical - immediate attention required
+   ├─ Damage Score: 0.473
+   └─ Model Confidence: 42.7%
+
+2. THYROID GLANDS
+   ├─ Predicted Severity: MILD (Level 1/3)
+   ├─ Clinical Significance: Minor abnormalities - monitor closely
+   ├─ Damage Score: 0.453
+   └─ Model Confidence: 27.5%
+
+3. OVERIES
+   ├─ Predicted Severity: MILD (Level 1/3)
+   ├─ Clinical Significance: Minor abnormalities - monitor closely
+   ├─ Damage Score: 0.362
+   └─ Model Confidence: 31.0%
+
+4. REPRODUCTIVE SYSTEM
+   ├─ Predicted Severity: MILD (Level 1/3)
+   ├─ Clinical Significance: Minor abnormalities - monitor closely
+   ├─ Damage Score: 0.357
+   └─ Model Confidence: 47.7%
+
+✅ NORMAL ORGAN SYSTEMS: 15
+   Immune system, Kidney, blood, bone narrow, cardiovascular system, immune system, joints, kidney, liver, nervous system (and 5 more)
+
+================================================================================
+REQUIRED: PHYSICIAN VALIDATION
+================================================================================
+
+This report contains AI-generated predictions that MUST be validated
+by a qualified physician before any clinical action is taken.
+
+PHYSICIAN REVIEW CHECKLIST:
+  [ ] Review patient history and symptoms
+  [ ] Verify available test results
+  [ ] Assess AI predictions for clinical plausibility
+  [ ] Compare with differential diagnosis
+  [ ] Decide: VALIDATE or REJECT AI predictions
+
+If predictions are VALIDATED:
+  → Proceed to Phase 2 for confirmatory test recommendations
+
+If predictions are REJECTED:
+  → Document reasons for rejection
+  → Follow standard diagnostic protocol
+
+Physician Name: _______________________  Date: __________
+
+Validation Decision:  [ ] VALIDATED    [ ] REJECTED
+
+================================================================================
+
+IMPORTANT MEDICAL DISCLAIMER
+================================================================================
+This AI system is a DECISION SUPPORT TOOL, not a replacement for
+clinical judgment. All predictions must be interpreted by a qualified
+healthcare professional in the context of the patient's complete
+clinical picture, medical history, and physical examination.
+
+Do NOT use this report alone for diagnosis or treatment decisions.
+================================================================================

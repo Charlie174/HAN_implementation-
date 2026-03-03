@@ -1,0 +1,94 @@
+================================================================================
+PHASE 1: AI DIAGNOSTIC PREDICTION REPORT
+================================================================================
+Patient ID: 900004
+Report Date: 2026-03-03 11:24:05
+AI Model: HAN++ with P-S-P Meta-Path
+Model Path: models_saved/ruhunu_data_clustered/hanpp_P-S-P.pt
+
+Patient: 69 years old, Male
+
+================================================================================
+AVAILABLE CLINICAL DATA
+================================================================================
+Laboratory tests performed: 15
+
+   1. Haemoglobin Absolute Value: 13.68
+   2. WBC Absolute Value: 5.63
+   3. Platelet Count Absolute Value: 183.75
+   4. HbA1c Result: 4.7
+   5. Serum_Creatinine_Result: 0.88
+   6. eGFR Result: 100.04
+   7. Total Cholesterol: 111.13
+   8. LDL-Cholesterol: 62.95
+   9. HDL Cholesterol: 68.42
+  10. SGPT (ALT) Result: 42.87
+  11. TSH: 2.51
+  12. Serum - Potassium: 4.85
+  13. Serum - Sodium: 141.21
+  14. Blood Urea Result: 36.64
+  15. RBC Absolute Value: 5.2
+
+================================================================================
+AI MODEL PREDICTIONS
+================================================================================
+
+⚠️  ATTENTION: 3 ORGAN SYSTEM(S) SHOW PREDICTED ABNORMALITIES
+
+1.         
+   ├─ Predicted Severity: SEVERE (Level 3/3)
+   ├─ Clinical Significance: Critical - immediate attention required
+   ├─ Damage Score: 0.382
+   └─ Model Confidence: 40.6%
+
+2. THYROID GLANDS
+   ├─ Predicted Severity: MILD (Level 1/3)
+   ├─ Clinical Significance: Minor abnormalities - monitor closely
+   ├─ Damage Score: 0.470
+   └─ Model Confidence: 40.5%
+
+3. OVERIES
+   ├─ Predicted Severity: MILD (Level 1/3)
+   ├─ Clinical Significance: Minor abnormalities - monitor closely
+   ├─ Damage Score: 0.332
+   └─ Model Confidence: 33.7%
+
+✅ NORMAL ORGAN SYSTEMS: 16
+   Immune system, Kidney, blood, bone narrow, cardiovascular system, immune system, joints, kidney, liver, nervous system (and 6 more)
+
+================================================================================
+REQUIRED: PHYSICIAN VALIDATION
+================================================================================
+
+This report contains AI-generated predictions that MUST be validated
+by a qualified physician before any clinical action is taken.
+
+PHYSICIAN REVIEW CHECKLIST:
+  [ ] Review patient history and symptoms
+  [ ] Verify available test results
+  [ ] Assess AI predictions for clinical plausibility
+  [ ] Compare with differential diagnosis
+  [ ] Decide: VALIDATE or REJECT AI predictions
+
+If predictions are VALIDATED:
+  → Proceed to Phase 2 for confirmatory test recommendations
+
+If predictions are REJECTED:
+  → Document reasons for rejection
+  → Follow standard diagnostic protocol
+
+Physician Name: _______________________  Date: __________
+
+Validation Decision:  [ ] VALIDATED    [ ] REJECTED
+
+================================================================================
+
+IMPORTANT MEDICAL DISCLAIMER
+================================================================================
+This AI system is a DECISION SUPPORT TOOL, not a replacement for
+clinical judgment. All predictions must be interpreted by a qualified
+healthcare professional in the context of the patient's complete
+clinical picture, medical history, and physical examination.
+
+Do NOT use this report alone for diagnosis or treatment decisions.
+================================================================================
