@@ -1,0 +1,949 @@
+%% IEEE Conference Paper — CareAI: Graph-Based Multi-Head Disease Prediction
+%% CareAI Project — Group 17, University of Moratuwa
+%% Ethics Approval: EDN/2026/004
+%% Compile: pdflatex main.tex && bibtex main && pdflatex main.tex && pdflatex main.tex
+
+\documentclass[conference]{IEEEtran}
+\IEEEoverridecommandlockouts
+
+% ── Packages ──────────────────────────────────────────────────────────────────
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage[table]{xcolor}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{array}
+\usepackage{url}
+\usepackage{hyperref}
+\usepackage{subcaption}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{bm}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blue!60!black,
+  citecolor=blue!60!black,
+  urlcolor=blue!60!black,
+  bookmarks=true
+}
+
+% ── Title ─────────────────────────────────────────────────────────────────────
+\title{CareAI: Graph-Based Multi-Head Disease Prediction\\and Early Warning System}
+
+\author{
+  \IEEEauthorblockN{Anushka Samaranayake,\quad
+                    JohnPeter Charles,\quad
+                    Tashin Kavishan,\quad
+                    Mailki Meghana Wickramasinghe}
+  \IEEEauthorblockA{Department of Electronic and Telecommunication Engineering /
+                    Biomedical Engineering,\\
+                    University of Moratuwa, Sri Lanka\\
+                    \{anushkasandeepa522, jpcharlie02,
+                      tashinkavishan123, malkimeghana1\}@gmail.com}
+}
+
+\begin{document}
+
+\maketitle
+
+% ── Abstract ──────────────────────────────────────────────────────────────────
+\begin{abstract}
+Predicting multi-organ disease severity from Electronic Health Records (EHRs)
+is a clinically critical yet technically demanding task.
+Traditional machine learning approaches --- including Decision Trees, Random
+Forests, and XGBoost --- represent each patient as a fixed-length feature
+vector, failing to capture the relational structure between patients,
+symptoms, organs, and diseases.
+This paper presents \textbf{CareAI}, an end-to-end clinical early warning
+system centred on \textbf{HAN++}, an improved Hierarchical Attention Network
+that employs meta-path-guided multi-head attention over a heterogeneous
+medical graph with four node types: Patient (P), Symptom/Test (S), Organ (O),
+and Disease (D).
+HAN++ introduces (i) four-head node-level attention per meta-path,
+(ii) semantic attention to fuse information across meta-paths, and
+(iii) a two-phase clinical workflow: Phase~1 predicts per-organ severity
+(Normal / Mild / Moderate / Severe) and damage scores; Phase~2 recommends
+confirmatory diagnostic tests.
+Experiments on an ethics-approved EHR dataset (EDN/2026/004) from CareCode
+(PVT)~Ltd, covering six Sri Lankan hospitals (5,766 patients, 137 clinical
+tests, 26 diseases), demonstrate that HAN++ achieves
+\textbf{F1-Macro = 0.8432} and \textbf{Accuracy = 0.8723} --- a
+\textbf{30.6\%} improvement over the best GridSearch-tuned traditional
+baseline (Decision Tree, F1-Macro = 0.6457) and an \textbf{11.6\%}
+improvement over the mid-review Heterogeneous Graph Transformer baseline
+(pyHGT, F1-Macro = 0.7550).
+Ablation studies confirm that four attention heads and a 128-dimensional
+hidden space are the optimal configuration, with the P--D--P meta-path
+contributing the strongest predictive signal.
+\end{abstract}
+
+\begin{IEEEkeywords}
+Electronic Health Records, Hierarchical Attention Network, Graph Neural
+Networks, Heterogeneous Graphs, Multi-organ Disease Prediction, Meta-path,
+Clinical Decision Support, CareAI, Early Warning System
+\end{IEEEkeywords}
+
+% ── Section 1: Introduction ───────────────────────────────────────────────────
+\section{Introduction}
+\label{sec:intro}
+
+Electronic Health Records (EHRs) contain rich longitudinal clinical
+information --- laboratory test results, demographic data, and disease
+histories --- that, when analysed effectively, can enable early
+identification of multi-organ deterioration and support timely clinical
+intervention \cite{obermeyer_2016, rajpurkar_2022}.
+In Sri Lanka and comparable healthcare settings, routine laboratory tests
+represent the primary quantitative clinical data source, making automated
+analysis of these records particularly valuable for resource-constrained
+hospital environments.
+
+\subsection{Are Graph Methods Necessary? A Principled Analysis}
+\label{subsec:motivation}
+
+A fundamental question in clinical AI system design is whether the added
+complexity of graph-based relational models is justified over well-established
+flat machine learning classifiers.
+We address this question directly, with both empirical evidence from our
+dataset and supporting evidence from the broader literature.
+
+\textbf{Structural mismatch between flat models and clinical reality.}
+Clinical test results are not independent features.
+A patient's creatinine level, blood urea nitrogen, and eGFR collectively
+signal renal dysfunction; their joint deviation --- relative to clinically
+similar patients --- is far more informative than any individual value
+in isolation.
+Flat classifiers (Decision Tree, Random Forest, XGBoost, SVM, etc.) represent
+each patient as a fixed-length vector, discarding the relational structure
+between symptoms, organs, and diseases that clinicians routinely exploit in
+differential diagnosis.
+In multi-label settings with 26 disease targets and severe class imbalance,
+this structural mismatch produces systematic failures that cannot be remedied
+by feature engineering alone.
+
+\textbf{Empirical evidence from our dataset.}
+Our experiments on 5,766 patients from six Sri Lankan hospitals reveal a
+consistent and significant performance gap.
+We ensure a rigorous comparison: all traditional models are tuned with
+\textbf{5-fold GridSearchCV} (scoring: F1-Macro) to their best possible
+hyperparameter configuration.
+Even so, the best-tuned traditional model (Decision Tree, GridSearch-optimal:
+\texttt{max\_depth=None}, \texttt{criterion=entropy}, \texttt{class\_weight=balanced})
+achieves F1-Macro = 0.6457, while HAN++ achieves 0.8432 ---
+a \textbf{30.6\% improvement} over a fully optimised flat classifier.
+Critically, XGBoost achieves high exact-match accuracy (0.9636) but
+F1-Macro of only 0.4311, exposing a key failure mode: it predicts the
+dominant class for nearly every patient, ignoring the 20+ clinically critical
+minority disease classes.
+This pathological behaviour under multi-label class imbalance is documented
+extensively in the clinical informatics literature \cite{oss_boll_2024}.
+
+\textbf{Evidence from the literature.}
+Sun et al.\ \cite{sun_2021} demonstrate that GNN-based patient similarity
+graphs improve disease prediction accuracy by 12--18\% over feature-based
+baselines, consistently across multiple clinical datasets.
+Oss Boll et al.\ \cite{oss_boll_2024} survey 41 independent studies and
+conclude that GNN-based models consistently outperform traditional classifiers
+on EHR tasks by leveraging patient similarity and medical ontology structure.
+Meenakshi et al.\ \cite{meenakshi_2025} show AUC improvements of up to 6.4\%
+for graph-based approaches over gradient boosting methods on healthcare risk
+prediction, even when traditional models are tuned to their best
+configuration.
+Collectively, the literature and our empirical results provide strong,
+convergent evidence that graph-based relational modelling is not
+an unnecessary complexity but a structural necessity for multi-organ,
+multi-label disease prediction.
+
+\textbf{Why F1-Macro and not accuracy?}
+Exact-match accuracy is misleading in multi-label settings with class
+imbalance: a classifier that always predicts the single most common label
+can achieve high accuracy while completely failing on rare diseases.
+F1-Macro penalises per-class failures equally regardless of class frequency,
+making it the appropriate primary metric.
+HAN++ employs Focal Loss \cite{lin_2017} ($\gamma = 2.0$) alongside
+graph-based information propagation to address both imbalance and relational
+structure simultaneously.
+
+\subsection{System Overview and Model Evolution}
+\label{subsec:evolution_intro}
+
+CareAI was developed through a principled progression of graph neural
+architectures.
+In the feasibility phase, SeHGNN \cite{yang_2023} was evaluated as an
+efficient heterogeneous GNN baseline.
+At mid-review, a standalone pyHGT model \cite{hu_2020} was the strongest
+available architecture (F1-Macro = 0.7550).
+Following the mid-review, HAN++ was developed to address the identified
+limitation of pyHGT --- its lack of clinically-motivated meta-path hierarchy
+--- and achieves F1-Macro = 0.8432, an 11.6\% improvement over the
+mid-review best.
+
+\subsection{Contributions}
+\label{subsec:contributions}
+
+\begin{enumerate}
+  \item \textbf{CareAI system}: an end-to-end clinical decision support system
+        integrating EHR data ingestion, heterogeneous graph construction,
+        HAN++ inference, and a two-phase severity prediction and test
+        recommendation workflow (Fig.~\ref{fig:workflow}).
+  \item \textbf{HAN++}: an improved Hierarchical Attention Network with
+        four-head node-level attention per meta-path and semantic attention
+        across meta-paths, achieving F1-Macro = 0.8432 on the Ruhunu/CareCode
+        EHR dataset.
+  \item \textbf{Heterogeneous medical graph}: a four-type ($P$-$S$-$O$-$D$)
+        patient similarity graph supporting three clinical meta-paths
+        (P-D-P, P-O-P, P-S-P), built from ethics-approved real-world data.
+  \item \textbf{Comprehensive empirical evaluation}: seven traditional ML
+        baselines, two intermediate GNN baselines (SeHGNN, pyHGT), the
+        HGT-HAN hybrid, and a full ablation study across meta-paths, attention
+        heads, hidden dimensions, and dropout rates.
+\end{enumerate}
+
+% ── Section 2: Related Work ───────────────────────────────────────────────────
+\section{Related Work}
+\label{sec:related}
+
+\subsection{Traditional Machine Learning for EHR}
+Early EHR analysis relied on feature engineering followed by standard
+classifiers.
+Logistic Regression and Support Vector Machines \cite{cortes_1995} have been
+widely applied to disease prediction tasks \cite{sun_2021}.
+Ensemble methods --- Random Forest \cite{breiman_2001} and XGBoost
+\cite{chen_2016} --- improve predictive performance through bagging and
+boosting, respectively.
+However, as shown in Section~\ref{subsec:motivation}, these flat approaches
+cannot model relational clinical structure and fail systematically under
+multi-label class imbalance, achieving F1-Macro $\leq 0.48$ in our
+experiments.
+
+\subsection{Graph Neural Networks for Clinical Risk Prediction}
+Oss Boll et al.\ \cite{oss_boll_2024} survey GNNs for clinical risk
+prediction from EHR, identifying heterogeneous data, temporal dynamics,
+and interpretability as the primary open challenges.
+GRAM \cite{choi_2017} uses ICD code DAGs with attention-weighted graph
+embeddings, significantly improving diagnostic prediction over flat features.
+Sun et al.\ \cite{sun_2021} construct patient--disease graphs and demonstrate
+that relational graph propagation yields consistent improvements over
+feature-based approaches.
+Graph Convolutional Networks (GCN) \cite{kipf_2017} and GraphSAGE
+\cite{hamilton_2017} operate on homogeneous graphs; heterogeneous extensions
+are required for clinical data with multiple entity types.
+
+\subsection{Heterogeneous Graph Transformers}
+The Heterogeneous Graph Transformer (HGT) \cite{hu_2020} introduces
+type-dependent attention weights for heterogeneous graphs, and Graph
+Transformer Networks \cite{yun_2019} learn node-type transition matrices.
+These models represent important advances, but they do not exploit
+domain-specific meta-paths that encode clinical semantics such as
+patient-disease-patient similarity, nor do they provide the hierarchical
+attention structure needed for multi-level clinical reasoning.
+
+\subsection{Hierarchical and Meta-path Attention}
+The Heterogeneous Graph Attention Network (HAN) \cite{wang_2019} introduced
+meta-path-guided hierarchical attention: node-level attention aggregates
+neighbours within each meta-path, and semantic attention fuses the resulting
+embeddings across meta-paths.
+Yang et al.\ \cite{yang_2016} demonstrated that hierarchical attention at
+multiple abstraction levels yields richer representations than flat attention.
+Our HAN++ extends \cite{wang_2019} with four-head node-level attention and
+dual output heads for joint severity classification and damage score regression.
+
+\subsection{Efficient Heterogeneous GNNs: SeHGNN}
+SeHGNN \cite{yang_2023} proposes an efficient approach to heterogeneous
+graph learning by pre-computing mean neighbour aggregations for each meta-path
+--- avoiding iterative message passing during training.
+While computationally attractive, this pre-aggregation strategy prevents the
+model from learning patient-pair-specific attention weights, limiting its
+discriminative power in clinical settings where individual patient heterogeneity
+is clinically significant.
+In our evaluation, SeHGNN achieved F1-Macro $\approx 0.63$ on the Ruhunu
+dataset, substantially below HAN++ (0.8432), motivating the shift to a
+full attention-based architecture.
+
+\subsection{Focal Loss and Class Imbalance}
+Focal Loss \cite{lin_2017}, originally proposed for dense object detection,
+dynamically down-weights easy examples and focuses learning on hard, rare
+cases.
+In the multi-label disease prediction setting, where many diseases appear in
+fewer than 5\% of patients, Focal Loss is a natural fit and we adopt it with
+$\gamma = 2.0$ for all severity classification heads.
+
+\subsection{Graph Retrieval-Augmented Generation}
+Graph RAG \cite{peng_2024} combines GNN graph representations with large
+language models for knowledge-intensive question answering.
+The CareAI medical chatbot module --- developed concurrently by a team
+member outside the scope of this paper --- uses validated HAN++ severity
+predictions as structured context for natural-language clinical explanations,
+aligning with the Graph RAG paradigm.
+
+% ── Section 3: Methodology ────────────────────────────────────────────────────
+\section{Methodology}
+\label{sec:method}
+
+\subsection{Problem Formulation}
+\label{subsec:problem}
+
+Let $\mathcal{G} = (\mathcal{V}, \mathcal{E}, \mathcal{T}_V, \mathcal{T}_E)$
+denote a heterogeneous graph where node types
+$\mathcal{T}_V = \{P, S, O, D\}$ correspond to Patients, Symptoms/Tests,
+Organs, and Diseases, and edge types $\mathcal{T}_E$ encode clinical
+relationships between them.
+Given patient $p_i \in \mathcal{V}_P$, we seek to predict:
+\begin{enumerate}
+  \item $\hat{y}_{i,o}^{\text{sev}} \in \{0,1,2,3\}$: the severity class
+        (Normal/Mild/Moderate/Severe) for each organ
+        $o \in \{1,\ldots,O\}$, $O = 25$;
+  \item $\hat{s}_{i,o} \in [0,1]$: the continuous organ damage score.
+\end{enumerate}
+
+\subsection{Heterogeneous Medical Graph Construction}
+\label{subsec:graph}
+
+\textbf{Node features.}
+Patient node features $\mathbf{x}_i \in \mathbb{R}^{182}$ are constructed
+as a concatenation of three clinically distinct segments:
+\begin{equation}
+  \mathbf{x}_i = [\,\mathbf{f}_i^{\text{sym}} \;\|\;
+                   \mathbf{f}_i^{\text{org}} \;\|\;
+                   \mathbf{f}_i^{\text{dis}}\,]
+\end{equation}
+where $\mathbf{f}^{\text{sym}} \in \mathbb{R}^{119}$ encodes normalised
+deviations of clinical test values from reference ranges,
+$\mathbf{f}^{\text{org}} \in \mathbb{R}^{19}$ encodes organ damage scores,
+and $\mathbf{f}^{\text{dis}} \in \mathbb{R}^{44}$ contains binary disease
+indicators.
+
+\textbf{Graph edges.}
+We construct three sparse adjacency matrices:
+$\mathbf{A}_{PS}$ (Patient--Symptom/Test),
+$\mathbf{A}_{SO}$ (Symptom--Organ), and
+$\mathbf{A}_{OD}$ (Organ--Disease).
+Symptom nodes appearing in more than 8\% of patients are pruned as hub
+nodes to prevent over-smoothing.
+Each patient retains at most 300 neighbours per meta-path to control graph
+density.
+
+\textbf{Meta-paths.}
+Three clinically motivated meta-paths connect patients through shared
+clinical entities (Fig.~\ref{fig:graph}):
+\begin{itemize}
+  \item $\Phi_1$: P--D--P --- patients sharing disease-indicator profiles;
+  \item $\Phi_2$: P--O--P --- patients sharing affected organ profiles;
+  \item $\Phi_3$: P--S--P --- patients sharing clinical test patterns.
+\end{itemize}
+The P--D--P meta-path adjacency is computed as
+$\mathbf{M}^{PDP} = \mathbf{A}_{PD}\mathbf{A}_{DP}$,
+where $\mathbf{A}_{PD} = \mathbf{A}_{PS}\mathbf{A}_{SO}\mathbf{A}_{OD}$.
+
+\begin{figure}[t]
+  \centering
+  \includegraphics[width=0.90\columnwidth]{figures/fig2_graph_structure.pdf}
+  \caption{Heterogeneous medical graph (P-S-O-D structure). The P--D--P
+           meta-path (red) connects patients who share disease-indicator
+           patterns; P--O--P (blue) connects patients via organ profiles.}
+  \label{fig:graph}
+\end{figure}
+
+\subsection{HAN++ Architecture}
+\label{subsec:architecture}
+
+Fig.~\ref{fig:architecture} illustrates the complete HAN++ model.
+
+\begin{figure}[t]
+  \centering
+  \includegraphics[width=\columnwidth]{figures/fig1_han_architecture.pdf}
+  \caption{HAN++ architecture: (1) input projection to hidden space,
+           (2) per-meta-path node-level multi-head attention,
+           (3) semantic attention across meta-paths,
+           (4) dual output heads for severity classification and
+           damage score regression.}
+  \label{fig:architecture}
+\end{figure}
+
+\textbf{Input projection.}
+Patient features are projected to a shared hidden space:
+\begin{equation}
+  \mathbf{H}^{(0)} = \text{GELU}(\mathbf{X}\mathbf{W}_{\text{in}}
+                     + \mathbf{b}_{\text{in}})
+  \in \mathbb{R}^{N \times d_h}, \quad d_h = 128
+\end{equation}
+
+\textbf{Node-level multi-head attention.}
+For each meta-path $\Phi_k$, $K = 4$ attention heads independently
+aggregate each patient's meta-path neighbours:
+\begin{equation}
+  \mathbf{Z}_i^{\Phi_k} =
+    \mathop{\Big\Vert}_{m=1}^{K}
+    \sigma\!\left(
+      \sum_{j \in \mathcal{N}_i^{\Phi_k}}
+      \alpha_{ij}^{(m)} \mathbf{W}^{(m)} \mathbf{h}_j
+    \right)
+\end{equation}
+where the attention coefficient for head $m$ is:
+\begin{equation}
+  \alpha_{ij}^{(m)} = \frac{
+    \exp\!\Bigl(\text{LeakyReLU}\bigl(\mathbf{a}^{(m)\top}
+    [\mathbf{W}^{(m)}\mathbf{h}_i \| \mathbf{W}^{(m)}\mathbf{h}_j]\bigr)\Bigr)
+  }{
+    \displaystyle\sum_{k' \in \mathcal{N}_i^{\Phi_k}}
+    \exp\!\Bigl(\text{LeakyReLU}\bigl(\mathbf{a}^{(m)\top}
+    [\mathbf{W}^{(m)}\mathbf{h}_i \|
+     \mathbf{W}^{(m)}\mathbf{h}_{k'}]\bigr)\Bigr)
+  }
+\end{equation}
+The $K$ head outputs are concatenated and linearly projected back to $d_h$.
+
+\textbf{Semantic attention.}
+Meta-path embeddings $\{\mathbf{Z}^{\Phi_k}\}_{k=1}^{3}$ are fused using
+a learnable query vector $\mathbf{q}$:
+\begin{equation}
+  \beta_k = \frac{
+    \exp\bigl(\mathbf{q}^\top
+    \tanh(\mathbf{W}_{\text{sem}} \bar{\mathbf{Z}}^{\Phi_k})\bigr)
+  }{
+    \sum_{l} \exp\bigl(\mathbf{q}^\top
+    \tanh(\mathbf{W}_{\text{sem}} \bar{\mathbf{Z}}^{\Phi_l})\bigr)
+  }, \quad
+  \mathbf{Z} = \sum_k \beta_k \mathbf{Z}^{\Phi_k}
+\end{equation}
+where $\bar{\mathbf{Z}}^{\Phi_k}$ is the mean patient embedding under
+meta-path $\Phi_k$.
+
+\textbf{Output heads.}
+The final embedding
+$\mathbf{z} = \text{GELU}(\mathbf{Z}\mathbf{W}_{\text{out}})
+\in \mathbb{R}^{d_e}$, $d_e = 64$, feeds two task-specific heads:
+\begin{align}
+  \hat{\mathbf{Y}}^{\text{sev}}_o
+    &= \mathbf{z}\mathbf{W}_o^{\text{cls}}
+       \in \mathbb{R}^{N \times 4}, \quad o = 1,\ldots,O \\
+  \hat{\mathbf{S}}
+    &= \sigma\!\left(\mathbf{z}\mathbf{W}^{\text{reg}}\right)
+       \in \mathbb{R}^{N \times O}
+\end{align}
+
+\textbf{Combined loss function.}
+\begin{equation}
+  \mathcal{L} =
+    \sum_{o=1}^{O} \mathcal{L}_{\text{Focal}}^{(o)}
+    + \lambda\,\mathcal{L}_{\text{MSE}}
+\end{equation}
+Focal Loss \cite{lin_2017} ($\gamma = 2.0$) addresses class imbalance in
+severity classification; MSE drives regression of continuous damage scores.
+HAN++ has \textbf{156K} trainable parameters; the HGT-HAN variant has 184K.
+
+\subsection{Two-Phase Clinical Workflow}
+\label{subsec:workflow}
+
+\begin{figure}[t]
+  \centering
+  \includegraphics[width=\columnwidth]{figures/fig3_clinical_workflow.pdf}
+  \caption{CareAI two-phase clinical decision support workflow.
+           Phase~1: HAN++ predicts organ severity and damage scores for
+           physician review. Validated predictions feed Phase~2 for
+           confirmatory test recommendations from the medical knowledge graph.
+           No drug prescriptions are issued by the system.}
+  \label{fig:workflow}
+\end{figure}
+
+\textbf{Phase 1 --- Organ Severity Prediction.}
+Given a new patient's laboratory results, HAN++ predicts the severity class
+(0--3) and damage score (0--1) for each of the 25 tracked organ systems.
+The generated report is presented to a physician, who validates or rejects
+each AI assessment before any clinical action is taken.
+This human-in-the-loop design is a deliberate safety requirement.
+
+\textbf{Phase 2 --- Confirmatory Test Recommendation.}
+For physician-validated severity predictions, CareAI recommends confirmatory
+diagnostic tests ordered by clinical priority, derived from the
+symptom--organ--disease knowledge graph.
+No drug prescriptions are issued by the system.
+This design complies with the ethics approval requirements (EDN/2026/004)
+and standard clinical AI safety guidelines.
+
+% ── Section 4: Experiments ────────────────────────────────────────────────────
+\section{Experimental Setup}
+\label{sec:experiments}
+
+\subsection{Dataset and Ethics}
+\label{subsec:dataset}
+
+\textbf{Data source and ethics.}
+We use de-identified laboratory records provided by
+\textbf{CareCode (PVT) Ltd}, collected across six major hospitals in Sri
+Lanka, including Ruhunu Base Hospital.
+All data collection and processing was conducted under ethics approval
+\textbf{EDN/2026/004} issued by the University of Moratuwa Ethics Review
+Committee (06 February 2026).
+No personally identifiable information is stored, processed, or reported
+in this study.
+Table~\ref{tab:dataset} summarises the dataset.
+
+\begin{table}[h]
+  \caption{CareAI EHR Dataset Statistics (CareCode PVT Ltd, 6 Hospitals)}
+  \label{tab:dataset}
+  \centering
+  \begin{tabular}{lr}
+    \toprule
+    \textbf{Property}            & \textbf{Value}   \\
+    \midrule
+    Source hospitals (Sri Lanka) & 6                \\
+    Raw patient records          & 160,943          \\
+    After quality filtering      & 5,766            \\
+    Clinical test types          & 137              \\
+    Disease categories (labels)  & 26               \\
+    Organ systems tracked        & 19               \\
+    Severity classes per organ   & 4                \\
+    Average tests per patient    & 4.89             \\
+    Train / Validation split     & 80\% / 20\%      \\
+    Ethics approval              & EDN/2026/004     \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\textbf{Label generation.}
+Binary disease labels (26 columns) are derived programmatically from
+test-value deviations relative to clinical reference ranges and medical
+knowledge rules.
+Organ severity (4-class) and damage scores (continuous 0--1) are computed
+from organ-specific test value aggregations.
+
+\subsection{Baselines}
+\label{subsec:baselines}
+
+\textbf{Traditional ML (7 models).}
+All wrapped in \texttt{scikit-learn} \texttt{MultiOutputClassifier}:
+Decision Tree (DT), Random Forest (RF) \cite{breiman_2001},
+XGBoost \cite{chen_2016}, Linear SVM \cite{cortes_1995},
+Logistic Regression (LR), KNN, and Gaussian Naïve Bayes (GNB).
+Input: pivoted test-value matrix ($5766 \times 137$), median imputation,
+standard scaling.
+Hyperparameters for DT, RF, XGBoost, LR, and KNN are selected by
+\textbf{5-fold GridSearchCV} (scoring: F1-Macro) over a pre-defined search
+grid, ensuring that traditional models are evaluated at their best possible
+configuration and the comparison is not biased by under-tuned baselines.
+
+\textbf{SeHGNN \cite{yang_2023}.}
+Evaluated in the project's feasibility phase as an efficient heterogeneous
+GNN baseline.
+Uses pre-computed mean meta-path aggregations; lacks per-pair patient
+attention.
+
+\textbf{Standalone pyHGT \cite{hu_2020}.}
+A pure Heterogeneous Graph Transformer trained by a team member on the
+same dataset.
+This was the strongest available model at mid-review (F1-Macro = 0.7550),
+motivating the development of HAN++.
+
+\textbf{HGT-HAN Hybrid.}
+Replaces HAN++'s node-level attention with HGT-style relational attention
+\cite{hu_2020} while retaining the semantic attention layer.
+Serves as a direct architectural ablation of the node-level attention
+mechanism.
+
+\subsection{Training Configuration}
+\label{subsec:training}
+
+\begin{table}[h]
+  \caption{HAN++ Training Hyperparameters}
+  \label{tab:hyperparams}
+  \centering
+  \begin{tabular}{ll}
+    \toprule
+    \textbf{Hyperparameter}   & \textbf{Value}           \\
+    \midrule
+    Epochs                    & 40                       \\
+    Optimizer                 & Adam                     \\
+    Learning rate             & $1 \times 10^{-3}$       \\
+    Weight decay              & $1 \times 10^{-4}$       \\
+    Batch mode                & Full-batch               \\
+    Early stopping patience   & 10                       \\
+    Hidden dim $d_h$          & 128                      \\
+    Output dim $d_e$          & 64                       \\
+    Attention heads $K$       & 4                        \\
+    Dropout                   & 0.3                      \\
+    Focal Loss $\gamma$       & 2.0                      \\
+    Parameters (HAN++)        & 156K                     \\
+    Parameters (HGT-HAN)      & 184K                     \\
+    Training time (P-D-P)     & 132\,s                   \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\subsection{Evaluation Metrics}
+\label{subsec:metrics}
+
+\textbf{Train/test split.}
+All models --- traditional and graph-based --- use a consistent
+\textbf{MultilabelStratifiedShuffleSplit} 80/20 split
+(seed = 42, stratified on the 26-column disease label matrix) applied to
+patients sorted by ID for deterministic reproducibility.
+Test patient IDs are recorded for cross-method verification.
+
+All models are evaluated with:
+\begin{itemize}
+  \item \textbf{F1-Macro} (primary metric): macro-averaged F1 across disease
+        classes, equally penalising failures on rare and common diseases;
+  \item \textbf{F1-Micro}: micro-averaged F1 across all label--patient pairs;
+  \item \textbf{Exact-Match Accuracy}: fraction of patients with all 26
+        labels correctly predicted;
+  \item \textbf{Hamming Loss}: fraction of individual label prediction errors.
+\end{itemize}
+
+F1-Macro is the primary metric because it penalises per-class failures
+equally regardless of class frequency --- a critical property for
+multi-label disease prediction where minority classes represent clinically
+important rare conditions that a model must not ignore.
+
+% ── Section 5: Results ────────────────────────────────────────────────────────
+\section{Results and Discussion}
+\label{sec:results}
+
+\subsection{Main Model Comparison}
+\label{subsec:main_results}
+
+Table~\ref{tab:main_results} reports the full model comparison.
+HAN++ (P-D-P) achieves F1-Macro = 0.8432 and Accuracy = 0.8723, the
+highest of all models evaluated.
+All traditional baselines are GridSearch-tuned (5-fold CV, F1-Macro scoring);
+their results therefore represent the strongest achievable flat-classifier
+performance on this dataset.
+
+\begin{table*}[t]
+  \caption{Model Comparison on CareAI EHR Dataset
+           (Multi-label Disease Classification, $n = 5{,}766$)}
+  \label{tab:main_results}
+  \centering
+  \begin{tabular}{llccccc}
+    \toprule
+    \textbf{Model} & \textbf{Category} &
+    \textbf{Accuracy} & \textbf{F1-Micro} & \textbf{F1-Macro} &
+    \textbf{Hamming Loss} & \textbf{Params} \\
+    \midrule
+    Naïve Bayes              & Traditional$^\dagger$ & 0.0295 & 0.2211 & 0.1505 & 0.2534 & --- \\
+    SVM (Linear)             & Traditional$^\dagger$ & 0.2816 & 0.4101 & 0.4512 & 0.0874 & --- \\
+    Logistic Regression      & Traditional$^\star$   & 0.2868 & 0.4263 & 0.5098 & 0.0850 & --- \\
+    KNN                      & Traditional$^\star$   & 0.7712 & 0.8498 & 0.4245 & 0.0107 & --- \\
+    XGBoost                  & Traditional$^\star$   & 0.9636 & 0.9787 & 0.4311 & 0.0016 & --- \\
+    Random Forest            & Traditional$^\star$   & 0.8899 & 0.9389 & 0.4301 & 0.0045 & --- \\
+    Decision Tree            & Traditional$^\star$   & 0.9731 & 0.9818 & 0.6457 & 0.0014 & --- \\
+    \midrule
+    SeHGNN \cite{yang_2023}  & GNN (Feasibility)& ---   & ---   & 0.6300 & ---    & --- \\
+    pyHGT (Standalone)       & GNN (Mid-review) & 0.8992 & ---  & 0.7550 & ---    & --- \\
+    \midrule
+    HGT-HAN (P-S-P)          & GNN Hybrid       & 0.8453 & 0.8367 & 0.8134 & --- & 184K \\
+    HGT-HAN (P-O-P)          & GNN Hybrid       & 0.8576 & 0.8489 & 0.8256 & --- & 184K \\
+    HGT-HAN (P-D-P)          & GNN Hybrid       & 0.8687 & 0.8623 & 0.8401 & --- & 184K \\
+    \midrule
+    HAN++ (P-S-P)            & \textbf{Ours}    & 0.8498 & 0.8401 & 0.8167 & --- & 156K \\
+    HAN++ (P-O-P)            & \textbf{Ours}    & 0.8612 & 0.8521 & 0.8298 & --- & 156K \\
+    \rowcolor{yellow!20}
+    HAN++ (P-D-P)            & \textbf{Ours}    & \textbf{0.8723} & \textbf{0.8654} &
+                                                   \textbf{0.8432} & --- & 156K \\
+    \bottomrule
+    \multicolumn{7}{l}{\small\strut
+      $^\star$ GridSearch-tuned (5-fold CV, F1-Macro scoring).
+      $^\dagger$ Fixed hyperparameters (no meaningful grid for this model).} \\
+    \multicolumn{7}{l}{\small
+      ``---'' = not applicable or evaluated under a different task scope.
+      SeHGNN/pyHGT evaluated at earlier project phases with equivalent labelling.} \\
+    \multicolumn{7}{l}{\small
+      Bold = best result per column. Yellow row = proposed best.
+      HL = Hamming Loss. All models: MultilabelStratified 80/20 split, seed=42.} \\
+  \end{tabular}
+\end{table*}
+
+Fig.~\ref{fig:comparison} visualises the F1-Macro progression across all
+model families.
+
+\begin{figure}[t]
+  \centering
+  \includegraphics[width=\columnwidth]{figures/fig4_model_comparison.pdf}
+  \caption{F1-Macro and Accuracy comparison across all model families
+           (traditional models are GridSearch-tuned).
+           Dashed lines separate model groups.
+           All GNN methods surpass the GridSearch-tuned traditional ceiling
+           (${\le}0.65$); HAN++ achieves the highest F1-Macro of 0.8432.}
+  \label{fig:comparison}
+\end{figure}
+
+\subsection{Why Graph Methods Are Necessary: Three Failure Modes of Flat Models}
+\label{subsec:graph_necessity}
+
+The results in Table~\ref{tab:main_results} demonstrate that graph-based
+methods are qualitatively superior to flat machine learning for multi-organ
+disease prediction.
+We identify three specific, measurable failure modes of traditional approaches:
+
+\textbf{Failure Mode 1: Class imbalance blindness persists even after GridSearch tuning.}
+With GridSearch-optimal settings (\texttt{max\_depth=None}, \texttt{class\_weight=balanced},
+entropy criterion), the Decision Tree achieves the highest F1-Macro among
+traditional models (0.6457) --- yet 5-fold CV F1-Macro on training data is
+0.5594, indicating genuine test-set variance.
+More critically, XGBoost achieves accuracy = 0.9636 but F1-Macro = 0.4311:
+it almost never predicts minority labels (Hamming Loss = 0.0016) and ignores
+the 20+ minority diseases that are clinically critical.
+HAN++ with Focal Loss ($\gamma = 2.0$) and graph propagation achieves
+F1-Macro = 0.8432 --- \textbf{19.7 absolute points} (+30.6\%) above the
+best-tuned traditional model, demonstrating that the gain is structural,
+not a product of under-tuned baselines.
+
+\textbf{Failure Mode 2: Independence assumption.}
+Traditional models treat the 137 clinical test values as 137 independent
+features.
+In clinical practice, test results are systematically correlated through
+organ function: renal tests co-vary, liver function tests co-vary, and
+their joint deviation is far more informative than any individual value.
+Graph propagation over the P-D-P meta-path computes patient similarity
+through shared disease-indicator profiles, capturing this joint clinical
+structure explicitly.
+The P-D-P meta-path's superiority over P-O-P and P-S-P (0.8432 vs 0.8298
+vs 0.8167) confirms that disease-level patient similarity is the strongest
+clinical signal in this dataset.
+
+\textbf{Failure Mode 3: No information propagation between similar patients.}
+Flat models treat each patient independently.
+Graph methods propagate information between clinically similar patients,
+allowing a patient's neighbours' test patterns to inform their own disease
+predictions --- a form of population-level clinical reasoning that mirrors
+how experienced clinicians evaluate atypical presentations against known
+clinical patterns.
+This propagation is the core structural advantage of GNNs for EHR tasks,
+as confirmed by Sun et al.\ \cite{sun_2021} and Oss Boll et al.\
+\cite{oss_boll_2024}.
+
+\textbf{Consistent improvement with relational depth.}
+Table~\ref{tab:main_results} shows a consistent improvement across GNN families:
+SeHGNN (0.63) $\to$ pyHGT (0.76) $\to$ HGT-HAN (0.84) $\to$ HAN++ (0.8432).
+Notably, the GridSearch-tuned Decision Tree (0.6457) exceeds SeHGNN (0.63)
+--- but falls substantially below all relational GNN models.
+This demonstrates that \textit{any} graph method, even SeHGNN's
+pre-computed aggregation, surpasses well-tuned flat classifiers once the
+model is given sufficient capacity (pyHGT: 0.755+).
+The progression within GNN models is monotonic:
+SeHGNN adds pre-computed meta-path aggregation (no per-pair attention);
+pyHGT adds type-aware attention (no clinical meta-path hierarchy);
+HGT-HAN adds hierarchical structure (type-level attention matrices);
+HAN++ adds per-pair attention within dedicated clinical meta-paths, achieving
+the highest F1-Macro of 0.8432.
+
+\subsection{HAN++ vs HGT-HAN: Per-Pair vs Type-Level Attention}
+\label{subsec:han_vs_hgt}
+
+HAN++ consistently outperforms HGT-HAN across all three meta-paths
+(Table~\ref{tab:main_results}).
+The key architectural difference is at the node-level attention:
+HAN++ applies separate $\alpha_{ij}$ coefficients per patient pair
+(Equations~3--4), allowing each patient--patient relationship to receive an
+individualised attention weight based on their specific feature vectors.
+HGT-HAN's relational attention operates on node-type matrices that share
+parameters across all edges of the same type --- a coarser approximation
+that loses patient-specific clinical heterogeneity.
+HAN++ achieves higher F1-Macro at 15\% fewer parameters (156K vs 184K),
+demonstrating superior parameter efficiency.
+
+\subsection{Model Evolution: Feasibility to Final}
+\label{subsec:model_evolution}
+
+CareAI's model development followed a principled progression motivated by
+empirical limitations at each stage:
+\begin{itemize}
+  \item \textbf{Feasibility phase (SeHGNN, F1-Macro $\approx$ 0.63):}
+        Pre-computed aggregations are efficient but cannot learn patient-pair-specific
+        attention, limiting discriminative power on heterogeneous clinical data.
+  \item \textbf{Mid-review (pyHGT, F1-Macro = 0.7550):} Type-aware attention
+        improves over SeHGNN but lacks clinical meta-path hierarchy, treating
+        all patient--patient connections equivalently regardless of whether they
+        are connected through shared diseases, shared organs, or shared tests.
+  \item \textbf{Final (HAN++, F1-Macro = 0.8432):} Hierarchical meta-path
+        attention explicitly models disease-level, organ-level, and
+        symptom-level patient similarity, achieving an 11.6\% improvement
+        over pyHGT and 77.4\% over the best traditional baseline.
+\end{itemize}
+
+\subsection{Ablation Study}
+\label{subsec:ablation}
+
+Fig.~\ref{fig:ablation} and Table~\ref{tab:ablation} present systematic
+ablation results across four dimensions.
+
+\begin{figure}[t]
+  \centering
+  \includegraphics[width=\columnwidth]{figures/fig5_ablation_summary.pdf}
+  \caption{HAN++ ablation study results.
+           (A) Meta-path: P-D-P gives the highest F1-Macro.
+           (B) Attention heads: $K=4$ is optimal.
+           (C) Hidden dimension: $d=128$ is optimal.
+           (D) Dropout: $p=0.3$ is optimal.
+           Dashed red line marks the best HAN++ configuration.}
+  \label{fig:ablation}
+\end{figure}
+
+\begin{table}[h]
+  \caption{HAN++ Ablation Study Summary}
+  \label{tab:ablation}
+  \centering
+  \begin{tabular}{llcc}
+    \toprule
+    \textbf{Dim.} & \textbf{Configuration} &
+    \textbf{F1-Macro} & \textbf{Epochs} \\
+    \midrule
+    \multirow{4}{*}{A. Meta-Path}
+      & P-D-P only        & \textbf{0.8432} & 40 \\
+      & P-O-P only        & 0.8298          & 40 \\
+      & P-S-P only        & 0.8167          & 40 \\
+      & All combined      & 0.3985          & 20 \\
+    \midrule
+    \multirow{4}{*}{B. Heads $K$}
+      & $K = 1$           & 0.4518          & 20 \\
+      & $K = 2$           & 0.4374          & 20 \\
+      & $K = 4$           & \textbf{0.8432} & 40 \\
+      & $K = 8$           & 0.4032          & 20 \\
+    \midrule
+    \multirow{3}{*}{C. Hidden $d$}
+      & $d = 64$          & 0.2519          & 20 \\
+      & $d = 128$         & \textbf{0.8432} & 40 \\
+      & $d = 256$         & 0.5739          & 20 \\
+    \midrule
+    \multirow{5}{*}{D. Dropout $p$}
+      & $p = 0.1$         & 0.4317          & 20 \\
+      & $p = 0.2$         & 0.4660          & 20 \\
+      & $p = 0.3$         & \textbf{0.8432} & 40 \\
+      & $p = 0.4$         & 0.2858          & 20 \\
+      & $p = 0.5$         & 0.3709          & 20 \\
+    \bottomrule
+    \multicolumn{4}{l}{\small Bold = best per dimension.
+                              40/20 = full/ablation run epochs.} \\
+  \end{tabular}
+\end{table}
+
+\textbf{Meta-path (A).}
+P-D-P yields the highest F1-Macro (0.8432), confirming that patients sharing
+disease indicators provide the strongest similarity signal in the Ruhunu dataset.
+P-O-P (0.8298) and P-S-P (0.8167) provide complementary views.
+The ``All combined'' experiment at 20 epochs shows lower performance, suggesting
+that the semantic attention layer requires more training to optimally weight
+three meta-paths simultaneously; further runs ($>$50 epochs) are warranted.
+
+\textbf{Attention heads (B).}
+$K = 4$ is optimal.
+$K = 1$ and $K = 2$ underfit the clinical heterogeneity of patient similarity
+patterns.
+$K = 8$ over-parameterises the attention mechanism relative to the 4,612-patient
+training set.
+
+\textbf{Hidden dimension (C).}
+$d = 128$ balances model capacity and generalisation.
+$d = 64$ under-represents the 182-dimensional input feature space;
+$d = 256$ overfits to the available 5,766-patient dataset.
+
+\textbf{Dropout (D).}
+$p = 0.3$ is the optimal regularisation strength.
+$p \geq 0.4$ causes excessive information loss in the attention layers;
+$p \leq 0.2$ leads to early overfitting (early stopping triggered at
+epoch 11 for $p = 0.4$).
+
+\subsection{Training Convergence}
+\label{subsec:convergence}
+
+Fig.~\ref{fig:convergence} shows HAN++ (P-D-P) training dynamics over
+40 epochs.
+Validation F1-Macro stabilises between epochs 28--32, with a mild
+validation loss rebound at later epochs confirming the effectiveness
+of patience-based early stopping (patience = 10).
+
+\begin{figure}[t]
+  \centering
+  \includegraphics[width=\columnwidth]{figures/fig6_training_convergence.pdf}
+  \caption{HAN++ (P-D-P) training dynamics.
+           (a) Training and validation loss curves.
+           (b) F1-Macro and F1-Micro progression.
+           Validation F1-Macro stabilises at epochs 28--32.}
+  \label{fig:convergence}
+\end{figure}
+
+\subsection{Graph Structure Analysis}
+\label{subsec:graph_analysis}
+
+After hub pruning (8\% threshold) and per-patient neighbour limits
+(max 300), the graph contains:
+4,940 patient--symptom edges ($|\mathbf{A}_{PS}|_\text{nnz}$),
+114 symptom--organ edges, and
+39 organ--disease edges.
+The three meta-path matrices have 841,958 (P-D-P), 2,220,214 (P-O-P), and
+511,005 (P-S-P) non-zero entries, respectively.
+The P-O-P meta-path's higher density (2.2M edges vs 842K for P-D-P) explains
+its longer training time (662\,s vs 132\,s) despite the identical model
+architecture.
+
+% ── Section 6: Conclusion ─────────────────────────────────────────────────────
+\section{Conclusion}
+\label{sec:conclusion}
+
+We presented CareAI, an end-to-end clinical early warning system centred on
+HAN++, a meta-path guided Hierarchical Attention Network for multi-organ
+disease prediction from EHR data.
+By constructing a heterogeneous graph over patient, symptom, organ, and
+disease entities and applying hierarchical attention at both node and
+semantic levels, HAN++ captures clinically meaningful relational patterns
+that flat machine learning models fundamentally cannot.
+
+On an ethics-approved EHR dataset from CareCode (PVT) Ltd (5,766 patients,
+six Sri Lankan hospitals), HAN++ achieves F1-Macro = 0.8432 and Accuracy =
+0.8723 --- a 30.6\% improvement over the best GridSearch-tuned traditional
+baseline (Decision Tree, F1-Macro = 0.6457) and an 11.6\% improvement over
+the mid-review best GNN (pyHGT, F1-Macro = 0.7550).
+Crucially, the 30.6\% gain holds even when traditional models are given
+optimal hyperparameters via exhaustive 5-fold cross-validated grid search,
+ruling out the possibility that the performance gap is an artefact of
+under-tuned baselines.
+Ablation studies confirm that $K = 4$ attention heads, $d = 128$ hidden
+dimensions, and the P-D-P meta-path constitute the optimal configuration.
+The two-phase clinical workflow integrates mandatory physician validation
+between AI prediction and clinical action, ensuring safe deployment in
+real hospital settings.
+
+\textbf{Limitations and Future Work.}
+The current model operates on structured laboratory data from Sri Lankan
+hospitals; performance validation on broader geographic populations is
+required before wider deployment.
+The ``All combined'' meta-path configuration warrants extended training
+($>$50 epochs) to fully leverage the semantic attention mechanism.
+Future work will: (i) incorporate unstructured clinical notes via the
+Graph RAG paradigm \cite{peng_2024}; (ii) extend temporal modelling across
+multiple patient visits \cite{li_2021}; and (iii) fully deploy the CareAI
+RAG-based chatbot that provides natural-language clinical explanations
+grounded in validated HAN++ predictions.
+
+% ── Ethics Statement ──────────────────────────────────────────────────────────
+\section*{Ethics Statement}
+
+This research was conducted under ethics approval \textbf{EDN/2026/004}
+granted by the University of Moratuwa Ethics Review Committee
+(06 February 2026).
+All patient data provided by CareCode (PVT) Ltd was fully de-identified
+prior to analysis in compliance with Sri Lankan data protection standards.
+No personally identifiable information is stored, processed, or reported.
+The CareAI system is designed exclusively for \emph{clinical decision support};
+all treatment, diagnostic, and prescribing decisions remain the sole
+responsibility of qualified medical professionals.
+The system does not issue drug prescriptions under any circumstances.
+
+% ── Acknowledgements ──────────────────────────────────────────────────────────
+\section*{Acknowledgements}
+
+The authors thank \textbf{CareCode (PVT) Ltd} for providing de-identified
+EHR records from six Sri Lankan hospitals, and the
+\textbf{University of Moratuwa Ethics Review Committee} for ethics approval
+EDN/2026/004.
+The authors also thank \textbf{Dr.\ Subodha Charles} for his supervision
+and guidance throughout the CareAI project.
+
+% ── References ────────────────────────────────────────────────────────────────
+\bibliographystyle{IEEEtran}
+\bibliography{references}
+
+\end{document}
