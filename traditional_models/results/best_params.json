@@ -1,0 +1,26 @@
+{
+  "Decision Tree": {
+    "clf__estimator__criterion": "entropy",
+    "clf__estimator__max_depth": null,
+    "clf__estimator__min_samples_leaf": 1
+  },
+  "Random Forest": {
+    "clf__estimator__max_depth": 10,
+    "clf__estimator__min_samples_leaf": 1,
+    "clf__estimator__n_estimators": 100
+  },
+  "XGBoost": {
+    "clf__estimator__learning_rate": 0.1,
+    "clf__estimator__max_depth": 6,
+    "clf__estimator__n_estimators": 100,
+    "clf__estimator__subsample": 0.9
+  },
+  "Logistic Regression": {
+    "clf__estimator__C": 10.0,
+    "clf__estimator__solver": "liblinear"
+  },
+  "KNN": {
+    "clf__estimator__n_neighbors": 5,
+    "clf__estimator__weights": "distance"
+  }
+}
