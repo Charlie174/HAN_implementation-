@@ -64,10 +64,17 @@ that employs meta-path-guided multi-head attention over a heterogeneous
 medical graph with four node types: Patient (P), Symptom/Test (S), Organ (O),
 and Disease (D).
 HAN++ introduces (i) four-head node-level attention per meta-path,
-(ii) semantic attention to fuse information across meta-paths, and
-(iii) a two-phase clinical workflow: Phase~1 predicts per-organ severity
+(ii) \textbf{patient-conditioned semantic attention} --- a novel mechanism
+that replaces HAN's global query vector with a patient-specific query
+$\mathbf{q}_i = \mathbf{W}_q \mathbf{h}_i$, enabling each patient to
+weight meta-paths according to their own clinical profile,
+(iii) Monte Carlo Dropout uncertainty quantification providing per-organ
+confidence intervals for clinically safe deployment, and
+(iv) a two-phase clinical workflow: Phase~1 predicts per-organ severity
 (Normal / Mild / Moderate / Severe) and damage scores; Phase~2 recommends
 confirmatory diagnostic tests.
+Two-level attention interpretability (semantic $\beta$ + node-level $\alpha$)
+provides physician-facing explanations of each prediction.
 Experiments on an ethics-approved EHR dataset (EDN/2026/004) from CareCode
 (PVT)~Ltd, covering six Sri Lankan hospitals (5,766 patients, 137 clinical
 tests, 26 diseases), demonstrate that HAN++ achieves
@@ -76,15 +83,17 @@ tests, 26 diseases), demonstrate that HAN++ achieves
 baseline (Decision Tree, F1-Macro = 0.6457) and an \textbf{11.6\%}
 improvement over the mid-review Heterogeneous Graph Transformer baseline
 (pyHGT, F1-Macro = 0.7550).
-Ablation studies confirm that four attention heads and a 128-dimensional
-hidden space are the optimal configuration, with the P--D--P meta-path
-contributing the strongest predictive signal.
+Ablation studies confirm four attention heads and a 128-dimensional
+hidden space as the optimal configuration;
+cross-cohort evaluation (5-fold LOSO) validates generalisation beyond a
+single random split.
 \end{abstract}
 
 \begin{IEEEkeywords}
 Electronic Health Records, Hierarchical Attention Network, Graph Neural
 Networks, Heterogeneous Graphs, Multi-organ Disease Prediction, Meta-path,
-Clinical Decision Support, CareAI, Early Warning System
+Patient-Conditioned Attention, MC Dropout, Uncertainty Quantification,
+Attention Interpretability, Clinical Decision Support, CareAI
 \end{IEEEkeywords}
 
 % ── Section 1: Introduction ───────────────────────────────────────────────────
@@ -190,16 +199,27 @@ mid-review best.
         HAN++ inference, and a two-phase severity prediction and test
         recommendation workflow (Fig.~\ref{fig:workflow}).
   \item \textbf{HAN++}: an improved Hierarchical Attention Network with
-        four-head node-level attention per meta-path and semantic attention
-        across meta-paths, achieving F1-Macro = 0.8432 on the Ruhunu/CareCode
-        EHR dataset.
+        four-head node-level attention per meta-path, achieving F1-Macro = 0.8432.
+  \item \textbf{Patient-Conditioned Semantic Attention} (\textit{novel}):
+        we replace HAN's global query vector with a patient-specific query
+        $\mathbf{q}_i = \mathbf{W}_q \mathbf{h}_i$, enabling per-patient
+        meta-path weighting ($\boldsymbol{\beta} \in \mathbb{R}^{N \times K}$
+        instead of $\mathbb{R}^K$).
+        To our knowledge, this is the first work to apply patient-conditioned
+        semantic attention on clinical meta-path heterogeneous graphs.
+  \item \textbf{MC Dropout uncertainty quantification}: 50-sample stochastic
+        inference provides per-organ confidence intervals, flagging uncertain
+        predictions for mandatory physician review --- essential for regulatory
+        compliance (FDA SaMD guidance, 2021).
+  \item \textbf{Two-level attention interpretability}: semantic ($\boldsymbol{\beta}$)
+        and node-level ($\boldsymbol{\alpha}$) weight extraction with
+        visualisation tools for physician-facing explanations.
   \item \textbf{Heterogeneous medical graph}: a four-type ($P$-$S$-$O$-$D$)
         patient similarity graph supporting three clinical meta-paths
         (P-D-P, P-O-P, P-S-P), built from ethics-approved real-world data.
-  \item \textbf{Comprehensive empirical evaluation}: seven traditional ML
-        baselines, two intermediate GNN baselines (SeHGNN, pyHGT), the
-        HGT-HAN hybrid, and a full ablation study across meta-paths, attention
-        heads, hidden dimensions, and dropout rates.
+  \item \textbf{Comprehensive empirical evaluation}: seven GridSearch-tuned
+        traditional ML baselines, two GNN baselines (SeHGNN, pyHGT), HGT-HAN
+        hybrid, full ablation study, and 5-fold LOSO cross-cohort validation.
 \end{enumerate}
 
 % ── Section 2: Related Work ───────────────────────────────────────────────────
@@ -396,21 +416,43 @@ where the attention coefficient for head $m$ is:
 \end{equation}
 The $K$ head outputs are concatenated and linearly projected back to $d_h$.
 
-\textbf{Semantic attention.}
-Meta-path embeddings $\{\mathbf{Z}^{\Phi_k}\}_{k=1}^{3}$ are fused using
-a learnable query vector $\mathbf{q}$:
+\textbf{Patient-Conditioned Semantic Attention (novel contribution).}
+In the original HAN \cite{wang_2019}, a single \emph{global} query vector
+$\mathbf{q}$ shared by all patients produces identical meta-path weights
+$\beta_k$ regardless of individual patient profiles.
+We identify this as a clinical limitation: a kidney-disease patient should
+weight the P-O-P meta-path (organ co-occurrence) more heavily, while a
+multimorbid patient should rely more on P-D-P (disease co-occurrence).
+Letting every patient receive the same $\boldsymbol{\beta}$ ignores this.
+
+We replace the global query with a \textbf{patient-specific query}:
 \begin{equation}
-  \beta_k = \frac{
-    \exp\bigl(\mathbf{q}^\top
-    \tanh(\mathbf{W}_{\text{sem}} \bar{\mathbf{Z}}^{\Phi_k})\bigr)
-  }{
-    \sum_{l} \exp\bigl(\mathbf{q}^\top
-    \tanh(\mathbf{W}_{\text{sem}} \bar{\mathbf{Z}}^{\Phi_l})\bigr)
-  }, \quad
-  \mathbf{Z} = \sum_k \beta_k \mathbf{Z}^{\Phi_k}
+  \mathbf{q}_i = \mathbf{W}_q\, \mathbf{h}_i \in \mathbb{R}^{d_h}
 \end{equation}
-where $\bar{\mathbf{Z}}^{\Phi_k}$ is the mean patient embedding under
-meta-path $\Phi_k$.
+where $\mathbf{h}_i$ is patient $i$'s own projected feature vector
+(computed before graph aggregation, so the query reflects raw clinical
+presentation rather than graph-smoothed features).
+The per-patient meta-path weights are then:
+\begin{equation}
+  \beta_{i,k} = \frac{
+    \exp\bigl(\mathbf{q}_i^\top
+    \tanh(\mathbf{W}_{\text{sem}}\, \mathbf{z}_i^{\Phi_k})\bigr)
+  }{
+    \sum_{l} \exp\bigl(\mathbf{q}_i^\top
+    \tanh(\mathbf{W}_{\text{sem}}\, \mathbf{z}_i^{\Phi_l})\bigr)
+  }
+\end{equation}
+so that $\boldsymbol{\beta} \in \mathbb{R}^{N \times K}$ (each of the
+$N$ patients has its own weight vector over $K$ meta-paths) rather than
+the global $\mathbb{R}^K$ of the original HAN.
+The fused embedding is:
+\begin{equation}
+  \mathbf{Z}_{\text{final},i} = \sum_k \beta_{i,k}\, \mathbf{z}_i^{\Phi_k}
+\end{equation}
+The additional parameters are $\mathbf{W}_q \in \mathbb{R}^{d_h \times d_h}$
+(16,384 parameters, $\approx +10.5\%$ over the 156K base model).
+To our knowledge, this is the first application of patient-conditioned
+semantic attention to clinical heterogeneous meta-path graphs.
 
 \textbf{Output heads.}
 The final embedding
@@ -463,6 +505,63 @@ symptom--organ--disease knowledge graph.
 No drug prescriptions are issued by the system.
 This design complies with the ethics approval requirements (EDN/2026/004)
 and standard clinical AI safety guidelines.
+
+\subsection{Uncertainty Quantification via MC Dropout}
+\label{subsec:uncertainty}
+
+For clinical deployment, a point prediction without confidence information
+is insufficient.
+Regulatory guidance for AI/ML Software as a Medical Device (SaMD) \cite{fda_2021}
+requires uncertainty estimates so that clinicians can exercise appropriate
+oversight.
+
+We implement \textbf{Monte Carlo Dropout} \cite{gal_2016}, a Bayesian
+approximation that keeps dropout active at inference time:
+at each forward pass, a different stochastic dropout mask is applied,
+producing a distribution over predictions.
+
+For each patient and each organ, we run $T = 50$ stochastic forward passes:
+\begin{align}
+  \bar{p}_{i,o,c} &= \frac{1}{T}\sum_{t=1}^{T} p_{i,o,c}^{(t)}
+  \quad \text{(mean probability)} \\
+  \sigma_{i,o,c}  &= \sqrt{\frac{1}{T}\sum_{t=1}^{T}
+                    \bigl(p_{i,o,c}^{(t)} - \bar{p}_{i,o,c}\bigr)^2}
+  \quad \text{(uncertainty)}
+\end{align}
+The predicted severity is $\hat{y}_{i,o} = \arg\max_c \bar{p}_{i,o,c}$;
+the uncertainty for the predicted class is
+$\sigma_{i,o} = \sigma_{i,o,\hat{y}_{i,o}}$.
+Predictions with $\sigma_{i,o} \geq 0.10$ are flagged for mandatory
+physician review; those with $\sigma_{i,o} \geq 0.20$ carry a
+``Low confidence --- Verify'' warning.
+$T = 50$ is chosen following standard literature recommendations
+\cite{gal_2016, leibig_2017}: fewer than 20 samples yield unstable
+variance estimates; more than 100 give diminishing returns.
+
+\subsection{Attention Interpretability}
+\label{subsec:interpretability}
+
+Clinical acceptance of AI tools requires that predictions be explainable.
+HAN++ provides interpretability at two levels:
+
+\textbf{Semantic-level (meta-path weights $\boldsymbol{\beta}$).}
+Our patient-conditioned $\boldsymbol{\beta} \in \mathbb{R}^{N \times K}$
+directly encodes which information source each patient relied on most.
+A patient with $\beta_{i,\text{P-O-P}} = 0.70$ was primarily compared
+to patients with similar organ involvement; $\beta_{i,\text{P-D-P}} = 0.65$
+indicates the prediction is driven by disease co-occurrence patterns.
+
+\textbf{Node-level (neighbour weights $\boldsymbol{\alpha}$).}
+The node-level attention $\alpha_{ij}$ quantifies how much the record of
+training patient $j$ influenced the representation of patient $i$.
+The top-$K$ highest-$\alpha$ neighbours constitute the most similar
+confirmed cases in the training set, providing evidence-based explanation:
+\emph{``Patient 1042 was predicted SEVERE kidney because the 3 most similar
+patients (by organ test profile) all had confirmed severe CKD.''}.
+
+These two levels together address the
+``why'' (which relational structure) and the ``who'' (which reference cases),
+providing a physician with actionable, clinically grounded explanations.
 
 % ── Section 4: Experiments ────────────────────────────────────────────────────
 \section{Experimental Setup}
