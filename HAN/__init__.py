@@ -6,6 +6,7 @@ Structured implementation for medical prediction tasks.
 from .conv import (
     NodeLevelAttentionImproved,
     SemanticAttentionImproved,
+    PatientConditionedSemanticAttention,
     HGTLayerSingle
 )
 
@@ -47,6 +48,12 @@ from .feature_schema import (
     load_schema,
     align_features,
     print_schema_diff
+)
+
+from .mc_dropout import (
+    mc_dropout_predict,
+    interpret_uncertainty,
+    uncertainty_report_lines
 )
 
 __version__ = "1.0.0"
@@ -91,4 +98,12 @@ __all__ = [
     'load_schema',
     'align_features',
     'print_schema_diff',
+
+    # MC Dropout uncertainty
+    'mc_dropout_predict',
+    'interpret_uncertainty',
+    'uncertainty_report_lines',
+
+    # Attention (conv)
+    'PatientConditionedSemanticAttention',
 ]

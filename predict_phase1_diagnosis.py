@@ -21,6 +21,10 @@ import torch
 from datetime import datetime
 from HAN import MedicalGraphData, HANPP
 from HAN.feature_schema import load_schema, align_features, print_schema_diff
+from HAN.mc_dropout import mc_dropout_predict, uncertainty_report_lines
+
+# MC Dropout samples: 50 gives good uncertainty estimates with reasonable speed
+MC_SAMPLES = 50
 
 # Configuration
 DEVICE = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
@@ -100,87 +104,106 @@ def load_trained_model(data_loader):
 
 
 def make_predictions(model, data_loader, patient_indices):
-    """Use trained model to predict organ severity for new patients."""
-    print(f"\n📊 Making predictions for {len(patient_indices)} patients...")
-    
+    """
+    Use trained model to predict organ severity with MC Dropout uncertainty.
+
+    Runs MC_SAMPLES stochastic forward passes with dropout enabled to
+    produce both a mean prediction and a per-organ uncertainty estimate.
+    """
+    print(f"\nMaking predictions for {len(patient_indices)} patients "
+          f"(MC Dropout, {MC_SAMPLES} samples)...")
+
     # Prepare features
     if isinstance(data_loader.patient_feats, np.ndarray):
-        features = torch.from_numpy(data_loader.patient_feats).float().to(DEVICE)
+        features = torch.from_numpy(data_loader.patient_feats).float()
     else:
-        features = data_loader.patient_feats.to(DEVICE)
-    
+        features = data_loader.patient_feats.float()
+
     # Build P-S-P meta-path if needed
     if not hasattr(data_loader, 'metapath_matrices') or len(data_loader.metapath_matrices) == 0:
         print("   Building P-S-P meta-path relations...")
         data_loader.build_metapaths(['P-S-P'])
-    
+
     neighbor_dicts = data_loader.metapath_matrices
-    
-    # Run model inference
-    with torch.no_grad():
-        organ_logits, organ_scores, embeddings, attention_weights = model(features, neighbor_dicts)
-        
-        # Get predictions
-        predictions = torch.argmax(organ_logits, dim=2).cpu().numpy()  # [N, num_organs]
-        scores = organ_scores.cpu().numpy()
-        
-        # Calculate confidence scores
-        probs = torch.softmax(organ_logits, dim=2)  # [N, num_organs, num_classes]
-        confidences = probs.max(dim=2)[0].cpu().numpy()  # Max probability per organ
-    
+
+    # MC Dropout inference — runs MC_SAMPLES passes with dropout ON
+    predictions, confidences, uncertainties, mean_probs, damage_mean, damage_std = \
+        mc_dropout_predict(model, features, neighbor_dicts,
+                           n_samples=MC_SAMPLES, device=DEVICE)
+
     # Get organ names
-    organ_names = data_loader.organs if hasattr(data_loader, 'organs') else [f"Organ_{i+1}" for i in range(predictions.shape[1])]
-    
-    print(f"✅ Predictions completed using trained P-S-P model!")
-    
-    return predictions, scores, confidences, organ_names
+    organ_names = (data_loader.organs if hasattr(data_loader, 'organs')
+                   else [f"Organ_{i+1}" for i in range(predictions.shape[1])])
+
+    print(f"Predictions completed using MC Dropout ({MC_SAMPLES} samples).")
+    print(f"Mean uncertainty across organs: {uncertainties.mean():.4f} "
+          f"(lower = more confident)")
+
+    return predictions, damage_mean, confidences, organ_names, uncertainties, damage_std
 
 
-def generate_prediction_report(patient_id, patient_data, predictions, scores, confidences, organ_names, patient_idx):
-    """Generate Phase 1 prediction report for doctor review."""
-    
+def generate_prediction_report(patient_id, patient_data, predictions, scores, confidences,
+                               organ_names, patient_idx,
+                               uncertainties=None, damage_std=None):
+    """
+    Generate Phase 1 prediction report for doctor review.
+
+    Now includes MC Dropout uncertainty estimates alongside predictions.
+    Organs with high uncertainty are explicitly flagged for physician review.
+    """
     # Identify affected organs
     affected_organs = []
     normal_organs = []
-    
+    flagged_count = 0
+
     for organ_idx, organ_name in enumerate(organ_names):
         if organ_idx < predictions.shape[1]:
             severity = int(predictions[patient_idx, organ_idx])
+            unc = float(uncertainties[patient_idx, organ_idx]) if uncertainties is not None else 0.0
+            d_std = float(damage_std[patient_idx, organ_idx]) if damage_std is not None else 0.0
             organ_info = {
                 'organ': organ_name,
                 'severity': severity,
                 'severity_name': SEVERITY_LEVELS[severity]['name'],
                 'description': SEVERITY_LEVELS[severity]['description'],
                 'damage_score': float(scores[patient_idx, organ_idx]),
-                'confidence': float(confidences[patient_idx, organ_idx]) * 100  # Convert to percentage
+                'damage_std': d_std,
+                'confidence': float(confidences[patient_idx, organ_idx]) * 100,
+                'uncertainty': unc,
             }
-            
             if severity > 0:
                 affected_organs.append(organ_info)
             else:
                 normal_organs.append(organ_info)
-    
-    # Sort by severity and confidence
+            if unc >= 0.10:
+                flagged_count += 1
+
+    # Sort by severity then damage score
     affected_organs.sort(key=lambda x: (x['severity'], x['damage_score']), reverse=True)
-    
+
     # Generate report
     report = []
     report.append("="*80)
-    report.append("PHASE 1: AI DIAGNOSTIC PREDICTION REPORT")
+    report.append("PHASE 1: AI DIAGNOSTIC PREDICTION REPORT (with Uncertainty)")
     report.append("="*80)
     report.append(f"Patient ID: {patient_id}")
     report.append(f"Report Date: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
-    report.append(f"AI Model: HAN++ with P-S-P Meta-Path")
+    report.append(f"AI Model: CareAI HAN++ with Patient-Conditioned Semantic Attention")
+    report.append(f"Uncertainty method: MC Dropout ({MC_SAMPLES} stochastic forward passes)")
     report.append(f"Model Path: {MODEL_PATH}")
     report.append("")
-    
+
     # Patient info
     if 'age_at_report' in patient_data.columns:
         age = int(patient_data.iloc[0]['age_at_report'])
         sex = patient_data.iloc[0]['sex']
         report.append(f"Patient: {age} years old, {sex}")
         report.append("")
-    
+
+    if flagged_count > 0:
+        report.append(f"!!! {flagged_count} organ(s) flagged for physician review due to high uncertainty !!!")
+        report.append("")
+
     # Available tests
     report.append("="*80)
     report.append("AVAILABLE CLINICAL DATA")
@@ -188,40 +211,43 @@ def generate_prediction_report(patient_id, patient_data, predictions, scores, co
     tests_available = patient_data['test_name'].unique()
     report.append(f"Laboratory tests performed: {len(tests_available)}")
     report.append("")
-    
+
     for i, test in enumerate(tests_available, 1):
         test_row = patient_data[patient_data['test_name'] == test].iloc[0]
         report.append(f"  {i:2d}. {test}: {test_row['test_value']}")
     report.append("")
-    
+
     # AI Predictions
     report.append("="*80)
-    report.append("AI MODEL PREDICTIONS")
+    report.append("AI MODEL PREDICTIONS  [confidence = mean prob; uncertainty = std over 50 samples]")
     report.append("="*80)
     report.append("")
-    
+
     if len(affected_organs) == 0:
-        report.append("✅ NO SIGNIFICANT ABNORMALITIES DETECTED")
+        report.append("NO SIGNIFICANT ABNORMALITIES DETECTED")
         report.append("")
-        report.append("According to the AI model, all organ systems appear to be")
-        report.append("functioning within normal parameters based on available data.")
-        report.append("")
+        report.append("All organ systems appear to be within normal parameters.")
         report.append("Recommendation: Continue routine health monitoring.")
     else:
-        report.append(f"⚠️  ATTENTION: {len(affected_organs)} ORGAN SYSTEM(S) SHOW PREDICTED ABNORMALITIES")
+        report.append(f"ATTENTION: {len(affected_organs)} ORGAN SYSTEM(S) SHOW PREDICTED ABNORMALITIES")
         report.append("")
-        
+
         for i, organ in enumerate(affected_organs, 1):
-            report.append(f"{i}. {organ['organ'].upper()}")
-            report.append(f"   ├─ Predicted Severity: {organ['severity_name']} (Level {organ['severity']}/3)")
-            report.append(f"   ├─ Clinical Significance: {organ['description']}")
-            report.append(f"   ├─ Damage Score: {organ['damage_score']:.3f}")
-            report.append(f"   └─ Model Confidence: {organ['confidence']:.1f}%")
+            unc = organ['uncertainty']
+            from HAN.mc_dropout import interpret_uncertainty
+            conf_label, flag = interpret_uncertainty(unc)
+            flag_str = "  [*** REVIEW RECOMMENDED]" if flag else ""
+            report.append(f"{i}. {organ['organ'].upper()}{flag_str}")
+            report.append(f"   Predicted Severity : {organ['severity_name']} (Level {organ['severity']}/3)")
+            report.append(f"   Clinical Significance: {organ['description']}")
+            report.append(f"   Damage Score       : {organ['damage_score']:.3f} +/- {organ['damage_std']:.3f}")
+            report.append(f"   Confidence (mean p): {organ['confidence']:.1f}%")
+            report.append(f"   Uncertainty (std)  : {unc:.4f}  [{conf_label} confidence]")
             report.append("")
-    
+
     # Normal organs summary
     if len(normal_organs) > 0:
-        report.append(f"✅ NORMAL ORGAN SYSTEMS: {len(normal_organs)}")
+        report.append(f"NORMAL ORGAN SYSTEMS: {len(normal_organs)}")
         organ_list = ", ".join([o['organ'] for o in normal_organs[:10]])
         if len(normal_organs) > 10:
             organ_list += f" (and {len(normal_organs) - 10} more)"
@@ -325,25 +351,26 @@ def main():
     
     # Make predictions
     print("\n🔮 Step 4: Generating predictions...")
-    predictions, scores, confidences, organ_names = make_predictions(
+    predictions, scores, confidences, organ_names, uncertainties, damage_std = make_predictions(
         model, data_loader, new_patient_indices)
-    
+
     # Generate reports
-    print("\n📄 Step 5: Creating physician review reports...")
-    
+    print("\nStep 5: Creating physician review reports...")
+
     phase1_dir = os.path.join(OUTPUT_DIR, 'phase1_predictions')
     os.makedirs(phase1_dir, exist_ok=True)
-    
+
     all_predictions = []
-    
+
     for i, patient_idx in enumerate(new_patient_indices[:10]):  # First 10 patients
         patient_id = data_loader.patient_ids[patient_idx]
         patient_data = new_patients_df[new_patients_df['patient_id'] == patient_id]
-        
-        # Generate report
+
+        # Generate report with uncertainty
         report_text, affected_organs = generate_prediction_report(
-            patient_id, patient_data, predictions, scores, confidences, 
-            organ_names, patient_idx)
+            patient_id, patient_data, predictions, scores, confidences,
+            organ_names, patient_idx,
+            uncertainties=uncertainties, damage_std=damage_std)
         
         # Save report
         report_file = os.path.join(phase1_dir, f'phase1_patient_{patient_id}.txt')
