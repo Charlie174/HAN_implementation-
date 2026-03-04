@@ -1,0 +1,46 @@
+# OS
+.DS_Store
+*.textClipping
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.env
+venv/
+env/
+
+# Claude AI files (auto-generated, not part of project)
+CLAUDE.md
+.claude/
+
+# Model weights and checkpoints (too large for git)
+models_saved/
+*.pt
+*.pth
+*.ckpt
+
+# Output and experiment artifacts
+output/
+mlruns/
+
+# Papers and reading materials (not source code)
+Papers_read/
+Reports/
+
+# Compressed archives
+*.zip
+*.tar.gz
+
+# Notebooks with outputs (commit clean versions only)
+# notebooks/  -- allow but strip outputs manually
+
+# Data files (large, not source code)
+*.csv
+*.json
+!paper/references.bib
+!traditional_models/results/baseline_results.json
+!traditional_models/results/best_params.json
+
+# Logs (large)
+traditional_models/results/run_log.txt

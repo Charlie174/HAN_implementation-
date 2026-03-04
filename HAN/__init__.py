@@ -42,6 +42,13 @@ from .validation_metrics import (
     plot_training_metrics_enhanced
 )
 
+from .feature_schema import (
+    save_schema,
+    load_schema,
+    align_features,
+    print_schema_diff
+)
+
 __version__ = "1.0.0"
 __author__ = "Medical AI Research Team"
 
@@ -75,7 +82,13 @@ __all__ = [
     'adaptive_batch_size',
     'create_sparse_batches',
     
-    # Validation Metrics (NEW!)
+    # Validation Metrics
     'compute_accuracy',
-    'plot_training_metrics_enhanced'
+    'plot_training_metrics_enhanced',
+
+    # Feature Schema
+    'save_schema',
+    'load_schema',
+    'align_features',
+    'print_schema_diff',
 ]

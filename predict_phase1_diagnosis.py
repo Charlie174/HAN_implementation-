@@ -20,6 +20,7 @@ import pandas as pd
 import torch
 from datetime import datetime
 from HAN import MedicalGraphData, HANPP
+from HAN.feature_schema import load_schema, align_features, print_schema_diff
 
 # Configuration
 DEVICE = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
@@ -68,22 +69,24 @@ def load_trained_model(data_loader):
     model.to(DEVICE)
     model.eval()
     
-    # Handle feature dimension mismatch
+    # Handle feature dimension mismatch via schema-based alignment
+    schema_path = os.path.join(os.path.dirname(MODEL_PATH), "feature_schema.json")
     if data_loader.patient_feats.shape[1] != in_dim:
-        print(f"\n⚠️  Feature mismatch detected:")
-        print(f"   Model expects: {in_dim} features")
-        print(f"   Data contains: {data_loader.patient_feats.shape[1]} features")
-        
-        current_feats = data_loader.patient_feats
-        if current_feats.shape[1] < in_dim:
-            # Pad with zeros
-            padding = np.zeros((current_feats.shape[0], in_dim - current_feats.shape[1]))
-            data_loader.patient_feats = np.hstack([current_feats, padding])
-            print(f"   → Padded features to match model input")
+        print(f"\n⚠️  Feature mismatch: model={in_dim}, data={data_loader.patient_feats.shape[1]}")
+        if os.path.exists(schema_path):
+            print(f"   Loading feature schema: {schema_path}")
+            schema = load_schema(schema_path)
+            print_schema_diff(data_loader, schema)
+            data_loader.patient_feats = align_features(
+                data_loader.patient_feats, data_loader, schema
+            )
+            print(f"   ✅ Features aligned via schema: {data_loader.patient_feats.shape[1]} features")
         else:
-            # Truncate
-            data_loader.patient_feats = current_feats[:, :in_dim]
-            print(f"   → Truncated {current_feats.shape[1] - in_dim} extra features")
+            # Fallback: truncate (less accurate — run save_feature_schema.py to fix)
+            print(f"   ⚠️  No schema found at {schema_path}")
+            print(f"   ⚠️  Run save_feature_schema.py to generate schema for accurate alignment")
+            data_loader.patient_feats = data_loader.patient_feats[:, :in_dim]
+            print(f"   → Fell back to truncation (results may be inaccurate)")
     
     print(f"✅ Model loaded successfully!")
     print(f"   Model architecture:")
