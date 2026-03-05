@@ -12,6 +12,7 @@ from .conv import (
 
 from .model import (
     HANPP,
+    HANPP_Disease,
     HGT_HAN
 )
 
@@ -67,6 +68,7 @@ __all__ = [
     
     # Models
     'HANPP',
+    'HANPP_Disease',
     'HGT_HAN',
     
     # Data

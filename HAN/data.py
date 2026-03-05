@@ -106,10 +106,13 @@ class MedicalGraphData:
             'PatientID': 'PatientID',
             'report_date': 'ReportDate',
             'ReportDate': 'ReportDate',
+            'record_date': 'ReportDate',       # CareAI March dataset
             'test_name': 'TestName',
             'TestName': 'TestName',
+            'mapped_test_name': 'TestName',    # CareAI March dataset
             'test_value': 'TestValue',
             'TestValue': 'TestValue',
+            'value': 'TestValue',              # CareAI March dataset
             'date_of_birth': 'DateOfBirth',
             'DateOfBirth': 'DateOfBirth',
             'age_at_report': 'AgeAtReport',
@@ -303,12 +306,16 @@ class MedicalGraphData:
         patient_symptom_dev = np.clip(patient_symptom_dev, -3.0, 3.0) / 3.0
         
         # Combine features
+        # NOTE: patient_disease is intentionally EXCLUDED from features.
+        # Including it would create circular reasoning: auto-derived disease flags
+        # (computed from the same test thresholds) would trivially predict the labels.
+        # patient_disease is still computed and available for graph construction
+        # (e.g. disease nodes, disease_map), just not used as input features.
         self.patient_feats = np.concatenate([
-            patient_symptom_dev,
-            self.patient_organ_score,
-            self.patient_disease.astype(np.float32)
+            patient_symptom_dev,       # [P, S] — normalised test-value deviations
+            self.patient_organ_score,  # [P, O] — per-organ damage scores [0,1]
         ], axis=1)
-        
+
         print(f"Patient features shape: {self.patient_feats.shape}")
     
     def build_adjacency_matrices(self):
