@@ -1,0 +1,8 @@
+test_name,organ,disease,min,max
+1-Hour Plasma Glucose,pancreas,Diabetes,0.0,180.0
+24-Hour Urine Creatinine,renal_system,CKD,800.0,2000.0
+24-Hour Urine Protein,renal_system,CKD,0.0,150.0
+2-Hour Plasma Glucose,pancreas,Diabetes,0.0,140.0
+Activated Partial Thromboplastin Time (APTT),hematopoietic_system,Hematology_Disorder,30.0,40.0
+Alanine Aminotransferase (ALT / SGPT),liver_hepatobiliary_system,,7.0,56.0
+Albumin/Globulin Ratio,liver_hepatobiliary_system,,1.1,2.2

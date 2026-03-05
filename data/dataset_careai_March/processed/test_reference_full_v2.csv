@@ -1,0 +1,108 @@
+test_name,organ,disease,min,max
+1-Hour Plasma Glucose,pancreas,Diabetes,0.0,180.0
+24-Hour Urine Creatinine,renal_system,CKD,800.0,2000.0
+24-Hour Urine Protein,renal_system,CKD,0.0,150.0
+2-Hour Plasma Glucose,pancreas,Diabetes,0.0,140.0
+Activated Partial Thromboplastin Time (APTT),hematopoietic_system,Hematology_Disorder,30.0,40.0
+Alanine Aminotransferase (ALT / SGPT),liver_hepatobiliary_system,Liver_Disease,7.0,56.0
+Albumin/Globulin Ratio,liver_hepatobiliary_system,Liver_Disease,1.1,2.2
+Alkaline Phosphatase (ALP),liver_hepatobiliary_system,Liver_Disease,44.0,147.0
+Anti-Streptolysin O Titre (ASOT),inflammatory_system,Infection_Inflammation,0.0,200.0
+Aspartate Aminotransferase (AST / SGOT),liver_hepatobiliary_system,Liver_Disease,10.0,40.0
+Basophils (%),hematopoietic_system,Hematology_Disorder,0.0,1.0
+Basophils (Absolute),hematopoietic_system,Hematology_Disorder,0.0,0.1
+Beta-hCG,reproductive_system,Anemia,0.0,5.0
+Bleeding Time,platelet_system,Hematology_Disorder,2.0,7.0
+Blood Urea,renal_system,CKD,7.0,20.0
+CA-125,reproductive_system,Anemia,0.0,35.0
+Clotting Time,liver_hepatobiliary_system,Liver_Disease,5.0,11.0
+Corrected Serum Calcium,bone_and_minaral_metabolism,Electrolyte_Imbalance,8.6,10.2
+C-Reactive Protein (CRP),cardiovascular_system,Dyslipidemia,0.0,5.0
+Creatine Phosphokinase (CPK),cardiovascular_system,Dyslipidemia,42.5,152.5
+Direct Bilirubin,liver_hepatobiliary_system,Liver_Disease,0.0,0.3
+Eosinophils (%),hematopoietic_system,Hematology_Disorder,1.0,6.0
+Eosinophils (Absolute),hematopoietic_system,Hematology_Disorder,0.02,0.5
+Erythrocyte Sedimentation Rate (ESR),cardiovascular_system,Dyslipidemia,0.0,15.0
+Estimated Glomerular Filtration Rate (eGFR),renal_system,CKD,90.0,
+Fasting Plasma Glucose,pancreas,Diabetes,70.0,99.0
+Follicle Stimulating Hormone (FSH),reproductive_system,Anemia,2.25,11.2
+Free T3,thyroid_gland,Thyroid_Disorder,2.0,4.4
+Free T4,thyroid_gland,Thyroid_Disorder,0.8,1.8
+Gamma-Glutamyl Transferase (GGT),liver_hepatobiliary_system,Liver_Disease,6.5,48.5
+Glucose Challenge Test (GCT),pancreas,Diabetes,0.0,140.0
+HDL Cholesterol,cardiovascular_system,Dyslipidemia,45.0,80.0
+Hematocrit (PCV/HCT),hematopoietic_system,Hematology_Disorder,38.0,51.0
+Hemoglobin (Hb),hematopoietic_system,Hematology_Disorder,12.5,16.0
+Hemoglobin A1c (HbA1c),cardiovascular_system,Dyslipidemia,4.0,5.6
+Indirect Bilirubin,liver_hepatobiliary_system,Liver_Disease,0.2,0.8
+International Normalized Ratio (INR),liver_hepatobiliary_system,Liver_Disease,0.8,1.2
+Ionized Calcium,bone_and_minaral_metabolism,Electrolyte_Imbalance,1.12,1.32
+Lactate Dehydrogenase (LDH),cardiovascular_system,Dyslipidemia,140.0,280.0
+LDL Cholesterol,cardiovascular_system,Dyslipidemia,0.0,100.0
+LDL/HDL Ratio,cardiovascular_system,Dyslipidemia,0.0,3.5
+Luteinizing Hormone (LH),reproductive_system,Anemia,1.6,9.9
+Lymphocytes (%),hematopoietic_system,Hematology_Disorder,20.0,40.0
+Lymphocytes (Absolute),hematopoietic_system,Hematology_Disorder,1.0,3.0
+Mean Corpuscular Hemoglobin (MCH),hematopoietic_system,Hematology_Disorder,27.0,34.0
+Mean Corpuscular Hemoglobin Concentration (MCHC),hematopoietic_system,Hematology_Disorder,31.0,36.0
+Mean Corpuscular Volume (MCV),hematopoietic_system,Hematology_Disorder,80.0,100.0
+Mean Platelet Volume (MPV),hematopoietic_system,Hematology_Disorder,7.5,12.0
+Monocytes (%),hematopoietic_system,Hematology_Disorder,2.0,8.0
+Monocytes (Absolute),hematopoietic_system,Hematology_Disorder,80.0,100.0
+Neutrophils (%),hematopoietic_system,Hematology_Disorder,40.0,70.0
+Neutrophils (Absolute),hematopoietic_system,Hematology_Disorder,2.0,7.0
+Platelet Count,hematopoietic_system,Hematology_Disorder,150.0,450.0
+Platelet Distribution Width (PDW),hematopoietic_system,Hematology_Disorder,9.0,17.0
+Platelet Large Cell Count (P-LCC),hematopoietic_system,Hematology_Disorder,44.0,140.0
+Platelet Large Cell Ratio (P-LCR),hematopoietic_system,Hematology_Disorder,13.0,43.0
+Plateletcrit (PCT),hematopoietic_system,Hematology_Disorder,0.1,0.28
+Postprandial Plasma Glucose (PPBS),pancrese,Diabetes,70.0,140.0
+Prolactin,reproductive_system,Anemia,4.0,19.0
+Prostate-Specific Antigen (PSA),reproductive_system,Anemia,0.0,4.0
+Prothrombin Time (PT),liver_hepatobiliary_system,Liver_Disease,11.0,13.5
+PTH,bone_and_minaral_metabolism,Electrolyte_Imbalance,10.0,65.0
+Random Plasma Glucose,pancreas,Diabetes,0.0,140.0
+Red Blood Cell Count (RBC),hematopoietic_system,Hematology_Disorder,4.5,5.9
+Red Cell Distribution Width – CV (RDW-CV),hematopoietic_system,Hematology_Disorder,11.5,14.5
+Red Cell Distribution Width – SD (RDW-SD),hematopoietic_system,Hematology_Disorder,39.0,46.0
+Rheumatoid Factor (RF),inflammatory_system,Infection_Inflammation,0.0,14.0
+Serum Albumin,liver_hepatobiliary_system,Liver_Disease,3.4,5.4
+Serum Amylase,pancreas,Diabetes,23.0,85.0
+Serum Bicarbonate (HCO₃⁻),renal_system,CKD,22.0,29.0
+Serum Calcium,renal_system,CKD,8.5,10.5
+Serum Chloride,renal_system,CKD,98.0,106.0
+Serum Creatinine,renal_system,CKD,0.6,1.3
+Serum Globulin,liver_hepatobiliary_system,Liver_Disease,2.0,3.5
+Serum Ferritin,hematopoietic_system,Hematology_Disorder,22.5,300.0
+Serum Magnesium,renal_system,CKD,1.7,2.2
+Serum Phosphorus,renal_system,CKD,2.5,4.5
+Serum Potassium,renal_system,CKD,3.5,5.1
+Serum Sodium,renal_system,CKD,135.0,145.0
+Serum Urea,renal_system,CKD,15.0,40.0
+Serum Uric Acid,renal_system,CKD,2.9,6.5
+Thyroid Stimulating Hormone (TSH),thyroid_gland,Thyroid_Disorder,0.4,4.0
+Total Bilirubin,liver_hepatobiliary_system,Liver_Disease,0.2,1.2
+Total Cholesterol,cardiovascular_system,Dyslipidemia,0.0,200.0
+Total Cholesterol/HDL Ratio,cardiovascular_system,Dyslipidemia,0.0,5.0
+Total Protein,liver_hepatobiliary_system,Liver_Disease,6.0,8.3
+Triglycerides,cardiovascular_system,Dyslipidemia,0.0,150.0
+Urine Albumin,renal_system,CKD,0.0,30.0
+Urine Albumin-Creatinine Ratio (ACR),renal_system,CKD,0.0,30.0
+Urine Calcium,renal_system,CKD,100.0,300.0
+Urine Chloride,renal_system,CKD,110.0,250.0
+Urine Creatinine (Spot),renal_system,CKD,20.0,320.0
+Urine Microalbumin,renal_system,CKD,0.0,30.0
+Urine pH,renal_system,CKD,4.5,8.0
+Urine Potassium,renal_system,CKD,25.0,125.0
+Urine Protein (Spot),renal_system,CKD,0.0,150.0
+Urine Protein-Creatinine Ratio (UPCR),renal_system,CKD,0.0,150.0
+Urine Sodium,renal_system,CKD,40.0,220.0
+Urine Specific Gravity,urinary_tract,CKD,1.005,1.03
+Urine Urate,renal_system,CKD,250.0,750.0
+Urine Urate-to-Creatinine Ratio,renal_system,CKD,0.0,0.6
+Urine Volume,renal_system,CKD,800.0,2000.0
+Vitamin D,bone_and_minaral_metabolism,Electrolyte_Imbalance,30.0,100.0
+VLDL Cholesterol,cardiovascular_system,Dyslipidemia,5.0,40.0
+White Blood Cell Count (WBC),hematopoietic_system,Hematology_Disorder,4.0,11.0
+White Blood Cell Count (WBC) (%),hematopoietic_system,Hematology_Disorder,40.0,70.0
+Urine Calcium-Creatinine Ratio (UCCR),renal_system,CKD,0.0,0.14

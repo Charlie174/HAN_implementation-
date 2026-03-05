@@ -57,6 +57,22 @@ from .mc_dropout import (
     uncertainty_report_lines
 )
 
+from .test_recommender import (
+    load_test_reference,
+    detect_missing_tests,
+    recommend_tests_for_disease,
+    recommend_all,
+    format_patient_json,
+)
+
+from .inductive import (
+    build_disease_prototypes,
+    build_organ_prototypes,
+    find_prototype_neighbors,
+    inductive_predict,
+    compare_inference_modes,
+)
+
 __version__ = "1.0.0"
 __author__ = "Medical AI Research Team"
 
@@ -108,4 +124,18 @@ __all__ = [
 
     # Attention (conv)
     'PatientConditionedSemanticAttention',
+
+    # Test Recommender
+    'load_test_reference',
+    'detect_missing_tests',
+    'recommend_tests_for_disease',
+    'recommend_all',
+    'format_patient_json',
+
+    # Inductive Inference
+    'build_disease_prototypes',
+    'build_organ_prototypes',
+    'find_prototype_neighbors',
+    'inductive_predict',
+    'compare_inference_modes',
 ]
