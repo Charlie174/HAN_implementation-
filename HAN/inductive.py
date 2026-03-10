@@ -35,6 +35,32 @@ import torch
 import torch.nn.functional as F
 import numpy as np
 from collections import defaultdict
+from contextlib import contextmanager
+
+
+@contextmanager
+def _no_precomputed_neighbors(model):
+    """
+    Temporarily disable pre-set vectorized neighbor tensors on all node_atts.
+
+    NodeLevelAttentionImproved._forward_vectorized uses self.neighbor_idx which
+    holds global training-set indices. When running on a mini-graph (e.g. new
+    patient + prototype neighbours), those global indices are out of bounds.
+
+    This context manager sets neighbor_idx/mask to None so the fallback
+    dict-based _forward_loop path is used instead.
+    """
+    saved = []
+    for layer in model.node_atts:
+        saved.append((layer.neighbor_idx, layer.neighbor_mask))
+        layer.neighbor_idx = None
+        layer.neighbor_mask = None
+    try:
+        yield
+    finally:
+        for layer, (idx, mask) in zip(model.node_atts, saved):
+            layer.neighbor_idx = idx
+            layer.neighbor_mask = mask
 
 
 # ── Prototype Building ────────────────────────────────────────────────────────
@@ -330,9 +356,12 @@ def inductive_predict(model,
     feats_t = torch.from_numpy(feats).to(device)    # [1, in_dim]
 
     # ── Step 1: Get initial embedding (MLP pass without neighbours) ──────────
+    # Must disable pre-set neighbors: they hold global training indices which
+    # are out-of-bounds for a single-patient feature matrix.
     model.eval()
     empty_nbr = {name: {} for name in model.metapath_names}
-    _, z_new, _ = model(feats_t, empty_nbr)
+    with _no_precomputed_neighbors(model):
+        _, z_new, _ = model(feats_t, empty_nbr)
     z_new_single = z_new[0]    # [out_dim]
 
     # ── Step 2: Build approximate neighbours ─────────────────────────────────
@@ -400,10 +429,12 @@ def inductive_predict(model,
         mini_nbr = empty_nbr
 
     # ── Step 3: MC Dropout passes ─────────────────────────────────────────────
+    # Disable pre-set neighbors: mini_feats_t is a small [1+k, in_dim] tensor,
+    # not the full training graph — global indices would be out of bounds.
     model.train()   # enable dropout
     all_probs = []
 
-    with torch.no_grad():
+    with _no_precomputed_neighbors(model), torch.no_grad():
         for _ in range(n_mc_samples):
             logits, _, _ = model(mini_feats_t, mini_nbr)
             prob = torch.sigmoid(logits[0])    # [num_diseases]
@@ -498,19 +529,16 @@ def compare_inference_modes(model, feats_np, labels_np, test_indices,
             true_labels = labels_np[pidx]    # [D]
 
             if mode == 'transductive':
-                # Use the actual training neighbours
-                nbr = {name: {0: nbr_dicts_full[name].get(pidx, [])}
-                       for name in model.metapath_names}
-                feats_t = torch.from_numpy(
-                    np.atleast_2d(feats_np[pidx]).astype(np.float32)
-                ).to(device)
-                # MC passes
+                # Run on full feature matrix so pre-set neighbor_idx (global indices)
+                # are valid. Extract the target patient's logits.
+                feats_full_t = torch.from_numpy(feats_np.astype(np.float32)).to(device)
+                empty = {name: {} for name in model.metapath_names}
                 model.train()
                 probs_list = []
                 with torch.no_grad():
                     for _ in range(n_mc_samples):
-                        logits, _, _ = model(feats_t, nbr)
-                        probs_list.append(torch.sigmoid(logits[0]).cpu())
+                        logits, _, _ = model(feats_full_t, empty)
+                        probs_list.append(torch.sigmoid(logits[pidx]).cpu())
                 model.eval()
                 mean_p = torch.stack(probs_list).mean(0).numpy()
 
@@ -519,7 +547,7 @@ def compare_inference_modes(model, feats_np, labels_np, test_indices,
                     model=model,
                     new_patient_feats=feats_np[pidx],
                     prototypes=prototypes,
-                    z_train=feats_np,   # pass raw feats for neighbour feature extraction
+                    z_train=feats_np,
                     labels_np=labels_np,
                     disease_order=disease_order,
                     opt_thresholds=opt_thresholds,
@@ -529,14 +557,15 @@ def compare_inference_modes(model, feats_np, labels_np, test_indices,
                 )
                 mean_p = np.array([result['disease_probs'][d] for d in disease_order])
 
-            else:  # mlp_only
+            else:  # mlp_only — single patient, no neighbours
                 feats_t = torch.from_numpy(
                     np.atleast_2d(feats_np[pidx]).astype(np.float32)
                 ).to(device)
                 empty = {name: {} for name in model.metapath_names}
                 model.train()
                 probs_list = []
-                with torch.no_grad():
+                # Disable pre-set neighbors: single-patient tensor is out of bounds
+                with _no_precomputed_neighbors(model), torch.no_grad():
                     for _ in range(n_mc_samples):
                         logits, _, _ = model(feats_t, empty)
                         probs_list.append(torch.sigmoid(logits[0]).cpu())

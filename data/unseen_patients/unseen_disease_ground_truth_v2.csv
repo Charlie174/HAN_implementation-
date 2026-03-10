@@ -1,0 +1,21 @@
+patient_id,profile_type,Anemia,CKD,Diabetes,Dyslipidemia,Electrolyte_Imbalance,Hematology_Disorder,Infection_Inflammation,Liver_Disease,Thyroid_Disorder,notes
+UP_H001,healthy,0,0,0,0,0,0,0,0,0,none
+UP_H002,healthy,0,0,0,0,0,0,0,0,0,none
+UP_H003,healthy,0,0,0,0,0,0,0,0,0,none
+UP_H004,healthy,0,0,0,0,0,0,0,0,0,none
+UP_H005,healthy,0,0,0,0,0,0,0,0,0,none
+UP_M001,mild,0,1,0,0,1,0,0,0,0,"CKD, Electrolyte_Imbalance"
+UP_M002,mild,0,0,0,0,0,0,0,1,0,Liver_Disease
+UP_M003,mild,0,0,0,1,0,0,0,0,0,Dyslipidemia
+UP_M004,mild,0,0,1,0,0,0,0,0,0,Diabetes
+UP_M005,mild,0,0,0,0,0,0,0,0,1,Thyroid_Disorder
+UP_D001,moderate,0,1,0,1,1,0,0,0,0,"CKD, Dyslipidemia, Electrolyte_Imbalance"
+UP_D002,moderate,0,0,1,0,0,0,0,1,0,"Liver_Disease, Diabetes"
+UP_D003,moderate,1,0,0,0,0,1,1,0,0,"Anemia, Hematology_Disorder, Infection_Inflammation"
+UP_D004,moderate,0,1,0,0,1,0,0,0,1,"CKD, Electrolyte_Imbalance, Thyroid_Disorder"
+UP_D005,moderate,0,0,0,1,0,0,0,1,0,"Dyslipidemia, Liver_Disease"
+UP_S001,severe,1,1,0,1,1,0,0,0,0,"CKD, Dyslipidemia, Electrolyte_Imbalance, Anemia"
+UP_S002,severe,0,0,1,0,0,0,1,1,0,"Liver_Disease, Diabetes, Infection_Inflammation"
+UP_S003,severe,1,1,0,0,1,0,0,1,1,"CKD, Liver_Disease, Thyroid_Disorder, Anemia, Electrolyte_Imbalance"
+UP_C001,mixed,0,1,1,1,1,0,0,0,0,"CKD, Diabetes, Dyslipidemia, Electrolyte_Imbalance"
+UP_C002,mixed,1,0,0,0,0,1,0,1,1,"Liver_Disease, Anemia, Hematology_Disorder, Thyroid_Disorder"

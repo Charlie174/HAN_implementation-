@@ -1,0 +1,882 @@
+{
+  "disease_order": [
+    "Anemia",
+    "CKD",
+    "Diabetes",
+    "Dyslipidemia",
+    "Electrolyte_Imbalance",
+    "Hematology_Disorder",
+    "Infection_Inflammation",
+    "Liver_Disease",
+    "Thyroid_Disorder"
+  ],
+  "opt_thresholds": {
+    "Anemia": 0.63,
+    "CKD": 0.51,
+    "Diabetes": 0.6,
+    "Dyslipidemia": 0.56,
+    "Electrolyte_Imbalance": 0.59,
+    "Hematology_Disorder": 0.63,
+    "Infection_Inflammation": 0.5,
+    "Liver_Disease": 0.55,
+    "Thyroid_Disorder": 0.5
+  },
+  "symptom_map": {
+    "1-Hour Plasma Glucose": 0,
+    "2 Hrs After LunchPlasma Glucose": 1,
+    "2-Hour Plasma Glucose": 2,
+    "24-Hour Urine Protein": 3,
+    "Activated Partial Thromboplastin Time (APTT)": 4,
+    "Alanine Aminotransferase (ALT / SGPT)": 5,
+    "Albumin/Globulin Ratio": 6,
+    "Alkaline Phosphatase (ALP)": 7,
+    "Anti-Streptolysin O Titre (ASOT)": 8,
+    "Aspartate Aminotransferase (AST / SGOT)": 9,
+    "Basophils (%)": 10,
+    "Basophils (Absolute)": 11,
+    "Beta-hCG": 12,
+    "Bleeding Time": 13,
+    "Blood Urea": 14,
+    "C-Reactive Protein (CRP)": 15,
+    "CA-125": 16,
+    "Clotting Time": 17,
+    "Comment Value": 18,
+    "Corrected Serum Calcium": 19,
+    "Creatine Phosphokinase (CPK)": 20,
+    "Direct Bilirubin": 21,
+    "Eosinophils (%)": 22,
+    "Eosinophils (Absolute)": 23,
+    "Erythrocyte Sedimentation Rate (ESR)": 24,
+    "Estimated Glomerular Filtration Rate (eGFR)": 25,
+    "Fasting Plasma Glucose": 26,
+    "Follicle Stimulating Hormone (FSH)": 27,
+    "Free T3": 28,
+    "Free T4": 29,
+    "Gamma-Glutamyl Transferase (GGT)": 30,
+    "Glucose Challenge Test (GCT)": 31,
+    "HDL Cholesterol": 32,
+    "Hematocrit (PCV/HCT)": 33,
+    "Hemoglobin (Hb)": 34,
+    "Hemoglobin A1c (HbA1c)": 35,
+    "Indirect Bilirubin": 36,
+    "International Normalized Ratio (INR)": 37,
+    "Ionized Calcium": 38,
+    "LDL Cholesterol": 39,
+    "LDL/HDL Ratio": 40,
+    "Lactate Dehydrogenase (LDH)": 41,
+    "Luteinizing Hormone (LH)": 42,
+    "Lymphocytes (%)": 43,
+    "Lymphocytes (Absolute)": 44,
+    "Mean Corpuscular Hemoglobin (MCH)": 45,
+    "Mean Corpuscular Hemoglobin Concentration (MCHC)": 46,
+    "Mean Corpuscular Volume (MCV)": 47,
+    "Mean Platelet Volume (MPV)": 48,
+    "Monocytes (%)": 49,
+    "Monocytes (Absolute)": 50,
+    "Neutrophils (%)": 51,
+    "Neutrophils (Absolute)": 52,
+    "Platelet Count": 53,
+    "Platelet Distribution Width (PDW)": 54,
+    "Platelet Large Cell Count (P-LCC)": 55,
+    "Platelet Large Cell Ratio (P-LCR)": 56,
+    "Plateletcrit (PCT)": 57,
+    "Postprandial Plasma Glucose (PPBS)": 58,
+    "Prolactin": 59,
+    "Prostate-Specific Antigen (PSA)": 60,
+    "Prothrombin Time (PT)": 61,
+    "RETICULOCYTE COUNT": 62,
+    "Random Plasma Glucose": 63,
+    "Red Blood Cell Count (RBC)": 64,
+    "Red Cell Distribution Width \u2013 CV (RDW-CV)": 65,
+    "Red Cell Distribution Width \u2013 SD (RDW-SD)": 66,
+    "Result Value": 67,
+    "Result value": 68,
+    "Rheumatoid Factor (RF)": 69,
+    "Serum Albumin": 70,
+    "Serum Amylase": 71,
+    "Serum Bicarbonate (HCO\u2083\u207b)": 72,
+    "Serum Calcium": 73,
+    "Serum Chloride": 74,
+    "Serum Creatinine": 75,
+    "Serum Ferritin": 76,
+    "Serum Globulin": 77,
+    "Serum Magnesium": 78,
+    "Serum Phosphorus": 79,
+    "Serum Potassium": 80,
+    "Serum Sodium": 81,
+    "Serum Urea": 82,
+    "Serum Uric Acid": 83,
+    "Thyroid Stimulating Hormone (TSH)": 84,
+    "Total Bilirubin": 85,
+    "Total Cholesterol": 86,
+    "Total Cholesterol/HDL Ratio": 87,
+    "Total Protein": 88,
+    "Triglycerides": 89,
+    "Urine Albumin-Creatinine Ratio (ACR)": 90,
+    "Urine Calcium": 91,
+    "Urine Calcium-Creatinine Ratio (UCCR)": 92,
+    "Urine Chloride": 93,
+    "Urine Creatinine (Spot)": 94,
+    "Urine Microalbumin": 95,
+    "Urine Potassium": 96,
+    "Urine Protein (Spot)": 97,
+    "Urine Protein-Creatinine Ratio (UPCR)": 98,
+    "Urine Sodium": 99,
+    "Urine Specific Gravity": 100,
+    "Urine Urate": 101,
+    "Urine Urate-to-Creatinine Ratio": 102,
+    "Urine Volume": 103,
+    "Urine pH": 104,
+    "VLDL Cholesterol": 105,
+    "White Blood Cell Count (WBC)": 106,
+    "White Blood Cell Count (WBC) (%)": 107
+  },
+  "organ_map": {
+    "bone_and_minaral_metabolism": 0,
+    "cardiovascular_system": 1,
+    "hematopoietic_system": 2,
+    "inflammatory_system": 3,
+    "liver_hepatobiliary_system": 4,
+    "pancreas": 5,
+    "pancrese": 6,
+    "platelet_system": 7,
+    "renal_system": 8,
+    "reproductive_system": 9,
+    "thyroid_gland": 10,
+    "urinary_tract": 11
+  },
+  "symptom_meta": {
+    "1-Hour Plasma Glucose": {
+      "most_relevant_disease": "Diabetes",
+      "organ": "pancreas",
+      "normal_low": 0.0,
+      "normal_high": 180.0,
+      "units": null
+    },
+    "24-Hour Urine Protein": {
+      "most_relevant_disease": "CKD",
+      "organ": "renal_system",
+      "normal_low": 0.0,
+      "normal_high": 150.0,
+      "units": null
+    },
+    "2-Hour Plasma Glucose": {
+      "most_relevant_disease": "Diabetes",
+      "organ": "pancreas",
+      "normal_low": 0.0,
+      "normal_high": 140.0,
+      "units": null
+    },
+    "Activated Partial Thromboplastin Time (APTT)": {
+      "most_relevant_disease": "Hematology_Disorder",
+      "organ": "hematopoietic_system",
+      "normal_low": 30.0,
+      "normal_high": 40.0,
+      "units": null
+    },
+    "Alanine Aminotransferase (ALT / SGPT)": {
+      "most_relevant_disease": "Liver_Disease",
+      "organ": "liver_hepatobiliary_system",
+      "normal_low": 7.0,
+      "normal_high": 56.0,
+      "units": null
+    },
+    "Albumin/Globulin Ratio": {
+      "most_relevant_disease": "Liver_Disease",
+      "organ": "liver_hepatobiliary_system",
+      "normal_low": 1.1,
+      "normal_high": 2.2,
+      "units": null
+    },
+    "Alkaline Phosphatase (ALP)": {
+      "most_relevant_disease": "Liver_Disease",
+      "organ": "liver_hepatobiliary_system",
+      "normal_low": 44.0,
+      "normal_high": 147.0,
+      "units": null
+    },
+    "Anti-Streptolysin O Titre (ASOT)": {
+      "most_relevant_disease": "Infection_Inflammation",
+      "organ": "inflammatory_system",
+      "normal_low": 0.0,
+      "normal_high": 200.0,
+      "units": null
+    },
+    "Aspartate Aminotransferase (AST / SGOT)": {
+      "most_relevant_disease": "Liver_Disease",
+      "organ": "liver_hepatobiliary_system",
+      "normal_low": 10.0,
+      "normal_high": 40.0,
+      "units": null
+    },
+    "Basophils (%)": {
+      "most_relevant_disease": "Hematology_Disorder",
+      "organ": "hematopoietic_system",
+      "normal_low": 0.0,
+      "normal_high": 1.0,
+      "units": null
+    },
+    "Basophils (Absolute)": {
+      "most_relevant_disease": "Hematology_Disorder",
+      "organ": "hematopoietic_system",
+      "normal_low": 0.0,
+      "normal_high": 0.1,
+      "units": null
+    },
+    "Beta-hCG": {
+      "most_relevant_disease": "Anemia",
+      "organ": "reproductive_system",
+      "normal_low": 0.0,
+      "normal_high": 5.0,
+      "units": null
+    },
+    "Bleeding Time": {
+      "most_relevant_disease": "Hematology_Disorder",
+      "organ": "platelet_system",
+      "normal_low": 2.0,
+      "normal_high": 7.0,
+      "units": null
+    },
+    "Blood Urea": {
+      "most_relevant_disease": "CKD",
+      "organ": "renal_system",
+      "normal_low": 7.0,
+      "normal_high": 20.0,
+      "units": null
+    },
+    "CA-125": {
+      "most_relevant_disease": "Anemia",
+      "organ": "reproductive_system",
+      "normal_low": 0.0,
+      "normal_high": 35.0,
+      "units": null
+    },
+    "Clotting Time": {
+      "most_relevant_disease": "Liver_Disease",
+      "organ": "liver_hepatobiliary_system",
+      "normal_low": 5.0,
+      "normal_high": 11.0,
+      "units": null
+    },
+    "Corrected Serum Calcium": {
+      "most_relevant_disease": "Electrolyte_Imbalance",
+      "organ": "bone_and_minaral_metabolism",
+      "normal_low": 8.6,
+      "normal_high": 10.2,
+      "units": null
+    },
+    "C-Reactive Protein (CRP)": {
+      "most_relevant_disease": "Dyslipidemia",
+      "organ": "cardiovascular_system",
+      "normal_low": 0.0,
+      "normal_high": 5.0,
+      "units": null
+    },
+    "Creatine Phosphokinase (CPK)": {
+      "most_relevant_disease": "Dyslipidemia",
+      "organ": "cardiovascular_system",
+      "normal_low": 42.5,
+      "normal_high": 152.5,
+      "units": null
+    },
+    "Direct Bilirubin": {
+      "most_relevant_disease": "Liver_Disease",
+      "organ": "liver_hepatobiliary_system",
+      "normal_low": 0.0,
+      "normal_high": 0.3,
+      "units": null
+    },
+    "Eosinophils (%)": {
+      "most_relevant_disease": "Hematology_Disorder",
+      "organ": "hematopoietic_system",
+      "normal_low": 1.0,
+      "normal_high": 6.0,
+      "units": null
+    },
+    "Eosinophils (Absolute)": {
+      "most_relevant_disease": "Hematology_Disorder",
+      "organ": "hematopoietic_system",
+      "normal_low": 0.02,
+      "normal_high": 0.5,
+      "units": null
+    },
+    "Erythrocyte Sedimentation Rate (ESR)": {
+      "most_relevant_disease": "Dyslipidemia",
+      "organ": "cardiovascular_system",
+      "normal_low": 0.0,
+      "normal_high": 15.0,
+      "units": null
+    },
+    "Estimated Glomerular Filtration Rate (eGFR)": {
+      "most_relevant_disease": "CKD",
+      "organ": "renal_system",
+      "normal_low": null,
+      "normal_high": null,
+      "units": null
+    },
+    "Fasting Plasma Glucose": {
+      "most_relevant_disease": "Diabetes",
+      "organ": "pancreas",
+      "normal_low": 70.0,
+      "normal_high": 99.0,
+      "units": null
+    },
+    "Follicle Stimulating Hormone (FSH)": {
+      "most_relevant_disease": "Anemia",
+      "organ": "reproductive_system",
+      "normal_low": 2.25,
+      "normal_high": 11.2,
+      "units": null
+    },
+    "Free T3": {
+      "most_relevant_disease": "Thyroid_Disorder",
+      "organ": "thyroid_gland",
+      "normal_low": 2.0,
+      "normal_high": 4.4,
+      "units": null
+    },
+    "Free T4": {
+      "most_relevant_disease": "Thyroid_Disorder",
+      "organ": "thyroid_gland",
+      "normal_low": 0.8,
+      "normal_high": 1.8,
+      "units": null
+    },
+    "Gamma-Glutamyl Transferase (GGT)": {
+      "most_relevant_disease": "Liver_Disease",
+      "organ": "liver_hepatobiliary_system",
+      "normal_low": 6.5,
+      "normal_high": 48.5,
+      "units": null
+    },
+    "Glucose Challenge Test (GCT)": {
+      "most_relevant_disease": "Diabetes",
+      "organ": "pancreas",
+      "normal_low": 0.0,
+      "normal_high": 140.0,
+      "units": null
+    },
+    "HDL Cholesterol": {
+      "most_relevant_disease": "Dyslipidemia",
+      "organ": "cardiovascular_system",
+      "normal_low": 45.0,
+      "normal_high": 80.0,
+      "units": null
+    },
+    "Hematocrit (PCV/HCT)": {
+      "most_relevant_disease": "Hematology_Disorder",
+      "organ": "hematopoietic_system",
+      "normal_low": 38.0,
+      "normal_high": 51.0,
+      "units": null
+    },
+    "Hemoglobin (Hb)": {
+      "most_relevant_disease": "Hematology_Disorder",
+      "organ": "hematopoietic_system",
+      "normal_low": 12.5,
+      "normal_high": 16.0,
+      "units": null
+    },
+    "Hemoglobin A1c (HbA1c)": {
+      "most_relevant_disease": "Dyslipidemia",
+      "organ": "cardiovascular_system",
+      "normal_low": 4.0,
+      "normal_high": 5.6,
+      "units": null
+    },
+    "Indirect Bilirubin": {
+      "most_relevant_disease": "Liver_Disease",
+      "organ": "liver_hepatobiliary_system",
+      "normal_low": 0.2,
+      "normal_high": 0.8,
+      "units": null
+    },
+    "International Normalized Ratio (INR)": {
+      "most_relevant_disease": "Liver_Disease",
+      "organ": "liver_hepatobiliary_system",
+      "normal_low": 0.8,
+      "normal_high": 1.2,
+      "units": null
+    },
+    "Ionized Calcium": {
+      "most_relevant_disease": "Electrolyte_Imbalance",
+      "organ": "bone_and_minaral_metabolism",
+      "normal_low": 1.12,
+      "normal_high": 1.32,
+      "units": null
+    },
+    "Lactate Dehydrogenase (LDH)": {
+      "most_relevant_disease": "Dyslipidemia",
+      "organ": "cardiovascular_system",
+      "normal_low": 140.0,
+      "normal_high": 280.0,
+      "units": null
+    },
+    "LDL Cholesterol": {
+      "most_relevant_disease": "Dyslipidemia",
+      "organ": "cardiovascular_system",
+      "normal_low": 0.0,
+      "normal_high": 100.0,
+      "units": null
+    },
+    "LDL/HDL Ratio": {
+      "most_relevant_disease": "Dyslipidemia",
+      "organ": "cardiovascular_system",
+      "normal_low": 0.0,
+      "normal_high": 3.5,
+      "units": null
+    },
+    "Luteinizing Hormone (LH)": {
+      "most_relevant_disease": "Anemia",
+      "organ": "reproductive_system",
+      "normal_low": 1.6,
+      "normal_high": 9.9,
+      "units": null
+    },
+    "Lymphocytes (%)": {
+      "most_relevant_disease": "Hematology_Disorder",
+      "organ": "hematopoietic_system",
+      "normal_low": 20.0,
+      "normal_high": 40.0,
+      "units": null
+    },
+    "Lymphocytes (Absolute)": {
+      "most_relevant_disease": "Hematology_Disorder",
+      "organ": "hematopoietic_system",
+      "normal_low": 1.0,
+      "normal_high": 3.0,
+      "units": null
+    },
+    "Mean Corpuscular Hemoglobin (MCH)": {
+      "most_relevant_disease": "Hematology_Disorder",
+      "organ": "hematopoietic_system",
+      "normal_low": 27.0,
+      "normal_high": 34.0,
+      "units": null
+    },
+    "Mean Corpuscular Hemoglobin Concentration (MCHC)": {
+      "most_relevant_disease": "Hematology_Disorder",
+      "organ": "hematopoietic_system",
+      "normal_low": 31.0,
+      "normal_high": 36.0,
+      "units": null
+    },
+    "Mean Corpuscular Volume (MCV)": {
+      "most_relevant_disease": "Hematology_Disorder",
+      "organ": "hematopoietic_system",
+      "normal_low": 80.0,
+      "normal_high": 100.0,
+      "units": null
+    },
+    "Mean Platelet Volume (MPV)": {
+      "most_relevant_disease": "Hematology_Disorder",
+      "organ": "hematopoietic_system",
+      "normal_low": 7.5,
+      "normal_high": 12.0,
+      "units": null
+    },
+    "Monocytes (%)": {
+      "most_relevant_disease": "Hematology_Disorder",
+      "organ": "hematopoietic_system",
+      "normal_low": 2.0,
+      "normal_high": 8.0,
+      "units": null
+    },
+    "Monocytes (Absolute)": {
+      "most_relevant_disease": "Hematology_Disorder",
+      "organ": "hematopoietic_system",
+      "normal_low": 80.0,
+      "normal_high": 100.0,
+      "units": null
+    },
+    "Neutrophils (%)": {
+      "most_relevant_disease": "Hematology_Disorder",
+      "organ": "hematopoietic_system",
+      "normal_low": 40.0,
+      "normal_high": 70.0,
+      "units": null
+    },
+    "Neutrophils (Absolute)": {
+      "most_relevant_disease": "Hematology_Disorder",
+      "organ": "hematopoietic_system",
+      "normal_low": 2.0,
+      "normal_high": 7.0,
+      "units": null
+    },
+    "Platelet Count": {
+      "most_relevant_disease": "Hematology_Disorder",
+      "organ": "hematopoietic_system",
+      "normal_low": 150.0,
+      "normal_high": 450.0,
+      "units": null
+    },
+    "Platelet Distribution Width (PDW)": {
+      "most_relevant_disease": "Hematology_Disorder",
+      "organ": "hematopoietic_system",
+      "normal_low": 9.0,
+      "normal_high": 17.0,
+      "units": null
+    },
+    "Platelet Large Cell Count (P-LCC)": {
+      "most_relevant_disease": "Hematology_Disorder",
+      "organ": "hematopoietic_system",
+      "normal_low": 44.0,
+      "normal_high": 140.0,
+      "units": null
+    },
+    "Platelet Large Cell Ratio (P-LCR)": {
+      "most_relevant_disease": "Hematology_Disorder",
+      "organ": "hematopoietic_system",
+      "normal_low": 13.0,
+      "normal_high": 43.0,
+      "units": null
+    },
+    "Plateletcrit (PCT)": {
+      "most_relevant_disease": "Hematology_Disorder",
+      "organ": "hematopoietic_system",
+      "normal_low": 0.1,
+      "normal_high": 0.28,
+      "units": null
+    },
+    "Postprandial Plasma Glucose (PPBS)": {
+      "most_relevant_disease": "Diabetes",
+      "organ": "pancrese",
+      "normal_low": 70.0,
+      "normal_high": 140.0,
+      "units": null
+    },
+    "Prolactin": {
+      "most_relevant_disease": "Anemia",
+      "organ": "reproductive_system",
+      "normal_low": 4.0,
+      "normal_high": 19.0,
+      "units": null
+    },
+    "Prostate-Specific Antigen (PSA)": {
+      "most_relevant_disease": "Anemia",
+      "organ": "reproductive_system",
+      "normal_low": 0.0,
+      "normal_high": 4.0,
+      "units": null
+    },
+    "Prothrombin Time (PT)": {
+      "most_relevant_disease": "Liver_Disease",
+      "organ": "liver_hepatobiliary_system",
+      "normal_low": 11.0,
+      "normal_high": 13.5,
+      "units": null
+    },
+    "Random Plasma Glucose": {
+      "most_relevant_disease": "Diabetes",
+      "organ": "pancreas",
+      "normal_low": 0.0,
+      "normal_high": 140.0,
+      "units": null
+    },
+    "Red Blood Cell Count (RBC)": {
+      "most_relevant_disease": "Hematology_Disorder",
+      "organ": "hematopoietic_system",
+      "normal_low": 4.5,
+      "normal_high": 5.9,
+      "units": null
+    },
+    "Red Cell Distribution Width \u2013 CV (RDW-CV)": {
+      "most_relevant_disease": "Hematology_Disorder",
+      "organ": "hematopoietic_system",
+      "normal_low": 11.5,
+      "normal_high": 14.5,
+      "units": null
+    },
+    "Red Cell Distribution Width \u2013 SD (RDW-SD)": {
+      "most_relevant_disease": "Hematology_Disorder",
+      "organ": "hematopoietic_system",
+      "normal_low": 39.0,
+      "normal_high": 46.0,
+      "units": null
+    },
+    "Rheumatoid Factor (RF)": {
+      "most_relevant_disease": "Infection_Inflammation",
+      "organ": "inflammatory_system",
+      "normal_low": 0.0,
+      "normal_high": 14.0,
+      "units": null
+    },
+    "Serum Albumin": {
+      "most_relevant_disease": "Liver_Disease",
+      "organ": "liver_hepatobiliary_system",
+      "normal_low": 3.4,
+      "normal_high": 5.4,
+      "units": null
+    },
+    "Serum Amylase": {
+      "most_relevant_disease": "Diabetes",
+      "organ": "pancreas",
+      "normal_low": 23.0,
+      "normal_high": 85.0,
+      "units": null
+    },
+    "Serum Bicarbonate (HCO\u2083\u207b)": {
+      "most_relevant_disease": "CKD",
+      "organ": "renal_system",
+      "normal_low": 22.0,
+      "normal_high": 29.0,
+      "units": null
+    },
+    "Serum Calcium": {
+      "most_relevant_disease": "CKD",
+      "organ": "renal_system",
+      "normal_low": 8.5,
+      "normal_high": 10.5,
+      "units": null
+    },
+    "Serum Chloride": {
+      "most_relevant_disease": "CKD",
+      "organ": "renal_system",
+      "normal_low": 98.0,
+      "normal_high": 106.0,
+      "units": null
+    },
+    "Serum Creatinine": {
+      "most_relevant_disease": "CKD",
+      "organ": "renal_system",
+      "normal_low": 0.6,
+      "normal_high": 1.3,
+      "units": null
+    },
+    "Serum Globulin": {
+      "most_relevant_disease": "Liver_Disease",
+      "organ": "liver_hepatobiliary_system",
+      "normal_low": 2.0,
+      "normal_high": 3.5,
+      "units": null
+    },
+    "Serum Ferritin": {
+      "most_relevant_disease": "Hematology_Disorder",
+      "organ": "hematopoietic_system",
+      "normal_low": 22.5,
+      "normal_high": 300.0,
+      "units": null
+    },
+    "Serum Magnesium": {
+      "most_relevant_disease": "CKD",
+      "organ": "renal_system",
+      "normal_low": 1.7,
+      "normal_high": 2.2,
+      "units": null
+    },
+    "Serum Phosphorus": {
+      "most_relevant_disease": "CKD",
+      "organ": "renal_system",
+      "normal_low": 2.5,
+      "normal_high": 4.5,
+      "units": null
+    },
+    "Serum Potassium": {
+      "most_relevant_disease": "CKD",
+      "organ": "renal_system",
+      "normal_low": 3.5,
+      "normal_high": 5.1,
+      "units": null
+    },
+    "Serum Sodium": {
+      "most_relevant_disease": "CKD",
+      "organ": "renal_system",
+      "normal_low": 135.0,
+      "normal_high": 145.0,
+      "units": null
+    },
+    "Serum Urea": {
+      "most_relevant_disease": "CKD",
+      "organ": "renal_system",
+      "normal_low": 15.0,
+      "normal_high": 40.0,
+      "units": null
+    },
+    "Serum Uric Acid": {
+      "most_relevant_disease": "CKD",
+      "organ": "renal_system",
+      "normal_low": 2.9,
+      "normal_high": 6.5,
+      "units": null
+    },
+    "Thyroid Stimulating Hormone (TSH)": {
+      "most_relevant_disease": "Thyroid_Disorder",
+      "organ": "thyroid_gland",
+      "normal_low": 0.4,
+      "normal_high": 4.0,
+      "units": null
+    },
+    "Total Bilirubin": {
+      "most_relevant_disease": "Liver_Disease",
+      "organ": "liver_hepatobiliary_system",
+      "normal_low": 0.2,
+      "normal_high": 1.2,
+      "units": null
+    },
+    "Total Cholesterol": {
+      "most_relevant_disease": "Dyslipidemia",
+      "organ": "cardiovascular_system",
+      "normal_low": 0.0,
+      "normal_high": 200.0,
+      "units": null
+    },
+    "Total Cholesterol/HDL Ratio": {
+      "most_relevant_disease": "Dyslipidemia",
+      "organ": "cardiovascular_system",
+      "normal_low": 0.0,
+      "normal_high": 5.0,
+      "units": null
+    },
+    "Total Protein": {
+      "most_relevant_disease": "Liver_Disease",
+      "organ": "liver_hepatobiliary_system",
+      "normal_low": 6.0,
+      "normal_high": 8.3,
+      "units": null
+    },
+    "Triglycerides": {
+      "most_relevant_disease": "Dyslipidemia",
+      "organ": "cardiovascular_system",
+      "normal_low": 0.0,
+      "normal_high": 150.0,
+      "units": null
+    },
+    "Urine Albumin-Creatinine Ratio (ACR)": {
+      "most_relevant_disease": "CKD",
+      "organ": "renal_system",
+      "normal_low": 0.0,
+      "normal_high": 30.0,
+      "units": null
+    },
+    "Urine Calcium": {
+      "most_relevant_disease": "CKD",
+      "organ": "renal_system",
+      "normal_low": 100.0,
+      "normal_high": 300.0,
+      "units": null
+    },
+    "Urine Chloride": {
+      "most_relevant_disease": "CKD",
+      "organ": "renal_system",
+      "normal_low": 110.0,
+      "normal_high": 250.0,
+      "units": null
+    },
+    "Urine Creatinine (Spot)": {
+      "most_relevant_disease": "CKD",
+      "organ": "renal_system",
+      "normal_low": 20.0,
+      "normal_high": 320.0,
+      "units": null
+    },
+    "Urine Microalbumin": {
+      "most_relevant_disease": "CKD",
+      "organ": "renal_system",
+      "normal_low": 0.0,
+      "normal_high": 30.0,
+      "units": null
+    },
+    "Urine pH": {
+      "most_relevant_disease": "CKD",
+      "organ": "renal_system",
+      "normal_low": 4.5,
+      "normal_high": 8.0,
+      "units": null
+    },
+    "Urine Potassium": {
+      "most_relevant_disease": "CKD",
+      "organ": "renal_system",
+      "normal_low": 25.0,
+      "normal_high": 125.0,
+      "units": null
+    },
+    "Urine Protein (Spot)": {
+      "most_relevant_disease": "CKD",
+      "organ": "renal_system",
+      "normal_low": 0.0,
+      "normal_high": 150.0,
+      "units": null
+    },
+    "Urine Protein-Creatinine Ratio (UPCR)": {
+      "most_relevant_disease": "CKD",
+      "organ": "renal_system",
+      "normal_low": 0.0,
+      "normal_high": 150.0,
+      "units": null
+    },
+    "Urine Sodium": {
+      "most_relevant_disease": "CKD",
+      "organ": "renal_system",
+      "normal_low": 40.0,
+      "normal_high": 220.0,
+      "units": null
+    },
+    "Urine Specific Gravity": {
+      "most_relevant_disease": "CKD",
+      "organ": "urinary_tract",
+      "normal_low": 1.005,
+      "normal_high": 1.03,
+      "units": null
+    },
+    "Urine Urate": {
+      "most_relevant_disease": "CKD",
+      "organ": "renal_system",
+      "normal_low": 250.0,
+      "normal_high": 750.0,
+      "units": null
+    },
+    "Urine Urate-to-Creatinine Ratio": {
+      "most_relevant_disease": "CKD",
+      "organ": "renal_system",
+      "normal_low": 0.0,
+      "normal_high": 0.6,
+      "units": null
+    },
+    "Urine Volume": {
+      "most_relevant_disease": "CKD",
+      "organ": "renal_system",
+      "normal_low": 800.0,
+      "normal_high": 2000.0,
+      "units": null
+    },
+    "VLDL Cholesterol": {
+      "most_relevant_disease": "Dyslipidemia",
+      "organ": "cardiovascular_system",
+      "normal_low": 5.0,
+      "normal_high": 40.0,
+      "units": null
+    },
+    "White Blood Cell Count (WBC)": {
+      "most_relevant_disease": "Hematology_Disorder",
+      "organ": "hematopoietic_system",
+      "normal_low": 4.0,
+      "normal_high": 11.0,
+      "units": null
+    },
+    "White Blood Cell Count (WBC) (%)": {
+      "most_relevant_disease": "Hematology_Disorder",
+      "organ": "hematopoietic_system",
+      "normal_low": 40.0,
+      "normal_high": 70.0,
+      "units": null
+    },
+    "Urine Calcium-Creatinine Ratio (UCCR)": {
+      "most_relevant_disease": "CKD",
+      "organ": "renal_system",
+      "normal_low": 0.0,
+      "normal_high": 0.14,
+      "units": null
+    }
+  },
+  "in_dim": 120,
+  "num_symptoms": 108,
+  "num_organs": 12,
+  "meta_paths": [
+    "P-D-P",
+    "P-O-P"
+  ],
+  "hidden_dim": 256,
+  "out_dim": 128,
+  "num_heads": 4,
+  "dropout": 0.3
+}

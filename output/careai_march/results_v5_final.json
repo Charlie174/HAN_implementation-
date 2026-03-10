@@ -1,0 +1,57 @@
+{
+  "dataset": "CareAI March 2026",
+  "model": "HANPP_Disease v5",
+  "metapaths": [
+    "P-D-P",
+    "P-O-P"
+  ],
+  "num_patients": 34852,
+  "num_diseases": 4,
+  "diseases": [
+    "CKD",
+    "Diabetes",
+    "Dyslipidemia",
+    "Hematology_Disorder"
+  ],
+  "in_dim": 122,
+  "hidden_dim": 256,
+  "out_dim": 128,
+  "feature_fix": "symptom_freq_threshold=0.99 + full test_reference (107 tests)",
+  "test_f1_macro": 0.9907283504947177,
+  "test_f1_micro": 0.9948808696201732,
+  "best_val_auc": 0.9996800795593537,
+  "best_val_f1": 0.9856084744472169,
+  "best_epoch": 100,
+  "opt_thresholds": {
+    "CKD": 0.53,
+    "Diabetes": 0.59,
+    "Dyslipidemia": 0.5700000000000001,
+    "Hematology_Disorder": 0.31
+  },
+  "per_disease": {
+    "CKD": {
+      "f1": 0.9909399773499433,
+      "precision": 0.9887005649717514,
+      "recall": 0.9931895573212258,
+      "auc": 0.9999244152936531
+    },
+    "Diabetes": {
+      "f1": 0.9793233082706767,
+      "precision": 0.9666048237476809,
+      "recall": 0.9923809523809524,
+      "auc": 0.9998397201744482
+    },
+    "Dyslipidemia": {
+      "f1": 0.9957519116397621,
+      "precision": 0.9957519116397621,
+      "recall": 0.9957519116397621,
+      "auc": 0.9999846216418609
+    },
+    "Hematology_Disorder": {
+      "f1": 0.9968982047184886,
+      "precision": 0.9998114630467572,
+      "recall": 0.9940018744142456,
+      "auc": 0.9989424333501989
+    }
+  }
+}

@@ -1,0 +1,21 @@
+patient_id,profile_type,age,sex,affected_organs,severity_factor,true_severity
+UP_H001,healthy,28,Female,none,0.0,0
+UP_H002,healthy,45,Male,none,0.0,0
+UP_H003,healthy,62,Female,none,0.0,0
+UP_H004,healthy,35,Male,none,0.0,0
+UP_H005,healthy,55,Female,none,0.0,0
+UP_M001,mild,52,Male,kidney,0.25,1
+UP_M002,mild,48,Female,liver,0.2,1
+UP_M003,mild,67,Male,cardiovascular system,0.22,1
+UP_M004,mild,41,Female,pancreas,0.18,1
+UP_M005,mild,59,Male,thyroid,0.15,1
+UP_D001,moderate,64,Male,kidney|cardiovascular system,0.5,2
+UP_D002,moderate,71,Female,liver|pancreas,0.55,2
+UP_D003,moderate,58,Male,blood|immune system,0.48,2
+UP_D004,moderate,76,Female,kidney|thyroid,0.52,2
+UP_D005,moderate,55,Male,liver|cardiovascular system,0.45,2
+UP_S001,severe,72,Male,kidney|cardiovascular system|blood,0.85,3
+UP_S002,severe,68,Female,liver|pancreas|immune system,0.9,3
+UP_S003,severe,80,Male,kidney|liver|thyroid|blood,0.95,3
+UP_C001,mixed,63,Female,pancreas|cardiovascular system|kidney,0.6,2
+UP_C002,mixed,77,Male,liver|blood|thyroid,0.7,2

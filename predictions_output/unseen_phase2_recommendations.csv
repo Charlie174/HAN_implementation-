@@ -1,0 +1,102 @@
+patient_id,organ,priority,test,severity
+UP_H001,All,ROUTINE,Annual Health Screening,NORMAL
+UP_H002,All,ROUTINE,Annual Health Screening,NORMAL
+UP_H003,All,ROUTINE,Annual Health Screening,NORMAL
+UP_H004,All,ROUTINE,Annual Health Screening,NORMAL
+UP_H005,All,ROUTINE,Annual Health Screening,NORMAL
+UP_M001,kidney,🔶 HIGH,24-hr Urine Collection,MODERATE
+UP_M001,kidney,🔶 HIGH,Cystatin C,MODERATE
+UP_M001,kidney,🔶 HIGH,Renal Doppler,MODERATE
+UP_M001,kidney,🔶 HIGH,Nephrology Referral,MODERATE
+UP_M002,liver,🔶 HIGH,Hepatitis B/C Panel,MODERATE
+UP_M002,liver,🔶 HIGH,FibroScan,MODERATE
+UP_M002,liver,🔶 HIGH,AFP,MODERATE
+UP_M003,cardiovascular system,🔶 HIGH,ECG 12-lead,MODERATE
+UP_M003,cardiovascular system,🔶 HIGH,Echocardiogram,MODERATE
+UP_M003,cardiovascular system,🔶 HIGH,Coronary Calcium Score,MODERATE
+UP_M004,pancreas,🔶 HIGH,C-Peptide,MODERATE
+UP_M004,pancreas,🔶 HIGH,CGM,MODERATE
+UP_M004,pancreas,🔶 HIGH,Anti-GAD Antibodies,MODERATE
+UP_M005,thyroid,🔶 HIGH,Free T3,MODERATE
+UP_M005,thyroid,🔶 HIGH,TgAb,MODERATE
+UP_M005,thyroid,🔶 HIGH,Radioactive Iodine Scan,MODERATE
+UP_D001,kidney,🔶 HIGH,24-hr Urine Collection,MODERATE
+UP_D001,kidney,🔶 HIGH,Cystatin C,MODERATE
+UP_D001,kidney,🔶 HIGH,Renal Doppler,MODERATE
+UP_D001,kidney,🔶 HIGH,Nephrology Referral,MODERATE
+UP_D001,cardiovascular system,🔶 HIGH,ECG 12-lead,MODERATE
+UP_D001,cardiovascular system,🔶 HIGH,Echocardiogram,MODERATE
+UP_D001,cardiovascular system,🔶 HIGH,Coronary Calcium Score,MODERATE
+UP_D002,liver,🔴 URGENT,Emergency GI Consult,SEVERE
+UP_D002,liver,🔴 URGENT,Liver CT (triple phase),SEVERE
+UP_D002,liver,🔴 URGENT,Ascitic Fluid Analysis,SEVERE
+UP_D002,pancreas,🔶 HIGH,C-Peptide,MODERATE
+UP_D002,pancreas,🔶 HIGH,CGM,MODERATE
+UP_D002,pancreas,🔶 HIGH,Anti-GAD Antibodies,MODERATE
+UP_D003,immune system,🔴 URGENT,Emergency Immunology,SEVERE
+UP_D003,immune system,🔴 URGENT,IL-6/Ferritin/D-Dimer,SEVERE
+UP_D003,immune system,🔴 URGENT,Bone Marrow Trephine,SEVERE
+UP_D003,blood,🔶 HIGH,Peripheral Blood Smear,MODERATE
+UP_D003,blood,🔶 HIGH,Hb Electrophoresis,MODERATE
+UP_D003,blood,🔶 HIGH,LDH,MODERATE
+UP_D004,kidney,🔴 URGENT,Emergency Nephrology,SEVERE
+UP_D004,kidney,🔴 URGENT,CT-KUB,SEVERE
+UP_D004,kidney,🔴 URGENT,Dialysis Assessment,SEVERE
+UP_D004,thyroid,🔴 URGENT,Emergency Endocrinology,SEVERE
+UP_D004,thyroid,🔴 URGENT,Thyroid Storm Protocol,SEVERE
+UP_D004,thyroid,🔴 URGENT,FNA,SEVERE
+UP_D005,liver,🔴 URGENT,Emergency GI Consult,SEVERE
+UP_D005,liver,🔴 URGENT,Liver CT (triple phase),SEVERE
+UP_D005,liver,🔴 URGENT,Ascitic Fluid Analysis,SEVERE
+UP_D005,cardiovascular system,🔴 URGENT,Emergency Cardiology,SEVERE
+UP_D005,cardiovascular system,🔴 URGENT,Troponin I & T,SEVERE
+UP_D005,cardiovascular system,🔴 URGENT,BNP/NT-proBNP,SEVERE
+UP_S001,blood,🔴 URGENT,Emergency Haematology,SEVERE
+UP_S001,blood,🔴 URGENT,Bone Marrow Biopsy,SEVERE
+UP_S001,blood,🔴 URGENT,Direct Coombs,SEVERE
+UP_S001,kidney,🔴 URGENT,Emergency Nephrology,SEVERE
+UP_S001,kidney,🔴 URGENT,CT-KUB,SEVERE
+UP_S001,kidney,🔴 URGENT,Dialysis Assessment,SEVERE
+UP_S001,cardiovascular system,🔴 URGENT,Emergency Cardiology,SEVERE
+UP_S001,cardiovascular system,🔴 URGENT,Troponin I & T,SEVERE
+UP_S001,cardiovascular system,🔴 URGENT,BNP/NT-proBNP,SEVERE
+UP_S002,immune system,🔴 URGENT,Emergency Immunology,SEVERE
+UP_S002,immune system,🔴 URGENT,IL-6/Ferritin/D-Dimer,SEVERE
+UP_S002,immune system,🔴 URGENT,Bone Marrow Trephine,SEVERE
+UP_S002,liver,🔴 URGENT,Emergency GI Consult,SEVERE
+UP_S002,liver,🔴 URGENT,Liver CT (triple phase),SEVERE
+UP_S002,liver,🔴 URGENT,Ascitic Fluid Analysis,SEVERE
+UP_S002,pancreas,🔴 URGENT,Emergency Endocrinology,SEVERE
+UP_S002,pancreas,🔴 URGENT,IV Insulin Sliding Scale,SEVERE
+UP_S002,pancreas,🔴 URGENT,Amylase & Lipase,SEVERE
+UP_S003,blood,🔴 URGENT,Emergency Haematology,SEVERE
+UP_S003,blood,🔴 URGENT,Bone Marrow Biopsy,SEVERE
+UP_S003,blood,🔴 URGENT,Direct Coombs,SEVERE
+UP_S003,kidney,🔴 URGENT,Emergency Nephrology,SEVERE
+UP_S003,kidney,🔴 URGENT,CT-KUB,SEVERE
+UP_S003,kidney,🔴 URGENT,Dialysis Assessment,SEVERE
+UP_S003,liver,🔴 URGENT,Emergency GI Consult,SEVERE
+UP_S003,liver,🔴 URGENT,Liver CT (triple phase),SEVERE
+UP_S003,liver,🔴 URGENT,Ascitic Fluid Analysis,SEVERE
+UP_S003,thyroid,🔴 URGENT,Emergency Endocrinology,SEVERE
+UP_S003,thyroid,🔴 URGENT,Thyroid Storm Protocol,SEVERE
+UP_S003,thyroid,🔴 URGENT,FNA,SEVERE
+UP_C001,cardiovascular system,🔴 URGENT,Emergency Cardiology,SEVERE
+UP_C001,cardiovascular system,🔴 URGENT,Troponin I & T,SEVERE
+UP_C001,cardiovascular system,🔴 URGENT,BNP/NT-proBNP,SEVERE
+UP_C001,pancreas,🔴 URGENT,Emergency Endocrinology,SEVERE
+UP_C001,pancreas,🔴 URGENT,IV Insulin Sliding Scale,SEVERE
+UP_C001,pancreas,🔴 URGENT,Amylase & Lipase,SEVERE
+UP_C001,kidney,🔶 HIGH,24-hr Urine Collection,MODERATE
+UP_C001,kidney,🔶 HIGH,Cystatin C,MODERATE
+UP_C001,kidney,🔶 HIGH,Renal Doppler,MODERATE
+UP_C001,kidney,🔶 HIGH,Nephrology Referral,MODERATE
+UP_C002,liver,🔴 URGENT,Emergency GI Consult,SEVERE
+UP_C002,liver,🔴 URGENT,Liver CT (triple phase),SEVERE
+UP_C002,liver,🔴 URGENT,Ascitic Fluid Analysis,SEVERE
+UP_C002,blood,🔶 HIGH,Peripheral Blood Smear,MODERATE
+UP_C002,blood,🔶 HIGH,Hb Electrophoresis,MODERATE
+UP_C002,blood,🔶 HIGH,LDH,MODERATE
+UP_C002,thyroid,🔶 HIGH,Free T3,MODERATE
+UP_C002,thyroid,🔶 HIGH,TgAb,MODERATE
+UP_C002,thyroid,🔶 HIGH,Radioactive Iodine Scan,MODERATE

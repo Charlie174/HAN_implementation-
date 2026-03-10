@@ -1,0 +1,13 @@
+{
+  "Exact Accuracy": 0.45,
+  "\u00b11 Tolerance Acc": 1.0,
+  "Precision (Macro)": 0.375,
+  "Recall (Macro)": 0.5357,
+  "F1 (Macro)": 0.4135,
+  "Precision (Weighted)": 0.3583,
+  "Recall (Weighted)": 0.45,
+  "F1 (Weighted)": 0.3788,
+  "Binary Precision": 1.0,
+  "Binary Recall": 1.0,
+  "Binary F1": 1.0
+}

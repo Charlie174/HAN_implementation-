@@ -1,0 +1,21 @@
+patient_id,profile_type,true_severity,pred_severity,pred_name,true_name,correct,within_1,organ_details,affected_organs
+UP_H001,healthy,0,0,NORMAL,NORMAL,1,1,"{'blood': 0, 'immune system': 0, 'kidney': 0, 'liver': 0, 'cardiovascular system': 0, 'pancreas': 0, 'thyroid': 0}",none
+UP_H002,healthy,0,0,NORMAL,NORMAL,1,1,"{'blood': 0, 'immune system': 0, 'kidney': 0, 'liver': 0, 'cardiovascular system': 0, 'pancreas': 0, 'thyroid': 0}",none
+UP_H003,healthy,0,0,NORMAL,NORMAL,1,1,"{'blood': 0, 'immune system': 0, 'kidney': 0, 'liver': 0, 'cardiovascular system': 0, 'pancreas': 0, 'thyroid': 0}",none
+UP_H004,healthy,0,0,NORMAL,NORMAL,1,1,"{'blood': 0, 'immune system': 0, 'kidney': 0, 'liver': 0, 'cardiovascular system': 0, 'pancreas': 0, 'thyroid': 0}",none
+UP_H005,healthy,0,0,NORMAL,NORMAL,1,1,"{'blood': 0, 'immune system': 0, 'kidney': 0, 'liver': 0, 'cardiovascular system': 0, 'pancreas': 0, 'thyroid': 0}",none
+UP_M001,mild,1,2,MODERATE,MILD,0,1,"{'blood': 0, 'immune system': 0, 'kidney': 2, 'liver': 0, 'cardiovascular system': 0, 'pancreas': 0, 'thyroid': 0}",kidney
+UP_M002,mild,1,2,MODERATE,MILD,0,1,"{'blood': 0, 'immune system': 0, 'kidney': 0, 'liver': 2, 'cardiovascular system': 0, 'pancreas': 0, 'thyroid': 0}",liver
+UP_M003,mild,1,2,MODERATE,MILD,0,1,"{'blood': 0, 'immune system': 0, 'kidney': 0, 'liver': 0, 'cardiovascular system': 2, 'pancreas': 0, 'thyroid': 0}",cardiovascular system
+UP_M004,mild,1,2,MODERATE,MILD,0,1,"{'blood': 0, 'immune system': 0, 'kidney': 0, 'liver': 0, 'cardiovascular system': 0, 'pancreas': 2, 'thyroid': 0}",pancreas
+UP_M005,mild,1,2,MODERATE,MILD,0,1,"{'blood': 0, 'immune system': 0, 'kidney': 0, 'liver': 0, 'cardiovascular system': 0, 'pancreas': 0, 'thyroid': 2}",thyroid
+UP_D001,moderate,2,2,MODERATE,MODERATE,1,1,"{'blood': 0, 'immune system': 0, 'kidney': 2, 'liver': 0, 'cardiovascular system': 2, 'pancreas': 0, 'thyroid': 0}",kidney|cardiovascular system
+UP_D002,moderate,2,3,SEVERE,MODERATE,0,1,"{'blood': 0, 'immune system': 0, 'kidney': 0, 'liver': 3, 'cardiovascular system': 0, 'pancreas': 2, 'thyroid': 0}",liver|pancreas
+UP_D003,moderate,2,3,SEVERE,MODERATE,0,1,"{'blood': 2, 'immune system': 3, 'kidney': 0, 'liver': 0, 'cardiovascular system': 0, 'pancreas': 0, 'thyroid': 0}",blood|immune system
+UP_D004,moderate,2,3,SEVERE,MODERATE,0,1,"{'blood': 0, 'immune system': 0, 'kidney': 3, 'liver': 0, 'cardiovascular system': 0, 'pancreas': 0, 'thyroid': 3}",kidney|thyroid
+UP_D005,moderate,2,3,SEVERE,MODERATE,0,1,"{'blood': 0, 'immune system': 0, 'kidney': 0, 'liver': 3, 'cardiovascular system': 3, 'pancreas': 0, 'thyroid': 0}",liver|cardiovascular system
+UP_S001,severe,3,3,SEVERE,SEVERE,1,1,"{'blood': 3, 'immune system': 0, 'kidney': 3, 'liver': 0, 'cardiovascular system': 3, 'pancreas': 0, 'thyroid': 0}",kidney|cardiovascular system|blood
+UP_S002,severe,3,3,SEVERE,SEVERE,1,1,"{'blood': 0, 'immune system': 3, 'kidney': 0, 'liver': 3, 'cardiovascular system': 0, 'pancreas': 3, 'thyroid': 0}",liver|pancreas|immune system
+UP_S003,severe,3,3,SEVERE,SEVERE,1,1,"{'blood': 3, 'immune system': 0, 'kidney': 3, 'liver': 3, 'cardiovascular system': 0, 'pancreas': 0, 'thyroid': 3}",kidney|liver|thyroid|blood
+UP_C001,mixed,2,3,SEVERE,MODERATE,0,1,"{'blood': 0, 'immune system': 0, 'kidney': 2, 'liver': 0, 'cardiovascular system': 3, 'pancreas': 3, 'thyroid': 0}",pancreas|cardiovascular system|kidney
+UP_C002,mixed,2,3,SEVERE,MODERATE,0,1,"{'blood': 2, 'immune system': 0, 'kidney': 0, 'liver': 3, 'cardiovascular system': 0, 'pancreas': 0, 'thyroid': 2}",liver|blood|thyroid

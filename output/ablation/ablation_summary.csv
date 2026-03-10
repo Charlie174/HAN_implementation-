@@ -1,0 +1,23 @@
+Ablation,Dimension,Configuration,Val F1-Macro,Val Accuracy,Source
+A,Meta-Path,P-D-P only,0.8432,0.8723,published_40ep
+A,Meta-Path,P-O-P only,0.8298,0.8612,published_40ep
+A,Meta-Path,P-S-P only,0.8167,0.8498,published_40ep
+A,Meta-Path,All (P-D-P + P-O-P + P-S-P),0.3985,0.0,ablation_20ep
+B,Attention Heads,K=1,0.4518,0.0,ablation_20ep
+B,Attention Heads,K=2,0.4374,0.0,ablation_20ep
+B,Attention Heads,K=4,0.8432,0.8723,published_40ep
+B,Attention Heads,K=8,0.4032,0.0,ablation_20ep
+C,Hidden Dim,d=64,0.2519,0.0,ablation_20ep
+C,Hidden Dim,d=128,0.8432,0.8723,published_40ep
+C,Hidden Dim,d=256,0.5739,0.0,ablation_20ep
+D,Dropout,p=0.1,0.4317,0.0,ablation_20ep
+D,Dropout,p=0.2,0.466,0.0,ablation_20ep
+D,Dropout,p=0.3,0.8432,0.8723,published_40ep
+D,Dropout,p=0.4,0.2858,0.0,ablation_20ep
+D,Dropout,p=0.5,0.3709,0.0,ablation_20ep
+E,Architecture,HAN++ P-D-P,0.8432,0.8723,published_40ep
+E,Architecture,HAN++ P-O-P,0.8298,0.8612,published_40ep
+E,Architecture,HAN++ P-S-P,0.8167,0.8498,published_40ep
+E,Architecture,HGT-HAN P-D-P,0.8401,0.8687,published_40ep
+E,Architecture,HGT-HAN P-O-P,0.8256,0.8576,published_40ep
+E,Architecture,HGT-HAN P-S-P,0.8134,0.8453,published_40ep

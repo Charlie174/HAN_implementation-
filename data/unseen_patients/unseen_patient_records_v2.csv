@@ -1,0 +1,2041 @@
+patient_id,report_date,test_name,test_value,date_of_birth,age_at_report,sex,is_foreign,profile_type
+UP_H001,03/06/2026 00:00,1-Hour Plasma Glucose,77.0484,01/01/1998 0:00,28.0,Female,0,healthy
+UP_H001,03/06/2026 00:00,2-Hour Plasma Glucose,37.4996,01/01/1998 0:00,28.0,Female,0,healthy
+UP_H001,03/06/2026 00:00,24-Hour Urine Protein,82.7893,01/01/1998 0:00,28.0,Female,0,healthy
+UP_H001,03/06/2026 00:00,Activated Partial Thromboplastin Time (APTT),34.9779,01/01/1998 0:00,28.0,Female,0,healthy
+UP_H001,03/06/2026 00:00,Alanine Aminotransferase (ALT / SGPT),43.3393,01/01/1998 0:00,28.0,Female,0,healthy
+UP_H001,03/06/2026 00:00,Albumin/Globulin Ratio,1.7047,01/01/1998 0:00,28.0,Female,0,healthy
+UP_H001,03/06/2026 00:00,Alkaline Phosphatase (ALP),81.2535,01/01/1998 0:00,28.0,Female,0,healthy
+UP_H001,03/06/2026 00:00,Anti-Streptolysin O Titre (ASOT),46.7947,01/01/1998 0:00,28.0,Female,0,healthy
+UP_H001,03/06/2026 00:00,Aspartate Aminotransferase (AST / SGOT),28.0672,01/01/1998 0:00,28.0,Female,0,healthy
+UP_H001,03/06/2026 00:00,Basophils (%),0.4471,01/01/1998 0:00,28.0,Female,0,healthy
+UP_H001,03/06/2026 00:00,Basophils (Absolute),0.0488,01/01/1998 0:00,28.0,Female,0,healthy
+UP_H001,03/06/2026 00:00,Beta-hCG,1.9928,01/01/1998 0:00,28.0,Female,0,healthy
+UP_H001,03/06/2026 00:00,Bleeding Time,2.8334,01/01/1998 0:00,28.0,Female,0,healthy
+UP_H001,03/06/2026 00:00,Blood Urea,15.4679,01/01/1998 0:00,28.0,Female,0,healthy
+UP_H001,03/06/2026 00:00,C-Reactive Protein (CRP),2.9025,01/01/1998 0:00,28.0,Female,0,healthy
+UP_H001,03/06/2026 00:00,CA-125,18.7943,01/01/1998 0:00,28.0,Female,0,healthy
+UP_H001,03/06/2026 00:00,Clotting Time,8.664,01/01/1998 0:00,28.0,Female,0,healthy
+UP_H001,03/06/2026 00:00,Corrected Serum Calcium,9.0678,01/01/1998 0:00,28.0,Female,0,healthy
+UP_H001,03/06/2026 00:00,Creatine Phosphokinase (CPK),133.5961,01/01/1998 0:00,28.0,Female,0,healthy
+UP_H001,03/06/2026 00:00,Direct Bilirubin,0.1341,01/01/1998 0:00,28.0,Female,0,healthy
+UP_H001,03/06/2026 00:00,Eosinophils (%),3.7998,01/01/1998 0:00,28.0,Female,0,healthy
+UP_H001,03/06/2026 00:00,Eosinophils (Absolute),0.3197,01/01/1998 0:00,28.0,Female,0,healthy
+UP_H001,03/06/2026 00:00,Erythrocyte Sedimentation Rate (ESR),0.6879,01/01/1998 0:00,28.0,Female,0,healthy
+UP_H001,03/06/2026 00:00,Fasting Plasma Glucose,92.5977,01/01/1998 0:00,28.0,Female,0,healthy
+UP_H001,03/06/2026 00:00,Follicle Stimulating Hormone (FSH),6.8089,01/01/1998 0:00,28.0,Female,0,healthy
+UP_H001,03/06/2026 00:00,Free T3,2.5203,01/01/1998 0:00,28.0,Female,0,healthy
+UP_H001,03/06/2026 00:00,Free T4,1.2398,01/01/1998 0:00,28.0,Female,0,healthy
+UP_H001,03/06/2026 00:00,Gamma-Glutamyl Transferase (GGT),46.6083,01/01/1998 0:00,28.0,Female,0,healthy
+UP_H001,03/06/2026 00:00,Glucose Challenge Test (GCT),64.4269,01/01/1998 0:00,28.0,Female,0,healthy
+UP_H001,03/06/2026 00:00,HDL Cholesterol,54.1936,01/01/1998 0:00,28.0,Female,0,healthy
+UP_H001,03/06/2026 00:00,Hematocrit (PCV/HCT),44.1427,01/01/1998 0:00,28.0,Female,0,healthy
+UP_H001,03/06/2026 00:00,Hemoglobin (Hb),14.4748,01/01/1998 0:00,28.0,Female,0,healthy
+UP_H001,03/06/2026 00:00,Hemoglobin A1c (HbA1c),4.6346,01/01/1998 0:00,28.0,Female,0,healthy
+UP_H001,03/06/2026 00:00,Indirect Bilirubin,0.4397,01/01/1998 0:00,28.0,Female,0,healthy
+UP_H001,03/06/2026 00:00,International Normalized Ratio (INR),1.0787,01/01/1998 0:00,28.0,Female,0,healthy
+UP_H001,03/06/2026 00:00,Ionized Calcium,1.2478,01/01/1998 0:00,28.0,Female,0,healthy
+UP_H001,03/06/2026 00:00,LDL Cholesterol,49.9021,01/01/1998 0:00,28.0,Female,0,healthy
+UP_H001,03/06/2026 00:00,LDL/HDL Ratio,1.7097,01/01/1998 0:00,28.0,Female,0,healthy
+UP_H001,03/06/2026 00:00,Lactate Dehydrogenase (LDH),213.4149,01/01/1998 0:00,28.0,Female,0,healthy
+UP_H001,03/06/2026 00:00,Luteinizing Hormone (LH),5.1505,01/01/1998 0:00,28.0,Female,0,healthy
+UP_H001,03/06/2026 00:00,Lymphocytes (%),29.9662,01/01/1998 0:00,28.0,Female,0,healthy
+UP_H001,03/06/2026 00:00,Lymphocytes (Absolute),2.0455,01/01/1998 0:00,28.0,Female,0,healthy
+UP_H001,03/06/2026 00:00,Mean Corpuscular Hemoglobin (MCH),32.2229,01/01/1998 0:00,28.0,Female,0,healthy
+UP_H001,03/06/2026 00:00,Mean Corpuscular Hemoglobin Concentration (MCHC),32.5279,01/01/1998 0:00,28.0,Female,0,healthy
+UP_H001,03/06/2026 00:00,Mean Corpuscular Volume (MCV),93.1335,01/01/1998 0:00,28.0,Female,0,healthy
+UP_H001,03/06/2026 00:00,Mean Platelet Volume (MPV),11.0046,01/01/1998 0:00,28.0,Female,0,healthy
+UP_H001,03/06/2026 00:00,Monocytes (%),4.1431,01/01/1998 0:00,28.0,Female,0,healthy
+UP_H001,03/06/2026 00:00,Monocytes (Absolute),90.62,01/01/1998 0:00,28.0,Female,0,healthy
+UP_H001,03/06/2026 00:00,Neutrophils (%),56.259,01/01/1998 0:00,28.0,Female,0,healthy
+UP_H001,03/06/2026 00:00,Neutrophils (Absolute),4.3648,01/01/1998 0:00,28.0,Female,0,healthy
+UP_H001,03/06/2026 00:00,Platelet Count,276.0864,01/01/1998 0:00,28.0,Female,0,healthy
+UP_H001,03/06/2026 00:00,Platelet Distribution Width (PDW),11.667,01/01/1998 0:00,28.0,Female,0,healthy
+UP_H001,03/06/2026 00:00,Platelet Large Cell Count (P-LCC),56.6072,01/01/1998 0:00,28.0,Female,0,healthy
+UP_H001,03/06/2026 00:00,Platelet Large Cell Ratio (P-LCR),30.8708,01/01/1998 0:00,28.0,Female,0,healthy
+UP_H001,03/06/2026 00:00,Plateletcrit (PCT),0.1018,01/01/1998 0:00,28.0,Female,0,healthy
+UP_H001,03/06/2026 00:00,Postprandial Plasma Glucose (PPBS),110.9467,01/01/1998 0:00,28.0,Female,0,healthy
+UP_H001,03/06/2026 00:00,Prolactin,13.7872,01/01/1998 0:00,28.0,Female,0,healthy
+UP_H001,03/06/2026 00:00,Prostate-Specific Antigen (PSA),1.3114,01/01/1998 0:00,28.0,Female,0,healthy
+UP_H001,03/06/2026 00:00,Prothrombin Time (PT),12.4845,01/01/1998 0:00,28.0,Female,0,healthy
+UP_H001,03/06/2026 00:00,Random Plasma Glucose,86.6849,01/01/1998 0:00,28.0,Female,0,healthy
+UP_H001,03/06/2026 00:00,Red Blood Cell Count (RBC),5.3671,01/01/1998 0:00,28.0,Female,0,healthy
+UP_H001,03/06/2026 00:00,Red Cell Distribution Width – CV (RDW-CV),12.7777,01/01/1998 0:00,28.0,Female,0,healthy
+UP_H001,03/06/2026 00:00,Red Cell Distribution Width – SD (RDW-SD),42.9087,01/01/1998 0:00,28.0,Female,0,healthy
+UP_H001,03/06/2026 00:00,Rheumatoid Factor (RF),7.4725,01/01/1998 0:00,28.0,Female,0,healthy
+UP_H001,03/06/2026 00:00,Serum Albumin,4.1308,01/01/1998 0:00,28.0,Female,0,healthy
+UP_H001,03/06/2026 00:00,Serum Amylase,48.5589,01/01/1998 0:00,28.0,Female,0,healthy
+UP_H001,03/06/2026 00:00,Serum Bicarbonate (HCO₃⁻),26.2575,01/01/1998 0:00,28.0,Female,0,healthy
+UP_H001,03/06/2026 00:00,Serum Calcium,9.3199,01/01/1998 0:00,28.0,Female,0,healthy
+UP_H001,03/06/2026 00:00,Serum Chloride,102.6009,01/01/1998 0:00,28.0,Female,0,healthy
+UP_H001,03/06/2026 00:00,Serum Creatinine,0.961,01/01/1998 0:00,28.0,Female,0,healthy
+UP_H001,03/06/2026 00:00,Serum Ferritin,150.4161,01/01/1998 0:00,28.0,Female,0,healthy
+UP_H001,03/06/2026 00:00,Serum Globulin,2.7786,01/01/1998 0:00,28.0,Female,0,healthy
+UP_H001,03/06/2026 00:00,Serum Magnesium,1.9784,01/01/1998 0:00,28.0,Female,0,healthy
+UP_H001,03/06/2026 00:00,Serum Phosphorus,3.5241,01/01/1998 0:00,28.0,Female,0,healthy
+UP_H001,03/06/2026 00:00,Serum Potassium,4.3489,01/01/1998 0:00,28.0,Female,0,healthy
+UP_H001,03/06/2026 00:00,Serum Sodium,141.1536,01/01/1998 0:00,28.0,Female,0,healthy
+UP_H001,03/06/2026 00:00,Serum Urea,26.8171,01/01/1998 0:00,28.0,Female,0,healthy
+UP_H001,03/06/2026 00:00,Serum Uric Acid,4.8292,01/01/1998 0:00,28.0,Female,0,healthy
+UP_H001,03/06/2026 00:00,Thyroid Stimulating Hormone (TSH),2.0867,01/01/1998 0:00,28.0,Female,0,healthy
+UP_H001,03/06/2026 00:00,Total Bilirubin,0.7693,01/01/1998 0:00,28.0,Female,0,healthy
+UP_H001,03/06/2026 00:00,Total Cholesterol,96.2734,01/01/1998 0:00,28.0,Female,0,healthy
+UP_H001,03/06/2026 00:00,Total Cholesterol/HDL Ratio,3.1023,01/01/1998 0:00,28.0,Female,0,healthy
+UP_H001,03/06/2026 00:00,Total Protein,7.5784,01/01/1998 0:00,28.0,Female,0,healthy
+UP_H001,03/06/2026 00:00,Triglycerides,40.3431,01/01/1998 0:00,28.0,Female,0,healthy
+UP_H001,03/06/2026 00:00,Urine Albumin-Creatinine Ratio (ACR),22.0326,01/01/1998 0:00,28.0,Female,0,healthy
+UP_H001,03/06/2026 00:00,Urine Calcium,239.7581,01/01/1998 0:00,28.0,Female,0,healthy
+UP_H001,03/06/2026 00:00,Urine Calcium-Creatinine Ratio (UCCR),0.052,01/01/1998 0:00,28.0,Female,0,healthy
+UP_H001,03/06/2026 00:00,Urine Chloride,236.0797,01/01/1998 0:00,28.0,Female,0,healthy
+UP_H001,03/06/2026 00:00,Urine Creatinine (Spot),182.0475,01/01/1998 0:00,28.0,Female,0,healthy
+UP_H001,03/06/2026 00:00,Urine Microalbumin,17.6571,01/01/1998 0:00,28.0,Female,0,healthy
+UP_H001,03/06/2026 00:00,Urine Potassium,103.5029,01/01/1998 0:00,28.0,Female,0,healthy
+UP_H001,03/06/2026 00:00,Urine Protein (Spot),59.441,01/01/1998 0:00,28.0,Female,0,healthy
+UP_H001,03/06/2026 00:00,Urine Protein-Creatinine Ratio (UPCR),47.4418,01/01/1998 0:00,28.0,Female,0,healthy
+UP_H001,03/06/2026 00:00,Urine Sodium,120.3345,01/01/1998 0:00,28.0,Female,0,healthy
+UP_H001,03/06/2026 00:00,Urine Specific Gravity,1.0182,01/01/1998 0:00,28.0,Female,0,healthy
+UP_H001,03/06/2026 00:00,Urine Urate,533.2105,01/01/1998 0:00,28.0,Female,0,healthy
+UP_H001,03/06/2026 00:00,Urine Urate-to-Creatinine Ratio,0.371,01/01/1998 0:00,28.0,Female,0,healthy
+UP_H001,03/06/2026 00:00,Urine Volume,1740.8537,01/01/1998 0:00,28.0,Female,0,healthy
+UP_H001,03/06/2026 00:00,Urine pH,5.7998,01/01/1998 0:00,28.0,Female,0,healthy
+UP_H001,03/06/2026 00:00,VLDL Cholesterol,15.4479,01/01/1998 0:00,28.0,Female,0,healthy
+UP_H001,03/06/2026 00:00,White Blood Cell Count (WBC),7.8735,01/01/1998 0:00,28.0,Female,0,healthy
+UP_H001,03/06/2026 00:00,White Blood Cell Count (WBC) (%),54.8892,01/01/1998 0:00,28.0,Female,0,healthy
+UP_H002,03/06/2026 00:00,1-Hour Plasma Glucose,87.9249,01/01/1981 0:00,45.0,Male,0,healthy
+UP_H002,03/06/2026 00:00,2-Hour Plasma Glucose,38.211,01/01/1981 0:00,45.0,Male,0,healthy
+UP_H002,03/06/2026 00:00,24-Hour Urine Protein,91.8762,01/01/1981 0:00,45.0,Male,0,healthy
+UP_H002,03/06/2026 00:00,Activated Partial Thromboplastin Time (APTT),36.0957,01/01/1981 0:00,45.0,Male,0,healthy
+UP_H002,03/06/2026 00:00,Alanine Aminotransferase (ALT / SGPT),29.1903,01/01/1981 0:00,45.0,Male,0,healthy
+UP_H002,03/06/2026 00:00,Albumin/Globulin Ratio,2.1486,01/01/1981 0:00,45.0,Male,0,healthy
+UP_H002,03/06/2026 00:00,Alkaline Phosphatase (ALP),75.1737,01/01/1981 0:00,45.0,Male,0,healthy
+UP_H002,03/06/2026 00:00,Anti-Streptolysin O Titre (ASOT),134.1252,01/01/1981 0:00,45.0,Male,0,healthy
+UP_H002,03/06/2026 00:00,Aspartate Aminotransferase (AST / SGOT),22.1197,01/01/1981 0:00,45.0,Male,0,healthy
+UP_H002,03/06/2026 00:00,Basophils (%),0.3576,01/01/1981 0:00,45.0,Male,0,healthy
+UP_H002,03/06/2026 00:00,Basophils (Absolute),0.0305,01/01/1981 0:00,45.0,Male,0,healthy
+UP_H002,03/06/2026 00:00,Beta-hCG,3.3613,01/01/1981 0:00,45.0,Male,0,healthy
+UP_H002,03/06/2026 00:00,Bleeding Time,3.9951,01/01/1981 0:00,45.0,Male,0,healthy
+UP_H002,03/06/2026 00:00,Blood Urea,12.4546,01/01/1981 0:00,45.0,Male,0,healthy
+UP_H002,03/06/2026 00:00,C-Reactive Protein (CRP),2.1649,01/01/1981 0:00,45.0,Male,0,healthy
+UP_H002,03/06/2026 00:00,CA-125,20.0122,01/01/1981 0:00,45.0,Male,0,healthy
+UP_H002,03/06/2026 00:00,Clotting Time,9.1804,01/01/1981 0:00,45.0,Male,0,healthy
+UP_H002,03/06/2026 00:00,Corrected Serum Calcium,9.4958,01/01/1981 0:00,45.0,Male,0,healthy
+UP_H002,03/06/2026 00:00,Creatine Phosphokinase (CPK),121.136,01/01/1981 0:00,45.0,Male,0,healthy
+UP_H002,03/06/2026 00:00,Direct Bilirubin,0.2195,01/01/1981 0:00,45.0,Male,0,healthy
+UP_H002,03/06/2026 00:00,Eosinophils (%),3.1791,01/01/1981 0:00,45.0,Male,0,healthy
+UP_H002,03/06/2026 00:00,Eosinophils (Absolute),0.2899,01/01/1981 0:00,45.0,Male,0,healthy
+UP_H002,03/06/2026 00:00,Erythrocyte Sedimentation Rate (ESR),9.8606,01/01/1981 0:00,45.0,Male,0,healthy
+UP_H002,03/06/2026 00:00,Fasting Plasma Glucose,88.3841,01/01/1981 0:00,45.0,Male,0,healthy
+UP_H002,03/06/2026 00:00,Follicle Stimulating Hormone (FSH),6.9964,01/01/1981 0:00,45.0,Male,0,healthy
+UP_H002,03/06/2026 00:00,Free T3,3.8561,01/01/1981 0:00,45.0,Male,0,healthy
+UP_H002,03/06/2026 00:00,Free T4,1.2736,01/01/1981 0:00,45.0,Male,0,healthy
+UP_H002,03/06/2026 00:00,Gamma-Glutamyl Transferase (GGT),26.5516,01/01/1981 0:00,45.0,Male,0,healthy
+UP_H002,03/06/2026 00:00,Glucose Challenge Test (GCT),80.3759,01/01/1981 0:00,45.0,Male,0,healthy
+UP_H002,03/06/2026 00:00,HDL Cholesterol,62.0437,01/01/1981 0:00,45.0,Male,0,healthy
+UP_H002,03/06/2026 00:00,Hematocrit (PCV/HCT),42.525,01/01/1981 0:00,45.0,Male,0,healthy
+UP_H002,03/06/2026 00:00,Hemoglobin (Hb),14.9396,01/01/1981 0:00,45.0,Male,0,healthy
+UP_H002,03/06/2026 00:00,Hemoglobin A1c (HbA1c),4.8348,01/01/1981 0:00,45.0,Male,0,healthy
+UP_H002,03/06/2026 00:00,Indirect Bilirubin,0.6073,01/01/1981 0:00,45.0,Male,0,healthy
+UP_H002,03/06/2026 00:00,International Normalized Ratio (INR),1.0864,01/01/1981 0:00,45.0,Male,0,healthy
+UP_H002,03/06/2026 00:00,Ionized Calcium,1.1833,01/01/1981 0:00,45.0,Male,0,healthy
+UP_H002,03/06/2026 00:00,LDL Cholesterol,61.2412,01/01/1981 0:00,45.0,Male,0,healthy
+UP_H002,03/06/2026 00:00,LDL/HDL Ratio,1.5399,01/01/1981 0:00,45.0,Male,0,healthy
+UP_H002,03/06/2026 00:00,Lactate Dehydrogenase (LDH),218.9749,01/01/1981 0:00,45.0,Male,0,healthy
+UP_H002,03/06/2026 00:00,Luteinizing Hormone (LH),6.7856,01/01/1981 0:00,45.0,Male,0,healthy
+UP_H002,03/06/2026 00:00,Lymphocytes (%),28.0503,01/01/1981 0:00,45.0,Male,0,healthy
+UP_H002,03/06/2026 00:00,Lymphocytes (Absolute),1.7195,01/01/1981 0:00,45.0,Male,0,healthy
+UP_H002,03/06/2026 00:00,Mean Corpuscular Hemoglobin (MCH),30.6574,01/01/1981 0:00,45.0,Male,0,healthy
+UP_H002,03/06/2026 00:00,Mean Corpuscular Hemoglobin Concentration (MCHC),33.3499,01/01/1981 0:00,45.0,Male,0,healthy
+UP_H002,03/06/2026 00:00,Mean Corpuscular Volume (MCV),88.732,01/01/1981 0:00,45.0,Male,0,healthy
+UP_H002,03/06/2026 00:00,Mean Platelet Volume (MPV),10.0965,01/01/1981 0:00,45.0,Male,0,healthy
+UP_H002,03/06/2026 00:00,Monocytes (%),4.9774,01/01/1981 0:00,45.0,Male,0,healthy
+UP_H002,03/06/2026 00:00,Monocytes (Absolute),92.0345,01/01/1981 0:00,45.0,Male,0,healthy
+UP_H002,03/06/2026 00:00,Neutrophils (%),58.8348,01/01/1981 0:00,45.0,Male,0,healthy
+UP_H002,03/06/2026 00:00,Neutrophils (Absolute),4.0392,01/01/1981 0:00,45.0,Male,0,healthy
+UP_H002,03/06/2026 00:00,Platelet Count,280.3372,01/01/1981 0:00,45.0,Male,0,healthy
+UP_H002,03/06/2026 00:00,Platelet Distribution Width (PDW),13.576,01/01/1981 0:00,45.0,Male,0,healthy
+UP_H002,03/06/2026 00:00,Platelet Large Cell Count (P-LCC),97.7783,01/01/1981 0:00,45.0,Male,0,healthy
+UP_H002,03/06/2026 00:00,Platelet Large Cell Ratio (P-LCR),29.4602,01/01/1981 0:00,45.0,Male,0,healthy
+UP_H002,03/06/2026 00:00,Plateletcrit (PCT),0.2369,01/01/1981 0:00,45.0,Male,0,healthy
+UP_H002,03/06/2026 00:00,Postprandial Plasma Glucose (PPBS),123.9893,01/01/1981 0:00,45.0,Male,0,healthy
+UP_H002,03/06/2026 00:00,Prolactin,7.7187,01/01/1981 0:00,45.0,Male,0,healthy
+UP_H002,03/06/2026 00:00,Prostate-Specific Antigen (PSA),2.1091,01/01/1981 0:00,45.0,Male,0,healthy
+UP_H002,03/06/2026 00:00,Prothrombin Time (PT),12.2046,01/01/1981 0:00,45.0,Male,0,healthy
+UP_H002,03/06/2026 00:00,Random Plasma Glucose,49.9819,01/01/1981 0:00,45.0,Male,0,healthy
+UP_H002,03/06/2026 00:00,Red Blood Cell Count (RBC),4.8556,01/01/1981 0:00,45.0,Male,0,healthy
+UP_H002,03/06/2026 00:00,Red Cell Distribution Width – CV (RDW-CV),11.9602,01/01/1981 0:00,45.0,Male,0,healthy
+UP_H002,03/06/2026 00:00,Red Cell Distribution Width – SD (RDW-SD),42.2745,01/01/1981 0:00,45.0,Male,0,healthy
+UP_H002,03/06/2026 00:00,Rheumatoid Factor (RF),6.1286,01/01/1981 0:00,45.0,Male,0,healthy
+UP_H002,03/06/2026 00:00,Serum Albumin,4.4972,01/01/1981 0:00,45.0,Male,0,healthy
+UP_H002,03/06/2026 00:00,Serum Amylase,51.669,01/01/1981 0:00,45.0,Male,0,healthy
+UP_H002,03/06/2026 00:00,Serum Bicarbonate (HCO₃⁻),26.4448,01/01/1981 0:00,45.0,Male,0,healthy
+UP_H002,03/06/2026 00:00,Serum Calcium,9.8897,01/01/1981 0:00,45.0,Male,0,healthy
+UP_H002,03/06/2026 00:00,Serum Chloride,101.1474,01/01/1981 0:00,45.0,Male,0,healthy
+UP_H002,03/06/2026 00:00,Serum Creatinine,0.8919,01/01/1981 0:00,45.0,Male,0,healthy
+UP_H002,03/06/2026 00:00,Serum Ferritin,223.5854,01/01/1981 0:00,45.0,Male,0,healthy
+UP_H002,03/06/2026 00:00,Serum Globulin,2.5495,01/01/1981 0:00,45.0,Male,0,healthy
+UP_H002,03/06/2026 00:00,Serum Magnesium,2.0945,01/01/1981 0:00,45.0,Male,0,healthy
+UP_H002,03/06/2026 00:00,Serum Phosphorus,4.1962,01/01/1981 0:00,45.0,Male,0,healthy
+UP_H002,03/06/2026 00:00,Serum Potassium,4.2214,01/01/1981 0:00,45.0,Male,0,healthy
+UP_H002,03/06/2026 00:00,Serum Sodium,140.2491,01/01/1981 0:00,45.0,Male,0,healthy
+UP_H002,03/06/2026 00:00,Serum Urea,29.348,01/01/1981 0:00,45.0,Male,0,healthy
+UP_H002,03/06/2026 00:00,Serum Uric Acid,3.9834,01/01/1981 0:00,45.0,Male,0,healthy
+UP_H002,03/06/2026 00:00,Thyroid Stimulating Hormone (TSH),3.4492,01/01/1981 0:00,45.0,Male,0,healthy
+UP_H002,03/06/2026 00:00,Total Bilirubin,0.3543,01/01/1981 0:00,45.0,Male,0,healthy
+UP_H002,03/06/2026 00:00,Total Cholesterol,99.7132,01/01/1981 0:00,45.0,Male,0,healthy
+UP_H002,03/06/2026 00:00,Total Cholesterol/HDL Ratio,2.2348,01/01/1981 0:00,45.0,Male,0,healthy
+UP_H002,03/06/2026 00:00,Total Protein,7.9286,01/01/1981 0:00,45.0,Male,0,healthy
+UP_H002,03/06/2026 00:00,Triglycerides,78.1205,01/01/1981 0:00,45.0,Male,0,healthy
+UP_H002,03/06/2026 00:00,Urine Albumin-Creatinine Ratio (ACR),8.0009,01/01/1981 0:00,45.0,Male,0,healthy
+UP_H002,03/06/2026 00:00,Urine Calcium,218.7049,01/01/1981 0:00,45.0,Male,0,healthy
+UP_H002,03/06/2026 00:00,Urine Calcium-Creatinine Ratio (UCCR),0.078,01/01/1981 0:00,45.0,Male,0,healthy
+UP_H002,03/06/2026 00:00,Urine Chloride,210.9105,01/01/1981 0:00,45.0,Male,0,healthy
+UP_H002,03/06/2026 00:00,Urine Creatinine (Spot),84.815,01/01/1981 0:00,45.0,Male,0,healthy
+UP_H002,03/06/2026 00:00,Urine Microalbumin,20.1055,01/01/1981 0:00,45.0,Male,0,healthy
+UP_H002,03/06/2026 00:00,Urine Potassium,93.4694,01/01/1981 0:00,45.0,Male,0,healthy
+UP_H002,03/06/2026 00:00,Urine Protein (Spot),59.3976,01/01/1981 0:00,45.0,Male,0,healthy
+UP_H002,03/06/2026 00:00,Urine Protein-Creatinine Ratio (UPCR),52.6088,01/01/1981 0:00,45.0,Male,0,healthy
+UP_H002,03/06/2026 00:00,Urine Sodium,111.3708,01/01/1981 0:00,45.0,Male,0,healthy
+UP_H002,03/06/2026 00:00,Urine Specific Gravity,1.0221,01/01/1981 0:00,45.0,Male,0,healthy
+UP_H002,03/06/2026 00:00,Urine Urate,569.3544,01/01/1981 0:00,45.0,Male,0,healthy
+UP_H002,03/06/2026 00:00,Urine Urate-to-Creatinine Ratio,0.2545,01/01/1981 0:00,45.0,Male,0,healthy
+UP_H002,03/06/2026 00:00,Urine Volume,1580.8372,01/01/1981 0:00,45.0,Male,0,healthy
+UP_H002,03/06/2026 00:00,Urine pH,7.012,01/01/1981 0:00,45.0,Male,0,healthy
+UP_H002,03/06/2026 00:00,VLDL Cholesterol,20.8177,01/01/1981 0:00,45.0,Male,0,healthy
+UP_H002,03/06/2026 00:00,White Blood Cell Count (WBC),8.8995,01/01/1981 0:00,45.0,Male,0,healthy
+UP_H002,03/06/2026 00:00,White Blood Cell Count (WBC) (%),53.0557,01/01/1981 0:00,45.0,Male,0,healthy
+UP_H003,03/06/2026 00:00,1-Hour Plasma Glucose,79.7184,01/01/1964 0:00,62.0,Female,0,healthy
+UP_H003,03/06/2026 00:00,2-Hour Plasma Glucose,67.1762,01/01/1964 0:00,62.0,Female,0,healthy
+UP_H003,03/06/2026 00:00,24-Hour Urine Protein,82.6659,01/01/1964 0:00,62.0,Female,0,healthy
+UP_H003,03/06/2026 00:00,Activated Partial Thromboplastin Time (APTT),31.5804,01/01/1964 0:00,62.0,Female,0,healthy
+UP_H003,03/06/2026 00:00,Alanine Aminotransferase (ALT / SGPT),22.9168,01/01/1964 0:00,62.0,Female,0,healthy
+UP_H003,03/06/2026 00:00,Albumin/Globulin Ratio,1.2212,01/01/1964 0:00,62.0,Female,0,healthy
+UP_H003,03/06/2026 00:00,Alkaline Phosphatase (ALP),106.4422,01/01/1964 0:00,62.0,Female,0,healthy
+UP_H003,03/06/2026 00:00,Anti-Streptolysin O Titre (ASOT),142.2009,01/01/1964 0:00,62.0,Female,0,healthy
+UP_H003,03/06/2026 00:00,Aspartate Aminotransferase (AST / SGOT),32.2997,01/01/1964 0:00,62.0,Female,0,healthy
+UP_H003,03/06/2026 00:00,Basophils (%),0.173,01/01/1964 0:00,62.0,Female,0,healthy
+UP_H003,03/06/2026 00:00,Basophils (Absolute),0.0509,01/01/1964 0:00,62.0,Female,0,healthy
+UP_H003,03/06/2026 00:00,Beta-hCG,1.513,01/01/1964 0:00,62.0,Female,0,healthy
+UP_H003,03/06/2026 00:00,Bleeding Time,3.3733,01/01/1964 0:00,62.0,Female,0,healthy
+UP_H003,03/06/2026 00:00,Blood Urea,12.2572,01/01/1964 0:00,62.0,Female,0,healthy
+UP_H003,03/06/2026 00:00,C-Reactive Protein (CRP),1.4157,01/01/1964 0:00,62.0,Female,0,healthy
+UP_H003,03/06/2026 00:00,CA-125,29.4286,01/01/1964 0:00,62.0,Female,0,healthy
+UP_H003,03/06/2026 00:00,Clotting Time,6.5169,01/01/1964 0:00,62.0,Female,0,healthy
+UP_H003,03/06/2026 00:00,Corrected Serum Calcium,9.1346,01/01/1964 0:00,62.0,Female,0,healthy
+UP_H003,03/06/2026 00:00,Creatine Phosphokinase (CPK),94.1773,01/01/1964 0:00,62.0,Female,0,healthy
+UP_H003,03/06/2026 00:00,Direct Bilirubin,0.1523,01/01/1964 0:00,62.0,Female,0,healthy
+UP_H003,03/06/2026 00:00,Eosinophils (%),3.5143,01/01/1964 0:00,62.0,Female,0,healthy
+UP_H003,03/06/2026 00:00,Eosinophils (Absolute),0.1639,01/01/1964 0:00,62.0,Female,0,healthy
+UP_H003,03/06/2026 00:00,Erythrocyte Sedimentation Rate (ESR),8.0772,01/01/1964 0:00,62.0,Female,0,healthy
+UP_H003,03/06/2026 00:00,Fasting Plasma Glucose,85.7693,01/01/1964 0:00,62.0,Female,0,healthy
+UP_H003,03/06/2026 00:00,Follicle Stimulating Hormone (FSH),7.7629,01/01/1964 0:00,62.0,Female,0,healthy
+UP_H003,03/06/2026 00:00,Free T3,3.1246,01/01/1964 0:00,62.0,Female,0,healthy
+UP_H003,03/06/2026 00:00,Free T4,1.4569,01/01/1964 0:00,62.0,Female,0,healthy
+UP_H003,03/06/2026 00:00,Gamma-Glutamyl Transferase (GGT),17.3587,01/01/1964 0:00,62.0,Female,0,healthy
+UP_H003,03/06/2026 00:00,Glucose Challenge Test (GCT),100.2738,01/01/1964 0:00,62.0,Female,0,healthy
+UP_H003,03/06/2026 00:00,HDL Cholesterol,67.4095,01/01/1964 0:00,62.0,Female,0,healthy
+UP_H003,03/06/2026 00:00,Hematocrit (PCV/HCT),45.1821,01/01/1964 0:00,62.0,Female,0,healthy
+UP_H003,03/06/2026 00:00,Hemoglobin (Hb),14.5161,01/01/1964 0:00,62.0,Female,0,healthy
+UP_H003,03/06/2026 00:00,Hemoglobin A1c (HbA1c),5.0575,01/01/1964 0:00,62.0,Female,0,healthy
+UP_H003,03/06/2026 00:00,Indirect Bilirubin,0.5842,01/01/1964 0:00,62.0,Female,0,healthy
+UP_H003,03/06/2026 00:00,International Normalized Ratio (INR),0.9298,01/01/1964 0:00,62.0,Female,0,healthy
+UP_H003,03/06/2026 00:00,Ionized Calcium,1.2567,01/01/1964 0:00,62.0,Female,0,healthy
+UP_H003,03/06/2026 00:00,LDL Cholesterol,53.5496,01/01/1964 0:00,62.0,Female,0,healthy
+UP_H003,03/06/2026 00:00,LDL/HDL Ratio,2.4248,01/01/1964 0:00,62.0,Female,0,healthy
+UP_H003,03/06/2026 00:00,Lactate Dehydrogenase (LDH),219.1995,01/01/1964 0:00,62.0,Female,0,healthy
+UP_H003,03/06/2026 00:00,Luteinizing Hormone (LH),4.3794,01/01/1964 0:00,62.0,Female,0,healthy
+UP_H003,03/06/2026 00:00,Lymphocytes (%),26.3347,01/01/1964 0:00,62.0,Female,0,healthy
+UP_H003,03/06/2026 00:00,Lymphocytes (Absolute),2.1413,01/01/1964 0:00,62.0,Female,0,healthy
+UP_H003,03/06/2026 00:00,Mean Corpuscular Hemoglobin (MCH),31.7645,01/01/1964 0:00,62.0,Female,0,healthy
+UP_H003,03/06/2026 00:00,Mean Corpuscular Hemoglobin Concentration (MCHC),32.2527,01/01/1964 0:00,62.0,Female,0,healthy
+UP_H003,03/06/2026 00:00,Mean Corpuscular Volume (MCV),88.8357,01/01/1964 0:00,62.0,Female,0,healthy
+UP_H003,03/06/2026 00:00,Mean Platelet Volume (MPV),10.5391,01/01/1964 0:00,62.0,Female,0,healthy
+UP_H003,03/06/2026 00:00,Monocytes (%),4.6301,01/01/1964 0:00,62.0,Female,0,healthy
+UP_H003,03/06/2026 00:00,Monocytes (Absolute),95.9283,01/01/1964 0:00,62.0,Female,0,healthy
+UP_H003,03/06/2026 00:00,Neutrophils (%),58.3302,01/01/1964 0:00,62.0,Female,0,healthy
+UP_H003,03/06/2026 00:00,Neutrophils (Absolute),5.5112,01/01/1964 0:00,62.0,Female,0,healthy
+UP_H003,03/06/2026 00:00,Platelet Count,265.712,01/01/1964 0:00,62.0,Female,0,healthy
+UP_H003,03/06/2026 00:00,Platelet Distribution Width (PDW),15.4307,01/01/1964 0:00,62.0,Female,0,healthy
+UP_H003,03/06/2026 00:00,Platelet Large Cell Count (P-LCC),104.2687,01/01/1964 0:00,62.0,Female,0,healthy
+UP_H003,03/06/2026 00:00,Platelet Large Cell Ratio (P-LCR),29.9861,01/01/1964 0:00,62.0,Female,0,healthy
+UP_H003,03/06/2026 00:00,Plateletcrit (PCT),0.2139,01/01/1964 0:00,62.0,Female,0,healthy
+UP_H003,03/06/2026 00:00,Postprandial Plasma Glucose (PPBS),108.7417,01/01/1964 0:00,62.0,Female,0,healthy
+UP_H003,03/06/2026 00:00,Prolactin,15.0477,01/01/1964 0:00,62.0,Female,0,healthy
+UP_H003,03/06/2026 00:00,Prostate-Specific Antigen (PSA),1.9668,01/01/1964 0:00,62.0,Female,0,healthy
+UP_H003,03/06/2026 00:00,Prothrombin Time (PT),12.1648,01/01/1964 0:00,62.0,Female,0,healthy
+UP_H003,03/06/2026 00:00,Random Plasma Glucose,66.9918,01/01/1964 0:00,62.0,Female,0,healthy
+UP_H003,03/06/2026 00:00,Red Blood Cell Count (RBC),5.266,01/01/1964 0:00,62.0,Female,0,healthy
+UP_H003,03/06/2026 00:00,Red Cell Distribution Width – CV (RDW-CV),13.0636,01/01/1964 0:00,62.0,Female,0,healthy
+UP_H003,03/06/2026 00:00,Red Cell Distribution Width – SD (RDW-SD),40.4055,01/01/1964 0:00,62.0,Female,0,healthy
+UP_H003,03/06/2026 00:00,Rheumatoid Factor (RF),9.7076,01/01/1964 0:00,62.0,Female,0,healthy
+UP_H003,03/06/2026 00:00,Serum Albumin,4.1029,01/01/1964 0:00,62.0,Female,0,healthy
+UP_H003,03/06/2026 00:00,Serum Amylase,49.516,01/01/1964 0:00,62.0,Female,0,healthy
+UP_H003,03/06/2026 00:00,Serum Bicarbonate (HCO₃⁻),25.1438,01/01/1964 0:00,62.0,Female,0,healthy
+UP_H003,03/06/2026 00:00,Serum Calcium,9.7731,01/01/1964 0:00,62.0,Female,0,healthy
+UP_H003,03/06/2026 00:00,Serum Chloride,99.2486,01/01/1964 0:00,62.0,Female,0,healthy
+UP_H003,03/06/2026 00:00,Serum Creatinine,0.7928,01/01/1964 0:00,62.0,Female,0,healthy
+UP_H003,03/06/2026 00:00,Serum Ferritin,274.5692,01/01/1964 0:00,62.0,Female,0,healthy
+UP_H003,03/06/2026 00:00,Serum Globulin,3.0917,01/01/1964 0:00,62.0,Female,0,healthy
+UP_H003,03/06/2026 00:00,Serum Magnesium,2.0979,01/01/1964 0:00,62.0,Female,0,healthy
+UP_H003,03/06/2026 00:00,Serum Phosphorus,3.4244,01/01/1964 0:00,62.0,Female,0,healthy
+UP_H003,03/06/2026 00:00,Serum Potassium,4.6409,01/01/1964 0:00,62.0,Female,0,healthy
+UP_H003,03/06/2026 00:00,Serum Sodium,139.7228,01/01/1964 0:00,62.0,Female,0,healthy
+UP_H003,03/06/2026 00:00,Serum Urea,25.8227,01/01/1964 0:00,62.0,Female,0,healthy
+UP_H003,03/06/2026 00:00,Serum Uric Acid,3.6296,01/01/1964 0:00,62.0,Female,0,healthy
+UP_H003,03/06/2026 00:00,Thyroid Stimulating Hormone (TSH),2.1727,01/01/1964 0:00,62.0,Female,0,healthy
+UP_H003,03/06/2026 00:00,Total Bilirubin,0.6611,01/01/1964 0:00,62.0,Female,0,healthy
+UP_H003,03/06/2026 00:00,Total Cholesterol,26.9763,01/01/1964 0:00,62.0,Female,0,healthy
+UP_H003,03/06/2026 00:00,Total Cholesterol/HDL Ratio,1.7258,01/01/1964 0:00,62.0,Female,0,healthy
+UP_H003,03/06/2026 00:00,Total Protein,7.0497,01/01/1964 0:00,62.0,Female,0,healthy
+UP_H003,03/06/2026 00:00,Triglycerides,46.9842,01/01/1964 0:00,62.0,Female,0,healthy
+UP_H003,03/06/2026 00:00,Urine Albumin-Creatinine Ratio (ACR),18.9211,01/01/1964 0:00,62.0,Female,0,healthy
+UP_H003,03/06/2026 00:00,Urine Calcium,190.2301,01/01/1964 0:00,62.0,Female,0,healthy
+UP_H003,03/06/2026 00:00,Urine Calcium-Creatinine Ratio (UCCR),0.0779,01/01/1964 0:00,62.0,Female,0,healthy
+UP_H003,03/06/2026 00:00,Urine Chloride,208.4778,01/01/1964 0:00,62.0,Female,0,healthy
+UP_H003,03/06/2026 00:00,Urine Creatinine (Spot),190.2115,01/01/1964 0:00,62.0,Female,0,healthy
+UP_H003,03/06/2026 00:00,Urine Microalbumin,8.3127,01/01/1964 0:00,62.0,Female,0,healthy
+UP_H003,03/06/2026 00:00,Urine Potassium,87.0389,01/01/1964 0:00,62.0,Female,0,healthy
+UP_H003,03/06/2026 00:00,Urine Protein (Spot),61.283,01/01/1964 0:00,62.0,Female,0,healthy
+UP_H003,03/06/2026 00:00,Urine Protein-Creatinine Ratio (UPCR),34.3774,01/01/1964 0:00,62.0,Female,0,healthy
+UP_H003,03/06/2026 00:00,Urine Sodium,124.6236,01/01/1964 0:00,62.0,Female,0,healthy
+UP_H003,03/06/2026 00:00,Urine Specific Gravity,1.0196,01/01/1964 0:00,62.0,Female,0,healthy
+UP_H003,03/06/2026 00:00,Urine Urate,536.3313,01/01/1964 0:00,62.0,Female,0,healthy
+UP_H003,03/06/2026 00:00,Urine Urate-to-Creatinine Ratio,0.1402,01/01/1964 0:00,62.0,Female,0,healthy
+UP_H003,03/06/2026 00:00,Urine Volume,1410.6659,01/01/1964 0:00,62.0,Female,0,healthy
+UP_H003,03/06/2026 00:00,Urine pH,6.8566,01/01/1964 0:00,62.0,Female,0,healthy
+UP_H003,03/06/2026 00:00,VLDL Cholesterol,18.7661,01/01/1964 0:00,62.0,Female,0,healthy
+UP_H003,03/06/2026 00:00,White Blood Cell Count (WBC),7.5536,01/01/1964 0:00,62.0,Female,0,healthy
+UP_H003,03/06/2026 00:00,White Blood Cell Count (WBC) (%),55.5245,01/01/1964 0:00,62.0,Female,0,healthy
+UP_H004,03/06/2026 00:00,1-Hour Plasma Glucose,96.3609,01/01/1991 0:00,35.0,Male,0,healthy
+UP_H004,03/06/2026 00:00,2-Hour Plasma Glucose,97.0631,01/01/1991 0:00,35.0,Male,0,healthy
+UP_H004,03/06/2026 00:00,24-Hour Urine Protein,79.4805,01/01/1991 0:00,35.0,Male,0,healthy
+UP_H004,03/06/2026 00:00,Activated Partial Thromboplastin Time (APTT),32.9075,01/01/1991 0:00,35.0,Male,0,healthy
+UP_H004,03/06/2026 00:00,Alanine Aminotransferase (ALT / SGPT),23.1871,01/01/1991 0:00,35.0,Male,0,healthy
+UP_H004,03/06/2026 00:00,Albumin/Globulin Ratio,1.6999,01/01/1991 0:00,35.0,Male,0,healthy
+UP_H004,03/06/2026 00:00,Alkaline Phosphatase (ALP),61.7013,01/01/1991 0:00,35.0,Male,0,healthy
+UP_H004,03/06/2026 00:00,Anti-Streptolysin O Titre (ASOT),101.3699,01/01/1991 0:00,35.0,Male,0,healthy
+UP_H004,03/06/2026 00:00,Aspartate Aminotransferase (AST / SGOT),25.6365,01/01/1991 0:00,35.0,Male,0,healthy
+UP_H004,03/06/2026 00:00,Basophils (%),0.5895,01/01/1991 0:00,35.0,Male,0,healthy
+UP_H004,03/06/2026 00:00,Basophils (Absolute),0.0438,01/01/1991 0:00,35.0,Male,0,healthy
+UP_H004,03/06/2026 00:00,Beta-hCG,2.5918,01/01/1991 0:00,35.0,Male,0,healthy
+UP_H004,03/06/2026 00:00,Bleeding Time,3.9131,01/01/1991 0:00,35.0,Male,0,healthy
+UP_H004,03/06/2026 00:00,Blood Urea,11.8752,01/01/1991 0:00,35.0,Male,0,healthy
+UP_H004,03/06/2026 00:00,C-Reactive Protein (CRP),3.3276,01/01/1991 0:00,35.0,Male,0,healthy
+UP_H004,03/06/2026 00:00,CA-125,14.3613,01/01/1991 0:00,35.0,Male,0,healthy
+UP_H004,03/06/2026 00:00,Clotting Time,8.3787,01/01/1991 0:00,35.0,Male,0,healthy
+UP_H004,03/06/2026 00:00,Corrected Serum Calcium,9.7105,01/01/1991 0:00,35.0,Male,0,healthy
+UP_H004,03/06/2026 00:00,Creatine Phosphokinase (CPK),128.4793,01/01/1991 0:00,35.0,Male,0,healthy
+UP_H004,03/06/2026 00:00,Direct Bilirubin,0.2251,01/01/1991 0:00,35.0,Male,0,healthy
+UP_H004,03/06/2026 00:00,Eosinophils (%),3.0113,01/01/1991 0:00,35.0,Male,0,healthy
+UP_H004,03/06/2026 00:00,Eosinophils (Absolute),0.1402,01/01/1991 0:00,35.0,Male,0,healthy
+UP_H004,03/06/2026 00:00,Erythrocyte Sedimentation Rate (ESR),6.8253,01/01/1991 0:00,35.0,Male,0,healthy
+UP_H004,03/06/2026 00:00,Fasting Plasma Glucose,82.3548,01/01/1991 0:00,35.0,Male,0,healthy
+UP_H004,03/06/2026 00:00,Follicle Stimulating Hormone (FSH),6.6625,01/01/1991 0:00,35.0,Male,0,healthy
+UP_H004,03/06/2026 00:00,Free T3,3.1038,01/01/1991 0:00,35.0,Male,0,healthy
+UP_H004,03/06/2026 00:00,Free T4,1.2824,01/01/1991 0:00,35.0,Male,0,healthy
+UP_H004,03/06/2026 00:00,Gamma-Glutamyl Transferase (GGT),14.7346,01/01/1991 0:00,35.0,Male,0,healthy
+UP_H004,03/06/2026 00:00,Glucose Challenge Test (GCT),78.3425,01/01/1991 0:00,35.0,Male,0,healthy
+UP_H004,03/06/2026 00:00,HDL Cholesterol,73.7294,01/01/1991 0:00,35.0,Male,0,healthy
+UP_H004,03/06/2026 00:00,Hematocrit (PCV/HCT),48.4589,01/01/1991 0:00,35.0,Male,0,healthy
+UP_H004,03/06/2026 00:00,Hemoglobin (Hb),14.6214,01/01/1991 0:00,35.0,Male,0,healthy
+UP_H004,03/06/2026 00:00,Hemoglobin A1c (HbA1c),4.9999,01/01/1991 0:00,35.0,Male,0,healthy
+UP_H004,03/06/2026 00:00,Indirect Bilirubin,0.4247,01/01/1991 0:00,35.0,Male,0,healthy
+UP_H004,03/06/2026 00:00,International Normalized Ratio (INR),0.9709,01/01/1991 0:00,35.0,Male,0,healthy
+UP_H004,03/06/2026 00:00,Ionized Calcium,1.296,01/01/1991 0:00,35.0,Male,0,healthy
+UP_H004,03/06/2026 00:00,LDL Cholesterol,56.0163,01/01/1991 0:00,35.0,Male,0,healthy
+UP_H004,03/06/2026 00:00,LDL/HDL Ratio,2.5294,01/01/1991 0:00,35.0,Male,0,healthy
+UP_H004,03/06/2026 00:00,Lactate Dehydrogenase (LDH),213.1504,01/01/1991 0:00,35.0,Male,0,healthy
+UP_H004,03/06/2026 00:00,Luteinizing Hormone (LH),6.5956,01/01/1991 0:00,35.0,Male,0,healthy
+UP_H004,03/06/2026 00:00,Lymphocytes (%),32.7796,01/01/1991 0:00,35.0,Male,0,healthy
+UP_H004,03/06/2026 00:00,Lymphocytes (Absolute),2.2348,01/01/1991 0:00,35.0,Male,0,healthy
+UP_H004,03/06/2026 00:00,Mean Corpuscular Hemoglobin (MCH),29.299,01/01/1991 0:00,35.0,Male,0,healthy
+UP_H004,03/06/2026 00:00,Mean Corpuscular Hemoglobin Concentration (MCHC),33.3329,01/01/1991 0:00,35.0,Male,0,healthy
+UP_H004,03/06/2026 00:00,Mean Corpuscular Volume (MCV),97.4136,01/01/1991 0:00,35.0,Male,0,healthy
+UP_H004,03/06/2026 00:00,Mean Platelet Volume (MPV),9.7607,01/01/1991 0:00,35.0,Male,0,healthy
+UP_H004,03/06/2026 00:00,Monocytes (%),6.2713,01/01/1991 0:00,35.0,Male,0,healthy
+UP_H004,03/06/2026 00:00,Monocytes (Absolute),89.7342,01/01/1991 0:00,35.0,Male,0,healthy
+UP_H004,03/06/2026 00:00,Neutrophils (%),49.0532,01/01/1991 0:00,35.0,Male,0,healthy
+UP_H004,03/06/2026 00:00,Neutrophils (Absolute),3.8381,01/01/1991 0:00,35.0,Male,0,healthy
+UP_H004,03/06/2026 00:00,Platelet Count,225.3753,01/01/1991 0:00,35.0,Male,0,healthy
+UP_H004,03/06/2026 00:00,Platelet Distribution Width (PDW),10.578,01/01/1991 0:00,35.0,Male,0,healthy
+UP_H004,03/06/2026 00:00,Platelet Large Cell Count (P-LCC),87.14,01/01/1991 0:00,35.0,Male,0,healthy
+UP_H004,03/06/2026 00:00,Platelet Large Cell Ratio (P-LCR),24.3501,01/01/1991 0:00,35.0,Male,0,healthy
+UP_H004,03/06/2026 00:00,Plateletcrit (PCT),0.1485,01/01/1991 0:00,35.0,Male,0,healthy
+UP_H004,03/06/2026 00:00,Postprandial Plasma Glucose (PPBS),95.897,01/01/1991 0:00,35.0,Male,0,healthy
+UP_H004,03/06/2026 00:00,Prolactin,10.0546,01/01/1991 0:00,35.0,Male,0,healthy
+UP_H004,03/06/2026 00:00,Prostate-Specific Antigen (PSA),2.3461,01/01/1991 0:00,35.0,Male,0,healthy
+UP_H004,03/06/2026 00:00,Prothrombin Time (PT),12.4768,01/01/1991 0:00,35.0,Male,0,healthy
+UP_H004,03/06/2026 00:00,Random Plasma Glucose,73.4055,01/01/1991 0:00,35.0,Male,0,healthy
+UP_H004,03/06/2026 00:00,Red Blood Cell Count (RBC),5.442,01/01/1991 0:00,35.0,Male,0,healthy
+UP_H004,03/06/2026 00:00,Red Cell Distribution Width – CV (RDW-CV),13.0439,01/01/1991 0:00,35.0,Male,0,healthy
+UP_H004,03/06/2026 00:00,Red Cell Distribution Width – SD (RDW-SD),42.8111,01/01/1991 0:00,35.0,Male,0,healthy
+UP_H004,03/06/2026 00:00,Rheumatoid Factor (RF),4.6688,01/01/1991 0:00,35.0,Male,0,healthy
+UP_H004,03/06/2026 00:00,Serum Albumin,4.1716,01/01/1991 0:00,35.0,Male,0,healthy
+UP_H004,03/06/2026 00:00,Serum Amylase,53.4696,01/01/1991 0:00,35.0,Male,0,healthy
+UP_H004,03/06/2026 00:00,Serum Bicarbonate (HCO₃⁻),25.0546,01/01/1991 0:00,35.0,Male,0,healthy
+UP_H004,03/06/2026 00:00,Serum Calcium,10.0991,01/01/1991 0:00,35.0,Male,0,healthy
+UP_H004,03/06/2026 00:00,Serum Chloride,102.8057,01/01/1991 0:00,35.0,Male,0,healthy
+UP_H004,03/06/2026 00:00,Serum Creatinine,1.0324,01/01/1991 0:00,35.0,Male,0,healthy
+UP_H004,03/06/2026 00:00,Serum Ferritin,154.9289,01/01/1991 0:00,35.0,Male,0,healthy
+UP_H004,03/06/2026 00:00,Serum Globulin,2.8545,01/01/1991 0:00,35.0,Male,0,healthy
+UP_H004,03/06/2026 00:00,Serum Magnesium,2.0799,01/01/1991 0:00,35.0,Male,0,healthy
+UP_H004,03/06/2026 00:00,Serum Phosphorus,3.28,01/01/1991 0:00,35.0,Male,0,healthy
+UP_H004,03/06/2026 00:00,Serum Potassium,4.6361,01/01/1991 0:00,35.0,Male,0,healthy
+UP_H004,03/06/2026 00:00,Serum Sodium,137.5586,01/01/1991 0:00,35.0,Male,0,healthy
+UP_H004,03/06/2026 00:00,Serum Urea,29.9873,01/01/1991 0:00,35.0,Male,0,healthy
+UP_H004,03/06/2026 00:00,Serum Uric Acid,5.3229,01/01/1991 0:00,35.0,Male,0,healthy
+UP_H004,03/06/2026 00:00,Thyroid Stimulating Hormone (TSH),2.8121,01/01/1991 0:00,35.0,Male,0,healthy
+UP_H004,03/06/2026 00:00,Total Bilirubin,0.8617,01/01/1991 0:00,35.0,Male,0,healthy
+UP_H004,03/06/2026 00:00,Total Cholesterol,52.3254,01/01/1991 0:00,35.0,Male,0,healthy
+UP_H004,03/06/2026 00:00,Total Cholesterol/HDL Ratio,2.2338,01/01/1991 0:00,35.0,Male,0,healthy
+UP_H004,03/06/2026 00:00,Total Protein,7.7824,01/01/1991 0:00,35.0,Male,0,healthy
+UP_H004,03/06/2026 00:00,Triglycerides,102.3263,01/01/1991 0:00,35.0,Male,0,healthy
+UP_H004,03/06/2026 00:00,Urine Albumin-Creatinine Ratio (ACR),12.0319,01/01/1991 0:00,35.0,Male,0,healthy
+UP_H004,03/06/2026 00:00,Urine Calcium,176.2238,01/01/1991 0:00,35.0,Male,0,healthy
+UP_H004,03/06/2026 00:00,Urine Calcium-Creatinine Ratio (UCCR),0.0815,01/01/1991 0:00,35.0,Male,0,healthy
+UP_H004,03/06/2026 00:00,Urine Chloride,177.8532,01/01/1991 0:00,35.0,Male,0,healthy
+UP_H004,03/06/2026 00:00,Urine Creatinine (Spot),161.7105,01/01/1991 0:00,35.0,Male,0,healthy
+UP_H004,03/06/2026 00:00,Urine Microalbumin,11.4708,01/01/1991 0:00,35.0,Male,0,healthy
+UP_H004,03/06/2026 00:00,Urine Potassium,80.1306,01/01/1991 0:00,35.0,Male,0,healthy
+UP_H004,03/06/2026 00:00,Urine Protein (Spot),96.5478,01/01/1991 0:00,35.0,Male,0,healthy
+UP_H004,03/06/2026 00:00,Urine Protein-Creatinine Ratio (UPCR),75.6676,01/01/1991 0:00,35.0,Male,0,healthy
+UP_H004,03/06/2026 00:00,Urine Sodium,151.8168,01/01/1991 0:00,35.0,Male,0,healthy
+UP_H004,03/06/2026 00:00,Urine Specific Gravity,1.0176,01/01/1991 0:00,35.0,Male,0,healthy
+UP_H004,03/06/2026 00:00,Urine Urate,724.9296,01/01/1991 0:00,35.0,Male,0,healthy
+UP_H004,03/06/2026 00:00,Urine Urate-to-Creatinine Ratio,0.369,01/01/1991 0:00,35.0,Male,0,healthy
+UP_H004,03/06/2026 00:00,Urine Volume,1682.7053,01/01/1991 0:00,35.0,Male,0,healthy
+UP_H004,03/06/2026 00:00,Urine pH,5.3013,01/01/1991 0:00,35.0,Male,0,healthy
+UP_H004,03/06/2026 00:00,VLDL Cholesterol,18.8105,01/01/1991 0:00,35.0,Male,0,healthy
+UP_H004,03/06/2026 00:00,White Blood Cell Count (WBC),7.3212,01/01/1991 0:00,35.0,Male,0,healthy
+UP_H004,03/06/2026 00:00,White Blood Cell Count (WBC) (%),50.9946,01/01/1991 0:00,35.0,Male,0,healthy
+UP_H005,03/06/2026 00:00,1-Hour Plasma Glucose,25.8341,01/01/1971 0:00,55.0,Female,0,healthy
+UP_H005,03/06/2026 00:00,2-Hour Plasma Glucose,61.8573,01/01/1971 0:00,55.0,Female,0,healthy
+UP_H005,03/06/2026 00:00,24-Hour Urine Protein,115.5957,01/01/1971 0:00,55.0,Female,0,healthy
+UP_H005,03/06/2026 00:00,Activated Partial Thromboplastin Time (APTT),35.7768,01/01/1971 0:00,55.0,Female,0,healthy
+UP_H005,03/06/2026 00:00,Alanine Aminotransferase (ALT / SGPT),35.973,01/01/1971 0:00,55.0,Female,0,healthy
+UP_H005,03/06/2026 00:00,Albumin/Globulin Ratio,1.8388,01/01/1971 0:00,55.0,Female,0,healthy
+UP_H005,03/06/2026 00:00,Alkaline Phosphatase (ALP),92.2135,01/01/1971 0:00,55.0,Female,0,healthy
+UP_H005,03/06/2026 00:00,Anti-Streptolysin O Titre (ASOT),139.1955,01/01/1971 0:00,55.0,Female,0,healthy
+UP_H005,03/06/2026 00:00,Aspartate Aminotransferase (AST / SGOT),25.5783,01/01/1971 0:00,55.0,Female,0,healthy
+UP_H005,03/06/2026 00:00,Basophils (%),0.616,01/01/1971 0:00,55.0,Female,0,healthy
+UP_H005,03/06/2026 00:00,Basophils (Absolute),0.0337,01/01/1971 0:00,55.0,Female,0,healthy
+UP_H005,03/06/2026 00:00,Beta-hCG,2.5687,01/01/1971 0:00,55.0,Female,0,healthy
+UP_H005,03/06/2026 00:00,Bleeding Time,4.8482,01/01/1971 0:00,55.0,Female,0,healthy
+UP_H005,03/06/2026 00:00,Blood Urea,11.9276,01/01/1971 0:00,55.0,Female,0,healthy
+UP_H005,03/06/2026 00:00,C-Reactive Protein (CRP),1.6177,01/01/1971 0:00,55.0,Female,0,healthy
+UP_H005,03/06/2026 00:00,CA-125,8.1236,01/01/1971 0:00,55.0,Female,0,healthy
+UP_H005,03/06/2026 00:00,Clotting Time,8.4265,01/01/1971 0:00,55.0,Female,0,healthy
+UP_H005,03/06/2026 00:00,Corrected Serum Calcium,9.4637,01/01/1971 0:00,55.0,Female,0,healthy
+UP_H005,03/06/2026 00:00,Creatine Phosphokinase (CPK),114.2346,01/01/1971 0:00,55.0,Female,0,healthy
+UP_H005,03/06/2026 00:00,Direct Bilirubin,0.1788,01/01/1971 0:00,55.0,Female,0,healthy
+UP_H005,03/06/2026 00:00,Eosinophils (%),5.1339,01/01/1971 0:00,55.0,Female,0,healthy
+UP_H005,03/06/2026 00:00,Eosinophils (Absolute),0.2862,01/01/1971 0:00,55.0,Female,0,healthy
+UP_H005,03/06/2026 00:00,Erythrocyte Sedimentation Rate (ESR),9.6791,01/01/1971 0:00,55.0,Female,0,healthy
+UP_H005,03/06/2026 00:00,Fasting Plasma Glucose,86.282,01/01/1971 0:00,55.0,Female,0,healthy
+UP_H005,03/06/2026 00:00,Follicle Stimulating Hormone (FSH),6.9541,01/01/1971 0:00,55.0,Female,0,healthy
+UP_H005,03/06/2026 00:00,Free T3,3.0211,01/01/1971 0:00,55.0,Female,0,healthy
+UP_H005,03/06/2026 00:00,Free T4,1.4076,01/01/1971 0:00,55.0,Female,0,healthy
+UP_H005,03/06/2026 00:00,Gamma-Glutamyl Transferase (GGT),28.0907,01/01/1971 0:00,55.0,Female,0,healthy
+UP_H005,03/06/2026 00:00,Glucose Challenge Test (GCT),46.2231,01/01/1971 0:00,55.0,Female,0,healthy
+UP_H005,03/06/2026 00:00,HDL Cholesterol,63.5674,01/01/1971 0:00,55.0,Female,0,healthy
+UP_H005,03/06/2026 00:00,Hematocrit (PCV/HCT),42.2005,01/01/1971 0:00,55.0,Female,0,healthy
+UP_H005,03/06/2026 00:00,Hemoglobin (Hb),14.3678,01/01/1971 0:00,55.0,Female,0,healthy
+UP_H005,03/06/2026 00:00,Hemoglobin A1c (HbA1c),5.0954,01/01/1971 0:00,55.0,Female,0,healthy
+UP_H005,03/06/2026 00:00,Indirect Bilirubin,0.5735,01/01/1971 0:00,55.0,Female,0,healthy
+UP_H005,03/06/2026 00:00,International Normalized Ratio (INR),0.9112,01/01/1971 0:00,55.0,Female,0,healthy
+UP_H005,03/06/2026 00:00,Ionized Calcium,1.1712,01/01/1971 0:00,55.0,Female,0,healthy
+UP_H005,03/06/2026 00:00,LDL Cholesterol,9.7184,01/01/1971 0:00,55.0,Female,0,healthy
+UP_H005,03/06/2026 00:00,LDL/HDL Ratio,1.5392,01/01/1971 0:00,55.0,Female,0,healthy
+UP_H005,03/06/2026 00:00,Lactate Dehydrogenase (LDH),209.3845,01/01/1971 0:00,55.0,Female,0,healthy
+UP_H005,03/06/2026 00:00,Luteinizing Hormone (LH),3.2157,01/01/1971 0:00,55.0,Female,0,healthy
+UP_H005,03/06/2026 00:00,Lymphocytes (%),27.8575,01/01/1971 0:00,55.0,Female,0,healthy
+UP_H005,03/06/2026 00:00,Lymphocytes (Absolute),1.4093,01/01/1971 0:00,55.0,Female,0,healthy
+UP_H005,03/06/2026 00:00,Mean Corpuscular Hemoglobin (MCH),29.7387,01/01/1971 0:00,55.0,Female,0,healthy
+UP_H005,03/06/2026 00:00,Mean Corpuscular Hemoglobin Concentration (MCHC),34.4606,01/01/1971 0:00,55.0,Female,0,healthy
+UP_H005,03/06/2026 00:00,Mean Corpuscular Volume (MCV),90.4556,01/01/1971 0:00,55.0,Female,0,healthy
+UP_H005,03/06/2026 00:00,Mean Platelet Volume (MPV),10.9511,01/01/1971 0:00,55.0,Female,0,healthy
+UP_H005,03/06/2026 00:00,Monocytes (%),5.6841,01/01/1971 0:00,55.0,Female,0,healthy
+UP_H005,03/06/2026 00:00,Monocytes (Absolute),88.4705,01/01/1971 0:00,55.0,Female,0,healthy
+UP_H005,03/06/2026 00:00,Neutrophils (%),62.8491,01/01/1971 0:00,55.0,Female,0,healthy
+UP_H005,03/06/2026 00:00,Neutrophils (Absolute),5.2364,01/01/1971 0:00,55.0,Female,0,healthy
+UP_H005,03/06/2026 00:00,Platelet Count,213.6334,01/01/1971 0:00,55.0,Female,0,healthy
+UP_H005,03/06/2026 00:00,Platelet Distribution Width (PDW),12.5293,01/01/1971 0:00,55.0,Female,0,healthy
+UP_H005,03/06/2026 00:00,Platelet Large Cell Count (P-LCC),80.071,01/01/1971 0:00,55.0,Female,0,healthy
+UP_H005,03/06/2026 00:00,Platelet Large Cell Ratio (P-LCR),26.897,01/01/1971 0:00,55.0,Female,0,healthy
+UP_H005,03/06/2026 00:00,Plateletcrit (PCT),0.1994,01/01/1971 0:00,55.0,Female,0,healthy
+UP_H005,03/06/2026 00:00,Postprandial Plasma Glucose (PPBS),118.1077,01/01/1971 0:00,55.0,Female,0,healthy
+UP_H005,03/06/2026 00:00,Prolactin,12.1614,01/01/1971 0:00,55.0,Female,0,healthy
+UP_H005,03/06/2026 00:00,Prostate-Specific Antigen (PSA),1.8033,01/01/1971 0:00,55.0,Female,0,healthy
+UP_H005,03/06/2026 00:00,Prothrombin Time (PT),12.6229,01/01/1971 0:00,55.0,Female,0,healthy
+UP_H005,03/06/2026 00:00,Random Plasma Glucose,63.1539,01/01/1971 0:00,55.0,Female,0,healthy
+UP_H005,03/06/2026 00:00,Red Blood Cell Count (RBC),5.3477,01/01/1971 0:00,55.0,Female,0,healthy
+UP_H005,03/06/2026 00:00,Red Cell Distribution Width – CV (RDW-CV),12.8966,01/01/1971 0:00,55.0,Female,0,healthy
+UP_H005,03/06/2026 00:00,Red Cell Distribution Width – SD (RDW-SD),43.9749,01/01/1971 0:00,55.0,Female,0,healthy
+UP_H005,03/06/2026 00:00,Rheumatoid Factor (RF),7.1996,01/01/1971 0:00,55.0,Female,0,healthy
+UP_H005,03/06/2026 00:00,Serum Albumin,4.216,01/01/1971 0:00,55.0,Female,0,healthy
+UP_H005,03/06/2026 00:00,Serum Amylase,40.9467,01/01/1971 0:00,55.0,Female,0,healthy
+UP_H005,03/06/2026 00:00,Serum Bicarbonate (HCO₃⁻),25.6479,01/01/1971 0:00,55.0,Female,0,healthy
+UP_H005,03/06/2026 00:00,Serum Calcium,9.3361,01/01/1971 0:00,55.0,Female,0,healthy
+UP_H005,03/06/2026 00:00,Serum Chloride,103.8101,01/01/1971 0:00,55.0,Female,0,healthy
+UP_H005,03/06/2026 00:00,Serum Creatinine,1.0236,01/01/1971 0:00,55.0,Female,0,healthy
+UP_H005,03/06/2026 00:00,Serum Ferritin,173.4055,01/01/1971 0:00,55.0,Female,0,healthy
+UP_H005,03/06/2026 00:00,Serum Globulin,2.6724,01/01/1971 0:00,55.0,Female,0,healthy
+UP_H005,03/06/2026 00:00,Serum Magnesium,2.0009,01/01/1971 0:00,55.0,Female,0,healthy
+UP_H005,03/06/2026 00:00,Serum Phosphorus,3.1734,01/01/1971 0:00,55.0,Female,0,healthy
+UP_H005,03/06/2026 00:00,Serum Potassium,3.7642,01/01/1971 0:00,55.0,Female,0,healthy
+UP_H005,03/06/2026 00:00,Serum Sodium,137.9079,01/01/1971 0:00,55.0,Female,0,healthy
+UP_H005,03/06/2026 00:00,Serum Urea,27.8407,01/01/1971 0:00,55.0,Female,0,healthy
+UP_H005,03/06/2026 00:00,Serum Uric Acid,5.9735,01/01/1971 0:00,55.0,Female,0,healthy
+UP_H005,03/06/2026 00:00,Thyroid Stimulating Hormone (TSH),2.8498,01/01/1971 0:00,55.0,Female,0,healthy
+UP_H005,03/06/2026 00:00,Total Bilirubin,0.726,01/01/1971 0:00,55.0,Female,0,healthy
+UP_H005,03/06/2026 00:00,Total Cholesterol,90.2303,01/01/1971 0:00,55.0,Female,0,healthy
+UP_H005,03/06/2026 00:00,Total Cholesterol/HDL Ratio,2.2615,01/01/1971 0:00,55.0,Female,0,healthy
+UP_H005,03/06/2026 00:00,Total Protein,7.1339,01/01/1971 0:00,55.0,Female,0,healthy
+UP_H005,03/06/2026 00:00,Triglycerides,69.8638,01/01/1971 0:00,55.0,Female,0,healthy
+UP_H005,03/06/2026 00:00,Urine Albumin-Creatinine Ratio (ACR),21.9673,01/01/1971 0:00,55.0,Female,0,healthy
+UP_H005,03/06/2026 00:00,Urine Calcium,144.4494,01/01/1971 0:00,55.0,Female,0,healthy
+UP_H005,03/06/2026 00:00,Urine Calcium-Creatinine Ratio (UCCR),0.096,01/01/1971 0:00,55.0,Female,0,healthy
+UP_H005,03/06/2026 00:00,Urine Chloride,170.7635,01/01/1971 0:00,55.0,Female,0,healthy
+UP_H005,03/06/2026 00:00,Urine Creatinine (Spot),109.9178,01/01/1971 0:00,55.0,Female,0,healthy
+UP_H005,03/06/2026 00:00,Urine Microalbumin,11.8225,01/01/1971 0:00,55.0,Female,0,healthy
+UP_H005,03/06/2026 00:00,Urine Potassium,72.7396,01/01/1971 0:00,55.0,Female,0,healthy
+UP_H005,03/06/2026 00:00,Urine Protein (Spot),108.3784,01/01/1971 0:00,55.0,Female,0,healthy
+UP_H005,03/06/2026 00:00,Urine Protein-Creatinine Ratio (UPCR),57.4362,01/01/1971 0:00,55.0,Female,0,healthy
+UP_H005,03/06/2026 00:00,Urine Sodium,175.0458,01/01/1971 0:00,55.0,Female,0,healthy
+UP_H005,03/06/2026 00:00,Urine Specific Gravity,1.015,01/01/1971 0:00,55.0,Female,0,healthy
+UP_H005,03/06/2026 00:00,Urine Urate,620.3667,01/01/1971 0:00,55.0,Female,0,healthy
+UP_H005,03/06/2026 00:00,Urine Urate-to-Creatinine Ratio,0.2705,01/01/1971 0:00,55.0,Female,0,healthy
+UP_H005,03/06/2026 00:00,Urine Volume,1856.5974,01/01/1971 0:00,55.0,Female,0,healthy
+UP_H005,03/06/2026 00:00,Urine pH,6.7297,01/01/1971 0:00,55.0,Female,0,healthy
+UP_H005,03/06/2026 00:00,VLDL Cholesterol,21.1,01/01/1971 0:00,55.0,Female,0,healthy
+UP_H005,03/06/2026 00:00,White Blood Cell Count (WBC),9.5428,01/01/1971 0:00,55.0,Female,0,healthy
+UP_H005,03/06/2026 00:00,White Blood Cell Count (WBC) (%),55.8497,01/01/1971 0:00,55.0,Female,0,healthy
+UP_M001,03/06/2026 00:00,1-Hour Plasma Glucose,55.6873,01/01/1974 0:00,52.0,Male,0,mild
+UP_M001,03/06/2026 00:00,2-Hour Plasma Glucose,63.0713,01/01/1974 0:00,52.0,Male,0,mild
+UP_M001,03/06/2026 00:00,24-Hour Urine Protein,0.0,01/01/1974 0:00,52.0,Male,0,mild
+UP_M001,03/06/2026 00:00,Activated Partial Thromboplastin Time (APTT),34.6009,01/01/1974 0:00,52.0,Male,0,mild
+UP_M001,03/06/2026 00:00,Alanine Aminotransferase (ALT / SGPT),27.574,01/01/1974 0:00,52.0,Male,0,mild
+UP_M001,03/06/2026 00:00,Albumin/Globulin Ratio,1.5204,01/01/1974 0:00,52.0,Male,0,mild
+UP_M001,03/06/2026 00:00,Alkaline Phosphatase (ALP),116.3097,01/01/1974 0:00,52.0,Male,0,mild
+UP_M001,03/06/2026 00:00,Anti-Streptolysin O Titre (ASOT),107.3879,01/01/1974 0:00,52.0,Male,0,mild
+UP_M001,03/06/2026 00:00,Aspartate Aminotransferase (AST / SGOT),24.4945,01/01/1974 0:00,52.0,Male,0,mild
+UP_M001,03/06/2026 00:00,Basophils (%),0.6113,01/01/1974 0:00,52.0,Male,0,mild
+UP_M001,03/06/2026 00:00,Basophils (Absolute),0.0505,01/01/1974 0:00,52.0,Male,0,mild
+UP_M001,03/06/2026 00:00,Beta-hCG,1.6106,01/01/1974 0:00,52.0,Male,0,mild
+UP_M001,03/06/2026 00:00,Bleeding Time,4.6632,01/01/1974 0:00,52.0,Male,0,mild
+UP_M001,03/06/2026 00:00,Blood Urea,0.0,01/01/1974 0:00,52.0,Male,0,mild
+UP_M001,03/06/2026 00:00,C-Reactive Protein (CRP),2.787,01/01/1974 0:00,52.0,Male,0,mild
+UP_M001,03/06/2026 00:00,CA-125,31.4521,01/01/1974 0:00,52.0,Male,0,mild
+UP_M001,03/06/2026 00:00,Clotting Time,9.7982,01/01/1974 0:00,52.0,Male,0,mild
+UP_M001,03/06/2026 00:00,Corrected Serum Calcium,11.3644,01/01/1974 0:00,52.0,Male,0,mild
+UP_M001,03/06/2026 00:00,Creatine Phosphokinase (CPK),75.6611,01/01/1974 0:00,52.0,Male,0,mild
+UP_M001,03/06/2026 00:00,Direct Bilirubin,0.1346,01/01/1974 0:00,52.0,Male,0,mild
+UP_M001,03/06/2026 00:00,Eosinophils (%),3.3678,01/01/1974 0:00,52.0,Male,0,mild
+UP_M001,03/06/2026 00:00,Eosinophils (Absolute),0.3032,01/01/1974 0:00,52.0,Male,0,mild
+UP_M001,03/06/2026 00:00,Erythrocyte Sedimentation Rate (ESR),11.0796,01/01/1974 0:00,52.0,Male,0,mild
+UP_M001,03/06/2026 00:00,Fasting Plasma Glucose,90.4301,01/01/1974 0:00,52.0,Male,0,mild
+UP_M001,03/06/2026 00:00,Follicle Stimulating Hormone (FSH),9.629,01/01/1974 0:00,52.0,Male,0,mild
+UP_M001,03/06/2026 00:00,Free T3,3.7717,01/01/1974 0:00,52.0,Male,0,mild
+UP_M001,03/06/2026 00:00,Free T4,1.0674,01/01/1974 0:00,52.0,Male,0,mild
+UP_M001,03/06/2026 00:00,Gamma-Glutamyl Transferase (GGT),25.3558,01/01/1974 0:00,52.0,Male,0,mild
+UP_M001,03/06/2026 00:00,Glucose Challenge Test (GCT),64.3361,01/01/1974 0:00,52.0,Male,0,mild
+UP_M001,03/06/2026 00:00,HDL Cholesterol,68.5869,01/01/1974 0:00,52.0,Male,0,mild
+UP_M001,03/06/2026 00:00,Hematocrit (PCV/HCT),46.0857,01/01/1974 0:00,52.0,Male,0,mild
+UP_M001,03/06/2026 00:00,Hemoglobin (Hb),14.4248,01/01/1974 0:00,52.0,Male,0,mild
+UP_M001,03/06/2026 00:00,Hemoglobin A1c (HbA1c),4.7292,01/01/1974 0:00,52.0,Male,0,mild
+UP_M001,03/06/2026 00:00,Indirect Bilirubin,0.6604,01/01/1974 0:00,52.0,Male,0,mild
+UP_M001,03/06/2026 00:00,International Normalized Ratio (INR),0.96,01/01/1974 0:00,52.0,Male,0,mild
+UP_M001,03/06/2026 00:00,Ionized Calcium,0.9852,01/01/1974 0:00,52.0,Male,0,mild
+UP_M001,03/06/2026 00:00,LDL Cholesterol,40.2961,01/01/1974 0:00,52.0,Male,0,mild
+UP_M001,03/06/2026 00:00,LDL/HDL Ratio,2.191,01/01/1974 0:00,52.0,Male,0,mild
+UP_M001,03/06/2026 00:00,Lactate Dehydrogenase (LDH),227.2046,01/01/1974 0:00,52.0,Male,0,mild
+UP_M001,03/06/2026 00:00,Luteinizing Hormone (LH),3.2404,01/01/1974 0:00,52.0,Male,0,mild
+UP_M001,03/06/2026 00:00,Lymphocytes (%),23.3155,01/01/1974 0:00,52.0,Male,0,mild
+UP_M001,03/06/2026 00:00,Lymphocytes (Absolute),1.2999,01/01/1974 0:00,52.0,Male,0,mild
+UP_M001,03/06/2026 00:00,Mean Corpuscular Hemoglobin (MCH),30.5731,01/01/1974 0:00,52.0,Male,0,mild
+UP_M001,03/06/2026 00:00,Mean Corpuscular Hemoglobin Concentration (MCHC),32.9347,01/01/1974 0:00,52.0,Male,0,mild
+UP_M001,03/06/2026 00:00,Mean Corpuscular Volume (MCV),94.272,01/01/1974 0:00,52.0,Male,0,mild
+UP_M001,03/06/2026 00:00,Mean Platelet Volume (MPV),9.432,01/01/1974 0:00,52.0,Male,0,mild
+UP_M001,03/06/2026 00:00,Monocytes (%),6.3888,01/01/1974 0:00,52.0,Male,0,mild
+UP_M001,03/06/2026 00:00,Monocytes (Absolute),92.0744,01/01/1974 0:00,52.0,Male,0,mild
+UP_M001,03/06/2026 00:00,Neutrophils (%),65.7332,01/01/1974 0:00,52.0,Male,0,mild
+UP_M001,03/06/2026 00:00,Neutrophils (Absolute),2.5828,01/01/1974 0:00,52.0,Male,0,mild
+UP_M001,03/06/2026 00:00,Platelet Count,347.2612,01/01/1974 0:00,52.0,Male,0,mild
+UP_M001,03/06/2026 00:00,Platelet Distribution Width (PDW),12.4881,01/01/1974 0:00,52.0,Male,0,mild
+UP_M001,03/06/2026 00:00,Platelet Large Cell Count (P-LCC),97.6022,01/01/1974 0:00,52.0,Male,0,mild
+UP_M001,03/06/2026 00:00,Platelet Large Cell Ratio (P-LCR),31.0611,01/01/1974 0:00,52.0,Male,0,mild
+UP_M001,03/06/2026 00:00,Plateletcrit (PCT),0.1701,01/01/1974 0:00,52.0,Male,0,mild
+UP_M001,03/06/2026 00:00,Postprandial Plasma Glucose (PPBS),92.5375,01/01/1974 0:00,52.0,Male,0,mild
+UP_M001,03/06/2026 00:00,Prolactin,15.2886,01/01/1974 0:00,52.0,Male,0,mild
+UP_M001,03/06/2026 00:00,Prostate-Specific Antigen (PSA),2.3174,01/01/1974 0:00,52.0,Male,0,mild
+UP_M001,03/06/2026 00:00,Prothrombin Time (PT),12.7168,01/01/1974 0:00,52.0,Male,0,mild
+UP_M001,03/06/2026 00:00,Random Plasma Glucose,104.67,01/01/1974 0:00,52.0,Male,0,mild
+UP_M001,03/06/2026 00:00,Red Blood Cell Count (RBC),5.8385,01/01/1974 0:00,52.0,Male,0,mild
+UP_M001,03/06/2026 00:00,Red Cell Distribution Width – CV (RDW-CV),13.1895,01/01/1974 0:00,52.0,Male,0,mild
+UP_M001,03/06/2026 00:00,Red Cell Distribution Width – SD (RDW-SD),41.6326,01/01/1974 0:00,52.0,Male,0,mild
+UP_M001,03/06/2026 00:00,Rheumatoid Factor (RF),7.6015,01/01/1974 0:00,52.0,Male,0,mild
+UP_M001,03/06/2026 00:00,Serum Albumin,4.8028,01/01/1974 0:00,52.0,Male,0,mild
+UP_M001,03/06/2026 00:00,Serum Amylase,49.3885,01/01/1974 0:00,52.0,Male,0,mild
+UP_M001,03/06/2026 00:00,Serum Bicarbonate (HCO₃⁻),17.4706,01/01/1974 0:00,52.0,Male,0,mild
+UP_M001,03/06/2026 00:00,Serum Calcium,11.6467,01/01/1974 0:00,52.0,Male,0,mild
+UP_M001,03/06/2026 00:00,Serum Chloride,111.0215,01/01/1974 0:00,52.0,Male,0,mild
+UP_M001,03/06/2026 00:00,Serum Creatinine,0.0,01/01/1974 0:00,52.0,Male,0,mild
+UP_M001,03/06/2026 00:00,Serum Ferritin,171.9394,01/01/1974 0:00,52.0,Male,0,mild
+UP_M001,03/06/2026 00:00,Serum Globulin,2.7344,01/01/1974 0:00,52.0,Male,0,mild
+UP_M001,03/06/2026 00:00,Serum Magnesium,1.4217,01/01/1974 0:00,52.0,Male,0,mild
+UP_M001,03/06/2026 00:00,Serum Phosphorus,0.7645,01/01/1974 0:00,52.0,Male,0,mild
+UP_M001,03/06/2026 00:00,Serum Potassium,2.8725,01/01/1974 0:00,52.0,Male,0,mild
+UP_M001,03/06/2026 00:00,Serum Sodium,128.0399,01/01/1974 0:00,52.0,Male,0,mild
+UP_M001,03/06/2026 00:00,Serum Urea,55.293,01/01/1974 0:00,52.0,Male,0,mild
+UP_M001,03/06/2026 00:00,Serum Uric Acid,0.0032,01/01/1974 0:00,52.0,Male,0,mild
+UP_M001,03/06/2026 00:00,Thyroid Stimulating Hormone (TSH),2.3461,01/01/1974 0:00,52.0,Male,0,mild
+UP_M001,03/06/2026 00:00,Total Bilirubin,0.795,01/01/1974 0:00,52.0,Male,0,mild
+UP_M001,03/06/2026 00:00,Total Cholesterol,102.3088,01/01/1974 0:00,52.0,Male,0,mild
+UP_M001,03/06/2026 00:00,Total Cholesterol/HDL Ratio,1.9099,01/01/1974 0:00,52.0,Male,0,mild
+UP_M001,03/06/2026 00:00,Total Protein,7.2313,01/01/1974 0:00,52.0,Male,0,mild
+UP_M001,03/06/2026 00:00,Triglycerides,52.6264,01/01/1974 0:00,52.0,Male,0,mild
+UP_M001,03/06/2026 00:00,Urine Albumin-Creatinine Ratio (ACR),0.0,01/01/1974 0:00,52.0,Male,0,mild
+UP_M001,03/06/2026 00:00,Urine Calcium,451.816,01/01/1974 0:00,52.0,Male,0,mild
+UP_M001,03/06/2026 00:00,Urine Calcium-Creatinine Ratio (UCCR),0.0,01/01/1974 0:00,52.0,Male,0,mild
+UP_M001,03/06/2026 00:00,Urine Chloride,365.4313,01/01/1974 0:00,52.0,Male,0,mild
+UP_M001,03/06/2026 00:00,Urine Creatinine (Spot),582.7995,01/01/1974 0:00,52.0,Male,0,mild
+UP_M001,03/06/2026 00:00,Urine Microalbumin,0.0,01/01/1974 0:00,52.0,Male,0,mild
+UP_M001,03/06/2026 00:00,Urine Potassium,0.0,01/01/1974 0:00,52.0,Male,0,mild
+UP_M001,03/06/2026 00:00,Urine Protein (Spot),0.0,01/01/1974 0:00,52.0,Male,0,mild
+UP_M001,03/06/2026 00:00,Urine Protein-Creatinine Ratio (UPCR),0.0,01/01/1974 0:00,52.0,Male,0,mild
+UP_M001,03/06/2026 00:00,Urine Sodium,312.8057,01/01/1974 0:00,52.0,Male,0,mild
+UP_M001,03/06/2026 00:00,Urine Specific Gravity,0.9823,01/01/1974 0:00,52.0,Male,0,mild
+UP_M001,03/06/2026 00:00,Urine Urate,0.7677,01/01/1974 0:00,52.0,Male,0,mild
+UP_M001,03/06/2026 00:00,Urine Urate-to-Creatinine Ratio,0.0,01/01/1974 0:00,52.0,Male,0,mild
+UP_M001,03/06/2026 00:00,Urine Volume,2537.2118,01/01/1974 0:00,52.0,Male,0,mild
+UP_M001,03/06/2026 00:00,Urine pH,2.6176,01/01/1974 0:00,52.0,Male,0,mild
+UP_M001,03/06/2026 00:00,VLDL Cholesterol,19.4208,01/01/1974 0:00,52.0,Male,0,mild
+UP_M001,03/06/2026 00:00,White Blood Cell Count (WBC),7.0226,01/01/1974 0:00,52.0,Male,0,mild
+UP_M001,03/06/2026 00:00,White Blood Cell Count (WBC) (%),55.4275,01/01/1974 0:00,52.0,Male,0,mild
+UP_M002,03/06/2026 00:00,1-Hour Plasma Glucose,100.7845,01/01/1978 0:00,48.0,Female,0,mild
+UP_M002,03/06/2026 00:00,2-Hour Plasma Glucose,90.0677,01/01/1978 0:00,48.0,Female,0,mild
+UP_M002,03/06/2026 00:00,24-Hour Urine Protein,71.2427,01/01/1978 0:00,48.0,Female,0,mild
+UP_M002,03/06/2026 00:00,Activated Partial Thromboplastin Time (APTT),38.6706,01/01/1978 0:00,48.0,Female,0,mild
+UP_M002,03/06/2026 00:00,Alanine Aminotransferase (ALT / SGPT),0.0,01/01/1978 0:00,48.0,Female,0,mild
+UP_M002,03/06/2026 00:00,Albumin/Globulin Ratio,0.1678,01/01/1978 0:00,48.0,Female,0,mild
+UP_M002,03/06/2026 00:00,Alkaline Phosphatase (ALP),212.2838,01/01/1978 0:00,48.0,Female,0,mild
+UP_M002,03/06/2026 00:00,Anti-Streptolysin O Titre (ASOT),151.0954,01/01/1978 0:00,48.0,Female,0,mild
+UP_M002,03/06/2026 00:00,Aspartate Aminotransferase (AST / SGOT),0.0,01/01/1978 0:00,48.0,Female,0,mild
+UP_M002,03/06/2026 00:00,Basophils (%),0.5698,01/01/1978 0:00,48.0,Female,0,mild
+UP_M002,03/06/2026 00:00,Basophils (Absolute),0.0435,01/01/1978 0:00,48.0,Female,0,mild
+UP_M002,03/06/2026 00:00,Beta-hCG,0.9283,01/01/1978 0:00,48.0,Female,0,mild
+UP_M002,03/06/2026 00:00,Bleeding Time,5.1922,01/01/1978 0:00,48.0,Female,0,mild
+UP_M002,03/06/2026 00:00,Blood Urea,13.4988,01/01/1978 0:00,48.0,Female,0,mild
+UP_M002,03/06/2026 00:00,C-Reactive Protein (CRP),2.6382,01/01/1978 0:00,48.0,Female,0,mild
+UP_M002,03/06/2026 00:00,CA-125,18.854,01/01/1978 0:00,48.0,Female,0,mild
+UP_M002,03/06/2026 00:00,Clotting Time,0.5421,01/01/1978 0:00,48.0,Female,0,mild
+UP_M002,03/06/2026 00:00,Corrected Serum Calcium,9.6641,01/01/1978 0:00,48.0,Female,0,mild
+UP_M002,03/06/2026 00:00,Creatine Phosphokinase (CPK),100.24,01/01/1978 0:00,48.0,Female,0,mild
+UP_M002,03/06/2026 00:00,Direct Bilirubin,0.5595,01/01/1978 0:00,48.0,Female,0,mild
+UP_M002,03/06/2026 00:00,Eosinophils (%),4.0666,01/01/1978 0:00,48.0,Female,0,mild
+UP_M002,03/06/2026 00:00,Eosinophils (Absolute),0.257,01/01/1978 0:00,48.0,Female,0,mild
+UP_M002,03/06/2026 00:00,Erythrocyte Sedimentation Rate (ESR),9.9846,01/01/1978 0:00,48.0,Female,0,mild
+UP_M002,03/06/2026 00:00,Fasting Plasma Glucose,85.808,01/01/1978 0:00,48.0,Female,0,mild
+UP_M002,03/06/2026 00:00,Follicle Stimulating Hormone (FSH),7.7467,01/01/1978 0:00,48.0,Female,0,mild
+UP_M002,03/06/2026 00:00,Free T3,3.0187,01/01/1978 0:00,48.0,Female,0,mild
+UP_M002,03/06/2026 00:00,Free T4,1.0832,01/01/1978 0:00,48.0,Female,0,mild
+UP_M002,03/06/2026 00:00,Gamma-Glutamyl Transferase (GGT),66.9773,01/01/1978 0:00,48.0,Female,0,mild
+UP_M002,03/06/2026 00:00,Glucose Challenge Test (GCT),123.7535,01/01/1978 0:00,48.0,Female,0,mild
+UP_M002,03/06/2026 00:00,HDL Cholesterol,68.1397,01/01/1978 0:00,48.0,Female,0,mild
+UP_M002,03/06/2026 00:00,Hematocrit (PCV/HCT),43.6461,01/01/1978 0:00,48.0,Female,0,mild
+UP_M002,03/06/2026 00:00,Hemoglobin (Hb),14.6056,01/01/1978 0:00,48.0,Female,0,mild
+UP_M002,03/06/2026 00:00,Hemoglobin A1c (HbA1c),4.8029,01/01/1978 0:00,48.0,Female,0,mild
+UP_M002,03/06/2026 00:00,Indirect Bilirubin,1.2124,01/01/1978 0:00,48.0,Female,0,mild
+UP_M002,03/06/2026 00:00,International Normalized Ratio (INR),1.3563,01/01/1978 0:00,48.0,Female,0,mild
+UP_M002,03/06/2026 00:00,Ionized Calcium,1.2241,01/01/1978 0:00,48.0,Female,0,mild
+UP_M002,03/06/2026 00:00,LDL Cholesterol,67.9613,01/01/1978 0:00,48.0,Female,0,mild
+UP_M002,03/06/2026 00:00,LDL/HDL Ratio,1.9958,01/01/1978 0:00,48.0,Female,0,mild
+UP_M002,03/06/2026 00:00,Lactate Dehydrogenase (LDH),249.3004,01/01/1978 0:00,48.0,Female,0,mild
+UP_M002,03/06/2026 00:00,Luteinizing Hormone (LH),4.1142,01/01/1978 0:00,48.0,Female,0,mild
+UP_M002,03/06/2026 00:00,Lymphocytes (%),22.5858,01/01/1978 0:00,48.0,Female,0,mild
+UP_M002,03/06/2026 00:00,Lymphocytes (Absolute),1.961,01/01/1978 0:00,48.0,Female,0,mild
+UP_M002,03/06/2026 00:00,Mean Corpuscular Hemoglobin (MCH),29.5014,01/01/1978 0:00,48.0,Female,0,mild
+UP_M002,03/06/2026 00:00,Mean Corpuscular Hemoglobin Concentration (MCHC),31.4019,01/01/1978 0:00,48.0,Female,0,mild
+UP_M002,03/06/2026 00:00,Mean Corpuscular Volume (MCV),83.7495,01/01/1978 0:00,48.0,Female,0,mild
+UP_M002,03/06/2026 00:00,Mean Platelet Volume (MPV),9.52,01/01/1978 0:00,48.0,Female,0,mild
+UP_M002,03/06/2026 00:00,Monocytes (%),4.8604,01/01/1978 0:00,48.0,Female,0,mild
+UP_M002,03/06/2026 00:00,Monocytes (Absolute),89.3365,01/01/1978 0:00,48.0,Female,0,mild
+UP_M002,03/06/2026 00:00,Neutrophils (%),54.694,01/01/1978 0:00,48.0,Female,0,mild
+UP_M002,03/06/2026 00:00,Neutrophils (Absolute),3.9416,01/01/1978 0:00,48.0,Female,0,mild
+UP_M002,03/06/2026 00:00,Platelet Count,301.1814,01/01/1978 0:00,48.0,Female,0,mild
+UP_M002,03/06/2026 00:00,Platelet Distribution Width (PDW),12.9404,01/01/1978 0:00,48.0,Female,0,mild
+UP_M002,03/06/2026 00:00,Platelet Large Cell Count (P-LCC),73.3641,01/01/1978 0:00,48.0,Female,0,mild
+UP_M002,03/06/2026 00:00,Platelet Large Cell Ratio (P-LCR),34.1381,01/01/1978 0:00,48.0,Female,0,mild
+UP_M002,03/06/2026 00:00,Plateletcrit (PCT),0.1831,01/01/1978 0:00,48.0,Female,0,mild
+UP_M002,03/06/2026 00:00,Postprandial Plasma Glucose (PPBS),127.9609,01/01/1978 0:00,48.0,Female,0,mild
+UP_M002,03/06/2026 00:00,Prolactin,4.6036,01/01/1978 0:00,48.0,Female,0,mild
+UP_M002,03/06/2026 00:00,Prostate-Specific Antigen (PSA),1.9152,01/01/1978 0:00,48.0,Female,0,mild
+UP_M002,03/06/2026 00:00,Prothrombin Time (PT),9.8092,01/01/1978 0:00,48.0,Female,0,mild
+UP_M002,03/06/2026 00:00,Random Plasma Glucose,30.4556,01/01/1978 0:00,48.0,Female,0,mild
+UP_M002,03/06/2026 00:00,Red Blood Cell Count (RBC),5.0203,01/01/1978 0:00,48.0,Female,0,mild
+UP_M002,03/06/2026 00:00,Red Cell Distribution Width – CV (RDW-CV),13.4729,01/01/1978 0:00,48.0,Female,0,mild
+UP_M002,03/06/2026 00:00,Red Cell Distribution Width – SD (RDW-SD),41.2087,01/01/1978 0:00,48.0,Female,0,mild
+UP_M002,03/06/2026 00:00,Rheumatoid Factor (RF),10.1913,01/01/1978 0:00,48.0,Female,0,mild
+UP_M002,03/06/2026 00:00,Serum Albumin,6.3714,01/01/1978 0:00,48.0,Female,0,mild
+UP_M002,03/06/2026 00:00,Serum Amylase,44.3143,01/01/1978 0:00,48.0,Female,0,mild
+UP_M002,03/06/2026 00:00,Serum Bicarbonate (HCO₃⁻),26.0676,01/01/1978 0:00,48.0,Female,0,mild
+UP_M002,03/06/2026 00:00,Serum Calcium,9.5422,01/01/1978 0:00,48.0,Female,0,mild
+UP_M002,03/06/2026 00:00,Serum Chloride,100.4078,01/01/1978 0:00,48.0,Female,0,mild
+UP_M002,03/06/2026 00:00,Serum Creatinine,0.8476,01/01/1978 0:00,48.0,Female,0,mild
+UP_M002,03/06/2026 00:00,Serum Ferritin,157.3046,01/01/1978 0:00,48.0,Female,0,mild
+UP_M002,03/06/2026 00:00,Serum Globulin,4.4,01/01/1978 0:00,48.0,Female,0,mild
+UP_M002,03/06/2026 00:00,Serum Magnesium,1.9374,01/01/1978 0:00,48.0,Female,0,mild
+UP_M002,03/06/2026 00:00,Serum Phosphorus,2.8402,01/01/1978 0:00,48.0,Female,0,mild
+UP_M002,03/06/2026 00:00,Serum Potassium,4.1838,01/01/1978 0:00,48.0,Female,0,mild
+UP_M002,03/06/2026 00:00,Serum Sodium,139.7815,01/01/1978 0:00,48.0,Female,0,mild
+UP_M002,03/06/2026 00:00,Serum Urea,28.3021,01/01/1978 0:00,48.0,Female,0,mild
+UP_M002,03/06/2026 00:00,Serum Uric Acid,4.0618,01/01/1978 0:00,48.0,Female,0,mild
+UP_M002,03/06/2026 00:00,Thyroid Stimulating Hormone (TSH),2.9835,01/01/1978 0:00,48.0,Female,0,mild
+UP_M002,03/06/2026 00:00,Total Bilirubin,1.8448,01/01/1978 0:00,48.0,Female,0,mild
+UP_M002,03/06/2026 00:00,Total Cholesterol,186.9933,01/01/1978 0:00,48.0,Female,0,mild
+UP_M002,03/06/2026 00:00,Total Cholesterol/HDL Ratio,4.618,01/01/1978 0:00,48.0,Female,0,mild
+UP_M002,03/06/2026 00:00,Total Protein,4.0646,01/01/1978 0:00,48.0,Female,0,mild
+UP_M002,03/06/2026 00:00,Triglycerides,94.138,01/01/1978 0:00,48.0,Female,0,mild
+UP_M002,03/06/2026 00:00,Urine Albumin-Creatinine Ratio (ACR),20.1842,01/01/1978 0:00,48.0,Female,0,mild
+UP_M002,03/06/2026 00:00,Urine Calcium,193.2265,01/01/1978 0:00,48.0,Female,0,mild
+UP_M002,03/06/2026 00:00,Urine Calcium-Creatinine Ratio (UCCR),0.0893,01/01/1978 0:00,48.0,Female,0,mild
+UP_M002,03/06/2026 00:00,Urine Chloride,180.778,01/01/1978 0:00,48.0,Female,0,mild
+UP_M002,03/06/2026 00:00,Urine Creatinine (Spot),152.3734,01/01/1978 0:00,48.0,Female,0,mild
+UP_M002,03/06/2026 00:00,Urine Microalbumin,6.5686,01/01/1978 0:00,48.0,Female,0,mild
+UP_M002,03/06/2026 00:00,Urine Potassium,92.4906,01/01/1978 0:00,48.0,Female,0,mild
+UP_M002,03/06/2026 00:00,Urine Protein (Spot),66.516,01/01/1978 0:00,48.0,Female,0,mild
+UP_M002,03/06/2026 00:00,Urine Protein-Creatinine Ratio (UPCR),95.6117,01/01/1978 0:00,48.0,Female,0,mild
+UP_M002,03/06/2026 00:00,Urine Sodium,93.2597,01/01/1978 0:00,48.0,Female,0,mild
+UP_M002,03/06/2026 00:00,Urine Specific Gravity,1.0144,01/01/1978 0:00,48.0,Female,0,mild
+UP_M002,03/06/2026 00:00,Urine Urate,410.4039,01/01/1978 0:00,48.0,Female,0,mild
+UP_M002,03/06/2026 00:00,Urine Urate-to-Creatinine Ratio,0.3958,01/01/1978 0:00,48.0,Female,0,mild
+UP_M002,03/06/2026 00:00,Urine Volume,1594.5055,01/01/1978 0:00,48.0,Female,0,mild
+UP_M002,03/06/2026 00:00,Urine pH,6.0521,01/01/1978 0:00,48.0,Female,0,mild
+UP_M002,03/06/2026 00:00,VLDL Cholesterol,14.8159,01/01/1978 0:00,48.0,Female,0,mild
+UP_M002,03/06/2026 00:00,White Blood Cell Count (WBC),7.6388,01/01/1978 0:00,48.0,Female,0,mild
+UP_M002,03/06/2026 00:00,White Blood Cell Count (WBC) (%),47.4395,01/01/1978 0:00,48.0,Female,0,mild
+UP_M003,03/06/2026 00:00,1-Hour Plasma Glucose,80.7314,01/01/1959 0:00,67.0,Male,0,mild
+UP_M003,03/06/2026 00:00,2-Hour Plasma Glucose,103.9413,01/01/1959 0:00,67.0,Male,0,mild
+UP_M003,03/06/2026 00:00,24-Hour Urine Protein,55.321,01/01/1959 0:00,67.0,Male,0,mild
+UP_M003,03/06/2026 00:00,Activated Partial Thromboplastin Time (APTT),34.8299,01/01/1959 0:00,67.0,Male,0,mild
+UP_M003,03/06/2026 00:00,Alanine Aminotransferase (ALT / SGPT),42.1559,01/01/1959 0:00,67.0,Male,0,mild
+UP_M003,03/06/2026 00:00,Albumin/Globulin Ratio,1.8519,01/01/1959 0:00,67.0,Male,0,mild
+UP_M003,03/06/2026 00:00,Alkaline Phosphatase (ALP),78.4435,01/01/1959 0:00,67.0,Male,0,mild
+UP_M003,03/06/2026 00:00,Anti-Streptolysin O Titre (ASOT),80.4922,01/01/1959 0:00,67.0,Male,0,mild
+UP_M003,03/06/2026 00:00,Aspartate Aminotransferase (AST / SGOT),14.5431,01/01/1959 0:00,67.0,Male,0,mild
+UP_M003,03/06/2026 00:00,Basophils (%),0.7094,01/01/1959 0:00,67.0,Male,0,mild
+UP_M003,03/06/2026 00:00,Basophils (Absolute),0.0504,01/01/1959 0:00,67.0,Male,0,mild
+UP_M003,03/06/2026 00:00,Beta-hCG,3.3397,01/01/1959 0:00,67.0,Male,0,mild
+UP_M003,03/06/2026 00:00,Bleeding Time,4.3665,01/01/1959 0:00,67.0,Male,0,mild
+UP_M003,03/06/2026 00:00,Blood Urea,10.9571,01/01/1959 0:00,67.0,Male,0,mild
+UP_M003,03/06/2026 00:00,C-Reactive Protein (CRP),8.3668,01/01/1959 0:00,67.0,Male,0,mild
+UP_M003,03/06/2026 00:00,CA-125,18.9653,01/01/1959 0:00,67.0,Male,0,mild
+UP_M003,03/06/2026 00:00,Clotting Time,9.0746,01/01/1959 0:00,67.0,Male,0,mild
+UP_M003,03/06/2026 00:00,Corrected Serum Calcium,9.3352,01/01/1959 0:00,67.0,Male,0,mild
+UP_M003,03/06/2026 00:00,Creatine Phosphokinase (CPK),230.0982,01/01/1959 0:00,67.0,Male,0,mild
+UP_M003,03/06/2026 00:00,Direct Bilirubin,0.1259,01/01/1959 0:00,67.0,Male,0,mild
+UP_M003,03/06/2026 00:00,Eosinophils (%),2.1118,01/01/1959 0:00,67.0,Male,0,mild
+UP_M003,03/06/2026 00:00,Eosinophils (Absolute),0.3003,01/01/1959 0:00,67.0,Male,0,mild
+UP_M003,03/06/2026 00:00,Erythrocyte Sedimentation Rate (ESR),22.1233,01/01/1959 0:00,67.0,Male,0,mild
+UP_M003,03/06/2026 00:00,Fasting Plasma Glucose,78.3662,01/01/1959 0:00,67.0,Male,0,mild
+UP_M003,03/06/2026 00:00,Follicle Stimulating Hormone (FSH),6.5359,01/01/1959 0:00,67.0,Male,0,mild
+UP_M003,03/06/2026 00:00,Free T3,2.3453,01/01/1959 0:00,67.0,Male,0,mild
+UP_M003,03/06/2026 00:00,Free T4,1.3695,01/01/1959 0:00,67.0,Male,0,mild
+UP_M003,03/06/2026 00:00,Gamma-Glutamyl Transferase (GGT),29.0962,01/01/1959 0:00,67.0,Male,0,mild
+UP_M003,03/06/2026 00:00,Glucose Challenge Test (GCT),31.4253,01/01/1959 0:00,67.0,Male,0,mild
+UP_M003,03/06/2026 00:00,HDL Cholesterol,14.5544,01/01/1959 0:00,67.0,Male,0,mild
+UP_M003,03/06/2026 00:00,Hematocrit (PCV/HCT),47.1442,01/01/1959 0:00,67.0,Male,0,mild
+UP_M003,03/06/2026 00:00,Hemoglobin (Hb),14.5409,01/01/1959 0:00,67.0,Male,0,mild
+UP_M003,03/06/2026 00:00,Hemoglobin A1c (HbA1c),2.6055,01/01/1959 0:00,67.0,Male,0,mild
+UP_M003,03/06/2026 00:00,Indirect Bilirubin,0.3084,01/01/1959 0:00,67.0,Male,0,mild
+UP_M003,03/06/2026 00:00,International Normalized Ratio (INR),0.9731,01/01/1959 0:00,67.0,Male,0,mild
+UP_M003,03/06/2026 00:00,Ionized Calcium,1.1822,01/01/1959 0:00,67.0,Male,0,mild
+UP_M003,03/06/2026 00:00,LDL Cholesterol,181.9435,01/01/1959 0:00,67.0,Male,0,mild
+UP_M003,03/06/2026 00:00,LDL/HDL Ratio,5.0062,01/01/1959 0:00,67.0,Male,0,mild
+UP_M003,03/06/2026 00:00,Lactate Dehydrogenase (LDH),50.5418,01/01/1959 0:00,67.0,Male,0,mild
+UP_M003,03/06/2026 00:00,Luteinizing Hormone (LH),6.089,01/01/1959 0:00,67.0,Male,0,mild
+UP_M003,03/06/2026 00:00,Lymphocytes (%),30.5938,01/01/1959 0:00,67.0,Male,0,mild
+UP_M003,03/06/2026 00:00,Lymphocytes (Absolute),1.9252,01/01/1959 0:00,67.0,Male,0,mild
+UP_M003,03/06/2026 00:00,Mean Corpuscular Hemoglobin (MCH),30.2976,01/01/1959 0:00,67.0,Male,0,mild
+UP_M003,03/06/2026 00:00,Mean Corpuscular Hemoglobin Concentration (MCHC),33.3153,01/01/1959 0:00,67.0,Male,0,mild
+UP_M003,03/06/2026 00:00,Mean Corpuscular Volume (MCV),93.3979,01/01/1959 0:00,67.0,Male,0,mild
+UP_M003,03/06/2026 00:00,Mean Platelet Volume (MPV),9.3621,01/01/1959 0:00,67.0,Male,0,mild
+UP_M003,03/06/2026 00:00,Monocytes (%),3.2693,01/01/1959 0:00,67.0,Male,0,mild
+UP_M003,03/06/2026 00:00,Monocytes (Absolute),88.5679,01/01/1959 0:00,67.0,Male,0,mild
+UP_M003,03/06/2026 00:00,Neutrophils (%),47.3196,01/01/1959 0:00,67.0,Male,0,mild
+UP_M003,03/06/2026 00:00,Neutrophils (Absolute),5.8974,01/01/1959 0:00,67.0,Male,0,mild
+UP_M003,03/06/2026 00:00,Platelet Count,248.7746,01/01/1959 0:00,67.0,Male,0,mild
+UP_M003,03/06/2026 00:00,Platelet Distribution Width (PDW),12.6261,01/01/1959 0:00,67.0,Male,0,mild
+UP_M003,03/06/2026 00:00,Platelet Large Cell Count (P-LCC),97.6987,01/01/1959 0:00,67.0,Male,0,mild
+UP_M003,03/06/2026 00:00,Platelet Large Cell Ratio (P-LCR),18.3667,01/01/1959 0:00,67.0,Male,0,mild
+UP_M003,03/06/2026 00:00,Plateletcrit (PCT),0.2065,01/01/1959 0:00,67.0,Male,0,mild
+UP_M003,03/06/2026 00:00,Postprandial Plasma Glucose (PPBS),106.7613,01/01/1959 0:00,67.0,Male,0,mild
+UP_M003,03/06/2026 00:00,Prolactin,13.3522,01/01/1959 0:00,67.0,Male,0,mild
+UP_M003,03/06/2026 00:00,Prostate-Specific Antigen (PSA),1.9799,01/01/1959 0:00,67.0,Male,0,mild
+UP_M003,03/06/2026 00:00,Prothrombin Time (PT),12.6122,01/01/1959 0:00,67.0,Male,0,mild
+UP_M003,03/06/2026 00:00,Random Plasma Glucose,32.3882,01/01/1959 0:00,67.0,Male,0,mild
+UP_M003,03/06/2026 00:00,Red Blood Cell Count (RBC),4.798,01/01/1959 0:00,67.0,Male,0,mild
+UP_M003,03/06/2026 00:00,Red Cell Distribution Width – CV (RDW-CV),12.5329,01/01/1959 0:00,67.0,Male,0,mild
+UP_M003,03/06/2026 00:00,Red Cell Distribution Width – SD (RDW-SD),43.243,01/01/1959 0:00,67.0,Male,0,mild
+UP_M003,03/06/2026 00:00,Rheumatoid Factor (RF),5.7082,01/01/1959 0:00,67.0,Male,0,mild
+UP_M003,03/06/2026 00:00,Serum Albumin,4.9377,01/01/1959 0:00,67.0,Male,0,mild
+UP_M003,03/06/2026 00:00,Serum Amylase,48.7747,01/01/1959 0:00,67.0,Male,0,mild
+UP_M003,03/06/2026 00:00,Serum Bicarbonate (HCO₃⁻),25.107,01/01/1959 0:00,67.0,Male,0,mild
+UP_M003,03/06/2026 00:00,Serum Calcium,10.2279,01/01/1959 0:00,67.0,Male,0,mild
+UP_M003,03/06/2026 00:00,Serum Chloride,102.3983,01/01/1959 0:00,67.0,Male,0,mild
+UP_M003,03/06/2026 00:00,Serum Creatinine,0.9456,01/01/1959 0:00,67.0,Male,0,mild
+UP_M003,03/06/2026 00:00,Serum Ferritin,161.1912,01/01/1959 0:00,67.0,Male,0,mild
+UP_M003,03/06/2026 00:00,Serum Globulin,2.8092,01/01/1959 0:00,67.0,Male,0,mild
+UP_M003,03/06/2026 00:00,Serum Magnesium,1.9704,01/01/1959 0:00,67.0,Male,0,mild
+UP_M003,03/06/2026 00:00,Serum Phosphorus,3.1572,01/01/1959 0:00,67.0,Male,0,mild
+UP_M003,03/06/2026 00:00,Serum Potassium,4.2842,01/01/1959 0:00,67.0,Male,0,mild
+UP_M003,03/06/2026 00:00,Serum Sodium,138.3779,01/01/1959 0:00,67.0,Male,0,mild
+UP_M003,03/06/2026 00:00,Serum Urea,31.5408,01/01/1959 0:00,67.0,Male,0,mild
+UP_M003,03/06/2026 00:00,Serum Uric Acid,4.1673,01/01/1959 0:00,67.0,Male,0,mild
+UP_M003,03/06/2026 00:00,Thyroid Stimulating Hormone (TSH),2.0323,01/01/1959 0:00,67.0,Male,0,mild
+UP_M003,03/06/2026 00:00,Total Bilirubin,0.8432,01/01/1959 0:00,67.0,Male,0,mild
+UP_M003,03/06/2026 00:00,Total Cholesterol,347.5861,01/01/1959 0:00,67.0,Male,0,mild
+UP_M003,03/06/2026 00:00,Total Cholesterol/HDL Ratio,0.0,01/01/1959 0:00,67.0,Male,0,mild
+UP_M003,03/06/2026 00:00,Total Protein,7.7926,01/01/1959 0:00,67.0,Male,0,mild
+UP_M003,03/06/2026 00:00,Triglycerides,267.5187,01/01/1959 0:00,67.0,Male,0,mild
+UP_M003,03/06/2026 00:00,Urine Albumin-Creatinine Ratio (ACR),4.2435,01/01/1959 0:00,67.0,Male,0,mild
+UP_M003,03/06/2026 00:00,Urine Calcium,237.5609,01/01/1959 0:00,67.0,Male,0,mild
+UP_M003,03/06/2026 00:00,Urine Calcium-Creatinine Ratio (UCCR),0.011,01/01/1959 0:00,67.0,Male,0,mild
+UP_M003,03/06/2026 00:00,Urine Chloride,121.5054,01/01/1959 0:00,67.0,Male,0,mild
+UP_M003,03/06/2026 00:00,Urine Creatinine (Spot),173.2348,01/01/1959 0:00,67.0,Male,0,mild
+UP_M003,03/06/2026 00:00,Urine Microalbumin,12.7911,01/01/1959 0:00,67.0,Male,0,mild
+UP_M003,03/06/2026 00:00,Urine Potassium,61.65,01/01/1959 0:00,67.0,Male,0,mild
+UP_M003,03/06/2026 00:00,Urine Protein (Spot),79.4612,01/01/1959 0:00,67.0,Male,0,mild
+UP_M003,03/06/2026 00:00,Urine Protein-Creatinine Ratio (UPCR),85.1313,01/01/1959 0:00,67.0,Male,0,mild
+UP_M003,03/06/2026 00:00,Urine Sodium,193.6632,01/01/1959 0:00,67.0,Male,0,mild
+UP_M003,03/06/2026 00:00,Urine Specific Gravity,1.0169,01/01/1959 0:00,67.0,Male,0,mild
+UP_M003,03/06/2026 00:00,Urine Urate,659.2872,01/01/1959 0:00,67.0,Male,0,mild
+UP_M003,03/06/2026 00:00,Urine Urate-to-Creatinine Ratio,0.426,01/01/1959 0:00,67.0,Male,0,mild
+UP_M003,03/06/2026 00:00,Urine Volume,1549.1526,01/01/1959 0:00,67.0,Male,0,mild
+UP_M003,03/06/2026 00:00,Urine pH,6.9436,01/01/1959 0:00,67.0,Male,0,mild
+UP_M003,03/06/2026 00:00,VLDL Cholesterol,60.2173,01/01/1959 0:00,67.0,Male,0,mild
+UP_M003,03/06/2026 00:00,White Blood Cell Count (WBC),6.3752,01/01/1959 0:00,67.0,Male,0,mild
+UP_M003,03/06/2026 00:00,White Blood Cell Count (WBC) (%),50.3014,01/01/1959 0:00,67.0,Male,0,mild
+UP_M004,03/06/2026 00:00,1-Hour Plasma Glucose,0.0,01/01/1985 0:00,41.0,Female,0,mild
+UP_M004,03/06/2026 00:00,2-Hour Plasma Glucose,0.0,01/01/1985 0:00,41.0,Female,0,mild
+UP_M004,03/06/2026 00:00,24-Hour Urine Protein,40.3972,01/01/1985 0:00,41.0,Female,0,mild
+UP_M004,03/06/2026 00:00,Activated Partial Thromboplastin Time (APTT),31.0095,01/01/1985 0:00,41.0,Female,0,mild
+UP_M004,03/06/2026 00:00,Alanine Aminotransferase (ALT / SGPT),32.1624,01/01/1985 0:00,41.0,Female,0,mild
+UP_M004,03/06/2026 00:00,Albumin/Globulin Ratio,1.5529,01/01/1985 0:00,41.0,Female,0,mild
+UP_M004,03/06/2026 00:00,Alkaline Phosphatase (ALP),116.993,01/01/1985 0:00,41.0,Female,0,mild
+UP_M004,03/06/2026 00:00,Anti-Streptolysin O Titre (ASOT),60.8049,01/01/1985 0:00,41.0,Female,0,mild
+UP_M004,03/06/2026 00:00,Aspartate Aminotransferase (AST / SGOT),31.8333,01/01/1985 0:00,41.0,Female,0,mild
+UP_M004,03/06/2026 00:00,Basophils (%),0.6272,01/01/1985 0:00,41.0,Female,0,mild
+UP_M004,03/06/2026 00:00,Basophils (Absolute),0.0488,01/01/1985 0:00,41.0,Female,0,mild
+UP_M004,03/06/2026 00:00,Beta-hCG,2.086,01/01/1985 0:00,41.0,Female,0,mild
+UP_M004,03/06/2026 00:00,Bleeding Time,5.0944,01/01/1985 0:00,41.0,Female,0,mild
+UP_M004,03/06/2026 00:00,Blood Urea,15.2262,01/01/1985 0:00,41.0,Female,0,mild
+UP_M004,03/06/2026 00:00,C-Reactive Protein (CRP),2.7261,01/01/1985 0:00,41.0,Female,0,mild
+UP_M004,03/06/2026 00:00,CA-125,10.6892,01/01/1985 0:00,41.0,Female,0,mild
+UP_M004,03/06/2026 00:00,Clotting Time,8.0305,01/01/1985 0:00,41.0,Female,0,mild
+UP_M004,03/06/2026 00:00,Corrected Serum Calcium,9.3556,01/01/1985 0:00,41.0,Female,0,mild
+UP_M004,03/06/2026 00:00,Creatine Phosphokinase (CPK),99.3775,01/01/1985 0:00,41.0,Female,0,mild
+UP_M004,03/06/2026 00:00,Direct Bilirubin,0.1145,01/01/1985 0:00,41.0,Female,0,mild
+UP_M004,03/06/2026 00:00,Eosinophils (%),2.5713,01/01/1985 0:00,41.0,Female,0,mild
+UP_M004,03/06/2026 00:00,Eosinophils (Absolute),0.1924,01/01/1985 0:00,41.0,Female,0,mild
+UP_M004,03/06/2026 00:00,Erythrocyte Sedimentation Rate (ESR),8.5862,01/01/1985 0:00,41.0,Female,0,mild
+UP_M004,03/06/2026 00:00,Fasting Plasma Glucose,58.7786,01/01/1985 0:00,41.0,Female,0,mild
+UP_M004,03/06/2026 00:00,Follicle Stimulating Hormone (FSH),6.6829,01/01/1985 0:00,41.0,Female,0,mild
+UP_M004,03/06/2026 00:00,Free T3,2.6995,01/01/1985 0:00,41.0,Female,0,mild
+UP_M004,03/06/2026 00:00,Free T4,1.2353,01/01/1985 0:00,41.0,Female,0,mild
+UP_M004,03/06/2026 00:00,Gamma-Glutamyl Transferase (GGT),38.5727,01/01/1985 0:00,41.0,Female,0,mild
+UP_M004,03/06/2026 00:00,Glucose Challenge Test (GCT),224.8032,01/01/1985 0:00,41.0,Female,0,mild
+UP_M004,03/06/2026 00:00,HDL Cholesterol,61.1844,01/01/1985 0:00,41.0,Female,0,mild
+UP_M004,03/06/2026 00:00,Hematocrit (PCV/HCT),43.106,01/01/1985 0:00,41.0,Female,0,mild
+UP_M004,03/06/2026 00:00,Hemoglobin (Hb),13.7354,01/01/1985 0:00,41.0,Female,0,mild
+UP_M004,03/06/2026 00:00,Hemoglobin A1c (HbA1c),5.0393,01/01/1985 0:00,41.0,Female,0,mild
+UP_M004,03/06/2026 00:00,Indirect Bilirubin,0.4905,01/01/1985 0:00,41.0,Female,0,mild
+UP_M004,03/06/2026 00:00,International Normalized Ratio (INR),1.008,01/01/1985 0:00,41.0,Female,0,mild
+UP_M004,03/06/2026 00:00,Ionized Calcium,1.2609,01/01/1985 0:00,41.0,Female,0,mild
+UP_M004,03/06/2026 00:00,LDL Cholesterol,23.998,01/01/1985 0:00,41.0,Female,0,mild
+UP_M004,03/06/2026 00:00,LDL/HDL Ratio,1.3869,01/01/1985 0:00,41.0,Female,0,mild
+UP_M004,03/06/2026 00:00,Lactate Dehydrogenase (LDH),217.3538,01/01/1985 0:00,41.0,Female,0,mild
+UP_M004,03/06/2026 00:00,Luteinizing Hormone (LH),5.3659,01/01/1985 0:00,41.0,Female,0,mild
+UP_M004,03/06/2026 00:00,Lymphocytes (%),35.5092,01/01/1985 0:00,41.0,Female,0,mild
+UP_M004,03/06/2026 00:00,Lymphocytes (Absolute),2.2802,01/01/1985 0:00,41.0,Female,0,mild
+UP_M004,03/06/2026 00:00,Mean Corpuscular Hemoglobin (MCH),30.6681,01/01/1985 0:00,41.0,Female,0,mild
+UP_M004,03/06/2026 00:00,Mean Corpuscular Hemoglobin Concentration (MCHC),33.3094,01/01/1985 0:00,41.0,Female,0,mild
+UP_M004,03/06/2026 00:00,Mean Corpuscular Volume (MCV),87.908,01/01/1985 0:00,41.0,Female,0,mild
+UP_M004,03/06/2026 00:00,Mean Platelet Volume (MPV),9.4554,01/01/1985 0:00,41.0,Female,0,mild
+UP_M004,03/06/2026 00:00,Monocytes (%),4.777,01/01/1985 0:00,41.0,Female,0,mild
+UP_M004,03/06/2026 00:00,Monocytes (Absolute),89.9603,01/01/1985 0:00,41.0,Female,0,mild
+UP_M004,03/06/2026 00:00,Neutrophils (%),54.2299,01/01/1985 0:00,41.0,Female,0,mild
+UP_M004,03/06/2026 00:00,Neutrophils (Absolute),2.05,01/01/1985 0:00,41.0,Female,0,mild
+UP_M004,03/06/2026 00:00,Platelet Count,226.191,01/01/1985 0:00,41.0,Female,0,mild
+UP_M004,03/06/2026 00:00,Platelet Distribution Width (PDW),14.1571,01/01/1985 0:00,41.0,Female,0,mild
+UP_M004,03/06/2026 00:00,Platelet Large Cell Count (P-LCC),114.4285,01/01/1985 0:00,41.0,Female,0,mild
+UP_M004,03/06/2026 00:00,Platelet Large Cell Ratio (P-LCR),19.4361,01/01/1985 0:00,41.0,Female,0,mild
+UP_M004,03/06/2026 00:00,Plateletcrit (PCT),0.1767,01/01/1985 0:00,41.0,Female,0,mild
+UP_M004,03/06/2026 00:00,Postprandial Plasma Glucose (PPBS),26.4432,01/01/1985 0:00,41.0,Female,0,mild
+UP_M004,03/06/2026 00:00,Prolactin,12.3251,01/01/1985 0:00,41.0,Female,0,mild
+UP_M004,03/06/2026 00:00,Prostate-Specific Antigen (PSA),2.5944,01/01/1985 0:00,41.0,Female,0,mild
+UP_M004,03/06/2026 00:00,Prothrombin Time (PT),12.6895,01/01/1985 0:00,41.0,Female,0,mild
+UP_M004,03/06/2026 00:00,Random Plasma Glucose,0.0,01/01/1985 0:00,41.0,Female,0,mild
+UP_M004,03/06/2026 00:00,Red Blood Cell Count (RBC),5.3887,01/01/1985 0:00,41.0,Female,0,mild
+UP_M004,03/06/2026 00:00,Red Cell Distribution Width – CV (RDW-CV),12.8433,01/01/1985 0:00,41.0,Female,0,mild
+UP_M004,03/06/2026 00:00,Red Cell Distribution Width – SD (RDW-SD),43.2458,01/01/1985 0:00,41.0,Female,0,mild
+UP_M004,03/06/2026 00:00,Rheumatoid Factor (RF),8.3569,01/01/1985 0:00,41.0,Female,0,mild
+UP_M004,03/06/2026 00:00,Serum Albumin,4.2433,01/01/1985 0:00,41.0,Female,0,mild
+UP_M004,03/06/2026 00:00,Serum Amylase,0.0,01/01/1985 0:00,41.0,Female,0,mild
+UP_M004,03/06/2026 00:00,Serum Bicarbonate (HCO₃⁻),26.4349,01/01/1985 0:00,41.0,Female,0,mild
+UP_M004,03/06/2026 00:00,Serum Calcium,10.0116,01/01/1985 0:00,41.0,Female,0,mild
+UP_M004,03/06/2026 00:00,Serum Chloride,102.9693,01/01/1985 0:00,41.0,Female,0,mild
+UP_M004,03/06/2026 00:00,Serum Creatinine,0.8146,01/01/1985 0:00,41.0,Female,0,mild
+UP_M004,03/06/2026 00:00,Serum Ferritin,130.1396,01/01/1985 0:00,41.0,Female,0,mild
+UP_M004,03/06/2026 00:00,Serum Globulin,2.7939,01/01/1985 0:00,41.0,Female,0,mild
+UP_M004,03/06/2026 00:00,Serum Magnesium,1.9745,01/01/1985 0:00,41.0,Female,0,mild
+UP_M004,03/06/2026 00:00,Serum Phosphorus,3.8318,01/01/1985 0:00,41.0,Female,0,mild
+UP_M004,03/06/2026 00:00,Serum Potassium,4.5028,01/01/1985 0:00,41.0,Female,0,mild
+UP_M004,03/06/2026 00:00,Serum Sodium,139.7753,01/01/1985 0:00,41.0,Female,0,mild
+UP_M004,03/06/2026 00:00,Serum Urea,25.7555,01/01/1985 0:00,41.0,Female,0,mild
+UP_M004,03/06/2026 00:00,Serum Uric Acid,5.1462,01/01/1985 0:00,41.0,Female,0,mild
+UP_M004,03/06/2026 00:00,Thyroid Stimulating Hormone (TSH),3.2753,01/01/1985 0:00,41.0,Female,0,mild
+UP_M004,03/06/2026 00:00,Total Bilirubin,0.4626,01/01/1985 0:00,41.0,Female,0,mild
+UP_M004,03/06/2026 00:00,Total Cholesterol,92.7768,01/01/1985 0:00,41.0,Female,0,mild
+UP_M004,03/06/2026 00:00,Total Cholesterol/HDL Ratio,3.2823,01/01/1985 0:00,41.0,Female,0,mild
+UP_M004,03/06/2026 00:00,Total Protein,6.5634,01/01/1985 0:00,41.0,Female,0,mild
+UP_M004,03/06/2026 00:00,Triglycerides,57.6259,01/01/1985 0:00,41.0,Female,0,mild
+UP_M004,03/06/2026 00:00,Urine Albumin-Creatinine Ratio (ACR),7.2011,01/01/1985 0:00,41.0,Female,0,mild
+UP_M004,03/06/2026 00:00,Urine Calcium,176.6409,01/01/1985 0:00,41.0,Female,0,mild
+UP_M004,03/06/2026 00:00,Urine Calcium-Creatinine Ratio (UCCR),0.0014,01/01/1985 0:00,41.0,Female,0,mild
+UP_M004,03/06/2026 00:00,Urine Chloride,172.0891,01/01/1985 0:00,41.0,Female,0,mild
+UP_M004,03/06/2026 00:00,Urine Creatinine (Spot),73.7044,01/01/1985 0:00,41.0,Female,0,mild
+UP_M004,03/06/2026 00:00,Urine Microalbumin,19.8061,01/01/1985 0:00,41.0,Female,0,mild
+UP_M004,03/06/2026 00:00,Urine Potassium,74.0693,01/01/1985 0:00,41.0,Female,0,mild
+UP_M004,03/06/2026 00:00,Urine Protein (Spot),83.7686,01/01/1985 0:00,41.0,Female,0,mild
+UP_M004,03/06/2026 00:00,Urine Protein-Creatinine Ratio (UPCR),36.0303,01/01/1985 0:00,41.0,Female,0,mild
+UP_M004,03/06/2026 00:00,Urine Sodium,104.8706,01/01/1985 0:00,41.0,Female,0,mild
+UP_M004,03/06/2026 00:00,Urine Specific Gravity,1.0119,01/01/1985 0:00,41.0,Female,0,mild
+UP_M004,03/06/2026 00:00,Urine Urate,428.7191,01/01/1985 0:00,41.0,Female,0,mild
+UP_M004,03/06/2026 00:00,Urine Urate-to-Creatinine Ratio,0.4173,01/01/1985 0:00,41.0,Female,0,mild
+UP_M004,03/06/2026 00:00,Urine Volume,1537.6431,01/01/1985 0:00,41.0,Female,0,mild
+UP_M004,03/06/2026 00:00,Urine pH,6.9146,01/01/1985 0:00,41.0,Female,0,mild
+UP_M004,03/06/2026 00:00,VLDL Cholesterol,10.9065,01/01/1985 0:00,41.0,Female,0,mild
+UP_M004,03/06/2026 00:00,White Blood Cell Count (WBC),6.0186,01/01/1985 0:00,41.0,Female,0,mild
+UP_M004,03/06/2026 00:00,White Blood Cell Count (WBC) (%),54.9653,01/01/1985 0:00,41.0,Female,0,mild
+UP_M005,03/06/2026 00:00,1-Hour Plasma Glucose,51.0431,01/01/1967 0:00,59.0,Male,0,mild
+UP_M005,03/06/2026 00:00,2-Hour Plasma Glucose,115.3374,01/01/1967 0:00,59.0,Male,0,mild
+UP_M005,03/06/2026 00:00,24-Hour Urine Protein,33.5242,01/01/1967 0:00,59.0,Male,0,mild
+UP_M005,03/06/2026 00:00,Activated Partial Thromboplastin Time (APTT),36.1461,01/01/1967 0:00,59.0,Male,0,mild
+UP_M005,03/06/2026 00:00,Alanine Aminotransferase (ALT / SGPT),24.4161,01/01/1967 0:00,59.0,Male,0,mild
+UP_M005,03/06/2026 00:00,Albumin/Globulin Ratio,1.8029,01/01/1967 0:00,59.0,Male,0,mild
+UP_M005,03/06/2026 00:00,Alkaline Phosphatase (ALP),67.3997,01/01/1967 0:00,59.0,Male,0,mild
+UP_M005,03/06/2026 00:00,Anti-Streptolysin O Titre (ASOT),77.3799,01/01/1967 0:00,59.0,Male,0,mild
+UP_M005,03/06/2026 00:00,Aspartate Aminotransferase (AST / SGOT),21.3383,01/01/1967 0:00,59.0,Male,0,mild
+UP_M005,03/06/2026 00:00,Basophils (%),0.7475,01/01/1967 0:00,59.0,Male,0,mild
+UP_M005,03/06/2026 00:00,Basophils (Absolute),0.0367,01/01/1967 0:00,59.0,Male,0,mild
+UP_M005,03/06/2026 00:00,Beta-hCG,2.1749,01/01/1967 0:00,59.0,Male,0,mild
+UP_M005,03/06/2026 00:00,Bleeding Time,4.439,01/01/1967 0:00,59.0,Male,0,mild
+UP_M005,03/06/2026 00:00,Blood Urea,18.1127,01/01/1967 0:00,59.0,Male,0,mild
+UP_M005,03/06/2026 00:00,C-Reactive Protein (CRP),3.0877,01/01/1967 0:00,59.0,Male,0,mild
+UP_M005,03/06/2026 00:00,CA-125,24.0437,01/01/1967 0:00,59.0,Male,0,mild
+UP_M005,03/06/2026 00:00,Clotting Time,7.7885,01/01/1967 0:00,59.0,Male,0,mild
+UP_M005,03/06/2026 00:00,Corrected Serum Calcium,9.1278,01/01/1967 0:00,59.0,Male,0,mild
+UP_M005,03/06/2026 00:00,Creatine Phosphokinase (CPK),109.947,01/01/1967 0:00,59.0,Male,0,mild
+UP_M005,03/06/2026 00:00,Direct Bilirubin,0.0815,01/01/1967 0:00,59.0,Male,0,mild
+UP_M005,03/06/2026 00:00,Eosinophils (%),3.1387,01/01/1967 0:00,59.0,Male,0,mild
+UP_M005,03/06/2026 00:00,Eosinophils (Absolute),0.4107,01/01/1967 0:00,59.0,Male,0,mild
+UP_M005,03/06/2026 00:00,Erythrocyte Sedimentation Rate (ESR),1.5177,01/01/1967 0:00,59.0,Male,0,mild
+UP_M005,03/06/2026 00:00,Fasting Plasma Glucose,82.2215,01/01/1967 0:00,59.0,Male,0,mild
+UP_M005,03/06/2026 00:00,Follicle Stimulating Hormone (FSH),7.89,01/01/1967 0:00,59.0,Male,0,mild
+UP_M005,03/06/2026 00:00,Free T3,6.0941,01/01/1967 0:00,59.0,Male,0,mild
+UP_M005,03/06/2026 00:00,Free T4,0.0786,01/01/1967 0:00,59.0,Male,0,mild
+UP_M005,03/06/2026 00:00,Gamma-Glutamyl Transferase (GGT),28.3892,01/01/1967 0:00,59.0,Male,0,mild
+UP_M005,03/06/2026 00:00,Glucose Challenge Test (GCT),71.7149,01/01/1967 0:00,59.0,Male,0,mild
+UP_M005,03/06/2026 00:00,HDL Cholesterol,58.5671,01/01/1967 0:00,59.0,Male,0,mild
+UP_M005,03/06/2026 00:00,Hematocrit (PCV/HCT),48.3144,01/01/1967 0:00,59.0,Male,0,mild
+UP_M005,03/06/2026 00:00,Hemoglobin (Hb),14.1378,01/01/1967 0:00,59.0,Male,0,mild
+UP_M005,03/06/2026 00:00,Hemoglobin A1c (HbA1c),4.2997,01/01/1967 0:00,59.0,Male,0,mild
+UP_M005,03/06/2026 00:00,Indirect Bilirubin,0.4982,01/01/1967 0:00,59.0,Male,0,mild
+UP_M005,03/06/2026 00:00,International Normalized Ratio (INR),1.0326,01/01/1967 0:00,59.0,Male,0,mild
+UP_M005,03/06/2026 00:00,Ionized Calcium,1.2069,01/01/1967 0:00,59.0,Male,0,mild
+UP_M005,03/06/2026 00:00,LDL Cholesterol,70.3151,01/01/1967 0:00,59.0,Male,0,mild
+UP_M005,03/06/2026 00:00,LDL/HDL Ratio,2.2169,01/01/1967 0:00,59.0,Male,0,mild
+UP_M005,03/06/2026 00:00,Lactate Dehydrogenase (LDH),219.7785,01/01/1967 0:00,59.0,Male,0,mild
+UP_M005,03/06/2026 00:00,Luteinizing Hormone (LH),3.4405,01/01/1967 0:00,59.0,Male,0,mild
+UP_M005,03/06/2026 00:00,Lymphocytes (%),34.4939,01/01/1967 0:00,59.0,Male,0,mild
+UP_M005,03/06/2026 00:00,Lymphocytes (Absolute),2.28,01/01/1967 0:00,59.0,Male,0,mild
+UP_M005,03/06/2026 00:00,Mean Corpuscular Hemoglobin (MCH),32.0035,01/01/1967 0:00,59.0,Male,0,mild
+UP_M005,03/06/2026 00:00,Mean Corpuscular Hemoglobin Concentration (MCHC),33.8456,01/01/1967 0:00,59.0,Male,0,mild
+UP_M005,03/06/2026 00:00,Mean Corpuscular Volume (MCV),89.4037,01/01/1967 0:00,59.0,Male,0,mild
+UP_M005,03/06/2026 00:00,Mean Platelet Volume (MPV),10.3393,01/01/1967 0:00,59.0,Male,0,mild
+UP_M005,03/06/2026 00:00,Monocytes (%),5.8869,01/01/1967 0:00,59.0,Male,0,mild
+UP_M005,03/06/2026 00:00,Monocytes (Absolute),90.8963,01/01/1967 0:00,59.0,Male,0,mild
+UP_M005,03/06/2026 00:00,Neutrophils (%),55.422,01/01/1967 0:00,59.0,Male,0,mild
+UP_M005,03/06/2026 00:00,Neutrophils (Absolute),3.7169,01/01/1967 0:00,59.0,Male,0,mild
+UP_M005,03/06/2026 00:00,Platelet Count,239.912,01/01/1967 0:00,59.0,Male,0,mild
+UP_M005,03/06/2026 00:00,Platelet Distribution Width (PDW),14.2098,01/01/1967 0:00,59.0,Male,0,mild
+UP_M005,03/06/2026 00:00,Platelet Large Cell Count (P-LCC),100.3286,01/01/1967 0:00,59.0,Male,0,mild
+UP_M005,03/06/2026 00:00,Platelet Large Cell Ratio (P-LCR),24.3817,01/01/1967 0:00,59.0,Male,0,mild
+UP_M005,03/06/2026 00:00,Plateletcrit (PCT),0.1811,01/01/1967 0:00,59.0,Male,0,mild
+UP_M005,03/06/2026 00:00,Postprandial Plasma Glucose (PPBS),86.7865,01/01/1967 0:00,59.0,Male,0,mild
+UP_M005,03/06/2026 00:00,Prolactin,11.2412,01/01/1967 0:00,59.0,Male,0,mild
+UP_M005,03/06/2026 00:00,Prostate-Specific Antigen (PSA),1.5071,01/01/1967 0:00,59.0,Male,0,mild
+UP_M005,03/06/2026 00:00,Prothrombin Time (PT),12.7563,01/01/1967 0:00,59.0,Male,0,mild
+UP_M005,03/06/2026 00:00,Random Plasma Glucose,104.483,01/01/1967 0:00,59.0,Male,0,mild
+UP_M005,03/06/2026 00:00,Red Blood Cell Count (RBC),5.1543,01/01/1967 0:00,59.0,Male,0,mild
+UP_M005,03/06/2026 00:00,Red Cell Distribution Width – CV (RDW-CV),13.6254,01/01/1967 0:00,59.0,Male,0,mild
+UP_M005,03/06/2026 00:00,Red Cell Distribution Width – SD (RDW-SD),39.1996,01/01/1967 0:00,59.0,Male,0,mild
+UP_M005,03/06/2026 00:00,Rheumatoid Factor (RF),4.0873,01/01/1967 0:00,59.0,Male,0,mild
+UP_M005,03/06/2026 00:00,Serum Albumin,4.2688,01/01/1967 0:00,59.0,Male,0,mild
+UP_M005,03/06/2026 00:00,Serum Amylase,51.864,01/01/1967 0:00,59.0,Male,0,mild
+UP_M005,03/06/2026 00:00,Serum Bicarbonate (HCO₃⁻),27.3094,01/01/1967 0:00,59.0,Male,0,mild
+UP_M005,03/06/2026 00:00,Serum Calcium,9.2932,01/01/1967 0:00,59.0,Male,0,mild
+UP_M005,03/06/2026 00:00,Serum Chloride,102.1643,01/01/1967 0:00,59.0,Male,0,mild
+UP_M005,03/06/2026 00:00,Serum Creatinine,1.0341,01/01/1967 0:00,59.0,Male,0,mild
+UP_M005,03/06/2026 00:00,Serum Ferritin,141.6665,01/01/1967 0:00,59.0,Male,0,mild
+UP_M005,03/06/2026 00:00,Serum Globulin,2.0239,01/01/1967 0:00,59.0,Male,0,mild
+UP_M005,03/06/2026 00:00,Serum Magnesium,1.9914,01/01/1967 0:00,59.0,Male,0,mild
+UP_M005,03/06/2026 00:00,Serum Phosphorus,2.6827,01/01/1967 0:00,59.0,Male,0,mild
+UP_M005,03/06/2026 00:00,Serum Potassium,4.1588,01/01/1967 0:00,59.0,Male,0,mild
+UP_M005,03/06/2026 00:00,Serum Sodium,144.1042,01/01/1967 0:00,59.0,Male,0,mild
+UP_M005,03/06/2026 00:00,Serum Urea,23.8347,01/01/1967 0:00,59.0,Male,0,mild
+UP_M005,03/06/2026 00:00,Serum Uric Acid,5.0935,01/01/1967 0:00,59.0,Male,0,mild
+UP_M005,03/06/2026 00:00,Thyroid Stimulating Hormone (TSH),5.8198,01/01/1967 0:00,59.0,Male,0,mild
+UP_M005,03/06/2026 00:00,Total Bilirubin,0.8262,01/01/1967 0:00,59.0,Male,0,mild
+UP_M005,03/06/2026 00:00,Total Cholesterol,56.8901,01/01/1967 0:00,59.0,Male,0,mild
+UP_M005,03/06/2026 00:00,Total Cholesterol/HDL Ratio,1.9184,01/01/1967 0:00,59.0,Male,0,mild
+UP_M005,03/06/2026 00:00,Total Protein,6.8632,01/01/1967 0:00,59.0,Male,0,mild
+UP_M005,03/06/2026 00:00,Triglycerides,101.4156,01/01/1967 0:00,59.0,Male,0,mild
+UP_M005,03/06/2026 00:00,Urine Albumin-Creatinine Ratio (ACR),8.5099,01/01/1967 0:00,59.0,Male,0,mild
+UP_M005,03/06/2026 00:00,Urine Calcium,202.6352,01/01/1967 0:00,59.0,Male,0,mild
+UP_M005,03/06/2026 00:00,Urine Calcium-Creatinine Ratio (UCCR),0.0468,01/01/1967 0:00,59.0,Male,0,mild
+UP_M005,03/06/2026 00:00,Urine Chloride,215.3897,01/01/1967 0:00,59.0,Male,0,mild
+UP_M005,03/06/2026 00:00,Urine Creatinine (Spot),231.0175,01/01/1967 0:00,59.0,Male,0,mild
+UP_M005,03/06/2026 00:00,Urine Microalbumin,17.2424,01/01/1967 0:00,59.0,Male,0,mild
+UP_M005,03/06/2026 00:00,Urine Potassium,107.5248,01/01/1967 0:00,59.0,Male,0,mild
+UP_M005,03/06/2026 00:00,Urine Protein (Spot),73.7039,01/01/1967 0:00,59.0,Male,0,mild
+UP_M005,03/06/2026 00:00,Urine Protein-Creatinine Ratio (UPCR),84.7779,01/01/1967 0:00,59.0,Male,0,mild
+UP_M005,03/06/2026 00:00,Urine Sodium,110.5976,01/01/1967 0:00,59.0,Male,0,mild
+UP_M005,03/06/2026 00:00,Urine Specific Gravity,1.0199,01/01/1967 0:00,59.0,Male,0,mild
+UP_M005,03/06/2026 00:00,Urine Urate,449.5936,01/01/1967 0:00,59.0,Male,0,mild
+UP_M005,03/06/2026 00:00,Urine Urate-to-Creatinine Ratio,0.306,01/01/1967 0:00,59.0,Male,0,mild
+UP_M005,03/06/2026 00:00,Urine Volume,1497.3958,01/01/1967 0:00,59.0,Male,0,mild
+UP_M005,03/06/2026 00:00,Urine pH,6.5456,01/01/1967 0:00,59.0,Male,0,mild
+UP_M005,03/06/2026 00:00,VLDL Cholesterol,29.5652,01/01/1967 0:00,59.0,Male,0,mild
+UP_M005,03/06/2026 00:00,White Blood Cell Count (WBC),6.8194,01/01/1967 0:00,59.0,Male,0,mild
+UP_M005,03/06/2026 00:00,White Blood Cell Count (WBC) (%),57.9291,01/01/1967 0:00,59.0,Male,0,mild
+UP_D001,03/06/2026 00:00,1-Hour Plasma Glucose,81.6063,01/01/1962 0:00,64.0,Male,0,moderate
+UP_D001,03/06/2026 00:00,2-Hour Plasma Glucose,45.5666,01/01/1962 0:00,64.0,Male,0,moderate
+UP_D001,03/06/2026 00:00,24-Hour Urine Protein,259.3262,01/01/1962 0:00,64.0,Male,0,moderate
+UP_D001,03/06/2026 00:00,Activated Partial Thromboplastin Time (APTT),35.2092,01/01/1962 0:00,64.0,Male,0,moderate
+UP_D001,03/06/2026 00:00,Alanine Aminotransferase (ALT / SGPT),23.7163,01/01/1962 0:00,64.0,Male,0,moderate
+UP_D001,03/06/2026 00:00,Albumin/Globulin Ratio,1.6962,01/01/1962 0:00,64.0,Male,0,moderate
+UP_D001,03/06/2026 00:00,Alkaline Phosphatase (ALP),118.557,01/01/1962 0:00,64.0,Male,0,moderate
+UP_D001,03/06/2026 00:00,Anti-Streptolysin O Titre (ASOT),4.1227,01/01/1962 0:00,64.0,Male,0,moderate
+UP_D001,03/06/2026 00:00,Aspartate Aminotransferase (AST / SGOT),34.0092,01/01/1962 0:00,64.0,Male,0,moderate
+UP_D001,03/06/2026 00:00,Basophils (%),0.5085,01/01/1962 0:00,64.0,Male,0,moderate
+UP_D001,03/06/2026 00:00,Basophils (Absolute),0.036,01/01/1962 0:00,64.0,Male,0,moderate
+UP_D001,03/06/2026 00:00,Beta-hCG,1.9301,01/01/1962 0:00,64.0,Male,0,moderate
+UP_D001,03/06/2026 00:00,Bleeding Time,5.1209,01/01/1962 0:00,64.0,Male,0,moderate
+UP_D001,03/06/2026 00:00,Blood Urea,0.0,01/01/1962 0:00,64.0,Male,0,moderate
+UP_D001,03/06/2026 00:00,C-Reactive Protein (CRP),0.0,01/01/1962 0:00,64.0,Male,0,moderate
+UP_D001,03/06/2026 00:00,CA-125,16.6094,01/01/1962 0:00,64.0,Male,0,moderate
+UP_D001,03/06/2026 00:00,Clotting Time,7.8895,01/01/1962 0:00,64.0,Male,0,moderate
+UP_D001,03/06/2026 00:00,Corrected Serum Calcium,7.6792,01/01/1962 0:00,64.0,Male,0,moderate
+UP_D001,03/06/2026 00:00,Creatine Phosphokinase (CPK),0.0,01/01/1962 0:00,64.0,Male,0,moderate
+UP_D001,03/06/2026 00:00,Direct Bilirubin,0.1786,01/01/1962 0:00,64.0,Male,0,moderate
+UP_D001,03/06/2026 00:00,Eosinophils (%),4.9582,01/01/1962 0:00,64.0,Male,0,moderate
+UP_D001,03/06/2026 00:00,Eosinophils (Absolute),0.2629,01/01/1962 0:00,64.0,Male,0,moderate
+UP_D001,03/06/2026 00:00,Erythrocyte Sedimentation Rate (ESR),33.4857,01/01/1962 0:00,64.0,Male,0,moderate
+UP_D001,03/06/2026 00:00,Fasting Plasma Glucose,81.8814,01/01/1962 0:00,64.0,Male,0,moderate
+UP_D001,03/06/2026 00:00,Follicle Stimulating Hormone (FSH),5.8373,01/01/1962 0:00,64.0,Male,0,moderate
+UP_D001,03/06/2026 00:00,Free T3,2.8564,01/01/1962 0:00,64.0,Male,0,moderate
+UP_D001,03/06/2026 00:00,Free T4,1.4171,01/01/1962 0:00,64.0,Male,0,moderate
+UP_D001,03/06/2026 00:00,Gamma-Glutamyl Transferase (GGT),31.325,01/01/1962 0:00,64.0,Male,0,moderate
+UP_D001,03/06/2026 00:00,Glucose Challenge Test (GCT),91.1112,01/01/1962 0:00,64.0,Male,0,moderate
+UP_D001,03/06/2026 00:00,HDL Cholesterol,8.3741,01/01/1962 0:00,64.0,Male,0,moderate
+UP_D001,03/06/2026 00:00,Hematocrit (PCV/HCT),38.2356,01/01/1962 0:00,64.0,Male,0,moderate
+UP_D001,03/06/2026 00:00,Hemoglobin (Hb),13.2896,01/01/1962 0:00,64.0,Male,0,moderate
+UP_D001,03/06/2026 00:00,Hemoglobin A1c (HbA1c),2.3955,01/01/1962 0:00,64.0,Male,0,moderate
+UP_D001,03/06/2026 00:00,Indirect Bilirubin,0.4382,01/01/1962 0:00,64.0,Male,0,moderate
+UP_D001,03/06/2026 00:00,International Normalized Ratio (INR),0.9512,01/01/1962 0:00,64.0,Male,0,moderate
+UP_D001,03/06/2026 00:00,Ionized Calcium,0.9942,01/01/1962 0:00,64.0,Male,0,moderate
+UP_D001,03/06/2026 00:00,LDL Cholesterol,218.4071,01/01/1962 0:00,64.0,Male,0,moderate
+UP_D001,03/06/2026 00:00,LDL/HDL Ratio,0.0,01/01/1962 0:00,64.0,Male,0,moderate
+UP_D001,03/06/2026 00:00,Lactate Dehydrogenase (LDH),0.0,01/01/1962 0:00,64.0,Male,0,moderate
+UP_D001,03/06/2026 00:00,Luteinizing Hormone (LH),5.5667,01/01/1962 0:00,64.0,Male,0,moderate
+UP_D001,03/06/2026 00:00,Lymphocytes (%),28.476,01/01/1962 0:00,64.0,Male,0,moderate
+UP_D001,03/06/2026 00:00,Lymphocytes (Absolute),2.4076,01/01/1962 0:00,64.0,Male,0,moderate
+UP_D001,03/06/2026 00:00,Mean Corpuscular Hemoglobin (MCH),30.5117,01/01/1962 0:00,64.0,Male,0,moderate
+UP_D001,03/06/2026 00:00,Mean Corpuscular Hemoglobin Concentration (MCHC),33.9968,01/01/1962 0:00,64.0,Male,0,moderate
+UP_D001,03/06/2026 00:00,Mean Corpuscular Volume (MCV),96.2092,01/01/1962 0:00,64.0,Male,0,moderate
+UP_D001,03/06/2026 00:00,Mean Platelet Volume (MPV),9.4714,01/01/1962 0:00,64.0,Male,0,moderate
+UP_D001,03/06/2026 00:00,Monocytes (%),4.2021,01/01/1962 0:00,64.0,Male,0,moderate
+UP_D001,03/06/2026 00:00,Monocytes (Absolute),87.3479,01/01/1962 0:00,64.0,Male,0,moderate
+UP_D001,03/06/2026 00:00,Neutrophils (%),59.2395,01/01/1962 0:00,64.0,Male,0,moderate
+UP_D001,03/06/2026 00:00,Neutrophils (Absolute),3.1509,01/01/1962 0:00,64.0,Male,0,moderate
+UP_D001,03/06/2026 00:00,Platelet Count,345.0785,01/01/1962 0:00,64.0,Male,0,moderate
+UP_D001,03/06/2026 00:00,Platelet Distribution Width (PDW),12.8918,01/01/1962 0:00,64.0,Male,0,moderate
+UP_D001,03/06/2026 00:00,Platelet Large Cell Count (P-LCC),110.4185,01/01/1962 0:00,64.0,Male,0,moderate
+UP_D001,03/06/2026 00:00,Platelet Large Cell Ratio (P-LCR),25.7272,01/01/1962 0:00,64.0,Male,0,moderate
+UP_D001,03/06/2026 00:00,Plateletcrit (PCT),0.184,01/01/1962 0:00,64.0,Male,0,moderate
+UP_D001,03/06/2026 00:00,Postprandial Plasma Glucose (PPBS),106.3575,01/01/1962 0:00,64.0,Male,0,moderate
+UP_D001,03/06/2026 00:00,Prolactin,12.6621,01/01/1962 0:00,64.0,Male,0,moderate
+UP_D001,03/06/2026 00:00,Prostate-Specific Antigen (PSA),2.0511,01/01/1962 0:00,64.0,Male,0,moderate
+UP_D001,03/06/2026 00:00,Prothrombin Time (PT),11.4338,01/01/1962 0:00,64.0,Male,0,moderate
+UP_D001,03/06/2026 00:00,Random Plasma Glucose,84.3002,01/01/1962 0:00,64.0,Male,0,moderate
+UP_D001,03/06/2026 00:00,Red Blood Cell Count (RBC),5.1255,01/01/1962 0:00,64.0,Male,0,moderate
+UP_D001,03/06/2026 00:00,Red Cell Distribution Width – CV (RDW-CV),13.6619,01/01/1962 0:00,64.0,Male,0,moderate
+UP_D001,03/06/2026 00:00,Red Cell Distribution Width – SD (RDW-SD),43.4369,01/01/1962 0:00,64.0,Male,0,moderate
+UP_D001,03/06/2026 00:00,Rheumatoid Factor (RF),2.687,01/01/1962 0:00,64.0,Male,0,moderate
+UP_D001,03/06/2026 00:00,Serum Albumin,4.2724,01/01/1962 0:00,64.0,Male,0,moderate
+UP_D001,03/06/2026 00:00,Serum Amylase,57.653,01/01/1962 0:00,64.0,Male,0,moderate
+UP_D001,03/06/2026 00:00,Serum Bicarbonate (HCO₃⁻),15.3468,01/01/1962 0:00,64.0,Male,0,moderate
+UP_D001,03/06/2026 00:00,Serum Calcium,6.7434,01/01/1962 0:00,64.0,Male,0,moderate
+UP_D001,03/06/2026 00:00,Serum Chloride,93.3294,01/01/1962 0:00,64.0,Male,0,moderate
+UP_D001,03/06/2026 00:00,Serum Creatinine,1.7628,01/01/1962 0:00,64.0,Male,0,moderate
+UP_D001,03/06/2026 00:00,Serum Ferritin,132.4243,01/01/1962 0:00,64.0,Male,0,moderate
+UP_D001,03/06/2026 00:00,Serum Globulin,3.0617,01/01/1962 0:00,64.0,Male,0,moderate
+UP_D001,03/06/2026 00:00,Serum Magnesium,2.7243,01/01/1962 0:00,64.0,Male,0,moderate
+UP_D001,03/06/2026 00:00,Serum Phosphorus,6.3633,01/01/1962 0:00,64.0,Male,0,moderate
+UP_D001,03/06/2026 00:00,Serum Potassium,2.6979,01/01/1962 0:00,64.0,Male,0,moderate
+UP_D001,03/06/2026 00:00,Serum Sodium,155.8961,01/01/1962 0:00,64.0,Male,0,moderate
+UP_D001,03/06/2026 00:00,Serum Urea,60.0401,01/01/1962 0:00,64.0,Male,0,moderate
+UP_D001,03/06/2026 00:00,Serum Uric Acid,0.5417,01/01/1962 0:00,64.0,Male,0,moderate
+UP_D001,03/06/2026 00:00,Thyroid Stimulating Hormone (TSH),2.3862,01/01/1962 0:00,64.0,Male,0,moderate
+UP_D001,03/06/2026 00:00,Total Bilirubin,0.5753,01/01/1962 0:00,64.0,Male,0,moderate
+UP_D001,03/06/2026 00:00,Total Cholesterol,435.3489,01/01/1962 0:00,64.0,Male,0,moderate
+UP_D001,03/06/2026 00:00,Total Cholesterol/HDL Ratio,0.0,01/01/1962 0:00,64.0,Male,0,moderate
+UP_D001,03/06/2026 00:00,Total Protein,6.7584,01/01/1962 0:00,64.0,Male,0,moderate
+UP_D001,03/06/2026 00:00,Triglycerides,257.6852,01/01/1962 0:00,64.0,Male,0,moderate
+UP_D001,03/06/2026 00:00,Urine Albumin-Creatinine Ratio (ACR),50.5086,01/01/1962 0:00,64.0,Male,0,moderate
+UP_D001,03/06/2026 00:00,Urine Calcium,0.0,01/01/1962 0:00,64.0,Male,0,moderate
+UP_D001,03/06/2026 00:00,Urine Calcium-Creatinine Ratio (UCCR),0.3059,01/01/1962 0:00,64.0,Male,0,moderate
+UP_D001,03/06/2026 00:00,Urine Chloride,16.0155,01/01/1962 0:00,64.0,Male,0,moderate
+UP_D001,03/06/2026 00:00,Urine Creatinine (Spot),0.0,01/01/1962 0:00,64.0,Male,0,moderate
+UP_D001,03/06/2026 00:00,Urine Microalbumin,0.0,01/01/1962 0:00,64.0,Male,0,moderate
+UP_D001,03/06/2026 00:00,Urine Potassium,236.6605,01/01/1962 0:00,64.0,Male,0,moderate
+UP_D001,03/06/2026 00:00,Urine Protein (Spot),0.0,01/01/1962 0:00,64.0,Male,0,moderate
+UP_D001,03/06/2026 00:00,Urine Protein-Creatinine Ratio (UPCR),282.3767,01/01/1962 0:00,64.0,Male,0,moderate
+UP_D001,03/06/2026 00:00,Urine Sodium,425.8156,01/01/1962 0:00,64.0,Male,0,moderate
+UP_D001,03/06/2026 00:00,Urine Specific Gravity,0.9749,01/01/1962 0:00,64.0,Male,0,moderate
+UP_D001,03/06/2026 00:00,Urine Urate,1016.0438,01/01/1962 0:00,64.0,Male,0,moderate
+UP_D001,03/06/2026 00:00,Urine Urate-to-Creatinine Ratio,1.172,01/01/1962 0:00,64.0,Male,0,moderate
+UP_D001,03/06/2026 00:00,Urine Volume,3393.5053,01/01/1962 0:00,64.0,Male,0,moderate
+UP_D001,03/06/2026 00:00,Urine pH,11.7677,01/01/1962 0:00,64.0,Male,0,moderate
+UP_D001,03/06/2026 00:00,VLDL Cholesterol,0.0,01/01/1962 0:00,64.0,Male,0,moderate
+UP_D001,03/06/2026 00:00,White Blood Cell Count (WBC),6.9913,01/01/1962 0:00,64.0,Male,0,moderate
+UP_D001,03/06/2026 00:00,White Blood Cell Count (WBC) (%),55.0719,01/01/1962 0:00,64.0,Male,0,moderate
+UP_D002,03/06/2026 00:00,1-Hour Plasma Glucose,278.7377,01/01/1955 0:00,71.0,Female,0,moderate
+UP_D002,03/06/2026 00:00,2-Hour Plasma Glucose,283.5692,01/01/1955 0:00,71.0,Female,0,moderate
+UP_D002,03/06/2026 00:00,24-Hour Urine Protein,77.1534,01/01/1955 0:00,71.0,Female,0,moderate
+UP_D002,03/06/2026 00:00,Activated Partial Thromboplastin Time (APTT),36.2823,01/01/1955 0:00,71.0,Female,0,moderate
+UP_D002,03/06/2026 00:00,Alanine Aminotransferase (ALT / SGPT),0.0,01/01/1955 0:00,71.0,Female,0,moderate
+UP_D002,03/06/2026 00:00,Albumin/Globulin Ratio,0.0,01/01/1955 0:00,71.0,Female,0,moderate
+UP_D002,03/06/2026 00:00,Alkaline Phosphatase (ALP),0.0,01/01/1955 0:00,71.0,Female,0,moderate
+UP_D002,03/06/2026 00:00,Anti-Streptolysin O Titre (ASOT),115.3042,01/01/1955 0:00,71.0,Female,0,moderate
+UP_D002,03/06/2026 00:00,Aspartate Aminotransferase (AST / SGOT),0.0,01/01/1955 0:00,71.0,Female,0,moderate
+UP_D002,03/06/2026 00:00,Basophils (%),0.3754,01/01/1955 0:00,71.0,Female,0,moderate
+UP_D002,03/06/2026 00:00,Basophils (Absolute),0.0797,01/01/1955 0:00,71.0,Female,0,moderate
+UP_D002,03/06/2026 00:00,Beta-hCG,3.7522,01/01/1955 0:00,71.0,Female,0,moderate
+UP_D002,03/06/2026 00:00,Bleeding Time,4.932,01/01/1955 0:00,71.0,Female,0,moderate
+UP_D002,03/06/2026 00:00,Blood Urea,13.4204,01/01/1955 0:00,71.0,Female,0,moderate
+UP_D002,03/06/2026 00:00,C-Reactive Protein (CRP),2.8161,01/01/1955 0:00,71.0,Female,0,moderate
+UP_D002,03/06/2026 00:00,CA-125,23.6766,01/01/1955 0:00,71.0,Female,0,moderate
+UP_D002,03/06/2026 00:00,Clotting Time,0.0,01/01/1955 0:00,71.0,Female,0,moderate
+UP_D002,03/06/2026 00:00,Corrected Serum Calcium,9.04,01/01/1955 0:00,71.0,Female,0,moderate
+UP_D002,03/06/2026 00:00,Creatine Phosphokinase (CPK),66.3975,01/01/1955 0:00,71.0,Female,0,moderate
+UP_D002,03/06/2026 00:00,Direct Bilirubin,0.653,01/01/1955 0:00,71.0,Female,0,moderate
+UP_D002,03/06/2026 00:00,Eosinophils (%),4.3785,01/01/1955 0:00,71.0,Female,0,moderate
+UP_D002,03/06/2026 00:00,Eosinophils (Absolute),0.2849,01/01/1955 0:00,71.0,Female,0,moderate
+UP_D002,03/06/2026 00:00,Erythrocyte Sedimentation Rate (ESR),7.2658,01/01/1955 0:00,71.0,Female,0,moderate
+UP_D002,03/06/2026 00:00,Fasting Plasma Glucose,53.3104,01/01/1955 0:00,71.0,Female,0,moderate
+UP_D002,03/06/2026 00:00,Follicle Stimulating Hormone (FSH),8.5397,01/01/1955 0:00,71.0,Female,0,moderate
+UP_D002,03/06/2026 00:00,Free T3,3.0805,01/01/1955 0:00,71.0,Female,0,moderate
+UP_D002,03/06/2026 00:00,Free T4,1.5199,01/01/1955 0:00,71.0,Female,0,moderate
+UP_D002,03/06/2026 00:00,Gamma-Glutamyl Transferase (GGT),0.0,01/01/1955 0:00,71.0,Female,0,moderate
+UP_D002,03/06/2026 00:00,Glucose Challenge Test (GCT),0.0,01/01/1955 0:00,71.0,Female,0,moderate
+UP_D002,03/06/2026 00:00,HDL Cholesterol,57.3064,01/01/1955 0:00,71.0,Female,0,moderate
+UP_D002,03/06/2026 00:00,Hematocrit (PCV/HCT),40.963,01/01/1955 0:00,71.0,Female,0,moderate
+UP_D002,03/06/2026 00:00,Hemoglobin (Hb),14.1805,01/01/1955 0:00,71.0,Female,0,moderate
+UP_D002,03/06/2026 00:00,Hemoglobin A1c (HbA1c),5.4612,01/01/1955 0:00,71.0,Female,0,moderate
+UP_D002,03/06/2026 00:00,Indirect Bilirubin,1.5518,01/01/1955 0:00,71.0,Female,0,moderate
+UP_D002,03/06/2026 00:00,International Normalized Ratio (INR),0.4273,01/01/1955 0:00,71.0,Female,0,moderate
+UP_D002,03/06/2026 00:00,Ionized Calcium,1.1938,01/01/1955 0:00,71.0,Female,0,moderate
+UP_D002,03/06/2026 00:00,LDL Cholesterol,60.751,01/01/1955 0:00,71.0,Female,0,moderate
+UP_D002,03/06/2026 00:00,LDL/HDL Ratio,2.2886,01/01/1955 0:00,71.0,Female,0,moderate
+UP_D002,03/06/2026 00:00,Lactate Dehydrogenase (LDH),211.8873,01/01/1955 0:00,71.0,Female,0,moderate
+UP_D002,03/06/2026 00:00,Luteinizing Hormone (LH),4.375,01/01/1955 0:00,71.0,Female,0,moderate
+UP_D002,03/06/2026 00:00,Lymphocytes (%),29.1771,01/01/1955 0:00,71.0,Female,0,moderate
+UP_D002,03/06/2026 00:00,Lymphocytes (Absolute),2.3767,01/01/1955 0:00,71.0,Female,0,moderate
+UP_D002,03/06/2026 00:00,Mean Corpuscular Hemoglobin (MCH),30.4,01/01/1955 0:00,71.0,Female,0,moderate
+UP_D002,03/06/2026 00:00,Mean Corpuscular Hemoglobin Concentration (MCHC),33.5624,01/01/1955 0:00,71.0,Female,0,moderate
+UP_D002,03/06/2026 00:00,Mean Corpuscular Volume (MCV),89.7008,01/01/1955 0:00,71.0,Female,0,moderate
+UP_D002,03/06/2026 00:00,Mean Platelet Volume (MPV),10.5539,01/01/1955 0:00,71.0,Female,0,moderate
+UP_D002,03/06/2026 00:00,Monocytes (%),4.439,01/01/1955 0:00,71.0,Female,0,moderate
+UP_D002,03/06/2026 00:00,Monocytes (Absolute),85.7308,01/01/1955 0:00,71.0,Female,0,moderate
+UP_D002,03/06/2026 00:00,Neutrophils (%),59.2919,01/01/1955 0:00,71.0,Female,0,moderate
+UP_D002,03/06/2026 00:00,Neutrophils (Absolute),3.7643,01/01/1955 0:00,71.0,Female,0,moderate
+UP_D002,03/06/2026 00:00,Platelet Count,309.6192,01/01/1955 0:00,71.0,Female,0,moderate
+UP_D002,03/06/2026 00:00,Platelet Distribution Width (PDW),14.3824,01/01/1955 0:00,71.0,Female,0,moderate
+UP_D002,03/06/2026 00:00,Platelet Large Cell Count (P-LCC),82.0753,01/01/1955 0:00,71.0,Female,0,moderate
+UP_D002,03/06/2026 00:00,Platelet Large Cell Ratio (P-LCR),34.3262,01/01/1955 0:00,71.0,Female,0,moderate
+UP_D002,03/06/2026 00:00,Plateletcrit (PCT),0.2078,01/01/1955 0:00,71.0,Female,0,moderate
+UP_D002,03/06/2026 00:00,Postprandial Plasma Glucose (PPBS),222.6625,01/01/1955 0:00,71.0,Female,0,moderate
+UP_D002,03/06/2026 00:00,Prolactin,9.6446,01/01/1955 0:00,71.0,Female,0,moderate
+UP_D002,03/06/2026 00:00,Prostate-Specific Antigen (PSA),2.1938,01/01/1955 0:00,71.0,Female,0,moderate
+UP_D002,03/06/2026 00:00,Prothrombin Time (PT),15.9603,01/01/1955 0:00,71.0,Female,0,moderate
+UP_D002,03/06/2026 00:00,Random Plasma Glucose,274.0465,01/01/1955 0:00,71.0,Female,0,moderate
+UP_D002,03/06/2026 00:00,Red Blood Cell Count (RBC),5.5665,01/01/1955 0:00,71.0,Female,0,moderate
+UP_D002,03/06/2026 00:00,Red Cell Distribution Width – CV (RDW-CV),12.8238,01/01/1955 0:00,71.0,Female,0,moderate
+UP_D002,03/06/2026 00:00,Red Cell Distribution Width – SD (RDW-SD),41.8607,01/01/1955 0:00,71.0,Female,0,moderate
+UP_D002,03/06/2026 00:00,Rheumatoid Factor (RF),13.86,01/01/1955 0:00,71.0,Female,0,moderate
+UP_D002,03/06/2026 00:00,Serum Albumin,1.8767,01/01/1955 0:00,71.0,Female,0,moderate
+UP_D002,03/06/2026 00:00,Serum Amylase,152.7992,01/01/1955 0:00,71.0,Female,0,moderate
+UP_D002,03/06/2026 00:00,Serum Bicarbonate (HCO₃⁻),23.9654,01/01/1955 0:00,71.0,Female,0,moderate
+UP_D002,03/06/2026 00:00,Serum Calcium,9.5841,01/01/1955 0:00,71.0,Female,0,moderate
+UP_D002,03/06/2026 00:00,Serum Chloride,102.2534,01/01/1955 0:00,71.0,Female,0,moderate
+UP_D002,03/06/2026 00:00,Serum Creatinine,1.0432,01/01/1955 0:00,71.0,Female,0,moderate
+UP_D002,03/06/2026 00:00,Serum Ferritin,157.0061,01/01/1955 0:00,71.0,Female,0,moderate
+UP_D002,03/06/2026 00:00,Serum Globulin,4.9797,01/01/1955 0:00,71.0,Female,0,moderate
+UP_D002,03/06/2026 00:00,Serum Magnesium,1.9469,01/01/1955 0:00,71.0,Female,0,moderate
+UP_D002,03/06/2026 00:00,Serum Phosphorus,3.4223,01/01/1955 0:00,71.0,Female,0,moderate
+UP_D002,03/06/2026 00:00,Serum Potassium,4.2955,01/01/1955 0:00,71.0,Female,0,moderate
+UP_D002,03/06/2026 00:00,Serum Sodium,140.1034,01/01/1955 0:00,71.0,Female,0,moderate
+UP_D002,03/06/2026 00:00,Serum Urea,27.0036,01/01/1955 0:00,71.0,Female,0,moderate
+UP_D002,03/06/2026 00:00,Serum Uric Acid,4.3878,01/01/1955 0:00,71.0,Female,0,moderate
+UP_D002,03/06/2026 00:00,Thyroid Stimulating Hormone (TSH),2.7541,01/01/1955 0:00,71.0,Female,0,moderate
+UP_D002,03/06/2026 00:00,Total Bilirubin,0.0,01/01/1955 0:00,71.0,Female,0,moderate
+UP_D002,03/06/2026 00:00,Total Cholesterol,47.5108,01/01/1955 0:00,71.0,Female,0,moderate
+UP_D002,03/06/2026 00:00,Total Cholesterol/HDL Ratio,2.4601,01/01/1955 0:00,71.0,Female,0,moderate
+UP_D002,03/06/2026 00:00,Total Protein,3.0175,01/01/1955 0:00,71.0,Female,0,moderate
+UP_D002,03/06/2026 00:00,Triglycerides,34.7076,01/01/1955 0:00,71.0,Female,0,moderate
+UP_D002,03/06/2026 00:00,Urine Albumin-Creatinine Ratio (ACR),14.2139,01/01/1955 0:00,71.0,Female,0,moderate
+UP_D002,03/06/2026 00:00,Urine Calcium,168.9308,01/01/1955 0:00,71.0,Female,0,moderate
+UP_D002,03/06/2026 00:00,Urine Calcium-Creatinine Ratio (UCCR),0.0886,01/01/1955 0:00,71.0,Female,0,moderate
+UP_D002,03/06/2026 00:00,Urine Chloride,173.2085,01/01/1955 0:00,71.0,Female,0,moderate
+UP_D002,03/06/2026 00:00,Urine Creatinine (Spot),183.0127,01/01/1955 0:00,71.0,Female,0,moderate
+UP_D002,03/06/2026 00:00,Urine Microalbumin,14.7998,01/01/1955 0:00,71.0,Female,0,moderate
+UP_D002,03/06/2026 00:00,Urine Potassium,73.7462,01/01/1955 0:00,71.0,Female,0,moderate
+UP_D002,03/06/2026 00:00,Urine Protein (Spot),67.3028,01/01/1955 0:00,71.0,Female,0,moderate
+UP_D002,03/06/2026 00:00,Urine Protein-Creatinine Ratio (UPCR),38.3485,01/01/1955 0:00,71.0,Female,0,moderate
+UP_D002,03/06/2026 00:00,Urine Sodium,125.5934,01/01/1955 0:00,71.0,Female,0,moderate
+UP_D002,03/06/2026 00:00,Urine Specific Gravity,1.0152,01/01/1955 0:00,71.0,Female,0,moderate
+UP_D002,03/06/2026 00:00,Urine Urate,439.487,01/01/1955 0:00,71.0,Female,0,moderate
+UP_D002,03/06/2026 00:00,Urine Urate-to-Creatinine Ratio,0.2993,01/01/1955 0:00,71.0,Female,0,moderate
+UP_D002,03/06/2026 00:00,Urine Volume,1389.7175,01/01/1955 0:00,71.0,Female,0,moderate
+UP_D002,03/06/2026 00:00,Urine pH,6.2577,01/01/1955 0:00,71.0,Female,0,moderate
+UP_D002,03/06/2026 00:00,VLDL Cholesterol,20.9403,01/01/1955 0:00,71.0,Female,0,moderate
+UP_D002,03/06/2026 00:00,White Blood Cell Count (WBC),9.0405,01/01/1955 0:00,71.0,Female,0,moderate
+UP_D002,03/06/2026 00:00,White Blood Cell Count (WBC) (%),55.4544,01/01/1955 0:00,71.0,Female,0,moderate
+UP_D003,03/06/2026 00:00,1-Hour Plasma Glucose,79.2386,01/01/1968 0:00,58.0,Male,0,moderate
+UP_D003,03/06/2026 00:00,2-Hour Plasma Glucose,114.8552,01/01/1968 0:00,58.0,Male,0,moderate
+UP_D003,03/06/2026 00:00,24-Hour Urine Protein,80.5862,01/01/1968 0:00,58.0,Male,0,moderate
+UP_D003,03/06/2026 00:00,Activated Partial Thromboplastin Time (APTT),52.0397,01/01/1968 0:00,58.0,Male,0,moderate
+UP_D003,03/06/2026 00:00,Alanine Aminotransferase (ALT / SGPT),36.7328,01/01/1968 0:00,58.0,Male,0,moderate
+UP_D003,03/06/2026 00:00,Albumin/Globulin Ratio,1.5448,01/01/1968 0:00,58.0,Male,0,moderate
+UP_D003,03/06/2026 00:00,Alkaline Phosphatase (ALP),116.2116,01/01/1968 0:00,58.0,Male,0,moderate
+UP_D003,03/06/2026 00:00,Anti-Streptolysin O Titre (ASOT),398.0394,01/01/1968 0:00,58.0,Male,0,moderate
+UP_D003,03/06/2026 00:00,Aspartate Aminotransferase (AST / SGOT),25.527,01/01/1968 0:00,58.0,Male,0,moderate
+UP_D003,03/06/2026 00:00,Basophils (%),2.104,01/01/1968 0:00,58.0,Male,0,moderate
+UP_D003,03/06/2026 00:00,Basophils (Absolute),0.1619,01/01/1968 0:00,58.0,Male,0,moderate
+UP_D003,03/06/2026 00:00,Beta-hCG,7.8222,01/01/1968 0:00,58.0,Male,0,moderate
+UP_D003,03/06/2026 00:00,Bleeding Time,0.0,01/01/1968 0:00,58.0,Male,0,moderate
+UP_D003,03/06/2026 00:00,Blood Urea,13.0513,01/01/1968 0:00,58.0,Male,0,moderate
+UP_D003,03/06/2026 00:00,C-Reactive Protein (CRP),2.8459,01/01/1968 0:00,58.0,Male,0,moderate
+UP_D003,03/06/2026 00:00,CA-125,56.349,01/01/1968 0:00,58.0,Male,0,moderate
+UP_D003,03/06/2026 00:00,Clotting Time,8.0171,01/01/1968 0:00,58.0,Male,0,moderate
+UP_D003,03/06/2026 00:00,Corrected Serum Calcium,9.7442,01/01/1968 0:00,58.0,Male,0,moderate
+UP_D003,03/06/2026 00:00,Creatine Phosphokinase (CPK),53.4807,01/01/1968 0:00,58.0,Male,0,moderate
+UP_D003,03/06/2026 00:00,Direct Bilirubin,0.0902,01/01/1968 0:00,58.0,Male,0,moderate
+UP_D003,03/06/2026 00:00,Eosinophils (%),11.5997,01/01/1968 0:00,58.0,Male,0,moderate
+UP_D003,03/06/2026 00:00,Eosinophils (Absolute),0.0,01/01/1968 0:00,58.0,Male,0,moderate
+UP_D003,03/06/2026 00:00,Erythrocyte Sedimentation Rate (ESR),7.2078,01/01/1968 0:00,58.0,Male,0,moderate
+UP_D003,03/06/2026 00:00,Fasting Plasma Glucose,87.2579,01/01/1968 0:00,58.0,Male,0,moderate
+UP_D003,03/06/2026 00:00,Follicle Stimulating Hormone (FSH),21.8272,01/01/1968 0:00,58.0,Male,0,moderate
+UP_D003,03/06/2026 00:00,Free T3,2.959,01/01/1968 0:00,58.0,Male,0,moderate
+UP_D003,03/06/2026 00:00,Free T4,1.1336,01/01/1968 0:00,58.0,Male,0,moderate
+UP_D003,03/06/2026 00:00,Gamma-Glutamyl Transferase (GGT),27.5981,01/01/1968 0:00,58.0,Male,0,moderate
+UP_D003,03/06/2026 00:00,Glucose Challenge Test (GCT),72.849,01/01/1968 0:00,58.0,Male,0,moderate
+UP_D003,03/06/2026 00:00,HDL Cholesterol,62.0121,01/01/1968 0:00,58.0,Male,0,moderate
+UP_D003,03/06/2026 00:00,Hematocrit (PCV/HCT),59.6803,01/01/1968 0:00,58.0,Male,0,moderate
+UP_D003,03/06/2026 00:00,Hemoglobin (Hb),10.7303,01/01/1968 0:00,58.0,Male,0,moderate
+UP_D003,03/06/2026 00:00,Hemoglobin A1c (HbA1c),4.3667,01/01/1968 0:00,58.0,Male,0,moderate
+UP_D003,03/06/2026 00:00,Indirect Bilirubin,0.4555,01/01/1968 0:00,58.0,Male,0,moderate
+UP_D003,03/06/2026 00:00,International Normalized Ratio (INR),0.9943,01/01/1968 0:00,58.0,Male,0,moderate
+UP_D003,03/06/2026 00:00,Ionized Calcium,1.2318,01/01/1968 0:00,58.0,Male,0,moderate
+UP_D003,03/06/2026 00:00,LDL Cholesterol,37.7926,01/01/1968 0:00,58.0,Male,0,moderate
+UP_D003,03/06/2026 00:00,LDL/HDL Ratio,1.0515,01/01/1968 0:00,58.0,Male,0,moderate
+UP_D003,03/06/2026 00:00,Lactate Dehydrogenase (LDH),164.5158,01/01/1968 0:00,58.0,Male,0,moderate
+UP_D003,03/06/2026 00:00,Luteinizing Hormone (LH),20.0031,01/01/1968 0:00,58.0,Male,0,moderate
+UP_D003,03/06/2026 00:00,Lymphocytes (%),63.7004,01/01/1968 0:00,58.0,Male,0,moderate
+UP_D003,03/06/2026 00:00,Lymphocytes (Absolute),4.2874,01/01/1968 0:00,58.0,Male,0,moderate
+UP_D003,03/06/2026 00:00,Mean Corpuscular Hemoglobin (MCH),22.9594,01/01/1968 0:00,58.0,Male,0,moderate
+UP_D003,03/06/2026 00:00,Mean Corpuscular Hemoglobin Concentration (MCHC),39.1762,01/01/1968 0:00,58.0,Male,0,moderate
+UP_D003,03/06/2026 00:00,Mean Corpuscular Volume (MCV),115.1055,01/01/1968 0:00,58.0,Male,0,moderate
+UP_D003,03/06/2026 00:00,Mean Platelet Volume (MPV),16.941,01/01/1968 0:00,58.0,Male,0,moderate
+UP_D003,03/06/2026 00:00,Monocytes (%),0.0,01/01/1968 0:00,58.0,Male,0,moderate
+UP_D003,03/06/2026 00:00,Monocytes (Absolute),110.2218,01/01/1968 0:00,58.0,Male,0,moderate
+UP_D003,03/06/2026 00:00,Neutrophils (%),5.8752,01/01/1968 0:00,58.0,Male,0,moderate
+UP_D003,03/06/2026 00:00,Neutrophils (Absolute),0.0,01/01/1968 0:00,58.0,Male,0,moderate
+UP_D003,03/06/2026 00:00,Platelet Count,670.9228,01/01/1968 0:00,58.0,Male,0,moderate
+UP_D003,03/06/2026 00:00,Platelet Distribution Width (PDW),23.5232,01/01/1968 0:00,58.0,Male,0,moderate
+UP_D003,03/06/2026 00:00,Platelet Large Cell Count (P-LCC),208.1524,01/01/1968 0:00,58.0,Male,0,moderate
+UP_D003,03/06/2026 00:00,Platelet Large Cell Ratio (P-LCR),0.0,01/01/1968 0:00,58.0,Male,0,moderate
+UP_D003,03/06/2026 00:00,Plateletcrit (PCT),0.0,01/01/1968 0:00,58.0,Male,0,moderate
+UP_D003,03/06/2026 00:00,Postprandial Plasma Glucose (PPBS),125.4041,01/01/1968 0:00,58.0,Male,0,moderate
+UP_D003,03/06/2026 00:00,Prolactin,0.0,01/01/1968 0:00,58.0,Male,0,moderate
+UP_D003,03/06/2026 00:00,Prostate-Specific Antigen (PSA),0.0,01/01/1968 0:00,58.0,Male,0,moderate
+UP_D003,03/06/2026 00:00,Prothrombin Time (PT),12.5109,01/01/1968 0:00,58.0,Male,0,moderate
+UP_D003,03/06/2026 00:00,Random Plasma Glucose,73.9341,01/01/1968 0:00,58.0,Male,0,moderate
+UP_D003,03/06/2026 00:00,Red Blood Cell Count (RBC),6.8623,01/01/1968 0:00,58.0,Male,0,moderate
+UP_D003,03/06/2026 00:00,Red Cell Distribution Width – CV (RDW-CV),17.7835,01/01/1968 0:00,58.0,Male,0,moderate
+UP_D003,03/06/2026 00:00,Red Cell Distribution Width – SD (RDW-SD),31.1461,01/01/1968 0:00,58.0,Male,0,moderate
+UP_D003,03/06/2026 00:00,Rheumatoid Factor (RF),28.0574,01/01/1968 0:00,58.0,Male,0,moderate
+UP_D003,03/06/2026 00:00,Serum Albumin,4.5346,01/01/1968 0:00,58.0,Male,0,moderate
+UP_D003,03/06/2026 00:00,Serum Amylase,41.7231,01/01/1968 0:00,58.0,Male,0,moderate
+UP_D003,03/06/2026 00:00,Serum Bicarbonate (HCO₃⁻),25.6807,01/01/1968 0:00,58.0,Male,0,moderate
+UP_D003,03/06/2026 00:00,Serum Calcium,9.4032,01/01/1968 0:00,58.0,Male,0,moderate
+UP_D003,03/06/2026 00:00,Serum Chloride,101.2624,01/01/1968 0:00,58.0,Male,0,moderate
+UP_D003,03/06/2026 00:00,Serum Creatinine,0.9286,01/01/1968 0:00,58.0,Male,0,moderate
+UP_D003,03/06/2026 00:00,Serum Ferritin,549.2483,01/01/1968 0:00,58.0,Male,0,moderate
+UP_D003,03/06/2026 00:00,Serum Globulin,2.4625,01/01/1968 0:00,58.0,Male,0,moderate
+UP_D003,03/06/2026 00:00,Serum Magnesium,2.0706,01/01/1968 0:00,58.0,Male,0,moderate
+UP_D003,03/06/2026 00:00,Serum Phosphorus,3.2523,01/01/1968 0:00,58.0,Male,0,moderate
+UP_D003,03/06/2026 00:00,Serum Potassium,4.4473,01/01/1968 0:00,58.0,Male,0,moderate
+UP_D003,03/06/2026 00:00,Serum Sodium,138.7711,01/01/1968 0:00,58.0,Male,0,moderate
+UP_D003,03/06/2026 00:00,Serum Urea,24.6343,01/01/1968 0:00,58.0,Male,0,moderate
+UP_D003,03/06/2026 00:00,Serum Uric Acid,4.794,01/01/1968 0:00,58.0,Male,0,moderate
+UP_D003,03/06/2026 00:00,Thyroid Stimulating Hormone (TSH),2.9275,01/01/1968 0:00,58.0,Male,0,moderate
+UP_D003,03/06/2026 00:00,Total Bilirubin,0.6197,01/01/1968 0:00,58.0,Male,0,moderate
+UP_D003,03/06/2026 00:00,Total Cholesterol,146.7183,01/01/1968 0:00,58.0,Male,0,moderate
+UP_D003,03/06/2026 00:00,Total Cholesterol/HDL Ratio,1.1748,01/01/1968 0:00,58.0,Male,0,moderate
+UP_D003,03/06/2026 00:00,Total Protein,7.3048,01/01/1968 0:00,58.0,Male,0,moderate
+UP_D003,03/06/2026 00:00,Triglycerides,141.3235,01/01/1968 0:00,58.0,Male,0,moderate
+UP_D003,03/06/2026 00:00,Urine Albumin-Creatinine Ratio (ACR),15.2885,01/01/1968 0:00,58.0,Male,0,moderate
+UP_D003,03/06/2026 00:00,Urine Calcium,191.8056,01/01/1968 0:00,58.0,Male,0,moderate
+UP_D003,03/06/2026 00:00,Urine Calcium-Creatinine Ratio (UCCR),0.0831,01/01/1968 0:00,58.0,Male,0,moderate
+UP_D003,03/06/2026 00:00,Urine Chloride,210.0902,01/01/1968 0:00,58.0,Male,0,moderate
+UP_D003,03/06/2026 00:00,Urine Creatinine (Spot),120.4373,01/01/1968 0:00,58.0,Male,0,moderate
+UP_D003,03/06/2026 00:00,Urine Microalbumin,24.7676,01/01/1968 0:00,58.0,Male,0,moderate
+UP_D003,03/06/2026 00:00,Urine Potassium,69.6671,01/01/1968 0:00,58.0,Male,0,moderate
+UP_D003,03/06/2026 00:00,Urine Protein (Spot),90.2236,01/01/1968 0:00,58.0,Male,0,moderate
+UP_D003,03/06/2026 00:00,Urine Protein-Creatinine Ratio (UPCR),82.9442,01/01/1968 0:00,58.0,Male,0,moderate
+UP_D003,03/06/2026 00:00,Urine Sodium,147.8028,01/01/1968 0:00,58.0,Male,0,moderate
+UP_D003,03/06/2026 00:00,Urine Specific Gravity,1.0108,01/01/1968 0:00,58.0,Male,0,moderate
+UP_D003,03/06/2026 00:00,Urine Urate,525.068,01/01/1968 0:00,58.0,Male,0,moderate
+UP_D003,03/06/2026 00:00,Urine Urate-to-Creatinine Ratio,0.204,01/01/1968 0:00,58.0,Male,0,moderate
+UP_D003,03/06/2026 00:00,Urine Volume,1651.5521,01/01/1968 0:00,58.0,Male,0,moderate
+UP_D003,03/06/2026 00:00,Urine pH,6.3264,01/01/1968 0:00,58.0,Male,0,moderate
+UP_D003,03/06/2026 00:00,VLDL Cholesterol,25.1017,01/01/1968 0:00,58.0,Male,0,moderate
+UP_D003,03/06/2026 00:00,White Blood Cell Count (WBC),0.5451,01/01/1968 0:00,58.0,Male,0,moderate
+UP_D003,03/06/2026 00:00,White Blood Cell Count (WBC) (%),104.8858,01/01/1968 0:00,58.0,Male,0,moderate
+UP_D004,03/06/2026 00:00,1-Hour Plasma Glucose,121.0068,01/01/1950 0:00,76.0,Female,0,moderate
+UP_D004,03/06/2026 00:00,2-Hour Plasma Glucose,59.5522,01/01/1950 0:00,76.0,Female,0,moderate
+UP_D004,03/06/2026 00:00,24-Hour Urine Protein,298.449,01/01/1950 0:00,76.0,Female,0,moderate
+UP_D004,03/06/2026 00:00,Activated Partial Thromboplastin Time (APTT),34.3964,01/01/1950 0:00,76.0,Female,0,moderate
+UP_D004,03/06/2026 00:00,Alanine Aminotransferase (ALT / SGPT),26.2821,01/01/1950 0:00,76.0,Female,0,moderate
+UP_D004,03/06/2026 00:00,Albumin/Globulin Ratio,1.6731,01/01/1950 0:00,76.0,Female,0,moderate
+UP_D004,03/06/2026 00:00,Alkaline Phosphatase (ALP),82.7727,01/01/1950 0:00,76.0,Female,0,moderate
+UP_D004,03/06/2026 00:00,Anti-Streptolysin O Titre (ASOT),49.2992,01/01/1950 0:00,76.0,Female,0,moderate
+UP_D004,03/06/2026 00:00,Aspartate Aminotransferase (AST / SGOT),26.8257,01/01/1950 0:00,76.0,Female,0,moderate
+UP_D004,03/06/2026 00:00,Basophils (%),0.4085,01/01/1950 0:00,76.0,Female,0,moderate
+UP_D004,03/06/2026 00:00,Basophils (Absolute),0.0493,01/01/1950 0:00,76.0,Female,0,moderate
+UP_D004,03/06/2026 00:00,Beta-hCG,1.9603,01/01/1950 0:00,76.0,Female,0,moderate
+UP_D004,03/06/2026 00:00,Bleeding Time,5.0615,01/01/1950 0:00,76.0,Female,0,moderate
+UP_D004,03/06/2026 00:00,Blood Urea,27.2943,01/01/1950 0:00,76.0,Female,0,moderate
+UP_D004,03/06/2026 00:00,C-Reactive Protein (CRP),2.0497,01/01/1950 0:00,76.0,Female,0,moderate
+UP_D004,03/06/2026 00:00,CA-125,14.6097,01/01/1950 0:00,76.0,Female,0,moderate
+UP_D004,03/06/2026 00:00,Clotting Time,9.4296,01/01/1950 0:00,76.0,Female,0,moderate
+UP_D004,03/06/2026 00:00,Corrected Serum Calcium,6.56,01/01/1950 0:00,76.0,Female,0,moderate
+UP_D004,03/06/2026 00:00,Creatine Phosphokinase (CPK),83.7791,01/01/1950 0:00,76.0,Female,0,moderate
+UP_D004,03/06/2026 00:00,Direct Bilirubin,0.114,01/01/1950 0:00,76.0,Female,0,moderate
+UP_D004,03/06/2026 00:00,Eosinophils (%),5.2217,01/01/1950 0:00,76.0,Female,0,moderate
+UP_D004,03/06/2026 00:00,Eosinophils (Absolute),0.2958,01/01/1950 0:00,76.0,Female,0,moderate
+UP_D004,03/06/2026 00:00,Erythrocyte Sedimentation Rate (ESR),3.3552,01/01/1950 0:00,76.0,Female,0,moderate
+UP_D004,03/06/2026 00:00,Fasting Plasma Glucose,76.2084,01/01/1950 0:00,76.0,Female,0,moderate
+UP_D004,03/06/2026 00:00,Follicle Stimulating Hormone (FSH),4.996,01/01/1950 0:00,76.0,Female,0,moderate
+UP_D004,03/06/2026 00:00,Free T3,0.4956,01/01/1950 0:00,76.0,Female,0,moderate
+UP_D004,03/06/2026 00:00,Free T4,0.0,01/01/1950 0:00,76.0,Female,0,moderate
+UP_D004,03/06/2026 00:00,Gamma-Glutamyl Transferase (GGT),39.0708,01/01/1950 0:00,76.0,Female,0,moderate
+UP_D004,03/06/2026 00:00,Glucose Challenge Test (GCT),73.8582,01/01/1950 0:00,76.0,Female,0,moderate
+UP_D004,03/06/2026 00:00,HDL Cholesterol,62.1129,01/01/1950 0:00,76.0,Female,0,moderate
+UP_D004,03/06/2026 00:00,Hematocrit (PCV/HCT),42.754,01/01/1950 0:00,76.0,Female,0,moderate
+UP_D004,03/06/2026 00:00,Hemoglobin (Hb),14.4118,01/01/1950 0:00,76.0,Female,0,moderate
+UP_D004,03/06/2026 00:00,Hemoglobin A1c (HbA1c),4.8529,01/01/1950 0:00,76.0,Female,0,moderate
+UP_D004,03/06/2026 00:00,Indirect Bilirubin,0.408,01/01/1950 0:00,76.0,Female,0,moderate
+UP_D004,03/06/2026 00:00,International Normalized Ratio (INR),1.0014,01/01/1950 0:00,76.0,Female,0,moderate
+UP_D004,03/06/2026 00:00,Ionized Calcium,1.4741,01/01/1950 0:00,76.0,Female,0,moderate
+UP_D004,03/06/2026 00:00,LDL Cholesterol,57.5389,01/01/1950 0:00,76.0,Female,0,moderate
+UP_D004,03/06/2026 00:00,LDL/HDL Ratio,1.5119,01/01/1950 0:00,76.0,Female,0,moderate
+UP_D004,03/06/2026 00:00,Lactate Dehydrogenase (LDH),236.7299,01/01/1950 0:00,76.0,Female,0,moderate
+UP_D004,03/06/2026 00:00,Luteinizing Hormone (LH),6.0713,01/01/1950 0:00,76.0,Female,0,moderate
+UP_D004,03/06/2026 00:00,Lymphocytes (%),27.0018,01/01/1950 0:00,76.0,Female,0,moderate
+UP_D004,03/06/2026 00:00,Lymphocytes (Absolute),2.4094,01/01/1950 0:00,76.0,Female,0,moderate
+UP_D004,03/06/2026 00:00,Mean Corpuscular Hemoglobin (MCH),30.7409,01/01/1950 0:00,76.0,Female,0,moderate
+UP_D004,03/06/2026 00:00,Mean Corpuscular Hemoglobin Concentration (MCHC),32.575,01/01/1950 0:00,76.0,Female,0,moderate
+UP_D004,03/06/2026 00:00,Mean Corpuscular Volume (MCV),92.1821,01/01/1950 0:00,76.0,Female,0,moderate
+UP_D004,03/06/2026 00:00,Mean Platelet Volume (MPV),10.1388,01/01/1950 0:00,76.0,Female,0,moderate
+UP_D004,03/06/2026 00:00,Monocytes (%),5.544,01/01/1950 0:00,76.0,Female,0,moderate
+UP_D004,03/06/2026 00:00,Monocytes (Absolute),86.4686,01/01/1950 0:00,76.0,Female,0,moderate
+UP_D004,03/06/2026 00:00,Neutrophils (%),56.1175,01/01/1950 0:00,76.0,Female,0,moderate
+UP_D004,03/06/2026 00:00,Neutrophils (Absolute),3.9841,01/01/1950 0:00,76.0,Female,0,moderate
+UP_D004,03/06/2026 00:00,Platelet Count,234.1901,01/01/1950 0:00,76.0,Female,0,moderate
+UP_D004,03/06/2026 00:00,Platelet Distribution Width (PDW),9.4238,01/01/1950 0:00,76.0,Female,0,moderate
+UP_D004,03/06/2026 00:00,Platelet Large Cell Count (P-LCC),99.5412,01/01/1950 0:00,76.0,Female,0,moderate
+UP_D004,03/06/2026 00:00,Platelet Large Cell Ratio (P-LCR),25.2321,01/01/1950 0:00,76.0,Female,0,moderate
+UP_D004,03/06/2026 00:00,Plateletcrit (PCT),0.1244,01/01/1950 0:00,76.0,Female,0,moderate
+UP_D004,03/06/2026 00:00,Postprandial Plasma Glucose (PPBS),114.0522,01/01/1950 0:00,76.0,Female,0,moderate
+UP_D004,03/06/2026 00:00,Prolactin,12.6606,01/01/1950 0:00,76.0,Female,0,moderate
+UP_D004,03/06/2026 00:00,Prostate-Specific Antigen (PSA),1.7719,01/01/1950 0:00,76.0,Female,0,moderate
+UP_D004,03/06/2026 00:00,Prothrombin Time (PT),11.1739,01/01/1950 0:00,76.0,Female,0,moderate
+UP_D004,03/06/2026 00:00,Random Plasma Glucose,126.8259,01/01/1950 0:00,76.0,Female,0,moderate
+UP_D004,03/06/2026 00:00,Red Blood Cell Count (RBC),5.6577,01/01/1950 0:00,76.0,Female,0,moderate
+UP_D004,03/06/2026 00:00,Red Cell Distribution Width – CV (RDW-CV),13.4991,01/01/1950 0:00,76.0,Female,0,moderate
+UP_D004,03/06/2026 00:00,Red Cell Distribution Width – SD (RDW-SD),41.2624,01/01/1950 0:00,76.0,Female,0,moderate
+UP_D004,03/06/2026 00:00,Rheumatoid Factor (RF),6.9149,01/01/1950 0:00,76.0,Female,0,moderate
+UP_D004,03/06/2026 00:00,Serum Albumin,5.1303,01/01/1950 0:00,76.0,Female,0,moderate
+UP_D004,03/06/2026 00:00,Serum Amylase,66.3423,01/01/1950 0:00,76.0,Female,0,moderate
+UP_D004,03/06/2026 00:00,Serum Bicarbonate (HCO₃⁻),37.3816,01/01/1950 0:00,76.0,Female,0,moderate
+UP_D004,03/06/2026 00:00,Serum Calcium,7.1135,01/01/1950 0:00,76.0,Female,0,moderate
+UP_D004,03/06/2026 00:00,Serum Chloride,110.7502,01/01/1950 0:00,76.0,Female,0,moderate
+UP_D004,03/06/2026 00:00,Serum Creatinine,0.0497,01/01/1950 0:00,76.0,Female,0,moderate
+UP_D004,03/06/2026 00:00,Serum Ferritin,227.9807,01/01/1950 0:00,76.0,Female,0,moderate
+UP_D004,03/06/2026 00:00,Serum Globulin,2.9325,01/01/1950 0:00,76.0,Female,0,moderate
+UP_D004,03/06/2026 00:00,Serum Magnesium,1.0922,01/01/1950 0:00,76.0,Female,0,moderate
+UP_D004,03/06/2026 00:00,Serum Phosphorus,6.6045,01/01/1950 0:00,76.0,Female,0,moderate
+UP_D004,03/06/2026 00:00,Serum Potassium,1.5853,01/01/1950 0:00,76.0,Female,0,moderate
+UP_D004,03/06/2026 00:00,Serum Sodium,150.6685,01/01/1950 0:00,76.0,Female,0,moderate
+UP_D004,03/06/2026 00:00,Serum Urea,57.6516,01/01/1950 0:00,76.0,Female,0,moderate
+UP_D004,03/06/2026 00:00,Serum Uric Acid,10.4918,01/01/1950 0:00,76.0,Female,0,moderate
+UP_D004,03/06/2026 00:00,Thyroid Stimulating Hormone (TSH),0.0,01/01/1950 0:00,76.0,Female,0,moderate
+UP_D004,03/06/2026 00:00,Total Bilirubin,0.78,01/01/1950 0:00,76.0,Female,0,moderate
+UP_D004,03/06/2026 00:00,Total Cholesterol,75.4328,01/01/1950 0:00,76.0,Female,0,moderate
+UP_D004,03/06/2026 00:00,Total Cholesterol/HDL Ratio,2.4789,01/01/1950 0:00,76.0,Female,0,moderate
+UP_D004,03/06/2026 00:00,Total Protein,7.5591,01/01/1950 0:00,76.0,Female,0,moderate
+UP_D004,03/06/2026 00:00,Triglycerides,102.635,01/01/1950 0:00,76.0,Female,0,moderate
+UP_D004,03/06/2026 00:00,Urine Albumin-Creatinine Ratio (ACR),0.0,01/01/1950 0:00,76.0,Female,0,moderate
+UP_D004,03/06/2026 00:00,Urine Calcium,540.3377,01/01/1950 0:00,76.0,Female,0,moderate
+UP_D004,03/06/2026 00:00,Urine Calcium-Creatinine Ratio (UCCR),0.2902,01/01/1950 0:00,76.0,Female,0,moderate
+UP_D004,03/06/2026 00:00,Urine Chloride,0.0,01/01/1950 0:00,76.0,Female,0,moderate
+UP_D004,03/06/2026 00:00,Urine Creatinine (Spot),556.5101,01/01/1950 0:00,76.0,Female,0,moderate
+UP_D004,03/06/2026 00:00,Urine Microalbumin,0.0,01/01/1950 0:00,76.0,Female,0,moderate
+UP_D004,03/06/2026 00:00,Urine Potassium,0.0,01/01/1950 0:00,76.0,Female,0,moderate
+UP_D004,03/06/2026 00:00,Urine Protein (Spot),0.0,01/01/1950 0:00,76.0,Female,0,moderate
+UP_D004,03/06/2026 00:00,Urine Protein-Creatinine Ratio (UPCR),0.0,01/01/1950 0:00,76.0,Female,0,moderate
+UP_D004,03/06/2026 00:00,Urine Sodium,0.0,01/01/1950 0:00,76.0,Female,0,moderate
+UP_D004,03/06/2026 00:00,Urine Specific Gravity,0.9894,01/01/1950 0:00,76.0,Female,0,moderate
+UP_D004,03/06/2026 00:00,Urine Urate,0.0,01/01/1950 0:00,76.0,Female,0,moderate
+UP_D004,03/06/2026 00:00,Urine Urate-to-Creatinine Ratio,1.0364,01/01/1950 0:00,76.0,Female,0,moderate
+UP_D004,03/06/2026 00:00,Urine Volume,139.8758,01/01/1950 0:00,76.0,Female,0,moderate
+UP_D004,03/06/2026 00:00,Urine pH,1.6011,01/01/1950 0:00,76.0,Female,0,moderate
+UP_D004,03/06/2026 00:00,VLDL Cholesterol,29.3424,01/01/1950 0:00,76.0,Female,0,moderate
+UP_D004,03/06/2026 00:00,White Blood Cell Count (WBC),8.2564,01/01/1950 0:00,76.0,Female,0,moderate
+UP_D004,03/06/2026 00:00,White Blood Cell Count (WBC) (%),42.3891,01/01/1950 0:00,76.0,Female,0,moderate
+UP_D005,03/06/2026 00:00,1-Hour Plasma Glucose,21.064,01/01/1971 0:00,55.0,Male,0,moderate
+UP_D005,03/06/2026 00:00,2-Hour Plasma Glucose,96.7314,01/01/1971 0:00,55.0,Male,0,moderate
+UP_D005,03/06/2026 00:00,24-Hour Urine Protein,45.6354,01/01/1971 0:00,55.0,Male,0,moderate
+UP_D005,03/06/2026 00:00,Activated Partial Thromboplastin Time (APTT),36.8538,01/01/1971 0:00,55.0,Male,0,moderate
+UP_D005,03/06/2026 00:00,Alanine Aminotransferase (ALT / SGPT),0.0,01/01/1971 0:00,55.0,Male,0,moderate
+UP_D005,03/06/2026 00:00,Albumin/Globulin Ratio,3.1318,01/01/1971 0:00,55.0,Male,0,moderate
+UP_D005,03/06/2026 00:00,Alkaline Phosphatase (ALP),223.3798,01/01/1971 0:00,55.0,Male,0,moderate
+UP_D005,03/06/2026 00:00,Anti-Streptolysin O Titre (ASOT),65.0429,01/01/1971 0:00,55.0,Male,0,moderate
+UP_D005,03/06/2026 00:00,Aspartate Aminotransferase (AST / SGOT),0.0,01/01/1971 0:00,55.0,Male,0,moderate
+UP_D005,03/06/2026 00:00,Basophils (%),0.5423,01/01/1971 0:00,55.0,Male,0,moderate
+UP_D005,03/06/2026 00:00,Basophils (Absolute),0.0407,01/01/1971 0:00,55.0,Male,0,moderate
+UP_D005,03/06/2026 00:00,Beta-hCG,3.06,01/01/1971 0:00,55.0,Male,0,moderate
+UP_D005,03/06/2026 00:00,Bleeding Time,6.0665,01/01/1971 0:00,55.0,Male,0,moderate
+UP_D005,03/06/2026 00:00,Blood Urea,14.2789,01/01/1971 0:00,55.0,Male,0,moderate
+UP_D005,03/06/2026 00:00,C-Reactive Protein (CRP),10.937,01/01/1971 0:00,55.0,Male,0,moderate
+UP_D005,03/06/2026 00:00,CA-125,8.8863,01/01/1971 0:00,55.0,Male,0,moderate
+UP_D005,03/06/2026 00:00,Clotting Time,14.0501,01/01/1971 0:00,55.0,Male,0,moderate
+UP_D005,03/06/2026 00:00,Corrected Serum Calcium,9.6972,01/01/1971 0:00,55.0,Male,0,moderate
+UP_D005,03/06/2026 00:00,Creatine Phosphokinase (CPK),0.0,01/01/1971 0:00,55.0,Male,0,moderate
+UP_D005,03/06/2026 00:00,Direct Bilirubin,0.0,01/01/1971 0:00,55.0,Male,0,moderate
+UP_D005,03/06/2026 00:00,Eosinophils (%),4.0251,01/01/1971 0:00,55.0,Male,0,moderate
+UP_D005,03/06/2026 00:00,Eosinophils (Absolute),0.1516,01/01/1971 0:00,55.0,Male,0,moderate
+UP_D005,03/06/2026 00:00,Erythrocyte Sedimentation Rate (ESR),22.3319,01/01/1971 0:00,55.0,Male,0,moderate
+UP_D005,03/06/2026 00:00,Fasting Plasma Glucose,81.5997,01/01/1971 0:00,55.0,Male,0,moderate
+UP_D005,03/06/2026 00:00,Follicle Stimulating Hormone (FSH),6.8977,01/01/1971 0:00,55.0,Male,0,moderate
+UP_D005,03/06/2026 00:00,Free T3,3.3112,01/01/1971 0:00,55.0,Male,0,moderate
+UP_D005,03/06/2026 00:00,Free T4,1.4759,01/01/1971 0:00,55.0,Male,0,moderate
+UP_D005,03/06/2026 00:00,Gamma-Glutamyl Transferase (GGT),77.4032,01/01/1971 0:00,55.0,Male,0,moderate
+UP_D005,03/06/2026 00:00,Glucose Challenge Test (GCT),70.2875,01/01/1971 0:00,55.0,Male,0,moderate
+UP_D005,03/06/2026 00:00,HDL Cholesterol,10.5855,01/01/1971 0:00,55.0,Male,0,moderate
+UP_D005,03/06/2026 00:00,Hematocrit (PCV/HCT),46.3064,01/01/1971 0:00,55.0,Male,0,moderate
+UP_D005,03/06/2026 00:00,Hemoglobin (Hb),14.6097,01/01/1971 0:00,55.0,Male,0,moderate
+UP_D005,03/06/2026 00:00,Hemoglobin A1c (HbA1c),3.0431,01/01/1971 0:00,55.0,Male,0,moderate
+UP_D005,03/06/2026 00:00,Indirect Bilirubin,0.0,01/01/1971 0:00,55.0,Male,0,moderate
+UP_D005,03/06/2026 00:00,International Normalized Ratio (INR),0.3681,01/01/1971 0:00,55.0,Male,0,moderate
+UP_D005,03/06/2026 00:00,Ionized Calcium,1.2346,01/01/1971 0:00,55.0,Male,0,moderate
+UP_D005,03/06/2026 00:00,LDL Cholesterol,154.6319,01/01/1971 0:00,55.0,Male,0,moderate
+UP_D005,03/06/2026 00:00,LDL/HDL Ratio,0.0,01/01/1971 0:00,55.0,Male,0,moderate
+UP_D005,03/06/2026 00:00,Lactate Dehydrogenase (LDH),24.4535,01/01/1971 0:00,55.0,Male,0,moderate
+UP_D005,03/06/2026 00:00,Luteinizing Hormone (LH),4.3397,01/01/1971 0:00,55.0,Male,0,moderate
+UP_D005,03/06/2026 00:00,Lymphocytes (%),34.2531,01/01/1971 0:00,55.0,Male,0,moderate
+UP_D005,03/06/2026 00:00,Lymphocytes (Absolute),1.6731,01/01/1971 0:00,55.0,Male,0,moderate
+UP_D005,03/06/2026 00:00,Mean Corpuscular Hemoglobin (MCH),31.8334,01/01/1971 0:00,55.0,Male,0,moderate
+UP_D005,03/06/2026 00:00,Mean Corpuscular Hemoglobin Concentration (MCHC),33.807,01/01/1971 0:00,55.0,Male,0,moderate
+UP_D005,03/06/2026 00:00,Mean Corpuscular Volume (MCV),88.1326,01/01/1971 0:00,55.0,Male,0,moderate
+UP_D005,03/06/2026 00:00,Mean Platelet Volume (MPV),11.6063,01/01/1971 0:00,55.0,Male,0,moderate
+UP_D005,03/06/2026 00:00,Monocytes (%),6.4803,01/01/1971 0:00,55.0,Male,0,moderate
+UP_D005,03/06/2026 00:00,Monocytes (Absolute),85.852,01/01/1971 0:00,55.0,Male,0,moderate
+UP_D005,03/06/2026 00:00,Neutrophils (%),53.3142,01/01/1971 0:00,55.0,Male,0,moderate
+UP_D005,03/06/2026 00:00,Neutrophils (Absolute),4.3655,01/01/1971 0:00,55.0,Male,0,moderate
+UP_D005,03/06/2026 00:00,Platelet Count,360.746,01/01/1971 0:00,55.0,Male,0,moderate
+UP_D005,03/06/2026 00:00,Platelet Distribution Width (PDW),12.7886,01/01/1971 0:00,55.0,Male,0,moderate
+UP_D005,03/06/2026 00:00,Platelet Large Cell Count (P-LCC),71.9002,01/01/1971 0:00,55.0,Male,0,moderate
+UP_D005,03/06/2026 00:00,Platelet Large Cell Ratio (P-LCR),22.5381,01/01/1971 0:00,55.0,Male,0,moderate
+UP_D005,03/06/2026 00:00,Plateletcrit (PCT),0.1711,01/01/1971 0:00,55.0,Male,0,moderate
+UP_D005,03/06/2026 00:00,Postprandial Plasma Glucose (PPBS),87.388,01/01/1971 0:00,55.0,Male,0,moderate
+UP_D005,03/06/2026 00:00,Prolactin,14.0724,01/01/1971 0:00,55.0,Male,0,moderate
+UP_D005,03/06/2026 00:00,Prostate-Specific Antigen (PSA),1.4176,01/01/1971 0:00,55.0,Male,0,moderate
+UP_D005,03/06/2026 00:00,Prothrombin Time (PT),9.4755,01/01/1971 0:00,55.0,Male,0,moderate
+UP_D005,03/06/2026 00:00,Random Plasma Glucose,43.2698,01/01/1971 0:00,55.0,Male,0,moderate
+UP_D005,03/06/2026 00:00,Red Blood Cell Count (RBC),4.8974,01/01/1971 0:00,55.0,Male,0,moderate
+UP_D005,03/06/2026 00:00,Red Cell Distribution Width – CV (RDW-CV),12.3458,01/01/1971 0:00,55.0,Male,0,moderate
+UP_D005,03/06/2026 00:00,Red Cell Distribution Width – SD (RDW-SD),44.4819,01/01/1971 0:00,55.0,Male,0,moderate
+UP_D005,03/06/2026 00:00,Rheumatoid Factor (RF),9.4763,01/01/1971 0:00,55.0,Male,0,moderate
+UP_D005,03/06/2026 00:00,Serum Albumin,1.8369,01/01/1971 0:00,55.0,Male,0,moderate
+UP_D005,03/06/2026 00:00,Serum Amylase,71.5335,01/01/1971 0:00,55.0,Male,0,moderate
+UP_D005,03/06/2026 00:00,Serum Bicarbonate (HCO₃⁻),24.528,01/01/1971 0:00,55.0,Male,0,moderate
+UP_D005,03/06/2026 00:00,Serum Calcium,9.0738,01/01/1971 0:00,55.0,Male,0,moderate
+UP_D005,03/06/2026 00:00,Serum Chloride,102.1733,01/01/1971 0:00,55.0,Male,0,moderate
+UP_D005,03/06/2026 00:00,Serum Creatinine,0.8682,01/01/1971 0:00,55.0,Male,0,moderate
+UP_D005,03/06/2026 00:00,Serum Ferritin,177.5915,01/01/1971 0:00,55.0,Male,0,moderate
+UP_D005,03/06/2026 00:00,Serum Globulin,0.4035,01/01/1971 0:00,55.0,Male,0,moderate
+UP_D005,03/06/2026 00:00,Serum Magnesium,1.8853,01/01/1971 0:00,55.0,Male,0,moderate
+UP_D005,03/06/2026 00:00,Serum Phosphorus,3.8127,01/01/1971 0:00,55.0,Male,0,moderate
+UP_D005,03/06/2026 00:00,Serum Potassium,4.4793,01/01/1971 0:00,55.0,Male,0,moderate
+UP_D005,03/06/2026 00:00,Serum Sodium,140.17,01/01/1971 0:00,55.0,Male,0,moderate
+UP_D005,03/06/2026 00:00,Serum Urea,22.9822,01/01/1971 0:00,55.0,Male,0,moderate
+UP_D005,03/06/2026 00:00,Serum Uric Acid,4.675,01/01/1971 0:00,55.0,Male,0,moderate
+UP_D005,03/06/2026 00:00,Thyroid Stimulating Hormone (TSH),3.1537,01/01/1971 0:00,55.0,Male,0,moderate
+UP_D005,03/06/2026 00:00,Total Bilirubin,2.2478,01/01/1971 0:00,55.0,Male,0,moderate
+UP_D005,03/06/2026 00:00,Total Cholesterol,0.0,01/01/1971 0:00,55.0,Male,0,moderate
+UP_D005,03/06/2026 00:00,Total Cholesterol/HDL Ratio,9.8031,01/01/1971 0:00,55.0,Male,0,moderate
+UP_D005,03/06/2026 00:00,Total Protein,4.4832,01/01/1971 0:00,55.0,Male,0,moderate
+UP_D005,03/06/2026 00:00,Triglycerides,267.7844,01/01/1971 0:00,55.0,Male,0,moderate
+UP_D005,03/06/2026 00:00,Urine Albumin-Creatinine Ratio (ACR),17.5185,01/01/1971 0:00,55.0,Male,0,moderate
+UP_D005,03/06/2026 00:00,Urine Calcium,155.4516,01/01/1971 0:00,55.0,Male,0,moderate
+UP_D005,03/06/2026 00:00,Urine Calcium-Creatinine Ratio (UCCR),0.0898,01/01/1971 0:00,55.0,Male,0,moderate
+UP_D005,03/06/2026 00:00,Urine Chloride,224.6363,01/01/1971 0:00,55.0,Male,0,moderate
+UP_D005,03/06/2026 00:00,Urine Creatinine (Spot),187.0979,01/01/1971 0:00,55.0,Male,0,moderate
+UP_D005,03/06/2026 00:00,Urine Microalbumin,11.377,01/01/1971 0:00,55.0,Male,0,moderate
+UP_D005,03/06/2026 00:00,Urine Potassium,67.2502,01/01/1971 0:00,55.0,Male,0,moderate
+UP_D005,03/06/2026 00:00,Urine Protein (Spot),51.6618,01/01/1971 0:00,55.0,Male,0,moderate
+UP_D005,03/06/2026 00:00,Urine Protein-Creatinine Ratio (UPCR),51.8284,01/01/1971 0:00,55.0,Male,0,moderate
+UP_D005,03/06/2026 00:00,Urine Sodium,185.5726,01/01/1971 0:00,55.0,Male,0,moderate
+UP_D005,03/06/2026 00:00,Urine Specific Gravity,1.022,01/01/1971 0:00,55.0,Male,0,moderate
+UP_D005,03/06/2026 00:00,Urine Urate,440.3156,01/01/1971 0:00,55.0,Male,0,moderate
+UP_D005,03/06/2026 00:00,Urine Urate-to-Creatinine Ratio,0.2001,01/01/1971 0:00,55.0,Male,0,moderate
+UP_D005,03/06/2026 00:00,Urine Volume,1533.2797,01/01/1971 0:00,55.0,Male,0,moderate
+UP_D005,03/06/2026 00:00,Urine pH,6.8212,01/01/1971 0:00,55.0,Male,0,moderate
+UP_D005,03/06/2026 00:00,VLDL Cholesterol,60.6819,01/01/1971 0:00,55.0,Male,0,moderate
+UP_D005,03/06/2026 00:00,White Blood Cell Count (WBC),7.8257,01/01/1971 0:00,55.0,Male,0,moderate
+UP_D005,03/06/2026 00:00,White Blood Cell Count (WBC) (%),54.7652,01/01/1971 0:00,55.0,Male,0,moderate
+UP_S001,03/06/2026 00:00,1-Hour Plasma Glucose,143.278,01/01/1954 0:00,72.0,Male,0,severe
+UP_S001,03/06/2026 00:00,2-Hour Plasma Glucose,101.7516,01/01/1954 0:00,72.0,Male,0,severe
+UP_S001,03/06/2026 00:00,24-Hour Urine Protein,0.0,01/01/1954 0:00,72.0,Male,0,severe
+UP_S001,03/06/2026 00:00,Activated Partial Thromboplastin Time (APTT),34.4482,01/01/1954 0:00,72.0,Male,0,severe
+UP_S001,03/06/2026 00:00,Alanine Aminotransferase (ALT / SGPT),21.1663,01/01/1954 0:00,72.0,Male,0,severe
+UP_S001,03/06/2026 00:00,Albumin/Globulin Ratio,1.7337,01/01/1954 0:00,72.0,Male,0,severe
+UP_S001,03/06/2026 00:00,Alkaline Phosphatase (ALP),94.3317,01/01/1954 0:00,72.0,Male,0,severe
+UP_S001,03/06/2026 00:00,Anti-Streptolysin O Titre (ASOT),121.695,01/01/1954 0:00,72.0,Male,0,severe
+UP_S001,03/06/2026 00:00,Aspartate Aminotransferase (AST / SGOT),19.0497,01/01/1954 0:00,72.0,Male,0,severe
+UP_S001,03/06/2026 00:00,Basophils (%),0.5474,01/01/1954 0:00,72.0,Male,0,severe
+UP_S001,03/06/2026 00:00,Basophils (Absolute),0.0185,01/01/1954 0:00,72.0,Male,0,severe
+UP_S001,03/06/2026 00:00,Beta-hCG,10.3609,01/01/1954 0:00,72.0,Male,0,severe
+UP_S001,03/06/2026 00:00,Bleeding Time,4.3818,01/01/1954 0:00,72.0,Male,0,severe
+UP_S001,03/06/2026 00:00,Blood Urea,41.0855,01/01/1954 0:00,72.0,Male,0,severe
+UP_S001,03/06/2026 00:00,C-Reactive Protein (CRP),11.3185,01/01/1954 0:00,72.0,Male,0,severe
+UP_S001,03/06/2026 00:00,CA-125,62.1228,01/01/1954 0:00,72.0,Male,0,severe
+UP_S001,03/06/2026 00:00,Clotting Time,9.0083,01/01/1954 0:00,72.0,Male,0,severe
+UP_S001,03/06/2026 00:00,Corrected Serum Calcium,11.8206,01/01/1954 0:00,72.0,Male,0,severe
+UP_S001,03/06/2026 00:00,Creatine Phosphokinase (CPK),0.0,01/01/1954 0:00,72.0,Male,0,severe
+UP_S001,03/06/2026 00:00,Direct Bilirubin,0.1851,01/01/1954 0:00,72.0,Male,0,severe
+UP_S001,03/06/2026 00:00,Eosinophils (%),4.4338,01/01/1954 0:00,72.0,Male,0,severe
+UP_S001,03/06/2026 00:00,Eosinophils (Absolute),0.2214,01/01/1954 0:00,72.0,Male,0,severe
+UP_S001,03/06/2026 00:00,Erythrocyte Sedimentation Rate (ESR),27.7411,01/01/1954 0:00,72.0,Male,0,severe
+UP_S001,03/06/2026 00:00,Fasting Plasma Glucose,81.4194,01/01/1954 0:00,72.0,Male,0,severe
+UP_S001,03/06/2026 00:00,Follicle Stimulating Hormone (FSH),0.0,01/01/1954 0:00,72.0,Male,0,severe
+UP_S001,03/06/2026 00:00,Free T3,2.4306,01/01/1954 0:00,72.0,Male,0,severe
+UP_S001,03/06/2026 00:00,Free T4,1.2939,01/01/1954 0:00,72.0,Male,0,severe
+UP_S001,03/06/2026 00:00,Gamma-Glutamyl Transferase (GGT),36.1417,01/01/1954 0:00,72.0,Male,0,severe
+UP_S001,03/06/2026 00:00,Glucose Challenge Test (GCT),83.0273,01/01/1954 0:00,72.0,Male,0,severe
+UP_S001,03/06/2026 00:00,HDL Cholesterol,118.7117,01/01/1954 0:00,72.0,Male,0,severe
+UP_S001,03/06/2026 00:00,Hematocrit (PCV/HCT),47.2782,01/01/1954 0:00,72.0,Male,0,severe
+UP_S001,03/06/2026 00:00,Hemoglobin (Hb),14.61,01/01/1954 0:00,72.0,Male,0,severe
+UP_S001,03/06/2026 00:00,Hemoglobin A1c (HbA1c),1.7839,01/01/1954 0:00,72.0,Male,0,severe
+UP_S001,03/06/2026 00:00,Indirect Bilirubin,0.3714,01/01/1954 0:00,72.0,Male,0,severe
+UP_S001,03/06/2026 00:00,International Normalized Ratio (INR),0.9423,01/01/1954 0:00,72.0,Male,0,severe
+UP_S001,03/06/2026 00:00,Ionized Calcium,1.6307,01/01/1954 0:00,72.0,Male,0,severe
+UP_S001,03/06/2026 00:00,LDL Cholesterol,0.0,01/01/1954 0:00,72.0,Male,0,severe
+UP_S001,03/06/2026 00:00,LDL/HDL Ratio,0.0,01/01/1954 0:00,72.0,Male,0,severe
+UP_S001,03/06/2026 00:00,Lactate Dehydrogenase (LDH),419.6177,01/01/1954 0:00,72.0,Male,0,severe
+UP_S001,03/06/2026 00:00,Luteinizing Hormone (LH),0.0,01/01/1954 0:00,72.0,Male,0,severe
+UP_S001,03/06/2026 00:00,Lymphocytes (%),29.8816,01/01/1954 0:00,72.0,Male,0,severe
+UP_S001,03/06/2026 00:00,Lymphocytes (Absolute),2.3276,01/01/1954 0:00,72.0,Male,0,severe
+UP_S001,03/06/2026 00:00,Mean Corpuscular Hemoglobin (MCH),31.457,01/01/1954 0:00,72.0,Male,0,severe
+UP_S001,03/06/2026 00:00,Mean Corpuscular Hemoglobin Concentration (MCHC),34.6043,01/01/1954 0:00,72.0,Male,0,severe
+UP_S001,03/06/2026 00:00,Mean Corpuscular Volume (MCV),93.9919,01/01/1954 0:00,72.0,Male,0,severe
+UP_S001,03/06/2026 00:00,Mean Platelet Volume (MPV),9.1902,01/01/1954 0:00,72.0,Male,0,severe
+UP_S001,03/06/2026 00:00,Monocytes (%),6.693,01/01/1954 0:00,72.0,Male,0,severe
+UP_S001,03/06/2026 00:00,Monocytes (Absolute),82.7589,01/01/1954 0:00,72.0,Male,0,severe
+UP_S001,03/06/2026 00:00,Neutrophils (%),48.9491,01/01/1954 0:00,72.0,Male,0,severe
+UP_S001,03/06/2026 00:00,Neutrophils (Absolute),4.2289,01/01/1954 0:00,72.0,Male,0,severe
+UP_S001,03/06/2026 00:00,Platelet Count,327.6408,01/01/1954 0:00,72.0,Male,0,severe
+UP_S001,03/06/2026 00:00,Platelet Distribution Width (PDW),12.8297,01/01/1954 0:00,72.0,Male,0,severe
+UP_S001,03/06/2026 00:00,Platelet Large Cell Count (P-LCC),83.1743,01/01/1954 0:00,72.0,Male,0,severe
+UP_S001,03/06/2026 00:00,Platelet Large Cell Ratio (P-LCR),32.3626,01/01/1954 0:00,72.0,Male,0,severe
+UP_S001,03/06/2026 00:00,Plateletcrit (PCT),0.2119,01/01/1954 0:00,72.0,Male,0,severe
+UP_S001,03/06/2026 00:00,Postprandial Plasma Glucose (PPBS),106.8396,01/01/1954 0:00,72.0,Male,0,severe
+UP_S001,03/06/2026 00:00,Prolactin,38.4053,01/01/1954 0:00,72.0,Male,0,severe
+UP_S001,03/06/2026 00:00,Prostate-Specific Antigen (PSA),0.0,01/01/1954 0:00,72.0,Male,0,severe
+UP_S001,03/06/2026 00:00,Prothrombin Time (PT),12.0007,01/01/1954 0:00,72.0,Male,0,severe
+UP_S001,03/06/2026 00:00,Random Plasma Glucose,112.1911,01/01/1954 0:00,72.0,Male,0,severe
+UP_S001,03/06/2026 00:00,Red Blood Cell Count (RBC),5.0051,01/01/1954 0:00,72.0,Male,0,severe
+UP_S001,03/06/2026 00:00,Red Cell Distribution Width – CV (RDW-CV),12.8436,01/01/1954 0:00,72.0,Male,0,severe
+UP_S001,03/06/2026 00:00,Red Cell Distribution Width – SD (RDW-SD),41.6866,01/01/1954 0:00,72.0,Male,0,severe
+UP_S001,03/06/2026 00:00,Rheumatoid Factor (RF),8.9908,01/01/1954 0:00,72.0,Male,0,severe
+UP_S001,03/06/2026 00:00,Serum Albumin,4.5196,01/01/1954 0:00,72.0,Male,0,severe
+UP_S001,03/06/2026 00:00,Serum Amylase,74.0317,01/01/1954 0:00,72.0,Male,0,severe
+UP_S001,03/06/2026 00:00,Serum Bicarbonate (HCO₃⁻),35.825,01/01/1954 0:00,72.0,Male,0,severe
+UP_S001,03/06/2026 00:00,Serum Calcium,12.3235,01/01/1954 0:00,72.0,Male,0,severe
+UP_S001,03/06/2026 00:00,Serum Chloride,90.0259,01/01/1954 0:00,72.0,Male,0,severe
+UP_S001,03/06/2026 00:00,Serum Creatinine,0.0,01/01/1954 0:00,72.0,Male,0,severe
+UP_S001,03/06/2026 00:00,Serum Ferritin,208.2584,01/01/1954 0:00,72.0,Male,0,severe
+UP_S001,03/06/2026 00:00,Serum Globulin,2.9465,01/01/1954 0:00,72.0,Male,0,severe
+UP_S001,03/06/2026 00:00,Serum Magnesium,0.9636,01/01/1954 0:00,72.0,Male,0,severe
+UP_S001,03/06/2026 00:00,Serum Phosphorus,0.4144,01/01/1954 0:00,72.0,Male,0,severe
+UP_S001,03/06/2026 00:00,Serum Potassium,1.9686,01/01/1954 0:00,72.0,Male,0,severe
+UP_S001,03/06/2026 00:00,Serum Sodium,123.9749,01/01/1954 0:00,72.0,Male,0,severe
+UP_S001,03/06/2026 00:00,Serum Urea,66.7856,01/01/1954 0:00,72.0,Male,0,severe
+UP_S001,03/06/2026 00:00,Serum Uric Acid,0.0,01/01/1954 0:00,72.0,Male,0,severe
+UP_S001,03/06/2026 00:00,Thyroid Stimulating Hormone (TSH),2.04,01/01/1954 0:00,72.0,Male,0,severe
+UP_S001,03/06/2026 00:00,Total Bilirubin,0.9402,01/01/1954 0:00,72.0,Male,0,severe
+UP_S001,03/06/2026 00:00,Total Cholesterol,0.0,01/01/1954 0:00,72.0,Male,0,severe
+UP_S001,03/06/2026 00:00,Total Cholesterol/HDL Ratio,11.1632,01/01/1954 0:00,72.0,Male,0,severe
+UP_S001,03/06/2026 00:00,Total Protein,7.808,01/01/1954 0:00,72.0,Male,0,severe
+UP_S001,03/06/2026 00:00,Triglycerides,0.0,01/01/1954 0:00,72.0,Male,0,severe
+UP_S001,03/06/2026 00:00,Urine Albumin-Creatinine Ratio (ACR),0.0,01/01/1954 0:00,72.0,Male,0,severe
+UP_S001,03/06/2026 00:00,Urine Calcium,616.407,01/01/1954 0:00,72.0,Male,0,severe
+UP_S001,03/06/2026 00:00,Urine Calcium-Creatinine Ratio (UCCR),0.3219,01/01/1954 0:00,72.0,Male,0,severe
+UP_S001,03/06/2026 00:00,Urine Chloride,463.8299,01/01/1954 0:00,72.0,Male,0,severe
+UP_S001,03/06/2026 00:00,Urine Creatinine (Spot),0.0,01/01/1954 0:00,72.0,Male,0,severe
+UP_S001,03/06/2026 00:00,Urine Microalbumin,67.7106,01/01/1954 0:00,72.0,Male,0,severe
+UP_S001,03/06/2026 00:00,Urine Potassium,281.1522,01/01/1954 0:00,72.0,Male,0,severe
+UP_S001,03/06/2026 00:00,Urine Protein (Spot),0.0,01/01/1954 0:00,72.0,Male,0,severe
+UP_S001,03/06/2026 00:00,Urine Protein-Creatinine Ratio (UPCR),0.0,01/01/1954 0:00,72.0,Male,0,severe
+UP_S001,03/06/2026 00:00,Urine Sodium,498.509,01/01/1954 0:00,72.0,Male,0,severe
+UP_S001,03/06/2026 00:00,Urine Specific Gravity,1.0698,01/01/1954 0:00,72.0,Male,0,severe
+UP_S001,03/06/2026 00:00,Urine Urate,0.0,01/01/1954 0:00,72.0,Male,0,severe
+UP_S001,03/06/2026 00:00,Urine Urate-to-Creatinine Ratio,0.0,01/01/1954 0:00,72.0,Male,0,severe
+UP_S001,03/06/2026 00:00,Urine Volume,0.0,01/01/1954 0:00,72.0,Male,0,severe
+UP_S001,03/06/2026 00:00,Urine pH,12.3311,01/01/1954 0:00,72.0,Male,0,severe
+UP_S001,03/06/2026 00:00,VLDL Cholesterol,0.0,01/01/1954 0:00,72.0,Male,0,severe
+UP_S001,03/06/2026 00:00,White Blood Cell Count (WBC),8.7388,01/01/1954 0:00,72.0,Male,0,severe
+UP_S001,03/06/2026 00:00,White Blood Cell Count (WBC) (%),62.3048,01/01/1954 0:00,72.0,Male,0,severe
+UP_S002,03/06/2026 00:00,1-Hour Plasma Glucose,431.0911,01/01/1958 0:00,68.0,Female,0,severe
+UP_S002,03/06/2026 00:00,2-Hour Plasma Glucose,286.5443,01/01/1958 0:00,68.0,Female,0,severe
+UP_S002,03/06/2026 00:00,24-Hour Urine Protein,102.4735,01/01/1958 0:00,68.0,Female,0,severe
+UP_S002,03/06/2026 00:00,Activated Partial Thromboplastin Time (APTT),36.7688,01/01/1958 0:00,68.0,Female,0,severe
+UP_S002,03/06/2026 00:00,Alanine Aminotransferase (ALT / SGPT),0.0,01/01/1958 0:00,68.0,Female,0,severe
+UP_S002,03/06/2026 00:00,Albumin/Globulin Ratio,3.0607,01/01/1958 0:00,68.0,Female,0,severe
+UP_S002,03/06/2026 00:00,Alkaline Phosphatase (ALP),219.6525,01/01/1958 0:00,68.0,Female,0,severe
+UP_S002,03/06/2026 00:00,Anti-Streptolysin O Titre (ASOT),451.9107,01/01/1958 0:00,68.0,Female,0,severe
+UP_S002,03/06/2026 00:00,Aspartate Aminotransferase (AST / SGOT),76.6713,01/01/1958 0:00,68.0,Female,0,severe
+UP_S002,03/06/2026 00:00,Basophils (%),0.5331,01/01/1958 0:00,68.0,Female,0,severe
+UP_S002,03/06/2026 00:00,Basophils (Absolute),0.0204,01/01/1958 0:00,68.0,Female,0,severe
+UP_S002,03/06/2026 00:00,Beta-hCG,2.786,01/01/1958 0:00,68.0,Female,0,severe
+UP_S002,03/06/2026 00:00,Bleeding Time,4.1534,01/01/1958 0:00,68.0,Female,0,severe
+UP_S002,03/06/2026 00:00,Blood Urea,12.9219,01/01/1958 0:00,68.0,Female,0,severe
+UP_S002,03/06/2026 00:00,C-Reactive Protein (CRP),1.5237,01/01/1958 0:00,68.0,Female,0,severe
+UP_S002,03/06/2026 00:00,CA-125,19.0697,01/01/1958 0:00,68.0,Female,0,severe
+UP_S002,03/06/2026 00:00,Clotting Time,0.0,01/01/1958 0:00,68.0,Female,0,severe
+UP_S002,03/06/2026 00:00,Corrected Serum Calcium,8.9874,01/01/1958 0:00,68.0,Female,0,severe
+UP_S002,03/06/2026 00:00,Creatine Phosphokinase (CPK),81.7986,01/01/1958 0:00,68.0,Female,0,severe
+UP_S002,03/06/2026 00:00,Direct Bilirubin,0.5237,01/01/1958 0:00,68.0,Female,0,severe
+UP_S002,03/06/2026 00:00,Eosinophils (%),3.5118,01/01/1958 0:00,68.0,Female,0,severe
+UP_S002,03/06/2026 00:00,Eosinophils (Absolute),0.2293,01/01/1958 0:00,68.0,Female,0,severe
+UP_S002,03/06/2026 00:00,Erythrocyte Sedimentation Rate (ESR),11.963,01/01/1958 0:00,68.0,Female,0,severe
+UP_S002,03/06/2026 00:00,Fasting Plasma Glucose,146.5439,01/01/1958 0:00,68.0,Female,0,severe
+UP_S002,03/06/2026 00:00,Follicle Stimulating Hormone (FSH),10.3138,01/01/1958 0:00,68.0,Female,0,severe
+UP_S002,03/06/2026 00:00,Free T3,3.2789,01/01/1958 0:00,68.0,Female,0,severe
+UP_S002,03/06/2026 00:00,Free T4,1.1627,01/01/1958 0:00,68.0,Female,0,severe
+UP_S002,03/06/2026 00:00,Gamma-Glutamyl Transferase (GGT),0.0,01/01/1958 0:00,68.0,Female,0,severe
+UP_S002,03/06/2026 00:00,Glucose Challenge Test (GCT),379.1476,01/01/1958 0:00,68.0,Female,0,severe
+UP_S002,03/06/2026 00:00,HDL Cholesterol,62.4784,01/01/1958 0:00,68.0,Female,0,severe
+UP_S002,03/06/2026 00:00,Hematocrit (PCV/HCT),45.9548,01/01/1958 0:00,68.0,Female,0,severe
+UP_S002,03/06/2026 00:00,Hemoglobin (Hb),14.2903,01/01/1958 0:00,68.0,Female,0,severe
+UP_S002,03/06/2026 00:00,Hemoglobin A1c (HbA1c),4.6819,01/01/1958 0:00,68.0,Female,0,severe
+UP_S002,03/06/2026 00:00,Indirect Bilirubin,1.7487,01/01/1958 0:00,68.0,Female,0,severe
+UP_S002,03/06/2026 00:00,International Normalized Ratio (INR),0.1051,01/01/1958 0:00,68.0,Female,0,severe
+UP_S002,03/06/2026 00:00,Ionized Calcium,1.2535,01/01/1958 0:00,68.0,Female,0,severe
+UP_S002,03/06/2026 00:00,LDL Cholesterol,43.1679,01/01/1958 0:00,68.0,Female,0,severe
+UP_S002,03/06/2026 00:00,LDL/HDL Ratio,1.2204,01/01/1958 0:00,68.0,Female,0,severe
+UP_S002,03/06/2026 00:00,Lactate Dehydrogenase (LDH),245.7744,01/01/1958 0:00,68.0,Female,0,severe
+UP_S002,03/06/2026 00:00,Luteinizing Hormone (LH),4.3385,01/01/1958 0:00,68.0,Female,0,severe
+UP_S002,03/06/2026 00:00,Lymphocytes (%),28.2955,01/01/1958 0:00,68.0,Female,0,severe
+UP_S002,03/06/2026 00:00,Lymphocytes (Absolute),1.8961,01/01/1958 0:00,68.0,Female,0,severe
+UP_S002,03/06/2026 00:00,Mean Corpuscular Hemoglobin (MCH),31.7431,01/01/1958 0:00,68.0,Female,0,severe
+UP_S002,03/06/2026 00:00,Mean Corpuscular Hemoglobin Concentration (MCHC),33.8405,01/01/1958 0:00,68.0,Female,0,severe
+UP_S002,03/06/2026 00:00,Mean Corpuscular Volume (MCV),89.345,01/01/1958 0:00,68.0,Female,0,severe
+UP_S002,03/06/2026 00:00,Mean Platelet Volume (MPV),9.7589,01/01/1958 0:00,68.0,Female,0,severe
+UP_S002,03/06/2026 00:00,Monocytes (%),5.247,01/01/1958 0:00,68.0,Female,0,severe
+UP_S002,03/06/2026 00:00,Monocytes (Absolute),87.3037,01/01/1958 0:00,68.0,Female,0,severe
+UP_S002,03/06/2026 00:00,Neutrophils (%),56.6569,01/01/1958 0:00,68.0,Female,0,severe
+UP_S002,03/06/2026 00:00,Neutrophils (Absolute),3.7191,01/01/1958 0:00,68.0,Female,0,severe
+UP_S002,03/06/2026 00:00,Platelet Count,257.3958,01/01/1958 0:00,68.0,Female,0,severe
+UP_S002,03/06/2026 00:00,Platelet Distribution Width (PDW),10.7189,01/01/1958 0:00,68.0,Female,0,severe
+UP_S002,03/06/2026 00:00,Platelet Large Cell Count (P-LCC),72.1266,01/01/1958 0:00,68.0,Female,0,severe
+UP_S002,03/06/2026 00:00,Platelet Large Cell Ratio (P-LCR),37.0693,01/01/1958 0:00,68.0,Female,0,severe
+UP_S002,03/06/2026 00:00,Plateletcrit (PCT),0.1513,01/01/1958 0:00,68.0,Female,0,severe
+UP_S002,03/06/2026 00:00,Postprandial Plasma Glucose (PPBS),223.3895,01/01/1958 0:00,68.0,Female,0,severe
+UP_S002,03/06/2026 00:00,Prolactin,14.4465,01/01/1958 0:00,68.0,Female,0,severe
+UP_S002,03/06/2026 00:00,Prostate-Specific Antigen (PSA),1.4865,01/01/1958 0:00,68.0,Female,0,severe
+UP_S002,03/06/2026 00:00,Prothrombin Time (PT),7.9621,01/01/1958 0:00,68.0,Female,0,severe
+UP_S002,03/06/2026 00:00,Random Plasma Glucose,0.0,01/01/1958 0:00,68.0,Female,0,severe
+UP_S002,03/06/2026 00:00,Red Blood Cell Count (RBC),5.2207,01/01/1958 0:00,68.0,Female,0,severe
+UP_S002,03/06/2026 00:00,Red Cell Distribution Width – CV (RDW-CV),12.66,01/01/1958 0:00,68.0,Female,0,severe
+UP_S002,03/06/2026 00:00,Red Cell Distribution Width – SD (RDW-SD),42.0035,01/01/1958 0:00,68.0,Female,0,severe
+UP_S002,03/06/2026 00:00,Rheumatoid Factor (RF),0.0,01/01/1958 0:00,68.0,Female,0,severe
+UP_S002,03/06/2026 00:00,Serum Albumin,1.8828,01/01/1958 0:00,68.0,Female,0,severe
+UP_S002,03/06/2026 00:00,Serum Amylase,169.2144,01/01/1958 0:00,68.0,Female,0,severe
+UP_S002,03/06/2026 00:00,Serum Bicarbonate (HCO₃⁻),24.7822,01/01/1958 0:00,68.0,Female,0,severe
+UP_S002,03/06/2026 00:00,Serum Calcium,9.8432,01/01/1958 0:00,68.0,Female,0,severe
+UP_S002,03/06/2026 00:00,Serum Chloride,102.6508,01/01/1958 0:00,68.0,Female,0,severe
+UP_S002,03/06/2026 00:00,Serum Creatinine,0.7621,01/01/1958 0:00,68.0,Female,0,severe
+UP_S002,03/06/2026 00:00,Serum Ferritin,148.8642,01/01/1958 0:00,68.0,Female,0,severe
+UP_S002,03/06/2026 00:00,Serum Globulin,0.7437,01/01/1958 0:00,68.0,Female,0,severe
+UP_S002,03/06/2026 00:00,Serum Magnesium,1.9961,01/01/1958 0:00,68.0,Female,0,severe
+UP_S002,03/06/2026 00:00,Serum Phosphorus,3.2488,01/01/1958 0:00,68.0,Female,0,severe
+UP_S002,03/06/2026 00:00,Serum Potassium,3.9937,01/01/1958 0:00,68.0,Female,0,severe
+UP_S002,03/06/2026 00:00,Serum Sodium,141.6537,01/01/1958 0:00,68.0,Female,0,severe
+UP_S002,03/06/2026 00:00,Serum Urea,27.2886,01/01/1958 0:00,68.0,Female,0,severe
+UP_S002,03/06/2026 00:00,Serum Uric Acid,5.5908,01/01/1958 0:00,68.0,Female,0,severe
+UP_S002,03/06/2026 00:00,Thyroid Stimulating Hormone (TSH),2.2913,01/01/1958 0:00,68.0,Female,0,severe
+UP_S002,03/06/2026 00:00,Total Bilirubin,0.0,01/01/1958 0:00,68.0,Female,0,severe
+UP_S002,03/06/2026 00:00,Total Cholesterol,93.1784,01/01/1958 0:00,68.0,Female,0,severe
+UP_S002,03/06/2026 00:00,Total Cholesterol/HDL Ratio,1.9147,01/01/1958 0:00,68.0,Female,0,severe
+UP_S002,03/06/2026 00:00,Total Protein,10.1637,01/01/1958 0:00,68.0,Female,0,severe
+UP_S002,03/06/2026 00:00,Triglycerides,59.2994,01/01/1958 0:00,68.0,Female,0,severe
+UP_S002,03/06/2026 00:00,Urine Albumin-Creatinine Ratio (ACR),12.3695,01/01/1958 0:00,68.0,Female,0,severe
+UP_S002,03/06/2026 00:00,Urine Calcium,234.3414,01/01/1958 0:00,68.0,Female,0,severe
+UP_S002,03/06/2026 00:00,Urine Calcium-Creatinine Ratio (UCCR),0.052,01/01/1958 0:00,68.0,Female,0,severe
+UP_S002,03/06/2026 00:00,Urine Chloride,163.965,01/01/1958 0:00,68.0,Female,0,severe
+UP_S002,03/06/2026 00:00,Urine Creatinine (Spot),108.0835,01/01/1958 0:00,68.0,Female,0,severe
+UP_S002,03/06/2026 00:00,Urine Microalbumin,22.4504,01/01/1958 0:00,68.0,Female,0,severe
+UP_S002,03/06/2026 00:00,Urine Potassium,78.449,01/01/1958 0:00,68.0,Female,0,severe
+UP_S002,03/06/2026 00:00,Urine Protein (Spot),46.6092,01/01/1958 0:00,68.0,Female,0,severe
+UP_S002,03/06/2026 00:00,Urine Protein-Creatinine Ratio (UPCR),102.8897,01/01/1958 0:00,68.0,Female,0,severe
+UP_S002,03/06/2026 00:00,Urine Sodium,167.2733,01/01/1958 0:00,68.0,Female,0,severe
+UP_S002,03/06/2026 00:00,Urine Specific Gravity,1.0182,01/01/1958 0:00,68.0,Female,0,severe
+UP_S002,03/06/2026 00:00,Urine Urate,459.2645,01/01/1958 0:00,68.0,Female,0,severe
+UP_S002,03/06/2026 00:00,Urine Urate-to-Creatinine Ratio,0.1808,01/01/1958 0:00,68.0,Female,0,severe
+UP_S002,03/06/2026 00:00,Urine Volume,1213.7114,01/01/1958 0:00,68.0,Female,0,severe
+UP_S002,03/06/2026 00:00,Urine pH,5.623,01/01/1958 0:00,68.0,Female,0,severe
+UP_S002,03/06/2026 00:00,VLDL Cholesterol,21.2272,01/01/1958 0:00,68.0,Female,0,severe
+UP_S002,03/06/2026 00:00,White Blood Cell Count (WBC),7.3565,01/01/1958 0:00,68.0,Female,0,severe
+UP_S002,03/06/2026 00:00,White Blood Cell Count (WBC) (%),53.1816,01/01/1958 0:00,68.0,Female,0,severe
+UP_S003,03/06/2026 00:00,1-Hour Plasma Glucose,91.5015,01/01/1946 0:00,80.0,Male,0,severe
+UP_S003,03/06/2026 00:00,2-Hour Plasma Glucose,98.391,01/01/1946 0:00,80.0,Male,0,severe
+UP_S003,03/06/2026 00:00,24-Hour Urine Protein,411.9124,01/01/1946 0:00,80.0,Male,0,severe
+UP_S003,03/06/2026 00:00,Activated Partial Thromboplastin Time (APTT),32.0945,01/01/1946 0:00,80.0,Male,0,severe
+UP_S003,03/06/2026 00:00,Alanine Aminotransferase (ALT / SGPT),132.0258,01/01/1946 0:00,80.0,Male,0,severe
+UP_S003,03/06/2026 00:00,Albumin/Globulin Ratio,3.895,01/01/1946 0:00,80.0,Male,0,severe
+UP_S003,03/06/2026 00:00,Alkaline Phosphatase (ALP),296.8087,01/01/1946 0:00,80.0,Male,0,severe
+UP_S003,03/06/2026 00:00,Anti-Streptolysin O Titre (ASOT),101.0397,01/01/1946 0:00,80.0,Male,0,severe
+UP_S003,03/06/2026 00:00,Aspartate Aminotransferase (AST / SGOT),0.0,01/01/1946 0:00,80.0,Male,0,severe
+UP_S003,03/06/2026 00:00,Basophils (%),0.4976,01/01/1946 0:00,80.0,Male,0,severe
+UP_S003,03/06/2026 00:00,Basophils (Absolute),0.0182,01/01/1946 0:00,80.0,Male,0,severe
+UP_S003,03/06/2026 00:00,Beta-hCG,0.0,01/01/1946 0:00,80.0,Male,0,severe
+UP_S003,03/06/2026 00:00,Bleeding Time,2.9492,01/01/1946 0:00,80.0,Male,0,severe
+UP_S003,03/06/2026 00:00,Blood Urea,38.8465,01/01/1946 0:00,80.0,Male,0,severe
+UP_S003,03/06/2026 00:00,C-Reactive Protein (CRP),1.9726,01/01/1946 0:00,80.0,Male,0,severe
+UP_S003,03/06/2026 00:00,CA-125,68.8968,01/01/1946 0:00,80.0,Male,0,severe
+UP_S003,03/06/2026 00:00,Clotting Time,18.2902,01/01/1946 0:00,80.0,Male,0,severe
+UP_S003,03/06/2026 00:00,Corrected Serum Calcium,11.4984,01/01/1946 0:00,80.0,Male,0,severe
+UP_S003,03/06/2026 00:00,Creatine Phosphokinase (CPK),98.338,01/01/1946 0:00,80.0,Male,0,severe
+UP_S003,03/06/2026 00:00,Direct Bilirubin,0.0,01/01/1946 0:00,80.0,Male,0,severe
+UP_S003,03/06/2026 00:00,Eosinophils (%),3.6734,01/01/1946 0:00,80.0,Male,0,severe
+UP_S003,03/06/2026 00:00,Eosinophils (Absolute),0.1836,01/01/1946 0:00,80.0,Male,0,severe
+UP_S003,03/06/2026 00:00,Erythrocyte Sedimentation Rate (ESR),9.293,01/01/1946 0:00,80.0,Male,0,severe
+UP_S003,03/06/2026 00:00,Fasting Plasma Glucose,87.4818,01/01/1946 0:00,80.0,Male,0,severe
+UP_S003,03/06/2026 00:00,Follicle Stimulating Hormone (FSH),0.0,01/01/1946 0:00,80.0,Male,0,severe
+UP_S003,03/06/2026 00:00,Free T3,0.0,01/01/1946 0:00,80.0,Male,0,severe
+UP_S003,03/06/2026 00:00,Free T4,0.0,01/01/1946 0:00,80.0,Male,0,severe
+UP_S003,03/06/2026 00:00,Gamma-Glutamyl Transferase (GGT),0.0,01/01/1946 0:00,80.0,Male,0,severe
+UP_S003,03/06/2026 00:00,Glucose Challenge Test (GCT),48.2874,01/01/1946 0:00,80.0,Male,0,severe
+UP_S003,03/06/2026 00:00,HDL Cholesterol,63.4444,01/01/1946 0:00,80.0,Male,0,severe
+UP_S003,03/06/2026 00:00,Hematocrit (PCV/HCT),44.4163,01/01/1946 0:00,80.0,Male,0,severe
+UP_S003,03/06/2026 00:00,Hemoglobin (Hb),13.5205,01/01/1946 0:00,80.0,Male,0,severe
+UP_S003,03/06/2026 00:00,Hemoglobin A1c (HbA1c),4.9399,01/01/1946 0:00,80.0,Male,0,severe
+UP_S003,03/06/2026 00:00,Indirect Bilirubin,0.0,01/01/1946 0:00,80.0,Male,0,severe
+UP_S003,03/06/2026 00:00,International Normalized Ratio (INR),0.4048,01/01/1946 0:00,80.0,Male,0,severe
+UP_S003,03/06/2026 00:00,Ionized Calcium,0.9136,01/01/1946 0:00,80.0,Male,0,severe
+UP_S003,03/06/2026 00:00,LDL Cholesterol,53.2105,01/01/1946 0:00,80.0,Male,0,severe
+UP_S003,03/06/2026 00:00,LDL/HDL Ratio,2.2017,01/01/1946 0:00,80.0,Male,0,severe
+UP_S003,03/06/2026 00:00,Lactate Dehydrogenase (LDH),154.9534,01/01/1946 0:00,80.0,Male,0,severe
+UP_S003,03/06/2026 00:00,Luteinizing Hormone (LH),22.8118,01/01/1946 0:00,80.0,Male,0,severe
+UP_S003,03/06/2026 00:00,Lymphocytes (%),29.8673,01/01/1946 0:00,80.0,Male,0,severe
+UP_S003,03/06/2026 00:00,Lymphocytes (Absolute),2.0333,01/01/1946 0:00,80.0,Male,0,severe
+UP_S003,03/06/2026 00:00,Mean Corpuscular Hemoglobin (MCH),31.0665,01/01/1946 0:00,80.0,Male,0,severe
+UP_S003,03/06/2026 00:00,Mean Corpuscular Hemoglobin Concentration (MCHC),34.7365,01/01/1946 0:00,80.0,Male,0,severe
+UP_S003,03/06/2026 00:00,Mean Corpuscular Volume (MCV),92.5106,01/01/1946 0:00,80.0,Male,0,severe
+UP_S003,03/06/2026 00:00,Mean Platelet Volume (MPV),10.3913,01/01/1946 0:00,80.0,Male,0,severe
+UP_S003,03/06/2026 00:00,Monocytes (%),3.4648,01/01/1946 0:00,80.0,Male,0,severe
+UP_S003,03/06/2026 00:00,Monocytes (Absolute),88.404,01/01/1946 0:00,80.0,Male,0,severe
+UP_S003,03/06/2026 00:00,Neutrophils (%),61.5187,01/01/1946 0:00,80.0,Male,0,severe
+UP_S003,03/06/2026 00:00,Neutrophils (Absolute),4.945,01/01/1946 0:00,80.0,Male,0,severe
+UP_S003,03/06/2026 00:00,Platelet Count,355.2609,01/01/1946 0:00,80.0,Male,0,severe
+UP_S003,03/06/2026 00:00,Platelet Distribution Width (PDW),13.4205,01/01/1946 0:00,80.0,Male,0,severe
+UP_S003,03/06/2026 00:00,Platelet Large Cell Count (P-LCC),99.467,01/01/1946 0:00,80.0,Male,0,severe
+UP_S003,03/06/2026 00:00,Platelet Large Cell Ratio (P-LCR),25.2117,01/01/1946 0:00,80.0,Male,0,severe
+UP_S003,03/06/2026 00:00,Plateletcrit (PCT),0.2149,01/01/1946 0:00,80.0,Male,0,severe
+UP_S003,03/06/2026 00:00,Postprandial Plasma Glucose (PPBS),104.2145,01/01/1946 0:00,80.0,Male,0,severe
+UP_S003,03/06/2026 00:00,Prolactin,0.0,01/01/1946 0:00,80.0,Male,0,severe
+UP_S003,03/06/2026 00:00,Prostate-Specific Antigen (PSA),10.5826,01/01/1946 0:00,80.0,Male,0,severe
+UP_S003,03/06/2026 00:00,Prothrombin Time (PT),16.2568,01/01/1946 0:00,80.0,Male,0,severe
+UP_S003,03/06/2026 00:00,Random Plasma Glucose,78.0414,01/01/1946 0:00,80.0,Male,0,severe
+UP_S003,03/06/2026 00:00,Red Blood Cell Count (RBC),5.1545,01/01/1946 0:00,80.0,Male,0,severe
+UP_S003,03/06/2026 00:00,Red Cell Distribution Width – CV (RDW-CV),12.44,01/01/1946 0:00,80.0,Male,0,severe
+UP_S003,03/06/2026 00:00,Red Cell Distribution Width – SD (RDW-SD),40.8868,01/01/1946 0:00,80.0,Male,0,severe
+UP_S003,03/06/2026 00:00,Rheumatoid Factor (RF),8.1191,01/01/1946 0:00,80.0,Male,0,severe
+UP_S003,03/06/2026 00:00,Serum Albumin,7.5684,01/01/1946 0:00,80.0,Male,0,severe
+UP_S003,03/06/2026 00:00,Serum Amylase,59.5239,01/01/1946 0:00,80.0,Male,0,severe
+UP_S003,03/06/2026 00:00,Serum Bicarbonate (HCO₃⁻),39.3298,01/01/1946 0:00,80.0,Male,0,severe
+UP_S003,03/06/2026 00:00,Serum Calcium,6.5161,01/01/1946 0:00,80.0,Male,0,severe
+UP_S003,03/06/2026 00:00,Serum Chloride,91.8132,01/01/1946 0:00,80.0,Male,0,severe
+UP_S003,03/06/2026 00:00,Serum Creatinine,0.0,01/01/1946 0:00,80.0,Male,0,severe
+UP_S003,03/06/2026 00:00,Serum Ferritin,172.8808,01/01/1946 0:00,80.0,Male,0,severe
+UP_S003,03/06/2026 00:00,Serum Globulin,0.0,01/01/1946 0:00,80.0,Male,0,severe
+UP_S003,03/06/2026 00:00,Serum Magnesium,1.129,01/01/1946 0:00,80.0,Male,0,severe
+UP_S003,03/06/2026 00:00,Serum Phosphorus,7.2897,01/01/1946 0:00,80.0,Male,0,severe
+UP_S003,03/06/2026 00:00,Serum Potassium,6.3918,01/01/1946 0:00,80.0,Male,0,severe
+UP_S003,03/06/2026 00:00,Serum Sodium,123.3542,01/01/1946 0:00,80.0,Male,0,severe
+UP_S003,03/06/2026 00:00,Serum Urea,0.0,01/01/1946 0:00,80.0,Male,0,severe
+UP_S003,03/06/2026 00:00,Serum Uric Acid,0.0205,01/01/1946 0:00,80.0,Male,0,severe
+UP_S003,03/06/2026 00:00,Thyroid Stimulating Hormone (TSH),0.0,01/01/1946 0:00,80.0,Male,0,severe
+UP_S003,03/06/2026 00:00,Total Bilirubin,0.0,01/01/1946 0:00,80.0,Male,0,severe
+UP_S003,03/06/2026 00:00,Total Cholesterol,126.493,01/01/1946 0:00,80.0,Male,0,severe
+UP_S003,03/06/2026 00:00,Total Cholesterol/HDL Ratio,2.5899,01/01/1946 0:00,80.0,Male,0,severe
+UP_S003,03/06/2026 00:00,Total Protein,4.083,01/01/1946 0:00,80.0,Male,0,severe
+UP_S003,03/06/2026 00:00,Triglycerides,35.4809,01/01/1946 0:00,80.0,Male,0,severe
+UP_S003,03/06/2026 00:00,Urine Albumin-Creatinine Ratio (ACR),0.0,01/01/1946 0:00,80.0,Male,0,severe
+UP_S003,03/06/2026 00:00,Urine Calcium,0.0,01/01/1946 0:00,80.0,Male,0,severe
+UP_S003,03/06/2026 00:00,Urine Calcium-Creatinine Ratio (UCCR),0.2798,01/01/1946 0:00,80.0,Male,0,severe
+UP_S003,03/06/2026 00:00,Urine Chloride,476.1859,01/01/1946 0:00,80.0,Male,0,severe
+UP_S003,03/06/2026 00:00,Urine Creatinine (Spot),0.0,01/01/1946 0:00,80.0,Male,0,severe
+UP_S003,03/06/2026 00:00,Urine Microalbumin,67.2992,01/01/1946 0:00,80.0,Male,0,severe
+UP_S003,03/06/2026 00:00,Urine Potassium,0.0,01/01/1946 0:00,80.0,Male,0,severe
+UP_S003,03/06/2026 00:00,Urine Protein (Spot),299.1709,01/01/1946 0:00,80.0,Male,0,severe
+UP_S003,03/06/2026 00:00,Urine Protein-Creatinine Ratio (UPCR),288.6987,01/01/1946 0:00,80.0,Male,0,severe
+UP_S003,03/06/2026 00:00,Urine Sodium,500.6167,01/01/1946 0:00,80.0,Male,0,severe
+UP_S003,03/06/2026 00:00,Urine Specific Gravity,1.0566,01/01/1946 0:00,80.0,Male,0,severe
+UP_S003,03/06/2026 00:00,Urine Urate,1262.3989,01/01/1946 0:00,80.0,Male,0,severe
+UP_S003,03/06/2026 00:00,Urine Urate-to-Creatinine Ratio,1.547,01/01/1946 0:00,80.0,Male,0,severe
+UP_S003,03/06/2026 00:00,Urine Volume,0.0,01/01/1946 0:00,80.0,Male,0,severe
+UP_S003,03/06/2026 00:00,Urine pH,0.8599,01/01/1946 0:00,80.0,Male,0,severe
+UP_S003,03/06/2026 00:00,VLDL Cholesterol,29.129,01/01/1946 0:00,80.0,Male,0,severe
+UP_S003,03/06/2026 00:00,White Blood Cell Count (WBC),7.8824,01/01/1946 0:00,80.0,Male,0,severe
+UP_S003,03/06/2026 00:00,White Blood Cell Count (WBC) (%),58.6226,01/01/1946 0:00,80.0,Male,0,severe
+UP_C001,03/06/2026 00:00,1-Hour Plasma Glucose,406.7216,01/01/1963 0:00,63.0,Female,0,mixed
+UP_C001,03/06/2026 00:00,2-Hour Plasma Glucose,321.8255,01/01/1963 0:00,63.0,Female,0,mixed
+UP_C001,03/06/2026 00:00,24-Hour Urine Protein,0.0,01/01/1963 0:00,63.0,Female,0,mixed
+UP_C001,03/06/2026 00:00,Activated Partial Thromboplastin Time (APTT),33.4688,01/01/1963 0:00,63.0,Female,0,mixed
+UP_C001,03/06/2026 00:00,Alanine Aminotransferase (ALT / SGPT),46.8353,01/01/1963 0:00,63.0,Female,0,mixed
+UP_C001,03/06/2026 00:00,Albumin/Globulin Ratio,1.6151,01/01/1963 0:00,63.0,Female,0,mixed
+UP_C001,03/06/2026 00:00,Alkaline Phosphatase (ALP),101.9946,01/01/1963 0:00,63.0,Female,0,mixed
+UP_C001,03/06/2026 00:00,Anti-Streptolysin O Titre (ASOT),114.9352,01/01/1963 0:00,63.0,Female,0,mixed
+UP_C001,03/06/2026 00:00,Aspartate Aminotransferase (AST / SGOT),24.6206,01/01/1963 0:00,63.0,Female,0,mixed
+UP_C001,03/06/2026 00:00,Basophils (%),0.3333,01/01/1963 0:00,63.0,Female,0,mixed
+UP_C001,03/06/2026 00:00,Basophils (Absolute),0.0364,01/01/1963 0:00,63.0,Female,0,mixed
+UP_C001,03/06/2026 00:00,Beta-hCG,1.9214,01/01/1963 0:00,63.0,Female,0,mixed
+UP_C001,03/06/2026 00:00,Bleeding Time,5.2065,01/01/1963 0:00,63.0,Female,0,mixed
+UP_C001,03/06/2026 00:00,Blood Urea,0.0,01/01/1963 0:00,63.0,Female,0,mixed
+UP_C001,03/06/2026 00:00,C-Reactive Protein (CRP),0.0,01/01/1963 0:00,63.0,Female,0,mixed
+UP_C001,03/06/2026 00:00,CA-125,9.6196,01/01/1963 0:00,63.0,Female,0,mixed
+UP_C001,03/06/2026 00:00,Clotting Time,8.2517,01/01/1963 0:00,63.0,Female,0,mixed
+UP_C001,03/06/2026 00:00,Corrected Serum Calcium,7.0755,01/01/1963 0:00,63.0,Female,0,mixed
+UP_C001,03/06/2026 00:00,Creatine Phosphokinase (CPK),0.0,01/01/1963 0:00,63.0,Female,0,mixed
+UP_C001,03/06/2026 00:00,Direct Bilirubin,0.1168,01/01/1963 0:00,63.0,Female,0,mixed
+UP_C001,03/06/2026 00:00,Eosinophils (%),4.4995,01/01/1963 0:00,63.0,Female,0,mixed
+UP_C001,03/06/2026 00:00,Eosinophils (Absolute),0.3435,01/01/1963 0:00,63.0,Female,0,mixed
+UP_C001,03/06/2026 00:00,Erythrocyte Sedimentation Rate (ESR),0.0,01/01/1963 0:00,63.0,Female,0,mixed
+UP_C001,03/06/2026 00:00,Fasting Plasma Glucose,118.0981,01/01/1963 0:00,63.0,Female,0,mixed
+UP_C001,03/06/2026 00:00,Follicle Stimulating Hormone (FSH),4.9961,01/01/1963 0:00,63.0,Female,0,mixed
+UP_C001,03/06/2026 00:00,Free T3,3.0013,01/01/1963 0:00,63.0,Female,0,mixed
+UP_C001,03/06/2026 00:00,Free T4,1.2175,01/01/1963 0:00,63.0,Female,0,mixed
+UP_C001,03/06/2026 00:00,Gamma-Glutamyl Transferase (GGT),27.8863,01/01/1963 0:00,63.0,Female,0,mixed
+UP_C001,03/06/2026 00:00,Glucose Challenge Test (GCT),272.4142,01/01/1963 0:00,63.0,Female,0,mixed
+UP_C001,03/06/2026 00:00,HDL Cholesterol,0.0,01/01/1963 0:00,63.0,Female,0,mixed
+UP_C001,03/06/2026 00:00,Hematocrit (PCV/HCT),41.0323,01/01/1963 0:00,63.0,Female,0,mixed
+UP_C001,03/06/2026 00:00,Hemoglobin (Hb),14.5667,01/01/1963 0:00,63.0,Female,0,mixed
+UP_C001,03/06/2026 00:00,Hemoglobin A1c (HbA1c),7.1509,01/01/1963 0:00,63.0,Female,0,mixed
+UP_C001,03/06/2026 00:00,Indirect Bilirubin,0.5003,01/01/1963 0:00,63.0,Female,0,mixed
+UP_C001,03/06/2026 00:00,International Normalized Ratio (INR),0.9964,01/01/1963 0:00,63.0,Female,0,mixed
+UP_C001,03/06/2026 00:00,Ionized Calcium,0.9566,01/01/1963 0:00,63.0,Female,0,mixed
+UP_C001,03/06/2026 00:00,LDL Cholesterol,163.472,01/01/1963 0:00,63.0,Female,0,mixed
+UP_C001,03/06/2026 00:00,LDL/HDL Ratio,0.0,01/01/1963 0:00,63.0,Female,0,mixed
+UP_C001,03/06/2026 00:00,Lactate Dehydrogenase (LDH),406.7814,01/01/1963 0:00,63.0,Female,0,mixed
+UP_C001,03/06/2026 00:00,Luteinizing Hormone (LH),5.5143,01/01/1963 0:00,63.0,Female,0,mixed
+UP_C001,03/06/2026 00:00,Lymphocytes (%),24.3018,01/01/1963 0:00,63.0,Female,0,mixed
+UP_C001,03/06/2026 00:00,Lymphocytes (Absolute),2.1092,01/01/1963 0:00,63.0,Female,0,mixed
+UP_C001,03/06/2026 00:00,Mean Corpuscular Hemoglobin (MCH),29.7383,01/01/1963 0:00,63.0,Female,0,mixed
+UP_C001,03/06/2026 00:00,Mean Corpuscular Hemoglobin Concentration (MCHC),33.3148,01/01/1963 0:00,63.0,Female,0,mixed
+UP_C001,03/06/2026 00:00,Mean Corpuscular Volume (MCV),82.6122,01/01/1963 0:00,63.0,Female,0,mixed
+UP_C001,03/06/2026 00:00,Mean Platelet Volume (MPV),9.8292,01/01/1963 0:00,63.0,Female,0,mixed
+UP_C001,03/06/2026 00:00,Monocytes (%),4.0316,01/01/1963 0:00,63.0,Female,0,mixed
+UP_C001,03/06/2026 00:00,Monocytes (Absolute),94.539,01/01/1963 0:00,63.0,Female,0,mixed
+UP_C001,03/06/2026 00:00,Neutrophils (%),57.4163,01/01/1963 0:00,63.0,Female,0,mixed
+UP_C001,03/06/2026 00:00,Neutrophils (Absolute),5.9131,01/01/1963 0:00,63.0,Female,0,mixed
+UP_C001,03/06/2026 00:00,Platelet Count,240.0566,01/01/1963 0:00,63.0,Female,0,mixed
+UP_C001,03/06/2026 00:00,Platelet Distribution Width (PDW),12.1528,01/01/1963 0:00,63.0,Female,0,mixed
+UP_C001,03/06/2026 00:00,Platelet Large Cell Count (P-LCC),96.959,01/01/1963 0:00,63.0,Female,0,mixed
+UP_C001,03/06/2026 00:00,Platelet Large Cell Ratio (P-LCR),33.4763,01/01/1963 0:00,63.0,Female,0,mixed
+UP_C001,03/06/2026 00:00,Plateletcrit (PCT),0.1781,01/01/1963 0:00,63.0,Female,0,mixed
+UP_C001,03/06/2026 00:00,Postprandial Plasma Glucose (PPBS),186.7219,01/01/1963 0:00,63.0,Female,0,mixed
+UP_C001,03/06/2026 00:00,Prolactin,12.2735,01/01/1963 0:00,63.0,Female,0,mixed
+UP_C001,03/06/2026 00:00,Prostate-Specific Antigen (PSA),2.3361,01/01/1963 0:00,63.0,Female,0,mixed
+UP_C001,03/06/2026 00:00,Prothrombin Time (PT),12.2052,01/01/1963 0:00,63.0,Female,0,mixed
+UP_C001,03/06/2026 00:00,Random Plasma Glucose,289.8472,01/01/1963 0:00,63.0,Female,0,mixed
+UP_C001,03/06/2026 00:00,Red Blood Cell Count (RBC),4.8572,01/01/1963 0:00,63.0,Female,0,mixed
+UP_C001,03/06/2026 00:00,Red Cell Distribution Width – CV (RDW-CV),12.6834,01/01/1963 0:00,63.0,Female,0,mixed
+UP_C001,03/06/2026 00:00,Red Cell Distribution Width – SD (RDW-SD),41.5226,01/01/1963 0:00,63.0,Female,0,mixed
+UP_C001,03/06/2026 00:00,Rheumatoid Factor (RF),5.4294,01/01/1963 0:00,63.0,Female,0,mixed
+UP_C001,03/06/2026 00:00,Serum Albumin,4.1611,01/01/1963 0:00,63.0,Female,0,mixed
+UP_C001,03/06/2026 00:00,Serum Amylase,144.543,01/01/1963 0:00,63.0,Female,0,mixed
+UP_C001,03/06/2026 00:00,Serum Bicarbonate (HCO₃⁻),15.8894,01/01/1963 0:00,63.0,Female,0,mixed
+UP_C001,03/06/2026 00:00,Serum Calcium,12.1893,01/01/1963 0:00,63.0,Female,0,mixed
+UP_C001,03/06/2026 00:00,Serum Chloride,115.7102,01/01/1963 0:00,63.0,Female,0,mixed
+UP_C001,03/06/2026 00:00,Serum Creatinine,1.7711,01/01/1963 0:00,63.0,Female,0,mixed
+UP_C001,03/06/2026 00:00,Serum Ferritin,129.1959,01/01/1963 0:00,63.0,Female,0,mixed
+UP_C001,03/06/2026 00:00,Serum Globulin,3.0291,01/01/1963 0:00,63.0,Female,0,mixed
+UP_C001,03/06/2026 00:00,Serum Magnesium,1.2576,01/01/1963 0:00,63.0,Female,0,mixed
+UP_C001,03/06/2026 00:00,Serum Phosphorus,6.7834,01/01/1963 0:00,63.0,Female,0,mixed
+UP_C001,03/06/2026 00:00,Serum Potassium,1.5306,01/01/1963 0:00,63.0,Female,0,mixed
+UP_C001,03/06/2026 00:00,Serum Sodium,150.5726,01/01/1963 0:00,63.0,Female,0,mixed
+UP_C001,03/06/2026 00:00,Serum Urea,0.0,01/01/1963 0:00,63.0,Female,0,mixed
+UP_C001,03/06/2026 00:00,Serum Uric Acid,0.6844,01/01/1963 0:00,63.0,Female,0,mixed
+UP_C001,03/06/2026 00:00,Thyroid Stimulating Hormone (TSH),2.0588,01/01/1963 0:00,63.0,Female,0,mixed
+UP_C001,03/06/2026 00:00,Total Bilirubin,0.7427,01/01/1963 0:00,63.0,Female,0,mixed
+UP_C001,03/06/2026 00:00,Total Cholesterol,0.0,01/01/1963 0:00,63.0,Female,0,mixed
+UP_C001,03/06/2026 00:00,Total Cholesterol/HDL Ratio,10.5913,01/01/1963 0:00,63.0,Female,0,mixed
+UP_C001,03/06/2026 00:00,Total Protein,7.546,01/01/1963 0:00,63.0,Female,0,mixed
+UP_C001,03/06/2026 00:00,Triglycerides,0.0,01/01/1963 0:00,63.0,Female,0,mixed
+UP_C001,03/06/2026 00:00,Urine Albumin-Creatinine Ratio (ACR),51.7745,01/01/1963 0:00,63.0,Female,0,mixed
+UP_C001,03/06/2026 00:00,Urine Calcium,456.3646,01/01/1963 0:00,63.0,Female,0,mixed
+UP_C001,03/06/2026 00:00,Urine Calcium-Creatinine Ratio (UCCR),0.0,01/01/1963 0:00,63.0,Female,0,mixed
+UP_C001,03/06/2026 00:00,Urine Chloride,357.0935,01/01/1963 0:00,63.0,Female,0,mixed
+UP_C001,03/06/2026 00:00,Urine Creatinine (Spot),0.0,01/01/1963 0:00,63.0,Female,0,mixed
+UP_C001,03/06/2026 00:00,Urine Microalbumin,0.0,01/01/1963 0:00,63.0,Female,0,mixed
+UP_C001,03/06/2026 00:00,Urine Potassium,0.0,01/01/1963 0:00,63.0,Female,0,mixed
+UP_C001,03/06/2026 00:00,Urine Protein (Spot),0.0,01/01/1963 0:00,63.0,Female,0,mixed
+UP_C001,03/06/2026 00:00,Urine Protein-Creatinine Ratio (UPCR),317.8456,01/01/1963 0:00,63.0,Female,0,mixed
+UP_C001,03/06/2026 00:00,Urine Sodium,0.0,01/01/1963 0:00,63.0,Female,0,mixed
+UP_C001,03/06/2026 00:00,Urine Specific Gravity,0.9721,01/01/1963 0:00,63.0,Female,0,mixed
+UP_C001,03/06/2026 00:00,Urine Urate,0.0,01/01/1963 0:00,63.0,Female,0,mixed
+UP_C001,03/06/2026 00:00,Urine Urate-to-Creatinine Ratio,0.0,01/01/1963 0:00,63.0,Female,0,mixed
+UP_C001,03/06/2026 00:00,Urine Volume,3192.0842,01/01/1963 0:00,63.0,Female,0,mixed
+UP_C001,03/06/2026 00:00,Urine pH,11.4692,01/01/1963 0:00,63.0,Female,0,mixed
+UP_C001,03/06/2026 00:00,VLDL Cholesterol,0.0,01/01/1963 0:00,63.0,Female,0,mixed
+UP_C001,03/06/2026 00:00,White Blood Cell Count (WBC),6.6836,01/01/1963 0:00,63.0,Female,0,mixed
+UP_C001,03/06/2026 00:00,White Blood Cell Count (WBC) (%),48.7803,01/01/1963 0:00,63.0,Female,0,mixed
+UP_C002,03/06/2026 00:00,1-Hour Plasma Glucose,132.4853,01/01/1949 0:00,77.0,Male,0,mixed
+UP_C002,03/06/2026 00:00,2-Hour Plasma Glucose,53.7687,01/01/1949 0:00,77.0,Male,0,mixed
+UP_C002,03/06/2026 00:00,24-Hour Urine Protein,104.5617,01/01/1949 0:00,77.0,Male,0,mixed
+UP_C002,03/06/2026 00:00,Activated Partial Thromboplastin Time (APTT),19.5062,01/01/1949 0:00,77.0,Male,0,mixed
+UP_C002,03/06/2026 00:00,Alanine Aminotransferase (ALT / SGPT),0.0,01/01/1949 0:00,77.0,Male,0,mixed
+UP_C002,03/06/2026 00:00,Albumin/Globulin Ratio,3.14,01/01/1949 0:00,77.0,Male,0,mixed
+UP_C002,03/06/2026 00:00,Alkaline Phosphatase (ALP),0.0,01/01/1949 0:00,77.0,Male,0,mixed
+UP_C002,03/06/2026 00:00,Anti-Streptolysin O Titre (ASOT),120.9915,01/01/1949 0:00,77.0,Male,0,mixed
+UP_C002,03/06/2026 00:00,Aspartate Aminotransferase (AST / SGOT),0.0,01/01/1949 0:00,77.0,Male,0,mixed
+UP_C002,03/06/2026 00:00,Basophils (%),2.2351,01/01/1949 0:00,77.0,Male,0,mixed
+UP_C002,03/06/2026 00:00,Basophils (Absolute),0.2138,01/01/1949 0:00,77.0,Male,0,mixed
+UP_C002,03/06/2026 00:00,Beta-hCG,0.0,01/01/1949 0:00,77.0,Male,0,mixed
+UP_C002,03/06/2026 00:00,Bleeding Time,13.8684,01/01/1949 0:00,77.0,Male,0,mixed
+UP_C002,03/06/2026 00:00,Blood Urea,14.9961,01/01/1949 0:00,77.0,Male,0,mixed
+UP_C002,03/06/2026 00:00,C-Reactive Protein (CRP),3.9573,01/01/1949 0:00,77.0,Male,0,mixed
+UP_C002,03/06/2026 00:00,CA-125,0.0,01/01/1949 0:00,77.0,Male,0,mixed
+UP_C002,03/06/2026 00:00,Clotting Time,16.3732,01/01/1949 0:00,77.0,Male,0,mixed
+UP_C002,03/06/2026 00:00,Corrected Serum Calcium,9.8926,01/01/1949 0:00,77.0,Male,0,mixed
+UP_C002,03/06/2026 00:00,Creatine Phosphokinase (CPK),93.0161,01/01/1949 0:00,77.0,Male,0,mixed
+UP_C002,03/06/2026 00:00,Direct Bilirubin,0.0,01/01/1949 0:00,77.0,Male,0,mixed
+UP_C002,03/06/2026 00:00,Eosinophils (%),0.0,01/01/1949 0:00,77.0,Male,0,mixed
+UP_C002,03/06/2026 00:00,Eosinophils (Absolute),1.1829,01/01/1949 0:00,77.0,Male,0,mixed
+UP_C002,03/06/2026 00:00,Erythrocyte Sedimentation Rate (ESR),7.0366,01/01/1949 0:00,77.0,Male,0,mixed
+UP_C002,03/06/2026 00:00,Fasting Plasma Glucose,85.3441,01/01/1949 0:00,77.0,Male,0,mixed
+UP_C002,03/06/2026 00:00,Follicle Stimulating Hormone (FSH),0.0,01/01/1949 0:00,77.0,Male,0,mixed
+UP_C002,03/06/2026 00:00,Free T3,7.438,01/01/1949 0:00,77.0,Male,0,mixed
+UP_C002,03/06/2026 00:00,Free T4,3.1351,01/01/1949 0:00,77.0,Male,0,mixed
+UP_C002,03/06/2026 00:00,Gamma-Glutamyl Transferase (GGT),83.371,01/01/1949 0:00,77.0,Male,0,mixed
+UP_C002,03/06/2026 00:00,Glucose Challenge Test (GCT),93.9022,01/01/1949 0:00,77.0,Male,0,mixed
+UP_C002,03/06/2026 00:00,HDL Cholesterol,55.9823,01/01/1949 0:00,77.0,Male,0,mixed
+UP_C002,03/06/2026 00:00,Hematocrit (PCV/HCT),29.9981,01/01/1949 0:00,77.0,Male,0,mixed
+UP_C002,03/06/2026 00:00,Hemoglobin (Hb),19.3333,01/01/1949 0:00,77.0,Male,0,mixed
+UP_C002,03/06/2026 00:00,Hemoglobin A1c (HbA1c),4.6761,01/01/1949 0:00,77.0,Male,0,mixed
+UP_C002,03/06/2026 00:00,Indirect Bilirubin,1.632,01/01/1949 0:00,77.0,Male,0,mixed
+UP_C002,03/06/2026 00:00,International Normalized Ratio (INR),1.7632,01/01/1949 0:00,77.0,Male,0,mixed
+UP_C002,03/06/2026 00:00,Ionized Calcium,1.2471,01/01/1949 0:00,77.0,Male,0,mixed
+UP_C002,03/06/2026 00:00,LDL Cholesterol,45.2157,01/01/1949 0:00,77.0,Male,0,mixed
+UP_C002,03/06/2026 00:00,LDL/HDL Ratio,2.5693,01/01/1949 0:00,77.0,Male,0,mixed
+UP_C002,03/06/2026 00:00,Lactate Dehydrogenase (LDH),183.9609,01/01/1949 0:00,77.0,Male,0,mixed
+UP_C002,03/06/2026 00:00,Luteinizing Hormone (LH),0.0,01/01/1949 0:00,77.0,Male,0,mixed
+UP_C002,03/06/2026 00:00,Lymphocytes (%),0.0,01/01/1949 0:00,77.0,Male,0,mixed
+UP_C002,03/06/2026 00:00,Lymphocytes (Absolute),5.4352,01/01/1949 0:00,77.0,Male,0,mixed
+UP_C002,03/06/2026 00:00,Mean Corpuscular Hemoglobin (MCH),41.8683,01/01/1949 0:00,77.0,Male,0,mixed
+UP_C002,03/06/2026 00:00,Mean Corpuscular Hemoglobin Concentration (MCHC),39.6488,01/01/1949 0:00,77.0,Male,0,mixed
+UP_C002,03/06/2026 00:00,Mean Corpuscular Volume (MCV),58.6314,01/01/1949 0:00,77.0,Male,0,mixed
+UP_C002,03/06/2026 00:00,Mean Platelet Volume (MPV),4.2753,01/01/1949 0:00,77.0,Male,0,mixed
+UP_C002,03/06/2026 00:00,Monocytes (%),12.682,01/01/1949 0:00,77.0,Male,0,mixed
+UP_C002,03/06/2026 00:00,Monocytes (Absolute),60.4654,01/01/1949 0:00,77.0,Male,0,mixed
+UP_C002,03/06/2026 00:00,Neutrophils (%),12.0277,01/01/1949 0:00,77.0,Male,0,mixed
+UP_C002,03/06/2026 00:00,Neutrophils (Absolute),10.4201,01/01/1949 0:00,77.0,Male,0,mixed
+UP_C002,03/06/2026 00:00,Platelet Count,699.6484,01/01/1949 0:00,77.0,Male,0,mixed
+UP_C002,03/06/2026 00:00,Platelet Distribution Width (PDW),28.339,01/01/1949 0:00,77.0,Male,0,mixed
+UP_C002,03/06/2026 00:00,Platelet Large Cell Count (P-LCC),0.0,01/01/1949 0:00,77.0,Male,0,mixed
+UP_C002,03/06/2026 00:00,Platelet Large Cell Ratio (P-LCR),73.2909,01/01/1949 0:00,77.0,Male,0,mixed
+UP_C002,03/06/2026 00:00,Plateletcrit (PCT),0.0,01/01/1949 0:00,77.0,Male,0,mixed
+UP_C002,03/06/2026 00:00,Postprandial Plasma Glucose (PPBS),109.0784,01/01/1949 0:00,77.0,Male,0,mixed
+UP_C002,03/06/2026 00:00,Prolactin,0.0,01/01/1949 0:00,77.0,Male,0,mixed
+UP_C002,03/06/2026 00:00,Prostate-Specific Antigen (PSA),7.2268,01/01/1949 0:00,77.0,Male,0,mixed
+UP_C002,03/06/2026 00:00,Prothrombin Time (PT),17.0878,01/01/1949 0:00,77.0,Male,0,mixed
+UP_C002,03/06/2026 00:00,Random Plasma Glucose,42.629,01/01/1949 0:00,77.0,Male,0,mixed
+UP_C002,03/06/2026 00:00,Red Blood Cell Count (RBC),3.0716,01/01/1949 0:00,77.0,Male,0,mixed
+UP_C002,03/06/2026 00:00,Red Cell Distribution Width – CV (RDW-CV),8.5873,01/01/1949 0:00,77.0,Male,0,mixed
+UP_C002,03/06/2026 00:00,Red Cell Distribution Width – SD (RDW-SD),56.1543,01/01/1949 0:00,77.0,Male,0,mixed
+UP_C002,03/06/2026 00:00,Rheumatoid Factor (RF),1.5645,01/01/1949 0:00,77.0,Male,0,mixed
+UP_C002,03/06/2026 00:00,Serum Albumin,7.9646,01/01/1949 0:00,77.0,Male,0,mixed
+UP_C002,03/06/2026 00:00,Serum Amylase,50.5709,01/01/1949 0:00,77.0,Male,0,mixed
+UP_C002,03/06/2026 00:00,Serum Bicarbonate (HCO₃⁻),24.0174,01/01/1949 0:00,77.0,Male,0,mixed
+UP_C002,03/06/2026 00:00,Serum Calcium,9.5616,01/01/1949 0:00,77.0,Male,0,mixed
+UP_C002,03/06/2026 00:00,Serum Chloride,104.247,01/01/1949 0:00,77.0,Male,0,mixed
+UP_C002,03/06/2026 00:00,Serum Creatinine,0.9012,01/01/1949 0:00,77.0,Male,0,mixed
+UP_C002,03/06/2026 00:00,Serum Ferritin,0.0,01/01/1949 0:00,77.0,Male,0,mixed
+UP_C002,03/06/2026 00:00,Serum Globulin,0.9528,01/01/1949 0:00,77.0,Male,0,mixed
+UP_C002,03/06/2026 00:00,Serum Magnesium,1.8986,01/01/1949 0:00,77.0,Male,0,mixed
+UP_C002,03/06/2026 00:00,Serum Phosphorus,3.843,01/01/1949 0:00,77.0,Male,0,mixed
+UP_C002,03/06/2026 00:00,Serum Potassium,4.4314,01/01/1949 0:00,77.0,Male,0,mixed
+UP_C002,03/06/2026 00:00,Serum Sodium,142.7929,01/01/1949 0:00,77.0,Male,0,mixed
+UP_C002,03/06/2026 00:00,Serum Urea,29.1036,01/01/1949 0:00,77.0,Male,0,mixed
+UP_C002,03/06/2026 00:00,Serum Uric Acid,5.8402,01/01/1949 0:00,77.0,Male,0,mixed
+UP_C002,03/06/2026 00:00,Thyroid Stimulating Hormone (TSH),9.3591,01/01/1949 0:00,77.0,Male,0,mixed
+UP_C002,03/06/2026 00:00,Total Bilirubin,0.0,01/01/1949 0:00,77.0,Male,0,mixed
+UP_C002,03/06/2026 00:00,Total Cholesterol,109.0495,01/01/1949 0:00,77.0,Male,0,mixed
+UP_C002,03/06/2026 00:00,Total Cholesterol/HDL Ratio,2.7783,01/01/1949 0:00,77.0,Male,0,mixed
+UP_C002,03/06/2026 00:00,Total Protein,11.052,01/01/1949 0:00,77.0,Male,0,mixed
+UP_C002,03/06/2026 00:00,Triglycerides,87.6947,01/01/1949 0:00,77.0,Male,0,mixed
+UP_C002,03/06/2026 00:00,Urine Albumin-Creatinine Ratio (ACR),15.9283,01/01/1949 0:00,77.0,Male,0,mixed
+UP_C002,03/06/2026 00:00,Urine Calcium,185.1793,01/01/1949 0:00,77.0,Male,0,mixed
+UP_C002,03/06/2026 00:00,Urine Calcium-Creatinine Ratio (UCCR),0.085,01/01/1949 0:00,77.0,Male,0,mixed
+UP_C002,03/06/2026 00:00,Urine Chloride,170.1378,01/01/1949 0:00,77.0,Male,0,mixed
+UP_C002,03/06/2026 00:00,Urine Creatinine (Spot),189.1487,01/01/1949 0:00,77.0,Male,0,mixed
+UP_C002,03/06/2026 00:00,Urine Microalbumin,17.495,01/01/1949 0:00,77.0,Male,0,mixed
+UP_C002,03/06/2026 00:00,Urine Potassium,74.2506,01/01/1949 0:00,77.0,Male,0,mixed
+UP_C002,03/06/2026 00:00,Urine Protein (Spot),50.769,01/01/1949 0:00,77.0,Male,0,mixed
+UP_C002,03/06/2026 00:00,Urine Protein-Creatinine Ratio (UPCR),97.4781,01/01/1949 0:00,77.0,Male,0,mixed
+UP_C002,03/06/2026 00:00,Urine Sodium,110.1493,01/01/1949 0:00,77.0,Male,0,mixed
+UP_C002,03/06/2026 00:00,Urine Specific Gravity,1.02,01/01/1949 0:00,77.0,Male,0,mixed
+UP_C002,03/06/2026 00:00,Urine Urate,357.3784,01/01/1949 0:00,77.0,Male,0,mixed
+UP_C002,03/06/2026 00:00,Urine Urate-to-Creatinine Ratio,0.3541,01/01/1949 0:00,77.0,Male,0,mixed
+UP_C002,03/06/2026 00:00,Urine Volume,1181.2677,01/01/1949 0:00,77.0,Male,0,mixed
+UP_C002,03/06/2026 00:00,Urine pH,5.7793,01/01/1949 0:00,77.0,Male,0,mixed
+UP_C002,03/06/2026 00:00,VLDL Cholesterol,24.0112,01/01/1949 0:00,77.0,Male,0,mixed
+UP_C002,03/06/2026 00:00,White Blood Cell Count (WBC),0.0,01/01/1949 0:00,77.0,Male,0,mixed
+UP_C002,03/06/2026 00:00,White Blood Cell Count (WBC) (%),95.3324,01/01/1949 0:00,77.0,Male,0,mixed

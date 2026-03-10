@@ -1,0 +1,49 @@
+{
+  "dataset": "CareAI March 2026",
+  "model": "HANPP_Disease",
+  "metapaths": [
+    "P-D-P",
+    "P-O-P"
+  ],
+  "num_patients": 34852,
+  "num_diseases": 4,
+  "diseases": [
+    "Diabetes",
+    "Dyslipidemia",
+    "CKD",
+    "Hematology_Disorder"
+  ],
+  "disease_order": [
+    "CKD",
+    "Diabetes",
+    "Hematology_Disorder"
+  ],
+  "in_dim": 66,
+  "hidden_dim": 128,
+  "out_dim": 64,
+  "best_val_f1": 0.31222313562175474,
+  "best_epoch": 5,
+  "test_f1_macro": 0.31211736142743907,
+  "test_f1_micro": 0.5025572105872251,
+  "test_auc_roc": 0.6904653318004949,
+  "per_disease": {
+    "CKD": {
+      "f1": 0.22882576253436313,
+      "precision": 0.12932820361053565,
+      "recall": 0.9920544835414302,
+      "auc": 0.6768372259467801
+    },
+    "Diabetes": {
+      "f1": 0.15258696287635196,
+      "precision": 0.08263416178565774,
+      "recall": 0.9942857142857143,
+      "auc": 0.9346428202059601
+    },
+    "Hematology_Disorder": {
+      "f1": 0.8670567202990411,
+      "precision": 0.7653134414000861,
+      "recall": 1.0,
+      "auc": 0.4599159492487448
+    }
+  }
+}

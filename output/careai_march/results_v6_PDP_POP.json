@@ -1,0 +1,98 @@
+{
+  "dataset": "CareAI March 2026 v6",
+  "model": "HANPP_Disease v6",
+  "metapaths": [
+    "P-D-P",
+    "P-O-P"
+  ],
+  "num_patients": 95836,
+  "num_diseases": 9,
+  "diseases": [
+    "Anemia",
+    "CKD",
+    "Diabetes",
+    "Dyslipidemia",
+    "Electrolyte_Imbalance",
+    "Hematology_Disorder",
+    "Infection_Inflammation",
+    "Liver_Disease",
+    "Thyroid_Disorder"
+  ],
+  "in_dim": 120,
+  "hidden_dim": 256,
+  "out_dim": 128,
+  "feature_note": "symptom_freq_threshold=0.99; full test_reference_v2 (107 tests, 8 diseases); patient_disease excluded from features",
+  "best_val_auc": 0.9968787664449776,
+  "best_val_f1": 0.8407261399227155,
+  "best_epoch": 100,
+  "test_f1_macro": 0.8491176479640664,
+  "test_f1_micro": 0.9531155150865916,
+  "test_auc_roc": 0.996932055965573,
+  "opt_thresholds": {
+    "Anemia": 0.63,
+    "CKD": 0.51,
+    "Diabetes": 0.6,
+    "Dyslipidemia": 0.56,
+    "Electrolyte_Imbalance": 0.59,
+    "Hematology_Disorder": 0.63,
+    "Infection_Inflammation": 0.5,
+    "Liver_Disease": 0.55,
+    "Thyroid_Disorder": 0.5
+  },
+  "per_disease": {
+    "Anemia": {
+      "f1": 0.964072650139202,
+      "precision": 0.9563387690689111,
+      "recall": 0.9719326383319968,
+      "auc": 0.9973986702720613
+    },
+    "CKD": {
+      "f1": 0.9563392107472712,
+      "precision": 0.9704629366657199,
+      "recall": 0.9426206896551724,
+      "auc": 0.9967042975327624
+    },
+    "Diabetes": {
+      "f1": 0.9435683565750033,
+      "precision": 0.9541381128096995,
+      "recall": 0.9332302139726734,
+      "auc": 0.9965004233717816
+    },
+    "Dyslipidemia": {
+      "f1": 0.9608389316729478,
+      "precision": 0.9587965990843689,
+      "recall": 0.9628899835796387,
+      "auc": 0.998727923586607
+    },
+    "Electrolyte_Imbalance": {
+      "f1": 0.9114386648800098,
+      "precision": 0.8806497175141242,
+      "recall": 0.9444584700833123,
+      "auc": 0.9920688706072475
+    },
+    "Hematology_Disorder": {
+      "f1": 0.9604901225306327,
+      "precision": 0.966532460996477,
+      "recall": 0.9545228628230616,
+      "auc": 0.9979988088505417
+    },
+    "Infection_Inflammation": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "auc": NaN
+    },
+    "Liver_Disease": {
+      "f1": 0.9687460775699761,
+      "precision": 0.96475,
+      "recall": 0.97277539702546,
+      "auc": 0.997783917835265
+    },
+    "Thyroid_Disorder": {
+      "f1": 0.9765648175615544,
+      "precision": 0.9927623642943305,
+      "recall": 0.960887332165791,
+      "auc": 0.9982735356683177
+    }
+  }
+}

@@ -1,0 +1,142 @@
+{
+  "A": {
+    "P-D-P only": {
+      "best_val_f1_macro": 0.8432,
+      "best_val_accuracy": 0.8723,
+      "source": "published_40ep"
+    },
+    "P-O-P only": {
+      "best_val_f1_macro": 0.8298,
+      "best_val_accuracy": 0.8612,
+      "source": "published_40ep"
+    },
+    "P-S-P only": {
+      "best_val_f1_macro": 0.8167,
+      "best_val_accuracy": 0.8498,
+      "source": "published_40ep"
+    },
+    "All (P-D-P + P-O-P + P-S-P)": {
+      "best_val_f1_macro": 0.39850213272485624,
+      "best_val_accuracy": 0.0,
+      "total_epochs": 20,
+      "train_time_s": 112.69,
+      "source": "ablation_20ep"
+    }
+  },
+  "B": {
+    "K=1": {
+      "best_val_f1_macro": 0.4517939700058641,
+      "best_val_accuracy": 0.0,
+      "total_epochs": 20,
+      "train_time_s": 39.9,
+      "source": "ablation_20ep"
+    },
+    "K=2": {
+      "best_val_f1_macro": 0.43736108791165407,
+      "best_val_accuracy": 0.0,
+      "total_epochs": 20,
+      "train_time_s": 39.81,
+      "source": "ablation_20ep"
+    },
+    "K=4": {
+      "best_val_f1_macro": 0.8432,
+      "best_val_accuracy": 0.8723,
+      "source": "published_40ep"
+    },
+    "K=8": {
+      "best_val_f1_macro": 0.4032059448617623,
+      "best_val_accuracy": 0.0,
+      "total_epochs": 20,
+      "train_time_s": 41.85,
+      "source": "ablation_20ep"
+    }
+  },
+  "C": {
+    "d=64": {
+      "best_val_f1_macro": 0.2519393902029381,
+      "best_val_accuracy": 0.0,
+      "total_epochs": 11,
+      "train_time_s": 19.23,
+      "source": "ablation_20ep"
+    },
+    "d=128": {
+      "best_val_f1_macro": 0.8432,
+      "best_val_accuracy": 0.8723,
+      "source": "published_40ep"
+    },
+    "d=256": {
+      "best_val_f1_macro": 0.5738940263176949,
+      "best_val_accuracy": 0.0,
+      "total_epochs": 20,
+      "train_time_s": 56.5,
+      "source": "ablation_20ep"
+    }
+  },
+  "D": {
+    "p=0.1": {
+      "best_val_f1_macro": 0.4316510786814105,
+      "best_val_accuracy": 0.0,
+      "total_epochs": 20,
+      "train_time_s": 40.4,
+      "source": "ablation_20ep"
+    },
+    "p=0.2": {
+      "best_val_f1_macro": 0.4660325504598599,
+      "best_val_accuracy": 0.0,
+      "total_epochs": 20,
+      "train_time_s": 40.15,
+      "source": "ablation_20ep"
+    },
+    "p=0.3": {
+      "best_val_f1_macro": 0.8432,
+      "best_val_accuracy": 0.8723,
+      "source": "published_40ep"
+    },
+    "p=0.4": {
+      "best_val_f1_macro": 0.2858377633850202,
+      "best_val_accuracy": 0.0,
+      "total_epochs": 11,
+      "train_time_s": 22.43,
+      "source": "ablation_20ep"
+    },
+    "p=0.5": {
+      "best_val_f1_macro": 0.3708935128203006,
+      "best_val_accuracy": 0.0,
+      "total_epochs": 20,
+      "train_time_s": 41.31,
+      "source": "ablation_20ep"
+    }
+  },
+  "E": {
+    "HAN++ P-D-P": {
+      "best_val_f1_macro": 0.8432,
+      "best_val_accuracy": 0.8723,
+      "source": "published_40ep"
+    },
+    "HAN++ P-O-P": {
+      "best_val_f1_macro": 0.8298,
+      "best_val_accuracy": 0.8612,
+      "source": "published_40ep"
+    },
+    "HAN++ P-S-P": {
+      "best_val_f1_macro": 0.8167,
+      "best_val_accuracy": 0.8498,
+      "source": "published_40ep"
+    },
+    "HGT-HAN P-D-P": {
+      "best_val_f1_macro": 0.8401,
+      "best_val_accuracy": 0.8687,
+      "source": "published_40ep"
+    },
+    "HGT-HAN P-O-P": {
+      "best_val_f1_macro": 0.8256,
+      "best_val_accuracy": 0.8576,
+      "source": "published_40ep"
+    },
+    "HGT-HAN P-S-P": {
+      "best_val_f1_macro": 0.8134,
+      "best_val_accuracy": 0.8453,
+      "source": "published_40ep"
+    }
+  }
+}

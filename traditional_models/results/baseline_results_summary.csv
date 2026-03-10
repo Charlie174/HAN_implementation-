@@ -1,0 +1,14 @@
+Model,Type,Accuracy,F1-Micro,F1-Macro,F1-Weighted,Precision-Macro,Recall-Macro,Hamming-Loss,ROC-AUC-Macro,Train-Time(s),Best-Params
+Decision Tree,Traditional ML (GridSearch-tuned),0.9731,0.9818,0.6457,0.9857,0.6488,0.6431,0.0014,,0.27,"{'clf__estimator__criterion': 'entropy', 'clf__estimator__max_depth': None, 'clf__estimator__min_samples_leaf': 1}"
+Random Forest,Traditional ML (GridSearch-tuned),0.8899,0.9389,0.4301,0.9348,0.4896,0.4005,0.0045,,1.25,"{'clf__estimator__max_depth': 10, 'clf__estimator__min_samples_leaf': 1, 'clf__estimator__n_estimators': 100}"
+XGBoost,Traditional ML (GridSearch-tuned),0.9636,0.9787,0.4311,0.9741,0.4601,0.411,0.0016,,1.36,"{'clf__estimator__learning_rate': 0.1, 'clf__estimator__max_depth': 6, 'clf__estimator__n_estimators': 100, 'clf__estimator__subsample': 0.9}"
+Logistic Regression,Traditional ML (GridSearch-tuned),0.2868,0.4263,0.5098,0.7334,0.4727,0.6302,0.085,,2.56,"{'clf__estimator__C': 10.0, 'clf__estimator__solver': 'liblinear'}"
+KNN,Traditional ML (GridSearch-tuned),0.7712,0.8498,0.4245,0.8432,0.5073,0.3835,0.0107,,1.02,"{'clf__estimator__n_neighbors': 5, 'clf__estimator__weights': 'distance'}"
+SVM (Linear),Traditional ML (GridSearch-tuned),0.2816,0.4101,0.4512,0.7241,0.4088,0.5848,0.0874,0.0,10.77,default/fixed
+Naive Bayes,Traditional ML (GridSearch-tuned),0.0295,0.2211,0.1505,0.6049,0.1076,0.6316,0.2534,,0.2,default/fixed
+HAN++ (P-D-P),HAN++ (GNN),0.8723,0.8654,0.8432,—,—,—,—,—,—,see paper
+HAN++ (P-O-P),HAN++ (GNN),0.8612,0.8521,0.8298,—,—,—,—,—,—,see paper
+HAN++ (P-S-P),HAN++ (GNN),0.8498,0.8401,0.8167,—,—,—,—,—,—,see paper
+HGT-HAN (P-D-P),HGT-HAN (GNN),0.8687,0.8623,0.8401,—,—,—,—,—,—,see paper
+HGT-HAN (P-O-P),HGT-HAN (GNN),0.8576,0.8489,0.8256,—,—,—,—,—,—,see paper
+HGT-HAN (P-S-P),HGT-HAN (GNN),0.8453,0.8367,0.8134,—,—,—,—,—,—,see paper
