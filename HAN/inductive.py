@@ -592,3 +592,131 @@ def compare_inference_modes(model, feats_np, labels_np, test_indices,
         'prototype':    dict(results['prototype']),
         'mlp_only':     dict(results['mlp_only']),
     }
+
+
+# ── Zero-Shot New Disease Inference ─────────────────────────────────────────────
+
+@torch.no_grad()
+def build_zero_shot_disease(test_names: list,
+                             symptom_names: list,
+                             disease_encoder,
+                             device,
+                             disease_label: str = "new_disease") -> dict:
+    """
+    Compute an embedding for a brand-new disease using only its diagnostic
+    test associations — without any model retraining.
+
+    This is the paper's key extensibility claim:
+        "New conditions can be introduced at inference time simply by specifying
+         their diagnostic test relationships, without model retraining."
+
+    Algorithm:
+        1. Build a binary feature vector f_new  [1, S]  where f_new[s] = 1 if
+           test s is in test_names (and is present in the model's symptom_names).
+        2. L2-normalise (same as build_disease_features() in MedicalGraphData).
+        3. Forward pass through DiseaseEncoder  →  h_D_new  [1, hidden_dim].
+
+    Args:
+        test_names:      list of diagnostic test names for the new disease
+                         (must be exact string matches to symptom_names)
+        symptom_names:   ordered list of all symptom/test names known to the model
+                         (from checkpoint["symptom_names"])
+        disease_encoder: trained DiseaseEncoder module
+        device:          torch device
+        disease_label:   name/label for the new disease (used in output dict)
+
+    Returns:
+        {
+            'label':        disease_label,
+            'embedding':    torch.Tensor [hidden_dim],
+            'feature_vec':  np.ndarray  [S],
+            'matched_tests': list of test names that were matched,
+            'unmatched_tests': list of test names not found in symptom_names,
+        }
+    """
+    symptom_idx = {s: i for i, s in enumerate(symptom_names)}
+    S = len(symptom_names)
+
+    feat_vec = np.zeros(S, dtype=np.float32)
+    matched   = []
+    unmatched = []
+
+    for test in test_names:
+        if test in symptom_idx:
+            feat_vec[symptom_idx[test]] = 1.0
+            matched.append(test)
+        else:
+            unmatched.append(test)
+
+    norm = np.linalg.norm(feat_vec)
+    if norm > 0:
+        feat_vec = feat_vec / norm
+
+    if len(matched) == 0:
+        print(f"  Warning: zero-shot '{disease_label}': none of the {len(test_names)} "
+              f"provided test names matched known symptoms. "
+              f"Embedding will be a zero vector.")
+
+    disease_encoder.eval()
+    feat_t = torch.from_numpy(feat_vec).unsqueeze(0).to(device)  # [1, S]
+    h_D_new = disease_encoder(feat_t)[0]                         # [hidden_dim]
+
+    print(f"  Zero-shot disease '{disease_label}': "
+          f"{len(matched)}/{len(test_names)} tests matched  "
+          f"(embedding norm={float(h_D_new.norm()):.4f})")
+
+    if unmatched:
+        print(f"    Unmatched tests: {unmatched[:5]}"
+              + ("..." if len(unmatched) > 5 else ""))
+
+    return {
+        'label':           disease_label,
+        'embedding':       h_D_new.cpu(),
+        'feature_vec':     feat_vec,
+        'matched_tests':   matched,
+        'unmatched_tests': unmatched,
+    }
+
+
+@torch.no_grad()
+def score_patients_for_disease(z_patients: torch.Tensor,
+                                disease_embedding: torch.Tensor,
+                                decoder,
+                                patient_ids: list = None,
+                                top_k: int = None) -> list:
+    """
+    Score all (or top-K) patients for a candidate disease using the
+    link prediction decoder.
+
+    Works for both known diseases (from training) and zero-shot new diseases.
+
+    Args:
+        z_patients:        [N, hidden_dim] patient embeddings from HANPP_Disease
+        disease_embedding: [hidden_dim] single disease embedding
+        decoder:           trained LinkPredDecoder
+        patient_ids:       optional list of patient IDs for output labelling
+        top_k:             if set, return only top-K highest-scoring patients
+
+    Returns:
+        list of dicts sorted by descending probability:
+            {'patient_id': ..., 'patient_idx': int, 'probability': float}
+    """
+    decoder.eval()
+    z_p = z_patients.to(decoder.relation.device)
+    h_d = disease_embedding.unsqueeze(0).to(decoder.relation.device)  # [1, H]
+
+    h_d_expanded = h_d.expand(z_p.shape[0], -1)                      # [N, H]
+    scores = torch.sigmoid(decoder.score_pair(z_p, h_d_expanded))    # [N]
+    scores_np = scores.cpu().numpy()
+
+    results = []
+    for idx, prob in enumerate(scores_np):
+        pid = patient_ids[idx] if patient_ids is not None else idx
+        results.append({'patient_id': pid, 'patient_idx': idx, 'probability': float(prob)})
+
+    results.sort(key=lambda x: x['probability'], reverse=True)
+
+    if top_k is not None:
+        results = results[:top_k]
+
+    return results

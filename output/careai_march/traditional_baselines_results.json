@@ -1,0 +1,175 @@
+{
+  "dataset": "CareAI April 2026 (n=48,546, high-confidence)",
+  "n_train": 38828,
+  "n_test": 9718,
+  "n_features": 119,
+  "n_diseases": 9,
+  "split": "MultilabelStratifiedShuffleSplit 80/20, seed=42",
+  "results": [
+    {
+      "model": "Naive Bayes",
+      "accuracy": 0.01564107841119572,
+      "f1_macro": 0.3222755114775234,
+      "f1_micro": 0.32670009180142645,
+      "hamming_loss": 0.5450710022638403,
+      "auc_roc": 0.7462356459300735,
+      "best_params": {},
+      "per_disease_f1": {
+        "Anemia": 0.04577656675749319,
+        "CKD": 0.3281404062315125,
+        "Diabetes": 0.5176788124156545,
+        "Dyslipidemia": 0.007374631268436578,
+        "Electrolyte_Imbalance": 0.12749596924221754,
+        "Hematology_Disorder": 0.0263756252842201,
+        "Infection_Inflammation": 0.9969453990072547,
+        "Liver_Disease": 0.71081307627829,
+        "Thyroid_Disorder": 0.13987911681263107
+      },
+      "time_seconds": 1.8898000717163086
+    },
+    {
+      "model": "KNN",
+      "accuracy": 0.9100637991356246,
+      "f1_macro": 0.8314738354246324,
+      "f1_micro": 0.9525410234862223,
+      "hamming_loss": 0.012268185040360384,
+      "auc_roc": 0.935721775009275,
+      "best_params": {
+        "n_neighbors": 3,
+        "weights": "distance"
+      },
+      "per_disease_f1": {
+        "Anemia": 0.5634674922600619,
+        "CKD": 0.8989834815756036,
+        "Diabetes": 0.9425164620039153,
+        "Dyslipidemia": 0.7450980392156863,
+        "Electrolyte_Imbalance": 0.9482926829268292,
+        "Hematology_Disorder": 0.4819277108433735,
+        "Infection_Inflammation": 0.9902017291066283,
+        "Liver_Disease": 0.9394673123486683,
+        "Thyroid_Disorder": 0.9733096085409253
+      },
+      "time_seconds": 57.46607065200806
+    },
+    {
+      "model": "Decision Tree",
+      "accuracy": 0.9757151677299856,
+      "f1_macro": 0.9457620241659755,
+      "f1_micro": 0.9893073388585907,
+      "hamming_loss": 0.002846950675722028,
+      "auc_roc": 0.9847843465604491,
+      "best_params": {
+        "max_depth": 10,
+        "min_samples_leaf": 10
+      },
+      "per_disease_f1": {
+        "Anemia": 0.9174757281553398,
+        "CKD": 0.9762470308788599,
+        "Diabetes": 0.99347751458977,
+        "Dyslipidemia": 0.8421052631578947,
+        "Electrolyte_Imbalance": 0.9857549857549858,
+        "Hematology_Disorder": 0.8360655737704918,
+        "Infection_Inflammation": 0.9981823399980867,
+        "Liver_Disease": 0.9695550351288056,
+        "Thyroid_Disorder": 0.9929947460595446
+      },
+      "time_seconds": 18.134801149368286
+    },
+    {
+      "model": "Random Forest",
+      "accuracy": 0.9766412842148591,
+      "f1_macro": 0.9458230628006338,
+      "f1_micro": 0.9897669619055809,
+      "hamming_loss": 0.002721181770368846,
+      "auc_roc": 0.9996807617048373,
+      "best_params": {
+        "max_depth": null,
+        "min_samples_leaf": 1,
+        "n_estimators": 100
+      },
+      "per_disease_f1": {
+        "Anemia": 0.9468599033816425,
+        "CKD": 0.9808153477218226,
+        "Diabetes": 0.9919754140344886,
+        "Dyslipidemia": 0.8461538461538461,
+        "Electrolyte_Imbalance": 0.9778206364513018,
+        "Hematology_Disorder": 0.8141592920353983,
+        "Infection_Inflammation": 0.9987570513433407,
+        "Liver_Disease": 0.964622641509434,
+        "Thyroid_Disorder": 0.9912434325744308
+      },
+      "time_seconds": 170.41796803474426
+    },
+    {
+      "model": "Logistic Regression",
+      "accuracy": 0.9598682856554847,
+      "f1_macro": 0.943049372503087,
+      "f1_micro": 0.9823701410388717,
+      "hamming_loss": 0.0046877501086186,
+      "auc_roc": 0.9962009670436842,
+      "best_params": {
+        "C": 1.0
+      },
+      "per_disease_f1": {
+        "Anemia": 0.9113300492610837,
+        "CKD": 0.9767025089605734,
+        "Diabetes": 0.9753001715265867,
+        "Dyslipidemia": 0.9310344827586207,
+        "Electrolyte_Imbalance": 0.9567723342939481,
+        "Hematology_Disorder": 0.8103448275862069,
+        "Infection_Inflammation": 0.998470363288719,
+        "Liver_Disease": 0.9388235294117647,
+        "Thyroid_Disorder": 0.988666085440279
+      },
+      "time_seconds": 5.530534029006958
+    },
+    {
+      "model": "SVM (Linear)",
+      "accuracy": 0.9573986416958222,
+      "f1_macro": 0.9321604139330256,
+      "f1_micro": 0.9812862981286298,
+      "hamming_loss": 0.004973588529875832,
+      "auc_roc": null,
+      "best_params": {
+        "C": 1.0
+      },
+      "per_disease_f1": {
+        "Anemia": 0.8816120906801007,
+        "CKD": 0.9787361485474693,
+        "Diabetes": 0.9739636861939021,
+        "Dyslipidemia": 0.8928571428571429,
+        "Electrolyte_Imbalance": 0.9529298751200769,
+        "Hematology_Disorder": 0.7863247863247863,
+        "Infection_Inflammation": 0.9983746056028301,
+        "Liver_Disease": 0.9385342789598109,
+        "Thyroid_Disorder": 0.9861111111111112
+      },
+      "time_seconds": 105.47082328796387
+    },
+    {
+      "model": "XGBoost",
+      "accuracy": 0.9795225355011319,
+      "f1_macro": 0.9354508298377469,
+      "f1_micro": 0.9910698952430019,
+      "hamming_loss": 0.002378175664860168,
+      "auc_roc": 0.9997074439144195,
+      "best_params": {
+        "learning_rate": 0.1,
+        "max_depth": 3,
+        "n_estimators": 100
+      },
+      "per_disease_f1": {
+        "Anemia": 0.9245742092457421,
+        "CKD": 0.9812555786968165,
+        "Diabetes": 0.9962328767123287,
+        "Dyslipidemia": 0.7368421052631579,
+        "Electrolyte_Imbalance": 0.9798657718120806,
+        "Hematology_Disorder": 0.8305084745762712,
+        "Infection_Inflammation": 0.9992350353796137,
+        "Liver_Disease": 0.9801169590643275,
+        "Thyroid_Disorder": 0.9904264577893821
+      },
+      "time_seconds": 51.490246057510376
+    }
+  ]
+}

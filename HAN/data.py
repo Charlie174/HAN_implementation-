@@ -88,6 +88,8 @@ class MedicalGraphData:
         self.patient_organ_severity = None
         self.patient_organ_score = None
         self.organ_class_weights = None
+        # Shape: [D, S] — binary matrix: disease_feat[d, s] = 1 if symptom s maps to disease d
+        self.disease_feat = None
         
     def load_data(self):
         """Load CSV files and perform initial filtering."""
@@ -439,7 +441,84 @@ class MedicalGraphData:
         
         self.metapath_matrices = patient_metapath_neighbors
         return patient_metapath_neighbors
-    
+
+    def build_disease_features(self):
+        """
+        Build disease node feature matrix for link prediction.
+
+        For each disease d, its feature vector is a binary indicator over all
+        symptoms/tests: feat[d, s] = 1 if test s is associated with disease d
+        in the symptom reference file.
+
+        Shape: self.disease_feat -> np.ndarray [D, S]
+
+        This enables the DiseaseEncoder to project diseases into the same
+        embedding space as patients, supporting zero-shot new disease inference.
+        """
+        if self.D == 0 or self.S == 0:
+            raise RuntimeError("Call load_data() before build_disease_features().")
+
+        disease_feat = np.zeros((self.D, self.S), dtype=np.float32)
+
+        for _, row in self.df_symptom.iterrows():
+            test_name = str(row['TestName']).strip()
+            disease   = row.get('Most_Relevant_Disease', None)
+
+            if test_name not in self.symptom_map:
+                continue
+            if disease not in self.disease_map:
+                continue
+
+            s_idx = self.symptom_map[test_name]
+            d_idx = self.disease_map[disease]
+            disease_feat[d_idx, s_idx] = 1.0
+
+        # L2-normalise each disease row so distances are cosine-comparable
+        row_norms = np.linalg.norm(disease_feat, axis=1, keepdims=True)
+        row_norms = np.where(row_norms == 0, 1.0, row_norms)   # avoid /0 for empty rows
+        disease_feat = disease_feat / row_norms
+
+        self.disease_feat = disease_feat
+        print(f"Disease features: {disease_feat.shape}  "
+              f"(non-zero rows: {int((disease_feat.sum(axis=1) > 0).sum())}/{self.D})")
+
+    def build_ground_truth_apd(self, path_ground_truth):
+        """
+        Load an external ground-truth CSV and build the Patient-Disease
+        adjacency matrix A_PD for link prediction training.
+
+        The CSV must have columns: patient_id, <disease_name_1>, ..., <disease_name_D>
+        where each disease cell is 0 or 1.
+
+        Args:
+            path_ground_truth: path to updated_patient_ground_truth_v2.csv
+
+        Returns:
+            np.ndarray [P, D] float32 binary matrix
+        """
+        df_gt = pd.read_csv(path_ground_truth)
+        df_gt.columns = df_gt.columns.str.strip()
+
+        A_PD = np.zeros((self.P, self.D), dtype=np.float32)
+
+        for _, row in df_gt.iterrows():
+            pid = row.get('patient_id', None)
+            if pid is None or pid not in self.patient_map:
+                continue
+            p_idx = self.patient_map[pid]
+
+            for d_name, d_idx in self.disease_map.items():
+                val = row.get(d_name, None)
+                if val is not None and float(val) == 1.0:
+                    A_PD[p_idx, d_idx] = 1.0
+
+        pos_count = int(A_PD.sum())
+        coverage  = int((A_PD.sum(axis=1) > 0).sum())
+        print(f"Ground truth A_PD: {A_PD.shape}  "
+              f"{pos_count} positive edges  "
+              f"{coverage}/{self.P} patients with >=1 known disease")
+        return A_PD
+
     def compute_class_weights(self, device='cpu'):
         """Compute class weights for organ severity classification."""
         organ_class_weights = []

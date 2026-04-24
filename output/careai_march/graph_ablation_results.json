@@ -1,0 +1,53 @@
+{
+  "model": "HANPP_Disease v6 (weights fixed, trained with threshold=0.99, P-D-P+P-O-P)",
+  "note": "No retraining \u2014 model weights are fixed. Tests graph construction sensitivity.",
+  "threshold_ablation": [
+    {
+      "symptom_freq_threshold": 0.5,
+      "n_symptoms_kept": 91,
+      "f1_macro": NaN,
+      "auc_roc": NaN
+    },
+    {
+      "symptom_freq_threshold": 0.7,
+      "n_symptoms_kept": 107,
+      "f1_macro": NaN,
+      "auc_roc": NaN
+    },
+    {
+      "symptom_freq_threshold": 0.9,
+      "n_symptoms_kept": 107,
+      "f1_macro": NaN,
+      "auc_roc": NaN
+    },
+    {
+      "symptom_freq_threshold": 0.99,
+      "n_symptoms_kept": 107,
+      "f1_macro": NaN,
+      "auc_roc": NaN
+    }
+  ],
+  "metapath_ablation": [
+    {
+      "config": "P-D-P + P-O-P (baseline)",
+      "use_PDP": true,
+      "use_POP": true,
+      "f1_macro": 0.9377998486124627,
+      "auc_roc": 0.9991717914166678
+    },
+    {
+      "config": "P-D-P only",
+      "use_PDP": true,
+      "use_POP": false,
+      "f1_macro": 0.8318617584191738,
+      "auc_roc": 0.9992193913771875
+    },
+    {
+      "config": "P-O-P only",
+      "use_PDP": false,
+      "use_POP": true,
+      "f1_macro": 0.41764499481527734,
+      "auc_roc": 0.9910103112534456
+    }
+  ]
+}

@@ -14,6 +14,14 @@ env/
 CLAUDE.md
 .claude/
 
+# Raw data directories (too large for GitHub)
+Data_4_16/
+new_processed_data_2026_04_20/
+data/dataset_careai_april/
+
+# Reference PDFs
+Example modal paper.pdf
+
 # Output and experiment artifacts
 mlruns/
 

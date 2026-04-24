@@ -1,0 +1,111 @@
+{
+  "model": "HANPP_Disease v6 (trained seed=42)",
+  "seeds": [
+    42,
+    123,
+    456
+  ],
+  "note": "Split seed varies; model weights fixed (seed=42 training). Measures test set composition variance, not training randomness.",
+  "summary": {
+    "f1_macro_mean": 0.9396611164439648,
+    "f1_macro_std": 0.0013266468358517174,
+    "f1_micro_mean": 0.9871955001536622,
+    "f1_micro_std": 0.00036675531404297464,
+    "auc_roc_mean": 0.9991750283678419,
+    "auc_roc_std": 5.120365824498458e-05
+  },
+  "per_disease_summary": {
+    "Anemia": {
+      "mean": 0.8789678387234163,
+      "std": 0.010997965052584569
+    },
+    "CKD": {
+      "mean": 0.9861006264494444,
+      "std": 0.0009115666641826131
+    },
+    "Diabetes": {
+      "mean": 0.9865630215803488,
+      "std": 0.001222784501383645
+    },
+    "Dyslipidemia": {
+      "mean": 0.966475255472199,
+      "std": 0.014066443904102187
+    },
+    "Electrolyte_Imbalance": {
+      "mean": 0.97214495365359,
+      "std": 0.006259209518888196
+    },
+    "Hematology_Disorder": {
+      "mean": 0.6946627886742734,
+      "std": 0.012204494015759076
+    },
+    "Infection_Inflammation": {
+      "mean": 0.9969796723430475,
+      "std": 0.000572643120947394
+    },
+    "Liver_Disease": {
+      "mean": 0.977396112295276,
+      "std": 0.0014675195512097341
+    },
+    "Thyroid_Disorder": {
+      "mean": 0.997659778804087,
+      "std": 0.0004121066504427325
+    }
+  },
+  "per_seed_results": [
+    {
+      "seed": 42,
+      "n_test": 9718,
+      "f1_macro": 0.9377998486124627,
+      "f1_micro": 0.9873602125198166,
+      "auc_roc": 0.9991717914166678,
+      "per_disease_f1": {
+        "Anemia": 0.8634361233480177,
+        "CKD": 0.9865711727842436,
+        "Diabetes": 0.9882192248591429,
+        "Dyslipidemia": 0.9666666666666667,
+        "Electrolyte_Imbalance": 0.9657869012707723,
+        "Hematology_Disorder": 0.6956521739130435,
+        "Infection_Inflammation": 0.9975190839694656,
+        "Liver_Disease": 0.9789719626168224,
+        "Thyroid_Disorder": 0.9973753280839895
+      }
+    },
+    {
+      "seed": 123,
+      "n_test": 9787,
+      "f1_macro": 0.9403874239415152,
+      "f1_micro": 0.9866872137322888,
+      "auc_roc": 0.9991139981121022,
+      "per_disease_f1": {
+        "Anemia": 0.8874458874458875,
+        "CKD": 0.9848259446593276,
+        "Diabetes": 0.9861656703672075,
+        "Dyslipidemia": 0.9836065573770492,
+        "Electrolyte_Imbalance": 0.9699903194578896,
+        "Hematology_Disorder": 0.6792452830188679,
+        "Infection_Inflammation": 0.996186844613918,
+        "Liver_Disease": 0.9777777777777777,
+        "Thyroid_Disorder": 0.9982425307557118
+      }
+    },
+    {
+      "seed": 456,
+      "n_test": 9698,
+      "f1_macro": 0.9407960767779164,
+      "f1_micro": 0.9875390742088811,
+      "auc_roc": 0.9992392955747553,
+      "per_disease_f1": {
+        "Anemia": 0.886021505376344,
+        "CKD": 0.986904761904762,
+        "Diabetes": 0.9853041695146958,
+        "Dyslipidemia": 0.9491525423728814,
+        "Electrolyte_Imbalance": 0.9806576402321083,
+        "Hematology_Disorder": 0.7090909090909091,
+        "Infection_Inflammation": 0.997233088445759,
+        "Liver_Disease": 0.9754385964912281,
+        "Thyroid_Disorder": 0.9973614775725593
+      }
+    }
+  ]
+}

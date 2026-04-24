@@ -1,0 +1,47 @@
+{
+  "baseline_f1_macro": 0.9303349441928372,
+  "overall_error_rate": 0.024902243259930026,
+  "n_test": 9718,
+  "deferral_results": [
+    {
+      "sigma_threshold": 0.05,
+      "deferral_rate": 0.9996912945050422,
+      "n_deferred": 9715,
+      "n_retained": 3,
+      "deferral_precision": 0.024909933093154916,
+      "f1_macro_retained": NaN
+    },
+    {
+      "sigma_threshold": 0.1,
+      "deferral_rate": 0.11669067709405227,
+      "n_deferred": 1134,
+      "n_retained": 8584,
+      "deferral_precision": 0.09259259259259259,
+      "f1_macro_retained": 0.9362076286335492
+    },
+    {
+      "sigma_threshold": 0.15,
+      "deferral_rate": 0.00010290183165260341,
+      "n_deferred": 1,
+      "n_retained": 9717,
+      "deferral_precision": 0.0,
+      "f1_macro_retained": 0.9303344411708415
+    },
+    {
+      "sigma_threshold": 0.2,
+      "deferral_rate": 0.0,
+      "n_deferred": 0,
+      "n_retained": 9718,
+      "deferral_precision": NaN,
+      "f1_macro_retained": 0.9303349441928372
+    },
+    {
+      "sigma_threshold": 0.25,
+      "deferral_rate": 0.0,
+      "n_deferred": 0,
+      "n_retained": 9718,
+      "deferral_precision": NaN,
+      "f1_macro_retained": 0.9303349441928372
+    }
+  ]
+}

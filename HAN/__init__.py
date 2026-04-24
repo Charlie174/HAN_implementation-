@@ -13,7 +13,14 @@ from .conv import (
 from .model import (
     HANPP,
     HANPP_Disease,
-    HGT_HAN
+    HGT_HAN,
+    DiseaseEncoder,
+    LinkPredDecoder,
+)
+
+from .inductive import (
+    build_zero_shot_disease,
+    score_patients_for_disease,
 )
 
 from .data import (

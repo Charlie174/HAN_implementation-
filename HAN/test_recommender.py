@@ -38,6 +38,12 @@ def load_test_reference(path_test_reference_v2: str) -> dict:
     """
     df = pd.read_csv(path_test_reference_v2)
 
+    col_map = {
+        'TestName': 'test_name', 'Target_Organ': 'organ',
+        'Most_Relevant_Disease': 'disease', 'Min': 'min', 'Max': 'max',
+    }
+    df.rename(columns={k: v for k, v in col_map.items() if k in df.columns}, inplace=True)
+
     ref = defaultdict(list)
     for _, row in df.iterrows():
         disease = row.get('disease')

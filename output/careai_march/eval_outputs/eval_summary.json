@@ -1,0 +1,33 @@
+{
+  "reproduced_f1_macro_9diseases": 0.9377998486124627,
+  "reproduced_f1_macro_8diseases": 0.9377998486124627,
+  "reproduced_f1_micro": 0.9873602125198166,
+  "reproduced_auc_roc": 0.9991717914166678,
+  "test_size": 9718,
+  "val_size": 7769,
+  "mc_samples": 50,
+  "mean_sigma": 0.056157179176807404,
+  "max_sigma": 0.1529718041419983,
+  "disease_names": [
+    "Anemia",
+    "CKD",
+    "Diabetes",
+    "Dyslipidemia",
+    "Electrolyte_Imbalance",
+    "Hematology_Disorder",
+    "Infection_Inflammation",
+    "Liver_Disease",
+    "Thyroid_Disorder"
+  ],
+  "paper_diseases": [
+    "Anemia",
+    "CKD",
+    "Diabetes",
+    "Dyslipidemia",
+    "Electrolyte_Imbalance",
+    "Hematology_Disorder",
+    "Infection_Inflammation",
+    "Liver_Disease",
+    "Thyroid_Disorder"
+  ]
+}

@@ -189,6 +189,94 @@ class HANPP_Disease(nn.Module):
         return disease_logits, z, beta
 
 
+# ── Link Prediction Components ────────────────────────────────────────────────
+
+class DiseaseEncoder(nn.Module):
+    """
+    Encodes disease node feature vectors into the same embedding space as patients.
+
+    Input: disease_feat [D, S]  — binary test-association vector per disease.
+    Output: h_D [D, hidden_dim] — disease embeddings compatible with patient z.
+
+    This is the key enabler for zero-shot new disease prediction: a new disease
+    only needs its test associations defined; no model retraining is required.
+
+    Args:
+        in_dim:     size of disease feature vector (= number of symptoms S)
+        hidden_dim: target embedding dimension (must equal HANPP_Disease out_dim)
+        dropout:    dropout rate
+    """
+
+    def __init__(self, in_dim: int, hidden_dim: int, dropout: float = 0.1):
+        super().__init__()
+        self.net = nn.Sequential(
+            nn.Linear(in_dim, hidden_dim),
+            nn.GELU(),
+            nn.Dropout(dropout),
+            nn.Linear(hidden_dim, hidden_dim),
+        )
+
+    def forward(self, disease_feats: torch.Tensor) -> torch.Tensor:
+        """
+        Args:
+            disease_feats: [D, in_dim]
+        Returns:
+            h_D: [D, hidden_dim]
+        """
+        return self.net(disease_feats)
+
+
+class LinkPredDecoder(nn.Module):
+    """
+    DistMult link prediction decoder for Patient-Disease edges.
+
+    Scores a candidate (Patient, Disease) edge as:
+        score(P, D) = (h_P ⊙ R ⊙ h_D).sum()
+
+    where R is a learnable per-dimension relation vector. This is the standard
+    DistMult factorisation (Yang et al., 2015), which is efficient and effective
+    for heterogeneous graphs with a single relation type.
+
+    For the all-pairs matrix: scores = (h_P * R) @ h_D.T  →  [N, D]
+
+    Args:
+        hidden_dim: embedding dimension (must match DiseaseEncoder and HANPP_Disease)
+    """
+
+    def __init__(self, hidden_dim: int):
+        super().__init__()
+        # Relation embedding initialised to ones so that early training
+        # approximates a plain dot-product (stable starting point)
+        self.relation = nn.Parameter(torch.ones(hidden_dim))
+
+    def forward(self, h_patient: torch.Tensor,
+                h_disease: torch.Tensor) -> torch.Tensor:
+        """
+        Compute all-pairs link scores.
+
+        Args:
+            h_patient: [N, hidden_dim]  patient embeddings
+            h_disease: [D, hidden_dim]  disease embeddings
+        Returns:
+            scores: [N, D]  unnormalised logits (apply sigmoid for probability)
+        """
+        p_weighted = h_patient * self.relation   # [N, H]
+        return p_weighted @ h_disease.t()        # [N, D]
+
+    def score_pair(self, h_patient: torch.Tensor,
+                   h_disease: torch.Tensor) -> torch.Tensor:
+        """
+        Score a batch of (patient, disease) pairs element-wise.
+
+        Args:
+            h_patient: [B, hidden_dim]
+            h_disease: [B, hidden_dim]   (one disease per patient in the batch)
+        Returns:
+            scores: [B]  unnormalised logits
+        """
+        return (h_patient * self.relation * h_disease).sum(dim=-1)
+
+
 class HGT_HAN(nn.Module):
     """
     HGT-HAN Hybrid Model (Version C)

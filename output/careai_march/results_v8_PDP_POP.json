@@ -1,0 +1,142 @@
+{
+  "dataset": "CareAI April 2026 v8 (new_processed_data, 9 diseases)",
+  "model": "HANPP_Disease v8",
+  "metapaths": [
+    "P-D-P",
+    "P-O-P"
+  ],
+  "num_patients": 48546,
+  "num_test": 9718,
+  "num_diseases": 9,
+  "diseases": [
+    "Anemia",
+    "CKD",
+    "Diabetes",
+    "Dyslipidemia",
+    "Electrolyte_Imbalance",
+    "Hematology_Disorder",
+    "Infection_Inflammation",
+    "Liver_Disease",
+    "Thyroid_Disorder"
+  ],
+  "in_dim": 119,
+  "hidden_dim": 256,
+  "out_dim": 128,
+  "best_val_auc": 0.999036096046293,
+  "best_val_f1": 0.9112436403684572,
+  "best_epoch": -1,
+  "test_f1_macro": 0.9377998486124627,
+  "test_f1_micro": 0.9873602125198166,
+  "test_f1_weighted": 0.9873465878009039,
+  "test_prec_macro": 0.9415632573449746,
+  "test_rec_macro": 0.9358047266350332,
+  "test_prec_weighted": 0.9865133061766016,
+  "test_rec_weighted": 0.9884189757227417,
+  "test_auc_roc": 0.9991717914166678,
+  "test_pr_auc": 0.9669383514508811,
+  "test_hamming_loss": 0.0033728933708353343,
+  "test_exact_match": 0.9731426219386705,
+  "opt_thresholds": {
+    "Anemia": 0.58,
+    "CKD": 0.53,
+    "Diabetes": 0.4,
+    "Dyslipidemia": 0.44,
+    "Electrolyte_Imbalance": 0.67,
+    "Hematology_Disorder": 0.65,
+    "Infection_Inflammation": 0.35000000000000003,
+    "Liver_Disease": 0.59,
+    "Thyroid_Disorder": 0.47000000000000003
+  },
+  "per_disease": {
+    "Anemia": {
+      "f1": 0.8634361233480177,
+      "precision": 0.8166666666666667,
+      "recall": 0.9158878504672897,
+      "auc": 0.9977800788256396,
+      "pr_auc": 0.9090585519536415,
+      "mcc": 0.8616632819436836,
+      "support": 214.0,
+      "threshold": 0.58
+    },
+    "CKD": {
+      "f1": 0.9865711727842436,
+      "precision": 0.9910071942446043,
+      "recall": 0.982174688057041,
+      "auc": 0.9996958493755594,
+      "pr_auc": 0.9987355574304534,
+      "mcc": 0.9837879934847328,
+      "support": 1683.0,
+      "threshold": 0.53
+    },
+    "Diabetes": {
+      "f1": 0.9882192248591429,
+      "precision": 0.9843537414965986,
+      "recall": 0.9921151868357901,
+      "auc": 0.9996921140829226,
+      "pr_auc": 0.999349048241244,
+      "mcc": 0.9831534913957818,
+      "support": 2917.0,
+      "threshold": 0.4
+    },
+    "Dyslipidemia": {
+      "f1": 0.9666666666666667,
+      "precision": 0.9666666666666667,
+      "recall": 0.9666666666666667,
+      "auc": 0.9999793559042114,
+      "pr_auc": 0.9944444444444445,
+      "mcc": 0.9665634461877236,
+      "support": 30.0,
+      "threshold": 0.44
+    },
+    "Electrolyte_Imbalance": {
+      "f1": 0.9657869012707723,
+      "precision": 0.993963782696177,
+      "recall": 0.9391634980988594,
+      "auc": 0.9994452938081386,
+      "pr_auc": 0.9924736742886349,
+      "mcc": 0.964319458952778,
+      "support": 526.0,
+      "threshold": 0.67
+    },
+    "Hematology_Disorder": {
+      "f1": 0.6956521739130435,
+      "precision": 0.7547169811320755,
+      "recall": 0.6451612903225806,
+      "auc": 0.9968363310794559,
+      "pr_auc": 0.8114920441220854,
+      "mcc": 0.6960119317984232,
+      "support": 62.0,
+      "threshold": 0.65
+    },
+    "Infection_Inflammation": {
+      "f1": 0.9975190839694656,
+      "precision": 0.9952399086062452,
+      "recall": 0.9998087222647284,
+      "auc": 0.9992705459552215,
+      "pr_auc": 0.9993168994028223,
+      "mcc": 0.9946283185389562,
+      "support": 5228.0,
+      "threshold": 0.35000000000000003
+    },
+    "Liver_Disease": {
+      "f1": 0.9789719626168224,
+      "precision": 0.9766899766899767,
+      "recall": 0.9812646370023419,
+      "auc": 0.9998467454969516,
+      "pr_auc": 0.997578015654403,
+      "mcc": 0.9780061056134182,
+      "support": 427.0,
+      "threshold": 0.59
+    },
+    "Thyroid_Disorder": {
+      "f1": 0.9973753280839895,
+      "precision": 0.9947643979057592,
+      "recall": 1.0,
+      "auc": 0.9999998082219103,
+      "pr_auc": 0.9999969275202016,
+      "mcc": 0.9972152096405535,
+      "support": 570.0,
+      "threshold": 0.47000000000000003
+    }
+  }
+}

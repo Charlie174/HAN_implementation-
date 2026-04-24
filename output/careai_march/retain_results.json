@@ -1,0 +1,73 @@
+{
+  "model": "RETAIN (1-visit, single linear layer)",
+  "reference": "Choi et al., 2016, KDD",
+  "dataset": "CareAI March 2026 (95836 patients)",
+  "diseases": [
+    "Anemia",
+    "CKD",
+    "Diabetes",
+    "Dyslipidemia",
+    "Electrolyte_Imbalance",
+    "Hematology_Disorder",
+    "Liver_Disease",
+    "Thyroid_Disorder"
+  ],
+  "split": "64/16/20 (train/val/test), seed=42",
+  "hyperparams": {
+    "hidden_dim": 256,
+    "epochs": 50,
+    "batch_size": 512,
+    "lr": 0.001,
+    "weight_decay": 0.0001
+  },
+  "best_val_f1": 0.8138185771135227,
+  "best_epoch": 48,
+  "test_f1_macro": 0.8111473372437529,
+  "test_f1_micro": 0.8548876433383041,
+  "test_auc_roc": 0.9576742777945004,
+  "test_brier_mean": 0.030551636671424187,
+  "test_brier_per_disease": {
+    "Anemia": 0.005124185062690073,
+    "CKD": 0.07238378219742808,
+    "Diabetes": 0.05599122724072497,
+    "Dyslipidemia": 0.05005505121890736,
+    "Electrolyte_Imbalance": 0.007044512608522992,
+    "Hematology_Disorder": 0.009848940235083096,
+    "Liver_Disease": 0.012065430498020705,
+    "Thyroid_Disorder": 0.03189996431001624
+  },
+  "per_disease": {
+    "Anemia": {
+      "f1": 0.8111111111111111,
+      "brier": 0.005124185062690073
+    },
+    "CKD": {
+      "f1": 0.7558291852239979,
+      "brier": 0.07238378219742808
+    },
+    "Diabetes": {
+      "f1": 0.7564016172506739,
+      "brier": 0.05599122724072497
+    },
+    "Dyslipidemia": {
+      "f1": 0.88125,
+      "brier": 0.05005505121890736
+    },
+    "Electrolyte_Imbalance": {
+      "f1": 0.688,
+      "brier": 0.007044512608522992
+    },
+    "Hematology_Disorder": {
+      "f1": 0.9885338345864662,
+      "brier": 0.009848940235083096
+    },
+    "Liver_Disease": {
+      "f1": 0.9047391096218286,
+      "brier": 0.012065430498020705
+    },
+    "Thyroid_Disorder": {
+      "f1": 0.7033138401559454,
+      "brier": 0.03189996431001624
+    }
+  }
+}

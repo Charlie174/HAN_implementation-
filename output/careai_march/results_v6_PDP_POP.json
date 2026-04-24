@@ -1,12 +1,12 @@
 {
-  "dataset": "CareAI March 2026 v6",
+  "dataset": "CareAI April 2026 v6",
   "model": "HANPP_Disease v6",
   "metapaths": [
     "P-D-P",
     "P-O-P"
   ],
-  "num_patients": 95836,
-  "num_diseases": 9,
+  "num_patients": 50839,
+  "num_diseases": 8,
   "diseases": [
     "Anemia",
     "CKD",
@@ -14,85 +14,77 @@
     "Dyslipidemia",
     "Electrolyte_Imbalance",
     "Hematology_Disorder",
-    "Infection_Inflammation",
     "Liver_Disease",
     "Thyroid_Disorder"
   ],
-  "in_dim": 120,
+  "in_dim": 119,
   "hidden_dim": 256,
   "out_dim": 128,
-  "feature_note": "symptom_freq_threshold=0.99; full test_reference_v2 (107 tests, 8 diseases); patient_disease excluded from features",
-  "best_val_auc": 0.9968787664449776,
-  "best_val_f1": 0.8407261399227155,
+  "feature_note": "symptom_freq_threshold=0.99; full test_reference_v2 (107 tests, 9 diseases); patient_disease excluded from features",
+  "best_val_auc": 0.9992748517223717,
+  "best_val_f1": 0.9246965928860045,
   "best_epoch": 100,
-  "test_f1_macro": 0.8491176479640664,
-  "test_f1_micro": 0.9531155150865916,
-  "test_auc_roc": 0.996932055965573,
+  "test_f1_macro": 0.9441191185697073,
+  "test_f1_micro": 0.9817984243412117,
+  "test_auc_roc": 0.9991989648620812,
   "opt_thresholds": {
-    "Anemia": 0.63,
-    "CKD": 0.51,
-    "Diabetes": 0.6,
-    "Dyslipidemia": 0.56,
-    "Electrolyte_Imbalance": 0.59,
-    "Hematology_Disorder": 0.63,
-    "Infection_Inflammation": 0.5,
-    "Liver_Disease": 0.55,
-    "Thyroid_Disorder": 0.5
+    "Anemia": 0.56,
+    "CKD": 0.46,
+    "Diabetes": 0.48,
+    "Dyslipidemia": 0.5700000000000001,
+    "Electrolyte_Imbalance": 0.56,
+    "Hematology_Disorder": 0.67,
+    "Liver_Disease": 0.5700000000000001,
+    "Thyroid_Disorder": 0.43
   },
   "per_disease": {
     "Anemia": {
-      "f1": 0.964072650139202,
-      "precision": 0.9563387690689111,
-      "recall": 0.9719326383319968,
-      "auc": 0.9973986702720613
+      "f1": 0.9250720461095101,
+      "precision": 0.8867403314917127,
+      "recall": 0.9668674698795181,
+      "auc": 0.9981963233168542
     },
     "CKD": {
-      "f1": 0.9563392107472712,
-      "precision": 0.9704629366657199,
-      "recall": 0.9426206896551724,
-      "auc": 0.9967042975327624
+      "f1": 0.992464415294446,
+      "precision": 0.9894268224819143,
+      "recall": 0.9955207166853304,
+      "auc": 0.9998749520048159
     },
     "Diabetes": {
-      "f1": 0.9435683565750033,
-      "precision": 0.9541381128096995,
-      "recall": 0.9332302139726734,
-      "auc": 0.9965004233717816
+      "f1": 0.9880147510755992,
+      "precision": 0.9916718075262184,
+      "recall": 0.9843845682792407,
+      "auc": 0.9996547767068058
     },
     "Dyslipidemia": {
-      "f1": 0.9608389316729478,
-      "precision": 0.9587965990843689,
-      "recall": 0.9628899835796387,
-      "auc": 0.998727923586607
+      "f1": 0.9734513274336283,
+      "precision": 0.990990990990991,
+      "recall": 0.9565217391304348,
+      "auc": 0.999725801080361
     },
     "Electrolyte_Imbalance": {
-      "f1": 0.9114386648800098,
-      "precision": 0.8806497175141242,
-      "recall": 0.9444584700833123,
-      "auc": 0.9920688706072475
+      "f1": 0.9924357034795764,
+      "precision": 1.0,
+      "recall": 0.984984984984985,
+      "auc": 0.9997163549573569
     },
     "Hematology_Disorder": {
-      "f1": 0.9604901225306327,
-      "precision": 0.966532460996477,
-      "recall": 0.9545228628230616,
-      "auc": 0.9979988088505417
-    },
-    "Infection_Inflammation": {
-      "f1": 0.0,
-      "precision": 0.0,
-      "recall": 0.0,
-      "auc": NaN
+      "f1": 0.7105263157894737,
+      "precision": 0.7941176470588235,
+      "recall": 0.6428571428571429,
+      "auc": 0.9965312354776605
     },
     "Liver_Disease": {
-      "f1": 0.9687460775699761,
-      "precision": 0.96475,
-      "recall": 0.97277539702546,
-      "auc": 0.997783917835265
+      "f1": 0.978912319644839,
+      "precision": 0.9821826280623608,
+      "recall": 0.9756637168141593,
+      "auc": 0.9998966215748496
     },
     "Thyroid_Disorder": {
-      "f1": 0.9765648175615544,
-      "precision": 0.9927623642943305,
-      "recall": 0.960887332165791,
-      "auc": 0.9982735356683177
+      "f1": 0.9920760697305864,
+      "precision": 0.9858267716535433,
+      "recall": 0.9984051036682615,
+      "auc": 0.9999956537779452
     }
   }
 }

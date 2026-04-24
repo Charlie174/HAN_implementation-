@@ -1,0 +1,24 @@
+{
+  "semantic_attention": {
+    "mean_beta_PDP": 0.9228054285049438,
+    "mean_beta_POP": 0.07719461619853973,
+    "n_PDP_dominant": 9058,
+    "n_POP_dominant": 660,
+    "pct_PDP_dominant": 0.9320847911092818,
+    "pct_POP_dominant": 0.06791520889071825
+  },
+  "metapath_ablation": {
+    "f1_macro_full_both_paths": 0.9377998486124627,
+    "f1_macro_PDP_only": 0.8318617584191738,
+    "f1_macro_POP_only": 0.41764499481527734,
+    "f1_drop_remove_PDP": 0.10593809019328893,
+    "f1_drop_remove_POP": 0.5201548537971854
+  },
+  "faithfulness": {
+    "logit_threshold": 0.1,
+    "pct_PDP_dominant_sensitive_to_PDP_removal": 0.021748730404062708,
+    "pct_POP_dominant_sensitive_to_POP_removal": 1.0,
+    "interpretation": "A faithful model should show high sensitivity when removing the dominant path for patients that prefer that path."
+  },
+  "n_test": 9718
+}
