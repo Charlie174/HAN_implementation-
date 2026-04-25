@@ -1,0 +1,94 @@
+{
+  "experiment": "Patient-Conditioned Semantic Attention Ablation",
+  "description": "Compares HAN++ (q_i = W_q * h_i) vs HAN (q = global parameter)",
+  "dataset": "CareAI April 2026 (48,546 patients, 9 diseases)",
+  "hyperparams": {
+    "hidden_dim": 256,
+    "out_dim": 128,
+    "num_heads": 4,
+    "dropout": 0.3,
+    "lr": 0.0003,
+    "wd": 0.0001,
+    "epochs": 100,
+    "patience": 20,
+    "seed": 42
+  },
+  "split": {
+    "train": 31059,
+    "val": 7769,
+    "test": 9718
+  },
+  "results": {
+    "patient_conditioned": {
+      "f1_macro": 0.9377998486124627,
+      "f1_micro": 0.9873602125198166,
+      "auc_roc": 0.9991717914166678,
+      "per_disease_f1": {
+        "Anemia": 0.8634361233480177,
+        "CKD": 0.9865711727842436,
+        "Diabetes": 0.9882192248591429,
+        "Dyslipidemia": 0.9666666666666667,
+        "Electrolyte_Imbalance": 0.9657869012707723,
+        "Hematology_Disorder": 0.6956521739130435,
+        "Infection_Inflammation": 0.9975190839694656,
+        "Liver_Disease": 0.9789719626168224,
+        "Thyroid_Disorder": 0.9973753280839895
+      },
+      "beta_mean": [
+        0.9228039383888245,
+        0.0771946832537651
+      ],
+      "beta_std": [
+        0.21892014145851135,
+        0.21892018616199493
+      ],
+      "opt_thresholds": [
+        0.58,
+        0.53,
+        0.4,
+        0.44,
+        0.67,
+        0.65,
+        0.35000000000000003,
+        0.59,
+        0.47000000000000003
+      ]
+    },
+    "global_query": {
+      "f1_macro": 0.8572357027046902,
+      "f1_micro": 0.9652450012872221,
+      "auc_roc": 0.9951716280649303,
+      "per_disease_f1": {
+        "Anemia": 0.6961038961038961,
+        "CKD": 0.9538461538461539,
+        "Diabetes": 0.9570573139435415,
+        "Dyslipidemia": 0.7142857142857143,
+        "Electrolyte_Imbalance": 0.9439252336448598,
+        "Hematology_Disorder": 0.5827814569536424,
+        "Infection_Inflammation": 0.9967544864452081,
+        "Liver_Disease": 0.8860465116279069,
+        "Thyroid_Disorder": 0.9843205574912892
+      },
+      "beta_mean": [
+        6.432317345428373e-09,
+        1.0
+      ],
+      "beta_std": [
+        2.0752372620336246e-07,
+        2.0825362412324466e-07
+      ],
+      "opt_thresholds": [
+        0.6,
+        0.55,
+        0.51,
+        0.48,
+        0.56,
+        0.47000000000000003,
+        0.39,
+        0.67,
+        0.66
+      ]
+    }
+  },
+  "delta_f1_macro": 0.0805641459077725
+}

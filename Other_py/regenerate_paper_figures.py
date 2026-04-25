@@ -56,7 +56,7 @@ def make_fig4():
         ("Decision Tree", 0.9458,   C_TRAD,  "Traditional\n(GridSearch)"),
         ("SeHGNN",        0.6300,   C_BAS,   "GNN / DL\nBaselines"),
         ("pyHGT",         0.7550,   C_BAS,   "GNN / DL\nBaselines"),
-        ("RETAIN",        0.8111,   C_BAS,   "GNN / DL\nBaselines"),
+        ("RETAIN",        0.6111,   C_BAS,   "GNN / DL\nBaselines"),
         ("HGT-HAN\n(P-D-P)", 0.8401, C_HGT, "HGT-HAN\nHybrid"),
         ("HAN++\n(P-D-P)", 0.8319,  C_HAN,  "HAN++\n(Ours)"),
         ("HAN++\n(P-O-P)", 0.4176,  C_HAN,  "HAN++\n(Ours)"),

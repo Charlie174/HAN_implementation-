@@ -233,7 +233,7 @@ for d, v in per_disease.items():
 results = {
     'model': 'RETAIN (1-visit, single linear layer)',
     'reference': 'Choi et al., 2016, KDD',
-    'dataset': 'CareAI March 2026 (95836 patients)',
+    'dataset': f'CareAI April 2026 ({data.P} patients, high-confidence)',
     'diseases': PAPER_DISEASES,
     'split': '64/16/20 (train/val/test), seed=42',
     'hyperparams': {
@@ -253,5 +253,5 @@ with open(os.path.join(OUT_DIR, 'retain_results.json'), 'w') as f:
     json.dump(results, f, indent=2)
 
 print(f"\n[Done] Saved retain_results.json")
-print(f"  RETAIN F1-Macro={f1_macro:.4f} vs HAN++ F1-Macro=0.9553")
+print(f"  RETAIN F1-Macro={f1_macro:.4f} vs HAN++ F1-Macro=0.9378")
 print(f"\nNext: run Other_py/multiseed_eval.py")

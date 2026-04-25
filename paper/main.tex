@@ -94,7 +94,7 @@ interpretability showing \emph{which} clinical relationships drove each
 prediction, and (3)~calibrated probability outputs suitable for
 risk-stratified decision-making.
 Unseen patient validation ($n{=}20$) achieves Mean AUC = 0.8934.
-Multi-seed stability confirms $\text{F1-Macro} = 0.9397 \pm 0.0013$.
+Test-set composition sensitivity confirms $\text{F1-Macro} = 0.9397 \pm 0.0013$.
 Attention faithfulness tests show removing the dominant meta-path
 (P-D-P) collapses F1-Macro from 0.9378 to 0.4176, confirming
 attention weights genuinely drive predictions.
@@ -222,6 +222,22 @@ semantic attention, addressing the clinical limitation of a global per-meta-path
 query vector shared across all patients.
 SeHGNN \cite{yang_2023} pre-computes meta-path aggregations for efficiency but
 loses per-pair patient attention (F1-Macro $\approx 0.63$ in our evaluation).
+
+\textbf{Interpretable and pre-trained EHR models.}
+RETAIN \cite{choi_2016_retain} introduces reverse-time attention for
+interpretable single-visit prediction; we include it as a baseline
+(F1-Macro = 0.6111 on our dataset --- it fails on rare diseases with
+$< 5\%$ prevalence).
+BEHRT \cite{li_behrt_2020} applies BERT-style pre-training to sequences
+of ICD diagnostic codes, and GraphCare \cite{jiang_graphcare_2024}
+constructs personalized knowledge graphs from medical ontologies.
+These models target different data modalities (diagnostic code sequences,
+ontology-linked visits) and require pre-training corpora or external
+knowledge bases not available in our setting, which uses raw laboratory
+test values as input features.
+Direct empirical comparison is deferred to future work; HAN++ addresses a
+complementary niche --- heterogeneous meta-path reasoning over structured
+laboratory values with patient-conditioned interpretability.
 
 \textbf{Uncertainty Quantification.}
 Focal Loss \cite{lin_2017} ($\gamma = 2.0$) and MC Dropout \cite{gal_2016}
@@ -857,7 +873,7 @@ quantification and patient-conditioned interpretability
     \midrule
     SeHGNN \cite{yang_2023}  & GNN (Feasibility)& ---   & ---   & 0.6300 & ---    & --- \\
     pyHGT (Standalone)       & GNN (Mid-review) & 0.8992 & ---  & 0.7550 & ---    & --- \\
-    RETAIN \cite{choi_2016_retain} & DL (Interp. Baseline) & --- & 0.8549 & 0.8111 & --- & --- \\
+    RETAIN \cite{choi_2016_retain} & DL (Interp. Baseline) & --- & 0.9383 & 0.6111 & --- & --- \\
     \midrule
     HGT-HAN (P-S-P)          & GNN Hybrid       & 0.8453 & 0.8367 & 0.8134 & --- & 184K \\
     HGT-HAN (P-O-P)          & GNN Hybrid       & 0.8576 & 0.8489 & 0.8256 & --- & 184K \\
@@ -881,7 +897,7 @@ quantification and patient-conditioned interpretability
     \multicolumn{7}{l}{\small $^{\ddagger}$HAN++ additionally provides MC Dropout uncertainty,
       patient-conditioned interpretability, and calibrated probability outputs ---} \\
     \multicolumn{7}{l}{\small \phantom{$^{\ddagger}$}capabilities absent from all traditional baselines.
-      Multi-seed stability: $0.9397\pm0.0013$ (Section~\ref{subsec:multiseed}).} \\
+      Test-set sensitivity: $0.9397\pm0.0013$ (Section~\ref{subsec:multiseed}).} \\
   \end{tabular}
 \end{table*}
 
@@ -937,11 +953,15 @@ physician-facing evidence that flat classifiers cannot offer;
 $\hat{p}_{i,d} \in [0,1]$ with Brier = 0.0192 (0.0040 scaled),
 suitable for risk stratification (Section~\ref{subsec:calibration}).
 
-\textbf{GNN architecture progression.}
-Within graph-based approaches, the improvement
-SeHGNN (0.63) $\to$ pyHGT (0.76) $\to$ HGT-HAN (0.84) $\to$ HAN++ (0.94)
+\textbf{GNN/DL architecture progression.}
+Within neural approaches, the improvement
+SeHGNN (0.63) $\to$ RETAIN (0.61) $\to$ pyHGT (0.76) $\to$
+HGT-HAN (0.84) $\to$ HAN++ (0.94)
 confirms that hierarchical meta-path attention with patient conditioning
-is the key architectural driver among GNN methods.
+is the key architectural driver.
+Notably, RETAIN --- the standard interpretable deep baseline --- achieves
+F1 = 0 on three rare diseases ($< 5\%$ prevalence), whereas HAN++'s
+graph-relational structure handles class imbalance substantially better.
 
 \subsection{HAN++ vs HGT-HAN: Per-Pair vs Type-Level Attention}
 \label{subsec:han_vs_hgt}
@@ -1026,17 +1046,20 @@ $K = 4$ attention heads is optimal; $K = 8$ over-parameterises.
 $d = 256$ yields the best production result ($d = 128$ is strong on the dev set).
 $p = 0.3$ dropout is optimal; $p \geq 0.4$ causes excessive attention information loss.
 
-\subsection{Multi-Seed Stability}
+\subsection{Test-Set Composition Sensitivity}
 \label{subsec:multiseed}
 
-To assess whether HAN++ results depend on a favourable random split, we vary
-the data-split seed across three values (42, 123, 456) while holding model
-weights fixed (trained with seed = 42).
+To assess whether reported metrics depend on a favourable random test split,
+we vary the data-split seed across three values (42, 123, 456) while holding
+model weights fixed (trained once with seed = 42).
 F1-Macro = $0.9397 \pm 0.0013$, F1-Micro = $0.9534 \pm 0.0004$,
 AUC-ROC = $0.9971 \pm 0.0001$ (Fig.~\ref{fig:per_disease}).
-The negligible standard deviation ($\leq 0.0004$) across seeds confirms that
-the reported result does not represent a statistical outlier and is robust to
-test-set composition.
+The negligible standard deviation ($\leq 0.0013$) across splits confirms that
+the reported result is robust to test-set composition and does not represent
+a statistical outlier.
+We note that this experiment holds model weights constant and varies only the
+evaluation split; full training stability (retraining with different weight
+initialisations) is deferred to future work.
 
 \begin{figure}[t]
   \centering
@@ -1174,26 +1197,37 @@ F1-Macro from 0.9378 to 0.8319 ($-$0.106), a 10.6 percentage point loss
 that demonstrates the dual meta-path combination is essential.
 
 \textbf{Faithfulness check.}
-Among P-O-P-dominant patients (4.3\%, those with $\beta_{\text{P-O-P}} > 0.5$),
-81.8\% show logit change $> 0.1$ when P-O-P is disabled,
-versus 43.8\% of P-D-P-dominant patients when P-D-P is disabled.
-This asymmetry confirms that attention weights faithfully predict which patients
-are sensitive to which meta-path --- the attention mechanism is not decorative.
-We note that attention weights do not constitute complete causal explanations
-\cite{jain_2019}; they are a necessary but not sufficient condition for
-interpretability, complemented here by the counterfactual masking evidence above.
+Among the 4.3\% of patients who are P-O-P-dominant
+($\beta_{\text{P-O-P}} > 0.5$), 81.8\% show logit change $> 0.1$ when
+P-O-P is disabled, confirming attention faithfulness for this subgroup.
+For the majority P-D-P-dominant group, 43.8\% are sensitive to P-D-P
+removal --- lower than expected, likely because P-D-P carries the primary
+information signal and the dual-path architecture provides partial
+compensation when one path is disabled.
+This asymmetry is consistent with a model that relies heavily on P-D-P
+but where P-O-P-dominant patients genuinely depend on organ-based
+reasoning.
+We note that attention weights do not constitute complete causal
+explanations \cite{jain_2019}; they are a necessary but not sufficient
+condition for interpretability, complemented here by the counterfactual
+masking evidence above.
 
 \subsection{Graph Construction Sensitivity}
 \label{subsec:graph_sensitivity}
 
 We test sensitivity to the symptom frequency filter threshold
-($\rho \in \{0.50, 0.70, 0.90, 0.99\}$, where higher = fewer symptoms pruned)
+($\rho \in \{0.50, 0.70, 0.90, 0.99\}$, where higher $\rho$ retains more symptoms)
 and to meta-path combinations, using fixed model weights.
 All four frequency thresholds yield identical F1-Macro = 0.9378 and AUC = 0.9992,
 because no symptom in this dataset appears in $> 50\%$ of patients --- the
-filter is never triggered below $\rho = 0.99$.
-This confirms that HAN++ performance is robust to graph sparsity choices
-on this dataset, and the results are not an artefact of a particular pruning setting.
+filter is never triggered at any threshold below $\rho = 0.99$.
+This null result means the threshold ablation is uninformative on this
+particular dataset; on datasets with high-frequency hub symptoms
+(e.g., CBC, glucose appearing in $> 50\%$ of patients), this parameter
+would be load-bearing.
+We report the null result for transparency: HAN++ performance is not an
+artefact of a particular pruning setting, but neither can we claim
+robustness to meaningful graph sparsity variation on this data.
 
 \subsection{Training Convergence}
 \label{subsec:convergence}
@@ -1357,12 +1391,12 @@ clinical relationships drove each individual prediction, and
 reduced to 0.0040 after temperature scaling at $T^* = 0.276$).
 All nine disease categories achieve AUC $\geq 0.99$ on the
 internal test set (Table~\ref{tab:per_disease}).
-Within the GNN family, HAN++ shows clear improvement over all
-alternatives: SeHGNN (0.63) $\to$ pyHGT (0.76) $\to$
+Within the GNN/DL family, HAN++ shows clear improvement over all
+alternatives: SeHGNN (0.63) $\to$ RETAIN (0.61) $\to$ pyHGT (0.76) $\to$
 HGT-HAN (0.84) $\to$ HAN++ (0.94).
 External validation on 20 unseen patients achieves
 Mean AUC = 0.8934 (Section~\ref{subsec:unseen}).
-Multi-seed stability confirms $\text{F1-Macro} = 0.9397 \pm 0.0013$.
+Test-set composition sensitivity confirms $\text{F1-Macro} = 0.9397 \pm 0.0013$.
 Attention faithfulness tests verify that semantic weights reflect genuine
 predictive contributions, with P-D-P removal causing F1-Macro to collapse
 from 0.9378 to 0.4176.
@@ -1370,24 +1404,46 @@ The two-phase clinical workflow integrates mandatory physician validation
 between AI prediction and clinical action, ensuring safe deployment in
 real hospital settings.
 
-\textbf{Limitations and Future Work.}
-The current model operates on structured laboratory data from Sri Lankan
-hospitals; performance validation on broader geographic populations is
+\textbf{Limitations.}
+\emph{(1)~Rule-based label bias.}
+The high-confidence dataset used for evaluation derives disease labels
+from clinical reference-range thresholds, which inherently advantages
+threshold-learning classifiers (DT, RF).
+Evaluation on physician-assigned diagnoses would better isolate
+relational reasoning benefits.
+\emph{(2)~Single-centre data.}
+All data originates from CareCode (PVT) Ltd hospitals in southern
+Sri Lanka; cross-geography and cross-institution validation is
 required before wider deployment.
-The high-confidence dataset used for evaluation has near-deterministic
-labels derived from test-value thresholds, which favours threshold-based
-classifiers; evaluation on physician-assigned diagnoses would better
-demonstrate HAN++'s relational reasoning advantages.
+\emph{(3)~No temporal modelling.}
+HAN++ processes a single aggregate snapshot per patient; multi-visit
+temporal modelling (e.g., GRU over visit sequences \cite{li_2021})
+is not incorporated.
+\emph{(4)~Comparator scope.}
+While we include RETAIN as an interpretable deep baseline, we do not
+compare against recent transformer-based EHR models
+(BEHRT \cite{li_behrt_2020}, GraphCare \cite{jiang_graphcare_2024})
+as these target different data modalities (diagnostic codes, temporal
+visit sequences) and require pre-training corpora unavailable in our
+setting; direct comparison would strengthen positioning.
+\emph{(5)~Patient-conditioned attention variance.}
+Mean $\bar{\beta}_{\text{P-D-P}} = 0.923$ indicates limited per-patient
+variation in semantic weights on this dataset; datasets with more
+heterogeneous patient profiles may benefit more from patient conditioning.
+\emph{(6)~Training stability.}
+The multi-seed experiment (Section~\ref{subsec:multiseed}) varies test
+splits with fixed weights; full retraining stability across random
+initialisations remains future work.
 This study follows the TRIPOD reporting guidelines for prediction model
 transparency \cite{collins_2015}.
-Hub-aware heterogeneous graph models such as HSGNN \cite{liu_2020} address
-degree-skewed attention; evaluating HAN++ under explicit hub-aware pruning
-is future work.
-Future directions include: (i)~incorporating unstructured clinical notes
-via Graph RAG \cite{peng_2024}; (ii)~extending to temporal multi-visit
-modelling \cite{li_2021}; (iii)~expanding external validation cohorts
-\cite{riley_2021}; and (iv)~prospective calibration validation for
-regulatory-grade probability certification.
+
+\textbf{Future Work.}
+(i)~Incorporating unstructured clinical notes via Graph RAG \cite{peng_2024};
+(ii)~temporal multi-visit modelling;
+(iii)~expanding external validation cohorts \cite{riley_2021};
+(iv)~hub-aware graph pruning (HSGNN \cite{liu_2020});
+and (v)~prospective calibration validation for regulatory-grade
+probability certification.
 
 % ── Ethics Statement ──────────────────────────────────────────────────────────
 \section*{Ethics Statement}

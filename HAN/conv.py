@@ -226,10 +226,14 @@ class PatientConditionedSemanticAttention(nn.Module):
         (This extends their global semantic attention to patient-conditional.)
     """
 
-    def __init__(self, hid, dropout=0.2):
+    def __init__(self, hid, dropout=0.2, use_global_query=False):
         super().__init__()
         self.W_sem = nn.Linear(hid, hid)   # transforms each meta-path embedding
-        self.W_q = nn.Linear(hid, hid)     # projects patient embedding to query space
+        self.use_global_query = use_global_query
+        if use_global_query:
+            self.q = nn.Parameter(torch.randn(hid))
+        else:
+            self.W_q = nn.Linear(hid, hid) # projects patient embedding to query space
         self.dropout = nn.Dropout(dropout)
 
     def forward(self, Z_list, h_patient=None):
@@ -237,7 +241,7 @@ class PatientConditionedSemanticAttention(nn.Module):
         Args:
             Z_list:    list of K tensors [N, hid], one per meta-path
             h_patient: patient embeddings [N, hid] used to compute the query.
-                       If None, falls back to global mean (same as original HAN).
+                       Ignored when use_global_query=True.
 
         Returns:
             Z_final: [N, hid]  weighted aggregate across meta-paths
@@ -246,11 +250,12 @@ class PatientConditionedSemanticAttention(nn.Module):
         K = len(Z_list)
         N = Z_list[0].size(0)
 
-        # Patient-specific query: [N, hid]
-        if h_patient is None:
-            # Fallback: reproduce original HAN global behaviour (mean pooling)
-            h_patient = torch.stack(Z_list, dim=0).mean(dim=0)
-        q_i = self.W_q(h_patient)  # [N, hid]
+        if self.use_global_query:
+            q_i = self.q.unsqueeze(0).expand(N, -1)  # [N, hid] broadcast
+        else:
+            if h_patient is None:
+                h_patient = torch.stack(Z_list, dim=0).mean(dim=0)
+            q_i = self.W_q(h_patient)  # [N, hid]
 
         # Per-patient, per-meta-path relevance scores: [N, K]
         scores = []

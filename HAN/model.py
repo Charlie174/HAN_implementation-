@@ -135,7 +135,8 @@ class HANPP_Disease(nn.Module):
     """
 
     def __init__(self, in_dim, hidden_dim, out_dim, metapath_names,
-                 num_heads=4, num_diseases=5, dropout=0.3):
+                 num_heads=4, num_diseases=5, dropout=0.3,
+                 use_global_query=False):
         super().__init__()
         self.metapath_names = metapath_names
 
@@ -148,7 +149,7 @@ class HANPP_Disease(nn.Module):
         ])
 
         self.semantic_att = PatientConditionedSemanticAttention(
-            hidden_dim, dropout=dropout
+            hidden_dim, dropout=dropout, use_global_query=use_global_query
         )
 
         self.out_proj = nn.Linear(hidden_dim, out_dim)

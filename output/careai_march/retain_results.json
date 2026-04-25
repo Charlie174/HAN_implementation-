@@ -9,6 +9,7 @@
     "Dyslipidemia",
     "Electrolyte_Imbalance",
     "Hematology_Disorder",
+    "Infection_Inflammation",
     "Liver_Disease",
     "Thyroid_Disorder"
   ],
@@ -20,54 +21,59 @@
     "lr": 0.001,
     "weight_decay": 0.0001
   },
-  "best_val_f1": 0.8138185771135227,
-  "best_epoch": 48,
-  "test_f1_macro": 0.8111473372437529,
-  "test_f1_micro": 0.8548876433383041,
-  "test_auc_roc": 0.9576742777945004,
-  "test_brier_mean": 0.030551636671424187,
+  "best_val_f1": 0.6178852255827733,
+  "best_epoch": 46,
+  "test_f1_macro": 0.6110952313549175,
+  "test_f1_micro": 0.9383319750067917,
+  "test_auc_roc": 0.8667331640844391,
+  "test_brier_mean": 0.019796472818249467,
   "test_brier_per_disease": {
-    "Anemia": 0.005124185062690073,
-    "CKD": 0.07238378219742808,
-    "Diabetes": 0.05599122724072497,
-    "Dyslipidemia": 0.05005505121890736,
-    "Electrolyte_Imbalance": 0.007044512608522992,
-    "Hematology_Disorder": 0.009848940235083096,
-    "Liver_Disease": 0.012065430498020705,
-    "Thyroid_Disorder": 0.03189996431001624
+    "Anemia": 0.022030015547060314,
+    "CKD": 0.039619991580875286,
+    "Diabetes": 0.04294435605517366,
+    "Dyslipidemia": 0.006307450878038231,
+    "Electrolyte_Imbalance": 0.019444464563624742,
+    "Hematology_Disorder": 0.009840845080367982,
+    "Infection_Inflammation": 0.01594033419099209,
+    "Liver_Disease": 0.010721332075309753,
+    "Thyroid_Disorder": 0.011319465392803155
   },
   "per_disease": {
     "Anemia": {
-      "f1": 0.8111111111111111,
-      "brier": 0.005124185062690073
+      "f1": 0.0,
+      "brier": 0.022030015547060314
     },
     "CKD": {
-      "f1": 0.7558291852239979,
-      "brier": 0.07238378219742808
+      "f1": 0.8928804702808621,
+      "brier": 0.039619991580875286
     },
     "Diabetes": {
-      "f1": 0.7564016172506739,
-      "brier": 0.05599122724072497
+      "f1": 0.9312839059674503,
+      "brier": 0.04294435605517366
     },
     "Dyslipidemia": {
-      "f1": 0.88125,
-      "brier": 0.05005505121890736
+      "f1": 0.0,
+      "brier": 0.006307450878038231
     },
     "Electrolyte_Imbalance": {
-      "f1": 0.688,
-      "brier": 0.007044512608522992
+      "f1": 0.8414096916299559,
+      "brier": 0.019444464563624742
     },
     "Hematology_Disorder": {
-      "f1": 0.9885338345864662,
-      "brier": 0.009848940235083096
+      "f1": 0.0,
+      "brier": 0.009840845080367982
+    },
+    "Infection_Inflammation": {
+      "f1": 0.9944305742270021,
+      "brier": 0.01594033419099209
     },
     "Liver_Disease": {
-      "f1": 0.9047391096218286,
-      "brier": 0.012065430498020705
+      "f1": 0.9072681704260651,
+      "brier": 0.010721332075309753
     },
     "Thyroid_Disorder": {
-      "f1": 0.7033138401559454,
-      "brier": 0.03189996431001624
+      "f1": 0.9325842696629213,
+      "brier": 0.011319465392803155
     }
   }
 }
