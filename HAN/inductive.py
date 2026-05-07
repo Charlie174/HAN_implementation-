@@ -194,6 +194,7 @@ def find_prototype_neighbors(z_new: torch.Tensor,
                               top_k_diseases: int = 3,
                               max_per_disease: int = 15,
                               metapath_name: str = 'P-D-P',
+                              min_sim_threshold: float = 0.0,
                               rng=None) -> dict:
     """
     Build approximate P-D-P neighbours for a single new patient.
@@ -237,9 +238,17 @@ def find_prototype_neighbors(z_new: torch.Tensor,
     ranked_diseases = sorted(sims, key=lambda d: sims[d], reverse=True)
     top_diseases = ranked_diseases[:top_k_diseases]
 
-    # Sample training patients from top disease clusters
+    # Sample training patients from top disease clusters.
+    # Only include diseases with positive cosine similarity — a negative/zero
+    # similarity means the new patient's embedding points AWAY from that disease
+    # cluster, so sampling those patients as neighbours would inject false signal.
+    # Without this guard, even a healthy patient (near-zero features → embedding
+    # orthogonal/opposite to all disease prototypes) gets forcibly assigned sick
+    # neighbours from the top-3 "least dissimilar" clusters.
     nbr_indices = set()
     for disease in top_diseases:
+        if sims[disease] < min_sim_threshold:
+            break  # ranked descending — all remaining are also below threshold
         d_idx = disease_order.index(disease)
         pos_indices = np.where(labels_np[:, d_idx] == 1)[0]
         if len(pos_indices) == 0:
@@ -258,6 +267,7 @@ def find_organ_prototype_neighbors(z_new: torch.Tensor,
                                    organ_map: dict,
                                    top_k_organs: int = 3,
                                    max_per_organ: int = 15,
+                                   min_sim_threshold: float = 0.0,
                                    rng=None) -> dict:
     """
     Build approximate P-O-P neighbours for a single new patient.
@@ -284,6 +294,8 @@ def find_organ_prototype_neighbors(z_new: torch.Tensor,
 
     nbr_indices = set()
     for organ_name in top_organs:
+        if sims[organ_name] < min_sim_threshold:
+            break  # ranked descending — stop once below threshold
         o_idx = organ_name_to_idx.get(organ_name)
         if o_idx is None:
             continue
@@ -314,6 +326,7 @@ def inductive_predict(model,
                       organ_prototypes: dict = None,
                       patient_organ_score: np.ndarray = None,
                       organ_map: dict = None,
+                      min_sim_threshold: float = 0.0,
                       rng=None):
     """
     Full inductive prediction pipeline for ONE new patient.
@@ -374,6 +387,7 @@ def inductive_predict(model,
             z_train=z_train,
             labels_np=labels_np,
             disease_order=disease_order,
+            min_sim_threshold=min_sim_threshold,
             rng=rng,
         )
         combined_nbr['P-D-P'] = pdp_nbr['P-D-P']
@@ -388,6 +402,7 @@ def inductive_predict(model,
             z_train=z_train,
             patient_organ_score=patient_organ_score,
             organ_map=organ_map,
+            min_sim_threshold=min_sim_threshold,
             rng=rng,
         )
         combined_nbr['P-O-P'] = pop_nbr['P-O-P']
@@ -424,36 +439,89 @@ def inductive_predict(model,
 
         mini_feats_t = torch.from_numpy(nbr_feats_np).float().to(device)
     else:
-        # No neighbours found — fall back to MLP
+        # No neighbours found — MLP-only pass.
+        # This is a DEGRADED mode: graph signal is absent, predictions are less
+        # reliable especially for rare diseases. Caller should surface a warning.
         mini_feats_t = feats_t
         mini_nbr = empty_nbr
+        import warnings
+        warnings.warn(
+            "inductive_predict: zero prototype neighbours found for this patient. "
+            "Predictions will use MLP-only (no graph signal) and may be unreliable. "
+            "Check that prototypes_v*.pkl was built on the same model checkpoint.",
+            RuntimeWarning, stacklevel=2
+        )
 
-    # ── Step 3: MC Dropout passes ─────────────────────────────────────────────
-    # Disable pre-set neighbors: mini_feats_t is a small [1+k, in_dim] tensor,
-    # not the full training graph — global indices would be out of bounds.
-    model.train()   # enable dropout
+    # ── Step 3a: Deterministic pass (model.eval) — PRIMARY PREDICTION ────────
+    # The model was trained in eval mode (dropout OFF). This single pass gives
+    # the correct, stable probability that the training objective optimised for.
+    # Using the MC-mean instead would add noise and cause flip-flopping predictions
+    # when the same report is submitted multiple times.
+    model.eval()
+    with _no_precomputed_neighbors(model), torch.no_grad():
+        logits_det, _, _ = model(mini_feats_t, mini_nbr)
+    det_probs = torch.sigmoid(logits_det[0]).cpu().numpy()   # [num_diseases]
+
+    # ── Step 3b: MC Dropout passes — UNCERTAINTY ONLY ────────────────────────
+    # Fixed seed makes the uncertainty estimate itself reproducible across calls.
+    torch.manual_seed(42)
+    model.train()
     all_probs = []
 
     with _no_precomputed_neighbors(model), torch.no_grad():
         for _ in range(n_mc_samples):
-            logits, _, _ = model(mini_feats_t, mini_nbr)
-            prob = torch.sigmoid(logits[0])    # [num_diseases]
-            all_probs.append(prob.cpu())
+            logits_mc, _, _ = model(mini_feats_t, mini_nbr)
+            all_probs.append(torch.sigmoid(logits_mc[0]).cpu())
 
     model.eval()
 
     all_probs_t = torch.stack(all_probs, dim=0)    # [S, num_diseases]
-    mean_probs  = all_probs_t.mean(dim=0).numpy()  # [num_diseases]
     std_probs   = all_probs_t.std(dim=0).numpy()   # [num_diseases]
 
-    # ── Step 4: Format output ─────────────────────────────────────────────────
+    # ── Step 4: Healthy-patient gate ─────────────────────────────────────────
+    # The model is trained on a dataset where 51.9% of patients have
+    # Infection_Inflammation. Its internal bias therefore outputs ~0.5 for
+    # that disease even on an all-zero feature vector (the training prior).
+    # For a patient whose ALL provided test values are within the normal range
+    # AND whose embedding had no similarity to any disease prototype (n_nbrs==0),
+    # this prior bias would produce a false positive.
+    #
+    # Guard: feats encodes  (value - midpoint) / (range/2) / 3  so that
+    #   feats = ±0.33  ↔  value is exactly at the normal range boundary.
+    # If max|feats| ≤ 0.34 → ALL provided tests within normal range.
+    # Combined with n_nbrs == 0 (embedding points away from all disease
+    # prototypes), we override predictions to all-negative.
+    #
+    # This is clinically sound: if all measured tests are normal AND the model
+    # sees no disease-cluster similarity, predicting disease is unjustified.
+    _HEALTHY_DEV_BOUND = 0.34     # ≈ 1/3, exactly at normal range boundary
+    _MIN_TESTS_HEALTHY = 3        # need ≥ 3 tests to make the healthy claim
+    _max_abs_dev  = float(np.abs(feats).max())
+    _n_tests_seen = int((np.abs(feats) > 1e-6).sum())
+
+    if n_nbrs == 0 and _n_tests_seen >= _MIN_TESTS_HEALTHY and _max_abs_dev <= _HEALTHY_DEV_BOUND:
+        disease_probs = {d: float(det_probs[j]) for j, d in enumerate(disease_order)}
+        disease_stds  = {d: float(std_probs[j])  for j, d in enumerate(disease_order)}
+        disease_preds = {d: 0 for d in disease_order}
+        return {
+            'disease_probs':       disease_probs,
+            'disease_stds':        disease_stds,
+            'disease_predictions': disease_preds,
+            'neighbor_count':      0,
+            'method':              'healthy_override',
+        }
+
+    # ── Step 5: Format output ─────────────────────────────────────────────────
+    # disease_probs uses the deterministic eval-mode probability (stable).
+    # disease_stds uses the MC Dropout std (uncertainty estimate, for reporting).
+    # Binary prediction is based on the deterministic probability — never flips.
     disease_probs  = {}
     disease_stds   = {}
     disease_preds  = {}
 
     for j, disease in enumerate(disease_order):
         thr = float(opt_thresholds.get(disease, 0.5))
-        p   = float(mean_probs[j])
+        p   = float(det_probs[j])
         s   = float(std_probs[j])
         disease_probs[disease] = p
         disease_stds[disease]  = s

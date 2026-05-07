@@ -21,7 +21,7 @@ import torch
 import numpy as np
 
 
-def mc_dropout_predict(model, features, neighbor_dicts, n_samples=50, device=None):
+def mc_dropout_predict(model, features, neighbor_dicts, n_samples=50, device=None, seed=42):
     """
     Monte Carlo Dropout inference for uncertainty quantification.
 
@@ -48,6 +48,11 @@ def mc_dropout_predict(model, features, neighbor_dicts, n_samples=50, device=Non
         device = next(model.parameters()).device
 
     features = features.to(device)
+
+    # --- Fix random seed so same input always gives same output ---
+    if seed is not None:
+        torch.manual_seed(seed)
+        np.random.seed(seed)
 
     # --- Enable dropout (set to train mode so dropout is active) ---
     model.train()

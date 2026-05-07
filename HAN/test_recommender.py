@@ -147,9 +147,9 @@ def recommend_all(disease_probs: dict,
                   disease_order: list,
                   patient_existing_tests: list,
                   test_reference: dict,
-                  uncertainty_threshold: float = 0.10,
-                  prob_threshold_low: float = 0.30,
-                  prob_threshold_high: float = 0.70,
+                  uncertainty_threshold: float = 0.20,
+                  prob_threshold_low: float = 0.40,
+                  prob_threshold_high: float = 0.65,
                   opt_thresholds: dict = None,
                   max_per_disease: int = 5) -> dict:
     """
@@ -192,10 +192,18 @@ def recommend_all(disease_probs: dict,
         std  = float(disease_uncertainties.get(disease, 0.0))
         thr  = float(thresholds.get(disease, 0.5))
 
-        low_conf  = std > uncertainty_threshold
-        ambiguous = prob_threshold_low <= prob <= prob_threshold_high
+        low_conf       = std > uncertainty_threshold
+        ambiguous      = prob_threshold_low <= prob <= prob_threshold_high
+        # σ < 0.08 means the model is confident even with dropout=0.3.
+        # Using uncertainty_threshold/2 was too strict (< 0.05 almost never hit).
+        very_confident = std < 0.08
 
-        if low_conf or ambiguous:
+        if very_confident:
+            if prob >= thr:
+                confirmed.append(disease)
+            else:
+                ruled_out.append(disease)
+        elif low_conf or ambiguous:
             recs = recommend_tests_for_disease(
                 disease, std, patient_existing_tests,
                 test_reference, max_recommendations=max_per_disease

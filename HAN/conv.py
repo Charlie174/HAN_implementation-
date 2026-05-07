@@ -69,11 +69,13 @@ class NodeLevelAttentionImproved(nn.Module):
         N = h.size(0)
         h_proj = self.W(h)  # (N, out_dim)
         
-        # Use vectorized path if neighbors are pre-set
-        if self.neighbor_idx is not None and self.neighbor_mask is not None:
+        # Use vectorized path only when neighbors are pre-set AND batch size matches
+        # the full training graph. Single-patient inference (N=1) must use the loop path.
+        if (self.neighbor_idx is not None and self.neighbor_mask is not None
+                and h.size(0) == self.neighbor_idx.size(0)):
             return self._forward_vectorized(h, h_proj)
         else:
-            # Fallback to original loop-based implementation
+            # Fallback to loop-based implementation (handles any batch size)
             return self._forward_loop(h, h_proj, neighbor_dict)
     
     def _forward_vectorized(self, h, h_proj):

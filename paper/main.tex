@@ -901,20 +901,33 @@ quantification and patient-conditioned interpretability
   \end{tabular}
 \end{table*}
 
-Fig.~\ref{fig:comparison} visualises the F1-Macro progression across all
-model families.
+Fig.~\ref{fig:comparison} visualises F1-Macro, Recall-Macro, and rare-disease
+F1 across all model families.
 
-\begin{figure}[t]
+\begin{figure*}[t]
   \centering
-  \includegraphics[width=\columnwidth]{figures/fig4_model_comparison.pdf}
-  \caption{F1-Macro and Accuracy comparison across all model families
-           (traditional models are GridSearch-tuned).
-           On this high-confidence dataset, traditional tree-based classifiers
-           (DT, RF) achieve competitive F1-Macro ($\geq 0.94$).
-           HAN++ (F1-Macro = 0.9378) additionally provides uncertainty
-           quantification and patient-conditioned interpretability.}
+  \includegraphics[width=\textwidth]{figures/fig4_model_comparison.pdf}
+  \caption{\textbf{(a) Overall performance.}
+           F1-Macro (solid) and Recall-Macro (hatched) for all models on the
+           same 9\,718-patient test split (CareAI April 2026, 9 diseases).
+           Traditional tree-based classifiers (DT, RF) achieve
+           F1-Macro\,$\approx$\,0.946 with GridSearch tuning.
+           Vanilla HAN (global query) drops to 0.857 despite graph structure,
+           revealing that a shared meta-path weight is insufficient.
+           HAN++ (patient-conditioned) recovers to 0.938 with
+           AUC-ROC\,=\,0.999 vs.\ DT 0.985.
+           Naive Bayes achieves high Recall (0.984) but negligible
+           precision (0.25), yielding F1\,=\,0.322.
+           KNN Recall-Macro\,=\,0.768 indicates 23\% of disease cases missed.
+           \textbf{(b) Rare-disease F1.}
+           For the three rarest diseases ($\leq$3.3\% prevalence),
+           where clinical impact is highest,
+           HAN++ outperforms all baselines by large margins —
+           most notably Dyslipidemia (1.1\%):
+           KNN\,=\,0.745, DT\,=\,0.842, HAN\,=\,0.714, HAN++\,=\,\textbf{0.967}
+           (+25\,pp over vanilla HAN, +13\,pp over best traditional).}
   \label{fig:comparison}
-\end{figure}
+\end{figure*}
 
 \subsection{Traditional Baselines vs.\ HAN++}
 \label{subsec:graph_necessity}

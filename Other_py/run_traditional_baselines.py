@@ -29,7 +29,7 @@ from sklearn.multioutput import MultiOutputClassifier
 from sklearn.preprocessing import StandardScaler
 from sklearn.model_selection import GridSearchCV
 from sklearn.metrics import (f1_score, accuracy_score, hamming_loss,
-                             roc_auc_score)
+                             roc_auc_score, precision_score, recall_score)
 from iterstrat.ml_stratifiers import MultilabelStratifiedShuffleSplit
 
 try:
@@ -50,6 +50,8 @@ RECORDS_PATH = 'data/dataset_careai_new/processed/records_labeled_new.csv'
 TESTS_PATH   = 'data/dataset_careai_new/processed/test_reference_new.csv'
 SUPPORT_PATH = 'output/careai_march/inductive_support.npz'
 OUT_DIR      = 'output/careai_march'
+PREDS_DIR    = 'output/careai_march/baseline_predictions'
+os.makedirs(PREDS_DIR, exist_ok=True)
 
 DISEASE_NAMES = [
     'Anemia', 'CKD', 'Diabetes', 'Dyslipidemia',
@@ -144,6 +146,8 @@ for name, base_model, param_grid in models:
     acc = accuracy_score(y_test, y_pred)
     f1_macro = f1_score(y_test, y_pred, average='macro', zero_division=0)
     f1_micro = f1_score(y_test, y_pred, average='micro', zero_division=0)
+    prec_macro = precision_score(y_test, y_pred, average='macro', zero_division=0)
+    rec_macro = recall_score(y_test, y_pred, average='macro', zero_division=0)
     hl = hamming_loss(y_test, y_pred)
 
     try:
@@ -162,7 +166,16 @@ for name, base_model, param_grid in models:
     per_disease = {}
     for d_idx, d_name in enumerate(DISEASE_NAMES):
         f1_d = f1_score(y_test[:, d_idx], y_pred[:, d_idx], zero_division=0)
-        per_disease[d_name] = float(f1_d)
+        p_d  = precision_score(y_test[:, d_idx], y_pred[:, d_idx], zero_division=0)
+        r_d  = recall_score(y_test[:, d_idx], y_pred[:, d_idx], zero_division=0)
+        per_disease[d_name] = {
+            'f1':        float(f1_d),
+            'precision': float(p_d),
+            'recall':    float(r_d),
+        }
+
+    safe = name.replace(' ', '_').replace('(', '').replace(')', '')
+    np.save(os.path.join(PREDS_DIR, f'{safe}_y_pred.npy'), y_pred.astype(np.int8))
 
     elapsed = time.time() - t0
     print(f"  {name:25s} {acc:10.4f} {f1_micro:10.4f} {f1_macro:10.4f} {hl:10.4f}  [{elapsed:.1f}s]")
@@ -176,10 +189,12 @@ for name, base_model, param_grid in models:
         'accuracy': float(acc),
         'f1_macro': float(f1_macro),
         'f1_micro': float(f1_micro),
-        'hamming_loss': float(hl),
+        'precision_macro': float(prec_macro),
+        'recall_macro':    float(rec_macro),
+        'hamming_loss':    float(hl),
         'auc_roc': float(auc) if not np.isnan(auc) else None,
         'best_params': best_params,
-        'per_disease_f1': per_disease,
+        'per_disease': per_disease,
         'time_seconds': float(elapsed),
     })
 
